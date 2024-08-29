@@ -1,0 +1,17 @@
+/home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/service
+/home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/client
+/home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/package_run_dependencies/service_ws
+/home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/parent_prefix_path/service_ws
+/home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/ament_prefix_path.sh
+/home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/ament_prefix_path.dsv
+/home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/path.sh
+/home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/path.dsv
+/home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.bash
+/home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.sh
+/home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.zsh
+/home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.dsv
+/home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/package.dsv
+/home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/packages/service_ws
+/home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/cmake/service_wsConfig.cmake
+/home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/cmake/service_wsConfig-version.cmake
+/home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/package.xml

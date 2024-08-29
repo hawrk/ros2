@@ -1,0 +1,116 @@
+[0.000000] (-) TimerEvent: {}
+[0.000557] (service_ws) JobQueued: {'identifier': 'service_ws', 'dependencies': OrderedDict()}
+[0.000996] (service_ws) JobStarted: {'identifier': 'service_ws'}
+[0.016240] (service_ws) JobProgress: {'identifier': 'service_ws', 'progress': 'cmake'}
+[0.017660] (service_ws) JobProgress: {'identifier': 'service_ws', 'progress': 'build'}
+[0.018804] (service_ws) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/byd/src/ros2/service_ws/build/service_ws', '--', '-j8', '-l8'], 'cwd': '/home/byd/src/ros2/service_ws/build/service_ws', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'byd'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '2498'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install:/home/byd/src/ros2/service_interface_ws/install:/home/byd/src/ros2/topic_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/home/byd/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/byd-desktop:@/tmp/.ICE-unix/2479,unix/byd-desktop:/tmp/.ICE-unix/2479'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/be571110_26ab_47dd_ba66_14bbc2b5e7e3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install/service_ws:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws:/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('GOPATH', '/home/byd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/byd/src/ros2/service_ws/build/service_ws'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/byd/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install/service_ws:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws:/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble')]), 'shell': False}
+[0.084642] (service_ws) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target client\x1b[0m\n'}
+[0.085723] (service_ws) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target service\x1b[0m\n'}
+[0.099471] (-) TimerEvent: {}
+[0.117648] (service_ws) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/client.dir/src/client.cpp.o\x1b[0m\n'}
+[0.118085] (service_ws) StdoutLine: {'line': b'[ 75%] Built target service\n'}
+[0.199667] (-) TimerEvent: {}
+[0.300327] (-) TimerEvent: {}
+[0.400955] (-) TimerEvent: {}
+[0.501620] (-) TimerEvent: {}
+[0.602302] (-) TimerEvent: {}
+[0.702964] (-) TimerEvent: {}
+[0.803602] (-) TimerEvent: {}
+[0.904310] (-) TimerEvent: {}
+[1.004999] (-) TimerEvent: {}
+[1.105824] (-) TimerEvent: {}
+[1.206622] (-) TimerEvent: {}
+[1.307400] (-) TimerEvent: {}
+[1.408137] (-) TimerEvent: {}
+[1.508794] (-) TimerEvent: {}
+[1.609464] (-) TimerEvent: {}
+[1.710124] (-) TimerEvent: {}
+[1.810772] (-) TimerEvent: {}
+[1.911425] (-) TimerEvent: {}
+[2.012079] (-) TimerEvent: {}
+[2.112741] (-) TimerEvent: {}
+[2.213421] (-) TimerEvent: {}
+[2.314066] (-) TimerEvent: {}
+[2.414724] (-) TimerEvent: {}
+[2.515385] (-) TimerEvent: {}
+[2.616055] (-) TimerEvent: {}
+[2.716718] (-) TimerEvent: {}
+[2.817391] (-) TimerEvent: {}
+[2.918041] (-) TimerEvent: {}
+[3.018718] (-) TimerEvent: {}
+[3.119470] (-) TimerEvent: {}
+[3.220259] (-) TimerEvent: {}
+[3.320976] (-) TimerEvent: {}
+[3.421843] (-) TimerEvent: {}
+[3.522635] (-) TimerEvent: {}
+[3.623334] (-) TimerEvent: {}
+[3.723995] (-) TimerEvent: {}
+[3.824616] (-) TimerEvent: {}
+[3.925296] (-) TimerEvent: {}
+[4.026002] (-) TimerEvent: {}
+[4.126659] (-) TimerEvent: {}
+[4.227312] (-) TimerEvent: {}
+[4.327963] (-) TimerEvent: {}
+[4.428626] (-) TimerEvent: {}
+[4.529285] (-) TimerEvent: {}
+[4.629955] (-) TimerEvent: {}
+[4.730614] (-) TimerEvent: {}
+[4.831289] (-) TimerEvent: {}
+[4.932063] (-) TimerEvent: {}
+[5.032746] (-) TimerEvent: {}
+[5.133549] (-) TimerEvent: {}
+[5.234217] (-) TimerEvent: {}
+[5.334868] (-) TimerEvent: {}
+[5.435523] (-) TimerEvent: {}
+[5.536177] (-) TimerEvent: {}
+[5.636827] (-) TimerEvent: {}
+[5.737470] (-) TimerEvent: {}
+[5.838123] (-) TimerEvent: {}
+[5.938783] (-) TimerEvent: {}
+[6.039430] (-) TimerEvent: {}
+[6.140097] (-) TimerEvent: {}
+[6.240771] (-) TimerEvent: {}
+[6.341463] (-) TimerEvent: {}
+[6.442117] (-) TimerEvent: {}
+[6.542765] (-) TimerEvent: {}
+[6.643406] (-) TimerEvent: {}
+[6.744044] (-) TimerEvent: {}
+[6.844708] (-) TimerEvent: {}
+[6.945497] (-) TimerEvent: {}
+[7.046262] (-) TimerEvent: {}
+[7.147068] (-) TimerEvent: {}
+[7.247867] (-) TimerEvent: {}
+[7.348721] (-) TimerEvent: {}
+[7.449373] (-) TimerEvent: {}
+[7.542914] (service_ws) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable client\x1b[0m\n'}
+[7.549439] (-) TimerEvent: {}
+[7.649985] (-) TimerEvent: {}
+[7.750664] (-) TimerEvent: {}
+[7.805474] (service_ws) StdoutLine: {'line': b'[100%] Built target client\n'}
+[7.829008] (service_ws) CommandEnded: {'returncode': 0}
+[7.850793] (-) TimerEvent: {}
+[7.866208] (service_ws) JobProgress: {'identifier': 'service_ws', 'progress': 'install'}
+[7.882629] (service_ws) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/byd/src/ros2/service_ws/build/service_ws'], 'cwd': '/home/byd/src/ros2/service_ws/build/service_ws', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'byd'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '2498'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install:/home/byd/src/ros2/service_interface_ws/install:/home/byd/src/ros2/topic_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/home/byd/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/byd-desktop:@/tmp/.ICE-unix/2479,unix/byd-desktop:/tmp/.ICE-unix/2479'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/be571110_26ab_47dd_ba66_14bbc2b5e7e3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install/service_ws:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws:/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('GOPATH', '/home/byd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/byd/src/ros2/service_ws/build/service_ws'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/byd/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install/service_ws:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws:/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble')]), 'shell': False}
+[7.895653] (service_ws) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.896143] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/service\n'}
+[7.896431] (service_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/client\n'}
+[7.898732] (service_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/client" to ""\n'}
+[7.899150] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/package_run_dependencies/service_ws\n'}
+[7.899322] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/parent_prefix_path/service_ws\n'}
+[7.899543] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/ament_prefix_path.sh\n'}
+[7.899724] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/ament_prefix_path.dsv\n'}
+[7.899854] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/path.sh\n'}
+[7.900041] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/path.dsv\n'}
+[7.900230] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.bash\n'}
+[7.900354] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.sh\n'}
+[7.900472] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.zsh\n'}
+[7.900587] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.dsv\n'}
+[7.900697] (service_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/package.dsv\n'}
+[7.900808] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/packages/service_ws\n'}
+[7.900925] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/cmake/service_wsConfig.cmake\n'}
+[7.901083] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/cmake/service_wsConfig-version.cmake\n'}
+[7.901201] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/package.xml\n'}
+[7.908269] (service_ws) CommandEnded: {'returncode': 0}
+[7.950908] (-) TimerEvent: {}
+[7.979201] (service_ws) JobEnded: {'identifier': 'service_ws', 'rc': 0}
+[7.980867] (-) EventReactorShutdown: {}

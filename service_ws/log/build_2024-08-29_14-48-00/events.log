@@ -1,0 +1,157 @@
+[0.000000] (-) TimerEvent: {}
+[0.000631] (service_ws) JobQueued: {'identifier': 'service_ws', 'dependencies': OrderedDict()}
+[0.001100] (service_ws) JobStarted: {'identifier': 'service_ws'}
+[0.016405] (service_ws) JobProgress: {'identifier': 'service_ws', 'progress': 'cmake'}
+[0.017739] (service_ws) JobProgress: {'identifier': 'service_ws', 'progress': 'build'}
+[0.018894] (service_ws) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/byd/src/ros2/service_ws/build/service_ws', '--', '-j8', '-l8'], 'cwd': '/home/byd/src/ros2/service_ws/build/service_ws', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'byd'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '2498'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install:/home/byd/src/ros2/service_interface_ws/install:/home/byd/src/ros2/topic_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/home/byd/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/byd-desktop:@/tmp/.ICE-unix/2479,unix/byd-desktop:/tmp/.ICE-unix/2479'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/be571110_26ab_47dd_ba66_14bbc2b5e7e3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install/service_ws:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws:/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('GOPATH', '/home/byd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/byd/src/ros2/service_ws/build/service_ws'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/byd/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install/service_ws:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws:/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble')]), 'shell': False}
+[0.061475] (service_ws) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099354] (-) TimerEvent: {}
+[0.199931] (-) TimerEvent: {}
+[0.294032] (service_ws) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.300088] (-) TimerEvent: {}
+[0.343875] (service_ws) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.347663] (service_ws) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.356842] (service_ws) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.371971] (service_ws) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.391925] (service_ws) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.400171] (-) TimerEvent: {}
+[0.445160] (service_ws) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.447195] (service_ws) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500378] (-) TimerEvent: {}
+[0.601025] (-) TimerEvent: {}
+[0.621361] (service_ws) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.699170] (service_ws) StdoutLine: {'line': b'-- Found service_interface_ws: 0.0.0 (/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake)\n'}
+[0.701104] (-) TimerEvent: {}
+[0.715815] (service_ws) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.801276] (-) TimerEvent: {}
+[0.875217] (service_ws) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.875892] (service_ws) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/byd/src/ros2/service_ws/include>\n'}
+[0.876249] (service_ws) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.878971] (service_ws) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.885164] (service_ws) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.888464] (service_ws) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.901372] (-) TimerEvent: {}
+[0.912457] (service_ws) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.912980] (service_ws) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.916018] (service_ws) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.917706] (service_ws) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.942275] (service_ws) StdoutLine: {'line': b'-- Generating done\n'}
+[0.945817] (service_ws) StdoutLine: {'line': b'-- Build files have been written to: /home/byd/src/ros2/service_ws/build/service_ws\n'}
+[0.993272] (service_ws) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target service\x1b[0m\n'}
+[1.001543] (-) TimerEvent: {}
+[1.008471] (service_ws) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/client.dir/src/client.cpp.o\x1b[0m\n'}
+[1.023595] (service_ws) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/service.dir/src/service.cpp.o\x1b[0m\n'}
+[1.101726] (-) TimerEvent: {}
+[1.202384] (-) TimerEvent: {}
+[1.303061] (-) TimerEvent: {}
+[1.403729] (-) TimerEvent: {}
+[1.504443] (-) TimerEvent: {}
+[1.605123] (-) TimerEvent: {}
+[1.705829] (-) TimerEvent: {}
+[1.806506] (-) TimerEvent: {}
+[1.907189] (-) TimerEvent: {}
+[2.007882] (-) TimerEvent: {}
+[2.108578] (-) TimerEvent: {}
+[2.209273] (-) TimerEvent: {}
+[2.309957] (-) TimerEvent: {}
+[2.410861] (-) TimerEvent: {}
+[2.511625] (-) TimerEvent: {}
+[2.612445] (-) TimerEvent: {}
+[2.713115] (-) TimerEvent: {}
+[2.813817] (-) TimerEvent: {}
+[2.914494] (-) TimerEvent: {}
+[3.015231] (-) TimerEvent: {}
+[3.115965] (-) TimerEvent: {}
+[3.216713] (-) TimerEvent: {}
+[3.317433] (-) TimerEvent: {}
+[3.418128] (-) TimerEvent: {}
+[3.518818] (-) TimerEvent: {}
+[3.619517] (-) TimerEvent: {}
+[3.720213] (-) TimerEvent: {}
+[3.820910] (-) TimerEvent: {}
+[3.921606] (-) TimerEvent: {}
+[4.022312] (-) TimerEvent: {}
+[4.123005] (-) TimerEvent: {}
+[4.223680] (-) TimerEvent: {}
+[4.324364] (-) TimerEvent: {}
+[4.425037] (-) TimerEvent: {}
+[4.525717] (-) TimerEvent: {}
+[4.626423] (-) TimerEvent: {}
+[4.727110] (-) TimerEvent: {}
+[4.827774] (-) TimerEvent: {}
+[4.928447] (-) TimerEvent: {}
+[5.029107] (-) TimerEvent: {}
+[5.129770] (-) TimerEvent: {}
+[5.230434] (-) TimerEvent: {}
+[5.331121] (-) TimerEvent: {}
+[5.431787] (-) TimerEvent: {}
+[5.532479] (-) TimerEvent: {}
+[5.633133] (-) TimerEvent: {}
+[5.733800] (-) TimerEvent: {}
+[5.834476] (-) TimerEvent: {}
+[5.935134] (-) TimerEvent: {}
+[6.035791] (-) TimerEvent: {}
+[6.136479] (-) TimerEvent: {}
+[6.237120] (-) TimerEvent: {}
+[6.337768] (-) TimerEvent: {}
+[6.438421] (-) TimerEvent: {}
+[6.539081] (-) TimerEvent: {}
+[6.639721] (-) TimerEvent: {}
+[6.740414] (-) TimerEvent: {}
+[6.841055] (-) TimerEvent: {}
+[6.941698] (-) TimerEvent: {}
+[7.042345] (-) TimerEvent: {}
+[7.142991] (-) TimerEvent: {}
+[7.243636] (-) TimerEvent: {}
+[7.269566] (service_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/service_ws/src/client.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint BlackMonkeyClient::hit_elder_jinchi(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.270104] (service_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/service_ws/src/client.cpp:41:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcontrol reaches end of non-void function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.270289] (service_ws) StderrLine: {'line': b'   41 |       \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[7.270433] (service_ws) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.343811] (-) TimerEvent: {}
+[7.444506] (-) TimerEvent: {}
+[7.545155] (-) TimerEvent: {}
+[7.645797] (-) TimerEvent: {}
+[7.746465] (-) TimerEvent: {}
+[7.847145] (-) TimerEvent: {}
+[7.947813] (-) TimerEvent: {}
+[8.048494] (-) TimerEvent: {}
+[8.149172] (-) TimerEvent: {}
+[8.249837] (-) TimerEvent: {}
+[8.350502] (-) TimerEvent: {}
+[8.451183] (-) TimerEvent: {}
+[8.483157] (service_ws) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable service\x1b[0m\n'}
+[8.551381] (-) TimerEvent: {}
+[8.628923] (service_ws) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable client\x1b[0m\n'}
+[8.651549] (-) TimerEvent: {}
+[8.752207] (-) TimerEvent: {}
+[8.762279] (service_ws) StdoutLine: {'line': b'[100%] Built target service\n'}
+[8.852390] (-) TimerEvent: {}
+[8.919252] (service_ws) StdoutLine: {'line': b'[100%] Built target client\n'}
+[8.942190] (service_ws) CommandEnded: {'returncode': 0}
+[8.952503] (-) TimerEvent: {}
+[8.982522] (service_ws) JobProgress: {'identifier': 'service_ws', 'progress': 'install'}
+[8.998573] (service_ws) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/byd/src/ros2/service_ws/build/service_ws'], 'cwd': '/home/byd/src/ros2/service_ws/build/service_ws', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'byd'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '2498'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install:/home/byd/src/ros2/service_interface_ws/install:/home/byd/src/ros2/topic_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/home/byd/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/byd-desktop:@/tmp/.ICE-unix/2479,unix/byd-desktop:/tmp/.ICE-unix/2479'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/be571110_26ab_47dd_ba66_14bbc2b5e7e3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install/service_ws:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws:/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('GOPATH', '/home/byd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/byd/src/ros2/service_ws/build/service_ws'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/byd/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install/service_ws:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws:/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble')]), 'shell': False}
+[9.012591] (service_ws) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.013113] (service_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/service\n'}
+[9.014777] (service_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/service" to ""\n'}
+[9.014994] (service_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/client\n'}
+[9.016789] (service_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/client" to ""\n'}
+[9.017048] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/package_run_dependencies/service_ws\n'}
+[9.017278] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/parent_prefix_path/service_ws\n'}
+[9.017419] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/ament_prefix_path.sh\n'}
+[9.017610] (service_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/ament_prefix_path.dsv\n'}
+[9.017744] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/path.sh\n'}
+[9.017899] (service_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/path.dsv\n'}
+[9.018082] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.bash\n'}
+[9.018239] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.sh\n'}
+[9.018360] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.zsh\n'}
+[9.018517] (service_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.dsv\n'}
+[9.018665] (service_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/package.dsv\n'}
+[9.018873] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/packages/service_ws\n'}
+[9.019031] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/cmake/service_wsConfig.cmake\n'}
+[9.019150] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/cmake/service_wsConfig-version.cmake\n'}
+[9.019273] (service_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/package.xml\n'}
+[9.025870] (service_ws) CommandEnded: {'returncode': 0}
+[9.052623] (-) TimerEvent: {}
+[9.103639] (service_ws) JobEnded: {'identifier': 'service_ws', 'rc': 0}
+[9.105130] (-) EventReactorShutdown: {}

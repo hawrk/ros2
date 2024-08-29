@@ -1,0 +1,4 @@
+[01m[K/home/byd/src/ros2/service_ws/src/client.cpp:[m[K In member function ‘[01m[Kint BlackMonkeyClient::hit_elder_jinchi(int, char**)[m[K’:
+[01m[K/home/byd/src/ros2/service_ws/src/client.cpp:41:7:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   41 |       [01;35m[K}[m[K
+      |       [01;35m[K^[m[K

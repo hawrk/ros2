@@ -1,0 +1,238 @@
+[0.015s] Invoking command in '/home/byd/src/ros2/service_interface_ws/build/service_interface_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/byd/src/ros2/service_interface_ws -DCMAKE_INSTALL_PREFIX=/home/byd/src/ros2/service_interface_ws/install/service_interface_ws
+[0.101s] -- The C compiler identification is GNU 11.4.0
+[0.191s] -- The CXX compiler identification is GNU 11.4.0
+[0.202s] -- Detecting C compiler ABI info
+[0.309s] -- Detecting C compiler ABI info - done
+[0.330s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.331s] -- Detecting C compile features
+[0.332s] -- Detecting C compile features - done
+[0.337s] -- Detecting CXX compiler ABI info
+[0.460s] -- Detecting CXX compiler ABI info - done
+[0.478s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.479s] -- Detecting CXX compile features
+[0.480s] -- Detecting CXX compile features - done
+[0.485s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.740s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.909s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.914s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.924s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.984s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.470s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.807s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.243s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.285s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.288s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.339s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.340s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.340s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.340s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[2.376s] -- Found PythonExtra: .so  
+[2.440s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.508s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.509s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_generator_c>;$<BUILD_INTERFACE:/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_typesupport_introspection_cpp>;/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_generator_c;/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_generator_py
+[2.509s] -- Configured cppcheck exclude dirs and/or files: 
+[2.514s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.525s] -- Added test 'lint_cmake' to check CMake code style
+[2.530s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.572s] -- Added test 'uncrustify' to check C / C++ code style
+[2.572s] -- Configured uncrustify additional arguments: 
+[2.578s] -- Added test 'xmllint' to check XML markup files
+[2.583s] -- Configuring done
+[2.630s] -- Generating done
+[2.635s] -- Build files have been written to: /home/byd/src/ros2/service_interface_ws/build/service_interface_ws
+[2.652s] Invoked command in '/home/byd/src/ros2/service_interface_ws/build/service_interface_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/byd/src/ros2/service_interface_ws -DCMAKE_INSTALL_PREFIX=/home/byd/src/ros2/service_interface_ws/install/service_interface_ws
+[2.655s] Invoking command in '/home/byd/src/ros2/service_interface_ws/build/service_interface_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/service_interface_ws/build/service_interface_ws -- -j8 -l8
+[2.713s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.728s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.746s] [  6%] Built target ament_cmake_python_copy_service_interface_ws
+[3.174s] running egg_info
+[3.175s] creating service_interface_ws.egg-info
+[3.175s] writing service_interface_ws.egg-info/PKG-INFO
+[3.176s] writing dependency_links to service_interface_ws.egg-info/dependency_links.txt
+[3.176s] writing top-level names to service_interface_ws.egg-info/top_level.txt
+[3.176s] writing manifest file 'service_interface_ws.egg-info/SOURCES.txt'
+[3.181s] reading manifest file 'service_interface_ws.egg-info/SOURCES.txt'
+[3.182s] writing manifest file 'service_interface_ws.egg-info/SOURCES.txt'
+[3.246s] [  6%] Built target ament_cmake_python_build_service_interface_ws_egg
+[3.289s] [  6%] Built target service_interface_ws__cpp
+[3.306s] [  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.306s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.306s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.317s] [ 19%] [32mBuilding C object CMakeFiles/service_interface_ws__rosidl_generator_c.dir/rosidl_generator_c/service_interface_ws/srv/detail/black_monkey__functions.c.o[0m
+[3.441s] [ 22%] [32m[1mLinking C shared library libservice_interface_ws__rosidl_generator_c.so[0m
+[3.503s] [ 22%] Built target service_interface_ws__rosidl_generator_c
+[3.522s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.522s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.522s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.874s] [ 35%] [32mBuilding CXX object CMakeFiles/service_interface_ws__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/service_interface_ws/srv/black_monkey__type_support.cpp.o[0m
+[3.915s] [ 38%] [32mBuilding CXX object CMakeFiles/service_interface_ws__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/service_interface_ws/srv/detail/black_monkey__type_support.cpp.o[0m
+[3.937s] [ 41%] [32mBuilding CXX object CMakeFiles/service_interface_ws__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/service_interface_ws/srv/detail/dds_fastrtps/black_monkey__type_support.cpp.o[0m
+[4.141s] [ 45%] [32mBuilding CXX object CMakeFiles/service_interface_ws__rosidl_typesupport_c.dir/rosidl_typesupport_c/service_interface_ws/srv/black_monkey__type_support.cpp.o[0m
+[4.224s] [ 51%] [32mBuilding CXX object CMakeFiles/service_interface_ws__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/service_interface_ws/srv/detail/black_monkey__type_support_c.cpp.o[0m
+[4.225s] [ 51%] [32mBuilding C object CMakeFiles/service_interface_ws__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/service_interface_ws/srv/detail/black_monkey__type_support.c.o[0m
+[4.230s] [ 54%] [32m[1mLinking CXX shared library libservice_interface_ws__rosidl_typesupport_c.so[0m
+[4.311s] [ 58%] [32m[1mLinking C shared library libservice_interface_ws__rosidl_typesupport_introspection_c.so[0m
+[4.322s] [ 58%] Built target service_interface_ws__rosidl_typesupport_c
+[4.388s] [ 58%] Built target service_interface_ws__rosidl_typesupport_introspection_c
+[4.539s] [ 61%] [32m[1mLinking CXX shared library libservice_interface_ws__rosidl_typesupport_cpp.so[0m
+[4.620s] [ 61%] Built target service_interface_ws__rosidl_typesupport_cpp
+[4.816s] [ 64%] [32m[1mLinking CXX shared library libservice_interface_ws__rosidl_typesupport_introspection_cpp.so[0m
+[4.919s] [ 67%] [32m[1mLinking CXX shared library libservice_interface_ws__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.976s] [ 67%] Built target service_interface_ws__rosidl_typesupport_introspection_cpp
+[5.028s] [ 70%] [32m[1mLinking CXX shared library libservice_interface_ws__rosidl_typesupport_fastrtps_c.so[0m
+[5.112s] [ 70%] Built target service_interface_ws__rosidl_typesupport_fastrtps_cpp
+[5.197s] [ 70%] Built target service_interface_ws__rosidl_typesupport_fastrtps_c
+[5.238s] [ 70%] Built target service_interface_ws
+[5.279s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.123s] [ 74%] Built target service_interface_ws__py
+[6.166s] [ 77%] [32mBuilding C object CMakeFiles/service_interface_ws__rosidl_generator_py.dir/rosidl_generator_py/service_interface_ws/srv/_black_monkey_s.c.o[0m
+[6.388s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/service_interface_ws/libservice_interface_ws__rosidl_generator_py.so[0m
+[6.465s] [ 80%] Built target service_interface_ws__rosidl_generator_py
+[6.509s] [ 90%] [32mBuilding C object CMakeFiles/service_interface_ws__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/service_interface_ws/_service_interface_ws_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.509s] [ 90%] [32mBuilding C object CMakeFiles/service_interface_ws__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/service_interface_ws/_service_interface_ws_s.ep.rosidl_typesupport_c.c.o[0m
+[6.509s] [ 90%] [32mBuilding C object CMakeFiles/service_interface_ws__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/service_interface_ws/_service_interface_ws_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.704s] [100%] [32m[1mLinking C shared library rosidl_generator_py/service_interface_ws/service_interface_ws_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[6.705s] [100%] [32m[1mLinking C shared library rosidl_generator_py/service_interface_ws/service_interface_ws_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[6.705s] [100%] [32m[1mLinking C shared library rosidl_generator_py/service_interface_ws/service_interface_ws_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[6.771s] [100%] Built target service_interface_ws__rosidl_typesupport_c__pyext
+[6.771s] [100%] Built target service_interface_ws__rosidl_typesupport_fastrtps_c__pyext
+[6.772s] [100%] Built target service_interface_ws__rosidl_typesupport_introspection_c__pyext
+[6.801s] Invoked command in '/home/byd/src/ros2/service_interface_ws/build/service_interface_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/service_interface_ws/build/service_interface_ws -- -j8 -l8
+[6.917s] Invoking command in '/home/byd/src/ros2/service_interface_ws/build/service_interface_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/service_interface_ws/build/service_interface_ws
+[6.934s] -- Install configuration: ""
+[6.934s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/ament_index/resource_index/rosidl_interfaces/service_interface_ws
+[6.935s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws
+[6.935s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv
+[6.935s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/black_monkey.h
+[6.935s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail
+[6.935s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__struct.h
+[6.935s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__functions.h
+[6.936s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__functions.c
+[6.936s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__type_support.h
+[6.936s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg
+[6.936s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg/rosidl_generator_c__visibility_control.h
+[6.937s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/library_path.sh
+[6.937s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/library_path.dsv
+[6.937s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_generator_c.so
+[6.938s] -- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_generator_c.so" to ""
+[6.938s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws
+[6.938s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv
+[6.938s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail
+[6.938s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__rosidl_typesupport_fastrtps_c.h
+[6.939s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg
+[6.939s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.939s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_fastrtps_c.so
+[6.939s] -- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_fastrtps_c.so" to ""
+[6.940s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws
+[6.940s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv
+[6.940s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail
+[6.940s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__type_support.c
+[6.940s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__rosidl_typesupport_introspection_c.h
+[6.940s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg
+[6.941s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.941s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_introspection_c.so
+[6.941s] -- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_introspection_c.so" to ""
+[6.941s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_c.so
+[6.942s] -- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_c.so" to ""
+[6.942s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws
+[6.942s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv
+[6.942s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail
+[6.942s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__builder.hpp
+[6.942s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__traits.hpp
+[6.942s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__struct.hpp
+[6.943s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/black_monkey.hpp
+[6.943s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws
+[6.943s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv
+[6.943s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail
+[6.943s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/dds_fastrtps
+[6.943s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__rosidl_typesupport_fastrtps_cpp.hpp
+[6.943s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg
+[6.944s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.944s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_fastrtps_cpp.so
+[6.944s] -- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.944s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws
+[6.945s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv
+[6.945s] -- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail
+[6.945s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__type_support.cpp
+[6.945s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__rosidl_typesupport_introspection_cpp.hpp
+[6.945s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_introspection_cpp.so
+[6.946s] -- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_introspection_cpp.so" to ""
+[6.946s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_cpp.so
+[6.946s] -- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_cpp.so" to ""
+[6.946s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/pythonpath.sh
+[6.947s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/pythonpath.dsv
+[6.947s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws-0.0.0-py3.10.egg-info
+[6.947s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws-0.0.0-py3.10.egg-info/SOURCES.txt
+[6.947s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws-0.0.0-py3.10.egg-info/PKG-INFO
+[6.947s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws-0.0.0-py3.10.egg-info/top_level.txt
+[6.948s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws-0.0.0-py3.10.egg-info/dependency_links.txt
+[6.948s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws
+[6.948s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/_service_interface_ws_s.ep.rosidl_typesupport_c.c
+[6.948s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/__init__.py
+[6.948s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/_service_interface_ws_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.949s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/srv
+[6.949s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/srv/_black_monkey_s.c
+[6.949s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/srv/__init__.py
+[6.949s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/srv/_black_monkey.py
+[6.949s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[6.950s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[6.950s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/_service_interface_ws_s.ep.rosidl_typesupport_introspection_c.c
+[6.950s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/libservice_interface_ws__rosidl_generator_py.so
+[6.950s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[7.020s] Listing '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws'...
+[7.020s] Compiling '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/__init__.py'...
+[7.020s] Listing '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/srv'...
+[7.021s] Compiling '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/srv/__init__.py'...
+[7.021s] Compiling '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/srv/_black_monkey.py'...
+[7.034s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[7.035s] -- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[7.035s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[7.036s] -- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[7.036s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[7.036s] -- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[7.037s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_generator_py.so
+[7.037s] -- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_generator_py.so" to ""
+[7.037s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/srv/BlackMonkey.idl
+[7.038s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/srv/BlackMonkey.srv
+[7.038s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/srv/BlackMonkey_Request.msg
+[7.038s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/srv/BlackMonkey_Response.msg
+[7.038s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/ament_index/resource_index/package_run_dependencies/service_interface_ws
+[7.039s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/ament_index/resource_index/parent_prefix_path/service_interface_ws
+[7.039s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/ament_prefix_path.sh
+[7.039s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/ament_prefix_path.dsv
+[7.039s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/path.sh
+[7.040s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/path.dsv
+[7.040s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/local_setup.bash
+[7.040s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/local_setup.sh
+[7.040s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/local_setup.zsh
+[7.041s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/local_setup.dsv
+[7.041s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/package.dsv
+[7.041s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/ament_index/resource_index/packages/service_interface_ws
+[7.042s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_generator_cExport.cmake
+[7.042s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_generator_cExport-noconfig.cmake
+[7.042s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_typesupport_fastrtps_cExport.cmake
+[7.042s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[7.043s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_introspection_cExport.cmake
+[7.043s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.043s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_cExport.cmake
+[7.043s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_cExport-noconfig.cmake
+[7.044s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_generator_cppExport.cmake
+[7.044s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_typesupport_fastrtps_cppExport.cmake
+[7.044s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[7.045s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_introspection_cppExport.cmake
+[7.045s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.045s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_cppExport.cmake
+[7.045s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_cppExport-noconfig.cmake
+[7.046s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_generator_pyExport.cmake
+[7.046s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_generator_pyExport-noconfig.cmake
+[7.046s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/rosidl_cmake-extras.cmake
+[7.046s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.047s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/ament_cmake_export_libraries-extras.cmake
+[7.047s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/ament_cmake_export_targets-extras.cmake
+[7.047s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.047s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.047s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.048s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_wsConfig.cmake
+[7.048s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_wsConfig-version.cmake
+[7.048s] -- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/package.xml
+[7.057s] Invoked command in '/home/byd/src/ros2/service_interface_ws/build/service_interface_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/service_interface_ws/build/service_interface_ws

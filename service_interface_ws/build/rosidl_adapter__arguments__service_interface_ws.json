@@ -1,0 +1,6 @@
+{
+  "package_name": "service_interface_ws",
+  "non_idl_tuples": [
+    "/home/byd/src/ros2/service_interface_ws:srv/BlackMonkey.srv"
+  ]
+}

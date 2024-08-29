@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from service_interface_ws/srv/BlackMonkey.srv
+// generated code does not contain a copyright notice
+
+
+module service_interface_ws {
+  module srv {
+    @verbatim (language="comment", text=
+      "打击类型")
+    struct BlackMonkey_Request {
+      int32 hit_type;
+
+      @verbatim (language="comment", text=
+        "伤害数值")
+      uint32 injury;
+    };
+    @verbatim (language="comment", text=
+      "是否已击败")
+    struct BlackMonkey_Response {
+      boolean beat;
+
+      @verbatim (language="comment", text=
+        "实际伤害数值")
+      uint32 real_injury;
+
+      @verbatim (language="comment", text=
+        "反馈")
+      string words;
+    };
+  };
+};

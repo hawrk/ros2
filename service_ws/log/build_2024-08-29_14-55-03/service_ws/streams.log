@@ -1,0 +1,28 @@
+[0.019s] Invoking command in '/home/byd/src/ros2/service_ws/build/service_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/service_ws/build/service_ws -- -j8 -l8
+[0.087s] [35m[1mConsolidate compiler generated dependencies of target service[0m
+[0.108s] [ 50%] Built target client
+[0.121s] [ 75%] [32mBuilding CXX object CMakeFiles/service.dir/src/service.cpp.o[0m
+[7.104s] [100%] [32m[1mLinking CXX executable service[0m
+[7.371s] [100%] Built target service
+[7.394s] Invoked command in '/home/byd/src/ros2/service_ws/build/service_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/service_ws/build/service_ws -- -j8 -l8
+[7.457s] Invoking command in '/home/byd/src/ros2/service_ws/build/service_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/service_ws/build/service_ws
+[7.470s] -- Install configuration: ""
+[7.470s] -- Installing: /home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/service
+[7.472s] -- Set runtime path of "/home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/service" to ""
+[7.472s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/client
+[7.472s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/package_run_dependencies/service_ws
+[7.472s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/parent_prefix_path/service_ws
+[7.473s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/ament_prefix_path.sh
+[7.473s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/ament_prefix_path.dsv
+[7.473s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/path.sh
+[7.473s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/path.dsv
+[7.473s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.bash
+[7.473s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.sh
+[7.474s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.zsh
+[7.474s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.dsv
+[7.474s] -- Installing: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/package.dsv
+[7.474s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/packages/service_ws
+[7.474s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/cmake/service_wsConfig.cmake
+[7.474s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/cmake/service_wsConfig-version.cmake
+[7.474s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/package.xml
+[7.481s] Invoked command in '/home/byd/src/ros2/service_ws/build/service_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/service_ws/build/service_ws

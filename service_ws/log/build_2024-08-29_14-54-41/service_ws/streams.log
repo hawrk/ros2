@@ -1,0 +1,52 @@
+[0.020s] Invoking command in '/home/byd/src/ros2/service_ws/build/service_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/service_ws/build/service_ws -- -j8 -l8
+[0.090s] [35m[1mConsolidate compiler generated dependencies of target client[0m
+[0.111s] [ 25%] [32mBuilding CXX object CMakeFiles/service.dir/src/service.cpp.o[0m
+[0.121s] [ 75%] Built target client
+[4.729s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.729s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.729s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.729s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.729s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.731s]                  from [01m[K/home/byd/src/ros2/service_ws/src/service.cpp:11[m[K:
+[4.731s] [01m[K/home/byd/src/ros2/service_ws/src/service.cpp:[m[K In member function ‘[01m[Kvoid BlackMonkeySerivce::black_monkey_cb(service_interface_ws::srv::BlackMonkey_Request_<std::allocator<void> >::SharedPtr, service_interface_ws::srv::BlackMonkey_Response_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.731s] [01m[K/home/byd/src/ros2/service_ws/src/service.cpp:46:48:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[4.731s]    46 |         RCLCPP_INFO(rclcpp::get_logger("node"),[01;35m[K"小菜鸡,没吃饭吗,打人都不疼,剩余血量[%d]"[m[K, [32m[Khp[m[K);
+[4.731s]       |                                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~[m[K
+[4.731s]       |                                                                                           [32m[K|[m[K
+[4.731s]       |                                                                                           [32m[Ksize_t {aka long unsigned int}[m[K
+[4.731s] [01m[K/home/byd/src/ros2/service_ws/src/service.cpp:46:86:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[4.732s]    46 |         RCLCPP_INFO(rclcpp::get_logger("node"),"小菜鸡,没吃饭吗,打人都不疼,剩余血量[[01;36m[K%d[m[K]", hp);
+[4.732s]       |                                                                                     [01;36m[K~^[m[K
+[4.732s]       |                                                                                      [01;36m[K|[m[K
+[4.732s]       |                                                                                      [01;36m[Kint[m[K
+[4.732s]       |                                                                                     [32m[K%ld[m[K
+[7.207s] [100%] [32m[1mLinking CXX executable service[0m
+[7.464s] [100%] Built target service
+[7.489s] Invoked command in '/home/byd/src/ros2/service_ws/build/service_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/service_ws/build/service_ws -- -j8 -l8
+[7.544s] Invoking command in '/home/byd/src/ros2/service_ws/build/service_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/service_ws/build/service_ws
+[7.556s] -- Install configuration: ""
+[7.556s] -- Installing: /home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/service
+[7.559s] -- Set runtime path of "/home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/service" to ""
+[7.559s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/lib/service_ws/client
+[7.559s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/package_run_dependencies/service_ws
+[7.559s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/parent_prefix_path/service_ws
+[7.560s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/ament_prefix_path.sh
+[7.560s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/ament_prefix_path.dsv
+[7.560s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/path.sh
+[7.560s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/environment/path.dsv
+[7.560s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.bash
+[7.560s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.sh
+[7.560s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.zsh
+[7.561s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/local_setup.dsv
+[7.561s] -- Installing: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/package.dsv
+[7.561s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/ament_index/resource_index/packages/service_ws
+[7.561s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/cmake/service_wsConfig.cmake
+[7.561s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/cmake/service_wsConfig-version.cmake
+[7.561s] -- Up-to-date: /home/byd/src/ros2/service_ws/install/service_ws/share/service_ws/package.xml
+[7.568s] Invoked command in '/home/byd/src/ros2/service_ws/build/service_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/service_ws/build/service_ws

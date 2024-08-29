@@ -1,0 +1,317 @@
+[0.000000] (-) TimerEvent: {}
+[0.000868] (service_interface_ws) JobQueued: {'identifier': 'service_interface_ws', 'dependencies': OrderedDict()}
+[0.001121] (service_interface_ws) JobStarted: {'identifier': 'service_interface_ws'}
+[0.013278] (service_interface_ws) JobProgress: {'identifier': 'service_interface_ws', 'progress': 'cmake'}
+[0.013743] (service_interface_ws) Command: {'cmd': ['/usr/bin/cmake', '/home/byd/src/ros2/service_interface_ws', '-DCMAKE_INSTALL_PREFIX=/home/byd/src/ros2/service_interface_ws/install/service_interface_ws'], 'cwd': '/home/byd/src/ros2/service_interface_ws/build/service_interface_ws', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'byd'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2/service_interface_ws/srv'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '2498'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/topic_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/home/byd/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/byd-desktop:@/tmp/.ICE-unix/2479,unix/byd-desktop:/tmp/.ICE-unix/2479'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/be571110_26ab_47dd_ba66_14bbc2b5e7e3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('GOPATH', '/home/byd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/byd/src/ros2/service_interface_ws/build/service_interface_ws'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/byd/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble')]), 'shell': False}
+[0.099121] (-) TimerEvent: {}
+[0.102195] (service_interface_ws) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.191318] (service_interface_ws) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.199298] (-) TimerEvent: {}
+[0.203312] (service_interface_ws) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299469] (-) TimerEvent: {}
+[0.309646] (service_interface_ws) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.331180] (service_interface_ws) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.331908] (service_interface_ws) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.332787] (service_interface_ws) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.338333] (service_interface_ws) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399636] (-) TimerEvent: {}
+[0.460584] (service_interface_ws) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.478798] (service_interface_ws) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.479596] (service_interface_ws) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.480726] (service_interface_ws) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.485763] (service_interface_ws) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.499711] (-) TimerEvent: {}
+[0.600114] (-) TimerEvent: {}
+[0.700722] (-) TimerEvent: {}
+[0.741000] (service_interface_ws) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.800879] (-) TimerEvent: {}
+[0.901605] (-) TimerEvent: {}
+[0.910103] (service_interface_ws) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.914838] (service_interface_ws) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.924518] (service_interface_ws) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.984336] (service_interface_ws) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.001707] (-) TimerEvent: {}
+[1.102274] (-) TimerEvent: {}
+[1.202932] (-) TimerEvent: {}
+[1.303576] (-) TimerEvent: {}
+[1.404136] (-) TimerEvent: {}
+[1.470635] (service_interface_ws) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.504313] (-) TimerEvent: {}
+[1.604982] (-) TimerEvent: {}
+[1.705668] (-) TimerEvent: {}
+[1.806410] (-) TimerEvent: {}
+[1.807937] (service_interface_ws) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.906583] (-) TimerEvent: {}
+[2.007357] (-) TimerEvent: {}
+[2.108106] (-) TimerEvent: {}
+[2.208818] (-) TimerEvent: {}
+[2.243905] (service_interface_ws) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.285362] (service_interface_ws) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.289002] (service_interface_ws) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.308905] (-) TimerEvent: {}
+[2.339891] (service_interface_ws) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.340548] (service_interface_ws) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.340838] (service_interface_ws) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.341098] (service_interface_ws) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[2.376278] (service_interface_ws) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.409116] (-) TimerEvent: {}
+[2.440720] (service_interface_ws) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.508534] (service_interface_ws) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.509196] (-) TimerEvent: {}
+[2.509748] (service_interface_ws) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_generator_c>;$<BUILD_INTERFACE:/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_typesupport_introspection_cpp>;/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_generator_c;/home/byd/src/ros2/service_interface_ws/build/service_interface_ws/rosidl_generator_py\n'}
+[2.510120] (service_interface_ws) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.515438] (service_interface_ws) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.525912] (service_interface_ws) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.531425] (service_interface_ws) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.572578] (service_interface_ws) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.573136] (service_interface_ws) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.578573] (service_interface_ws) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.583491] (service_interface_ws) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.609322] (-) TimerEvent: {}
+[2.631194] (service_interface_ws) StdoutLine: {'line': b'-- Generating done\n'}
+[2.636269] (service_interface_ws) StdoutLine: {'line': b'-- Build files have been written to: /home/byd/src/ros2/service_interface_ws/build/service_interface_ws\n'}
+[2.652469] (service_interface_ws) CommandEnded: {'returncode': 0}
+[2.653741] (service_interface_ws) JobProgress: {'identifier': 'service_interface_ws', 'progress': 'build'}
+[2.654956] (service_interface_ws) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/byd/src/ros2/service_interface_ws/build/service_interface_ws', '--', '-j8', '-l8'], 'cwd': '/home/byd/src/ros2/service_interface_ws/build/service_interface_ws', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'byd'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2/service_interface_ws/srv'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '2498'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/topic_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/home/byd/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/byd-desktop:@/tmp/.ICE-unix/2479,unix/byd-desktop:/tmp/.ICE-unix/2479'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/be571110_26ab_47dd_ba66_14bbc2b5e7e3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('GOPATH', '/home/byd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/byd/src/ros2/service_interface_ws/build/service_interface_ws'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/byd/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble')]), 'shell': False}
+[2.709540] (-) TimerEvent: {}
+[2.713914] (service_interface_ws) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.729256] (service_interface_ws) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.746498] (service_interface_ws) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_service_interface_ws\n'}
+[2.809618] (-) TimerEvent: {}
+[2.910184] (-) TimerEvent: {}
+[3.010731] (-) TimerEvent: {}
+[3.111292] (-) TimerEvent: {}
+[3.174871] (service_interface_ws) StdoutLine: {'line': b'running egg_info\n'}
+[3.176021] (service_interface_ws) StdoutLine: {'line': b'creating service_interface_ws.egg-info\n'}
+[3.176377] (service_interface_ws) StdoutLine: {'line': b'writing service_interface_ws.egg-info/PKG-INFO\n'}
+[3.176760] (service_interface_ws) StdoutLine: {'line': b'writing dependency_links to service_interface_ws.egg-info/dependency_links.txt\n'}
+[3.177071] (service_interface_ws) StdoutLine: {'line': b'writing top-level names to service_interface_ws.egg-info/top_level.txt\n'}
+[3.177453] (service_interface_ws) StdoutLine: {'line': b"writing manifest file 'service_interface_ws.egg-info/SOURCES.txt'\n"}
+[3.182372] (service_interface_ws) StdoutLine: {'line': b"reading manifest file 'service_interface_ws.egg-info/SOURCES.txt'\n"}
+[3.183295] (service_interface_ws) StdoutLine: {'line': b"writing manifest file 'service_interface_ws.egg-info/SOURCES.txt'\n"}
+[3.211412] (-) TimerEvent: {}
+[3.246047] (service_interface_ws) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_service_interface_ws_egg\n'}
+[3.290305] (service_interface_ws) StdoutLine: {'line': b'[  6%] Built target service_interface_ws__cpp\n'}
+[3.306496] (service_interface_ws) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.307047] (service_interface_ws) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.307227] (service_interface_ws) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.311547] (-) TimerEvent: {}
+[3.317428] (service_interface_ws) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/service_interface_ws__rosidl_generator_c.dir/rosidl_generator_c/service_interface_ws/srv/detail/black_monkey__functions.c.o\x1b[0m\n'}
+[3.411699] (-) TimerEvent: {}
+[3.441851] (service_interface_ws) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libservice_interface_ws__rosidl_generator_c.so\x1b[0m\n'}
+[3.504242] (service_interface_ws) StdoutLine: {'line': b'[ 22%] Built target service_interface_ws__rosidl_generator_c\n'}
+[3.511893] (-) TimerEvent: {}
+[3.522825] (service_interface_ws) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.523272] (service_interface_ws) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.523521] (service_interface_ws) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.612128] (-) TimerEvent: {}
+[3.713059] (-) TimerEvent: {}
+[3.814031] (-) TimerEvent: {}
+[3.874607] (service_interface_ws) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/service_interface_ws__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/service_interface_ws/srv/black_monkey__type_support.cpp.o\x1b[0m\n'}
+[3.914300] (-) TimerEvent: {}
+[3.915499] (service_interface_ws) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/service_interface_ws__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/service_interface_ws/srv/detail/black_monkey__type_support.cpp.o\x1b[0m\n'}
+[3.938115] (service_interface_ws) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/service_interface_ws__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/service_interface_ws/srv/detail/dds_fastrtps/black_monkey__type_support.cpp.o\x1b[0m\n'}
+[4.014542] (-) TimerEvent: {}
+[4.115605] (-) TimerEvent: {}
+[4.141709] (service_interface_ws) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/service_interface_ws__rosidl_typesupport_c.dir/rosidl_typesupport_c/service_interface_ws/srv/black_monkey__type_support.cpp.o\x1b[0m\n'}
+[4.215888] (-) TimerEvent: {}
+[4.224939] (service_interface_ws) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/service_interface_ws__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/service_interface_ws/srv/detail/black_monkey__type_support_c.cpp.o\x1b[0m\n'}
+[4.225758] (service_interface_ws) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/service_interface_ws__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/service_interface_ws/srv/detail/black_monkey__type_support.c.o\x1b[0m\n'}
+[4.231165] (service_interface_ws) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libservice_interface_ws__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.311835] (service_interface_ws) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libservice_interface_ws__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.316092] (-) TimerEvent: {}
+[4.322319] (service_interface_ws) StdoutLine: {'line': b'[ 58%] Built target service_interface_ws__rosidl_typesupport_c\n'}
+[4.388970] (service_interface_ws) StdoutLine: {'line': b'[ 58%] Built target service_interface_ws__rosidl_typesupport_introspection_c\n'}
+[4.416384] (-) TimerEvent: {}
+[4.517630] (-) TimerEvent: {}
+[4.539617] (service_interface_ws) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libservice_interface_ws__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.617906] (-) TimerEvent: {}
+[4.620800] (service_interface_ws) StdoutLine: {'line': b'[ 61%] Built target service_interface_ws__rosidl_typesupport_cpp\n'}
+[4.718274] (-) TimerEvent: {}
+[4.816385] (service_interface_ws) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libservice_interface_ws__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.818339] (-) TimerEvent: {}
+[4.919132] (-) TimerEvent: {}
+[4.920070] (service_interface_ws) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libservice_interface_ws__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.976782] (service_interface_ws) StdoutLine: {'line': b'[ 67%] Built target service_interface_ws__rosidl_typesupport_introspection_cpp\n'}
+[5.019390] (-) TimerEvent: {}
+[5.028845] (service_interface_ws) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libservice_interface_ws__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.112504] (service_interface_ws) StdoutLine: {'line': b'[ 70%] Built target service_interface_ws__rosidl_typesupport_fastrtps_cpp\n'}
+[5.119578] (-) TimerEvent: {}
+[5.197950] (service_interface_ws) StdoutLine: {'line': b'[ 70%] Built target service_interface_ws__rosidl_typesupport_fastrtps_c\n'}
+[5.219797] (-) TimerEvent: {}
+[5.238639] (service_interface_ws) StdoutLine: {'line': b'[ 70%] Built target service_interface_ws\n'}
+[5.280150] (service_interface_ws) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.319983] (-) TimerEvent: {}
+[5.420829] (-) TimerEvent: {}
+[5.521671] (-) TimerEvent: {}
+[5.622524] (-) TimerEvent: {}
+[5.723396] (-) TimerEvent: {}
+[5.824228] (-) TimerEvent: {}
+[5.925057] (-) TimerEvent: {}
+[6.025894] (-) TimerEvent: {}
+[6.123212] (service_interface_ws) StdoutLine: {'line': b'[ 74%] Built target service_interface_ws__py\n'}
+[6.125966] (-) TimerEvent: {}
+[6.166809] (service_interface_ws) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/service_interface_ws__rosidl_generator_py.dir/rosidl_generator_py/service_interface_ws/srv/_black_monkey_s.c.o\x1b[0m\n'}
+[6.226302] (-) TimerEvent: {}
+[6.327474] (-) TimerEvent: {}
+[6.388305] (service_interface_ws) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/service_interface_ws/libservice_interface_ws__rosidl_generator_py.so\x1b[0m\n'}
+[6.427711] (-) TimerEvent: {}
+[6.465707] (service_interface_ws) StdoutLine: {'line': b'[ 80%] Built target service_interface_ws__rosidl_generator_py\n'}
+[6.509382] (service_interface_ws) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/service_interface_ws__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/service_interface_ws/_service_interface_ws_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.510265] (service_interface_ws) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/service_interface_ws__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/service_interface_ws/_service_interface_ws_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.510492] (service_interface_ws) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/service_interface_ws__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/service_interface_ws/_service_interface_ws_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.527968] (-) TimerEvent: {}
+[6.629029] (-) TimerEvent: {}
+[6.704979] (service_interface_ws) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/service_interface_ws/service_interface_ws_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[6.705695] (service_interface_ws) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/service_interface_ws/service_interface_ws_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[6.705855] (service_interface_ws) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/service_interface_ws/service_interface_ws_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[6.729282] (-) TimerEvent: {}
+[6.771694] (service_interface_ws) StdoutLine: {'line': b'[100%] Built target service_interface_ws__rosidl_typesupport_c__pyext\n'}
+[6.772467] (service_interface_ws) StdoutLine: {'line': b'[100%] Built target service_interface_ws__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.772641] (service_interface_ws) StdoutLine: {'line': b'[100%] Built target service_interface_ws__rosidl_typesupport_introspection_c__pyext\n'}
+[6.800555] (service_interface_ws) CommandEnded: {'returncode': 0}
+[6.829386] (-) TimerEvent: {}
+[6.895709] (service_interface_ws) JobProgress: {'identifier': 'service_interface_ws', 'progress': 'install'}
+[6.915275] (service_interface_ws) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/byd/src/ros2/service_interface_ws/build/service_interface_ws'], 'cwd': '/home/byd/src/ros2/service_interface_ws/build/service_interface_ws', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'byd'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2/service_interface_ws/srv'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '2498'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/topic_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/home/byd/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/byd-desktop:@/tmp/.ICE-unix/2479,unix/byd-desktop:/tmp/.ICE-unix/2479'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/be571110_26ab_47dd_ba66_14bbc2b5e7e3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('GOPATH', '/home/byd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/byd/src/ros2/service_interface_ws/build/service_interface_ws'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/byd/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble')]), 'shell': False}
+[6.929464] (-) TimerEvent: {}
+[6.934643] (service_interface_ws) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.935176] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/ament_index/resource_index/rosidl_interfaces/service_interface_ws\n'}
+[6.935574] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws\n'}
+[6.935848] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv\n'}
+[6.936011] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/black_monkey.h\n'}
+[6.936204] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail\n'}
+[6.936360] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__struct.h\n'}
+[6.936554] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__functions.h\n'}
+[6.936789] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__functions.c\n'}
+[6.937052] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__type_support.h\n'}
+[6.937221] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg\n'}
+[6.937367] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.937740] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/library_path.sh\n'}
+[6.937982] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/library_path.dsv\n'}
+[6.938323] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_generator_c.so\n'}
+[6.938929] (service_interface_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_generator_c.so" to ""\n'}
+[6.939074] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws\n'}
+[6.939231] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv\n'}
+[6.939367] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail\n'}
+[6.939503] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__rosidl_typesupport_fastrtps_c.h\n'}
+[6.939642] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg\n'}
+[6.939751] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.939910] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_fastrtps_c.so\n'}
+[6.940402] (service_interface_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.940583] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws\n'}
+[6.940751] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv\n'}
+[6.940868] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail\n'}
+[6.941010] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__type_support.c\n'}
+[6.941148] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__rosidl_typesupport_introspection_c.h\n'}
+[6.941300] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg\n'}
+[6.941416] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.941783] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_introspection_c.so\n'}
+[6.942022] (service_interface_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.942171] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_c.so\n'}
+[6.942629] (service_interface_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_c.so" to ""\n'}
+[6.942776] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws\n'}
+[6.942963] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv\n'}
+[6.943087] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail\n'}
+[6.943235] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__builder.hpp\n'}
+[6.943379] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__traits.hpp\n'}
+[6.943503] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__struct.hpp\n'}
+[6.943661] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/black_monkey.hpp\n'}
+[6.943797] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws\n'}
+[6.943967] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv\n'}
+[6.944111] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail\n'}
+[6.944256] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/dds_fastrtps\n'}
+[6.944395] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.944541] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg\n'}
+[6.944707] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.944833] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.945303] (service_interface_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.945458] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws\n'}
+[6.945664] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv\n'}
+[6.945792] (service_interface_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail\n'}
+[6.945940] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__type_support.cpp\n'}
+[6.946062] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/include/service_interface_ws/service_interface_ws/srv/detail/black_monkey__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.946200] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_introspection_cpp.so\n'}
+[6.946725] (service_interface_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.946881] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_cpp.so\n'}
+[6.947353] (service_interface_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_typesupport_cpp.so" to ""\n'}
+[6.947518] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/pythonpath.sh\n'}
+[6.947685] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/pythonpath.dsv\n'}
+[6.947905] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws-0.0.0-py3.10.egg-info\n'}
+[6.948169] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.948364] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.948550] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.948734] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.948972] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws\n'}
+[6.949133] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/_service_interface_ws_s.ep.rosidl_typesupport_c.c\n'}
+[6.949345] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/__init__.py\n'}
+[6.949540] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/_service_interface_ws_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.949773] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/srv\n'}
+[6.949937] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/srv/_black_monkey_s.c\n'}
+[6.950132] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/srv/__init__.py\n'}
+[6.950331] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/srv/_black_monkey.py\n'}
+[6.950553] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.950787] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.951008] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/_service_interface_ws_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.951226] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/libservice_interface_ws__rosidl_generator_py.so\n'}
+[6.951464] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.020743] (service_interface_ws) StdoutLine: {'line': b"Listing '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws'...\n"}
+[7.021324] (service_interface_ws) StdoutLine: {'line': b"Compiling '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/__init__.py'...\n"}
+[7.021480] (service_interface_ws) StdoutLine: {'line': b"Listing '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/srv'...\n"}
+[7.021647] (service_interface_ws) StdoutLine: {'line': b"Compiling '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/srv/__init__.py'...\n"}
+[7.021773] (service_interface_ws) StdoutLine: {'line': b"Compiling '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/srv/_black_monkey.py'...\n"}
+[7.029581] (-) TimerEvent: {}
+[7.035341] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.035851] (service_interface_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[7.036152] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.036637] (service_interface_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[7.036957] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.037443] (service_interface_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages/service_interface_ws/service_interface_ws_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[7.037620] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_generator_py.so\n'}
+[7.038179] (service_interface_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib/libservice_interface_ws__rosidl_generator_py.so" to ""\n'}
+[7.038438] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/srv/BlackMonkey.idl\n'}
+[7.038677] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/srv/BlackMonkey.srv\n'}
+[7.038914] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/srv/BlackMonkey_Request.msg\n'}
+[7.039148] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/srv/BlackMonkey_Response.msg\n'}
+[7.039481] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/ament_index/resource_index/package_run_dependencies/service_interface_ws\n'}
+[7.039797] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/ament_index/resource_index/parent_prefix_path/service_interface_ws\n'}
+[7.040066] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/ament_prefix_path.sh\n'}
+[7.040311] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/ament_prefix_path.dsv\n'}
+[7.040577] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/path.sh\n'}
+[7.040806] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/environment/path.dsv\n'}
+[7.041042] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/local_setup.bash\n'}
+[7.041272] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/local_setup.sh\n'}
+[7.041535] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/local_setup.zsh\n'}
+[7.041764] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/local_setup.dsv\n'}
+[7.041984] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/package.dsv\n'}
+[7.042288] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/ament_index/resource_index/packages/service_interface_ws\n'}
+[7.042615] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_generator_cExport.cmake\n'}
+[7.042871] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.043146] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[7.043409] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[7.043674] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.043958] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.044234] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_cExport.cmake\n'}
+[7.044504] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.044771] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_generator_cppExport.cmake\n'}
+[7.045032] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[7.045329] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[7.045609] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.045879] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.046130] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_cppExport.cmake\n'}
+[7.046376] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_ws__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.046643] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_generator_pyExport.cmake\n'}
+[7.046897] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/export_service_interface_ws__rosidl_generator_pyExport-noconfig.cmake\n'}
+[7.047132] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/rosidl_cmake-extras.cmake\n'}
+[7.047363] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.047626] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.047880] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.048110] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.048344] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.048602] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.048843] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_wsConfig.cmake\n'}
+[7.049033] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/cmake/service_interface_wsConfig-version.cmake\n'}
+[7.049250] (service_interface_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/service_interface_ws/install/service_interface_ws/share/service_interface_ws/package.xml\n'}
+[7.056276] (service_interface_ws) CommandEnded: {'returncode': 0}
+[7.129797] (-) TimerEvent: {}
+[7.210731] (service_interface_ws) JobEnded: {'identifier': 'service_interface_ws', 'rc': 0}
+[7.213075] (-) EventReactorShutdown: {}
