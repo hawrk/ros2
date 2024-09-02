@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from action_interface_ws/action/Book.action
+// generated code does not contain a copyright notice
+
+
+module action_interface_ws {
+  module action {
+    @verbatim (language="comment", text=
+      "goal 要读的书本")
+    struct Book_Goal {
+      string book_name;
+    };
+    @verbatim (language="comment", text=
+      "result 最后输出该书的总行数")
+    struct Book_Result {
+      int32 line_num;
+    };
+    @verbatim (language="comment", text=
+      "feedback 反馈当前行数和文字内容")
+    struct Book_Feedback {
+      int32 cur_line;
+
+      string line_words;
+    };
+  };
+};

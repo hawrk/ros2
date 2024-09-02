@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target action_ser[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/action_ser.dir/src/action_ser.cpp.o[0m
+[100%] [32m[1mLinking CXX executable action_ser[0m
+[100%] Built target action_ser
+-- Install configuration: ""
+-- Installing: /home/byd/src/ros2/action_ws/install/action_ws/lib/action_ws/action_ser
+-- Set runtime path of "/home/byd/src/ros2/action_ws/install/action_ws/lib/action_ws/action_ser" to ""
+-- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/ament_index/resource_index/package_run_dependencies/action_ws
+-- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/ament_index/resource_index/parent_prefix_path/action_ws
+-- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/environment/ament_prefix_path.sh
+-- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/environment/path.sh
+-- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/environment/path.dsv
+-- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/local_setup.bash
+-- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/local_setup.sh
+-- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/local_setup.zsh
+-- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/local_setup.dsv
+-- Installing: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/package.dsv
+-- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/ament_index/resource_index/packages/action_ws
+-- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/cmake/action_wsConfig.cmake
+-- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/cmake/action_wsConfig-version.cmake
+-- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/package.xml

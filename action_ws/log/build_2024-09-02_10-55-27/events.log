@@ -1,0 +1,174 @@
+[0.000000] (-) TimerEvent: {}
+[0.000799] (action_ws) JobQueued: {'identifier': 'action_ws', 'dependencies': OrderedDict()}
+[0.001416] (action_ws) JobStarted: {'identifier': 'action_ws'}
+[0.019366] (action_ws) JobProgress: {'identifier': 'action_ws', 'progress': 'cmake'}
+[0.019927] (action_ws) Command: {'cmd': ['/usr/bin/cmake', '/home/byd/src/ros2/action_ws', '-DCMAKE_INSTALL_PREFIX=/home/byd/src/ros2/action_ws/install/action_ws'], 'cwd': '/home/byd/src/ros2/action_ws/build/action_ws', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'byd'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2/action_ws/doc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '3877'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install:/home/byd/src/ros2/service_interface_ws/install:/home/byd/src/ros2/topic_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/home/byd/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/byd-desktop:@/tmp/.ICE-unix/2479,unix/byd-desktop:/tmp/.ICE-unix/2479'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5caffac6_2363_4792_b35e_621a18d222d9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install/service_ws:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws:/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('GOPATH', '/home/byd/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/byd/src/ros2/action_ws/build/action_ws'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/byd/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install/service_ws:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws:/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble')]), 'shell': False}
+[0.099248] (-) TimerEvent: {}
+[0.138319] (action_ws) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199538] (-) TimerEvent: {}
+[0.253090] (action_ws) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.269091] (action_ws) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299786] (-) TimerEvent: {}
+[0.400871] (-) TimerEvent: {}
+[0.416092] (action_ws) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.435291] (action_ws) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.436178] (action_ws) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.436729] (action_ws) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.443228] (action_ws) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.501123] (-) TimerEvent: {}
+[0.602184] (-) TimerEvent: {}
+[0.608536] (action_ws) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.632371] (action_ws) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.633516] (action_ws) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.634312] (action_ws) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.640947] (action_ws) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.702389] (-) TimerEvent: {}
+[0.803315] (-) TimerEvent: {}
+[0.904240] (-) TimerEvent: {}
+[0.980741] (action_ws) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.004349] (-) TimerEvent: {}
+[1.104936] (-) TimerEvent: {}
+[1.148740] (action_ws) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.205110] (-) TimerEvent: {}
+[1.219863] (action_ws) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.228040] (action_ws) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.242302] (action_ws) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.262811] (action_ws) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.290449] (action_ws) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.305161] (-) TimerEvent: {}
+[1.362698] (action_ws) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.366677] (action_ws) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.405369] (-) TimerEvent: {}
+[1.494395] (action_ws) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.505464] (-) TimerEvent: {}
+[1.547234] (action_ws) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.605671] (-) TimerEvent: {}
+[1.625459] (action_ws) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.642547] (action_ws) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.705970] (-) TimerEvent: {}
+[1.765490] (action_ws) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.766249] (action_ws) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.806133] (-) TimerEvent: {}
+[1.883969] (action_ws) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.886967] (action_ws) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.906213] (-) TimerEvent: {}
+[1.982842] (action_ws) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[2.006373] (-) TimerEvent: {}
+[2.038732] (action_ws) StdoutLine: {'line': b'-- Found action_interface_ws: 0.0.0 (/home/byd/src/ros2/action_interface_ws/install/action_interface_ws/share/action_interface_ws/cmake)\n'}
+[2.064483] (action_ws) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.106511] (-) TimerEvent: {}
+[2.207105] (-) TimerEvent: {}
+[2.217282] (action_ws) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.217654] (action_ws) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/byd/src/ros2/action_ws/include>\n'}
+[2.217871] (action_ws) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.223974] (action_ws) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.241442] (action_ws) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.241894] (action_ws) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.244297] (action_ws) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.247027] (action_ws) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.266004] (action_ws) StdoutLine: {'line': b'-- Generating done\n'}
+[2.269268] (action_ws) StdoutLine: {'line': b'-- Build files have been written to: /home/byd/src/ros2/action_ws/build/action_ws\n'}
+[2.294357] (action_ws) CommandEnded: {'returncode': 0}
+[2.295841] (action_ws) JobProgress: {'identifier': 'action_ws', 'progress': 'build'}
+[2.297019] (action_ws) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/byd/src/ros2/action_ws/build/action_ws', '--', '-j8', '-l8'], 'cwd': '/home/byd/src/ros2/action_ws/build/action_ws', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'byd'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2/action_ws/doc'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '3877'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install:/home/byd/src/ros2/service_interface_ws/install:/home/byd/src/ros2/topic_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/home/byd/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/byd-desktop:@/tmp/.ICE-unix/2479,unix/byd-desktop:/tmp/.ICE-unix/2479'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5caffac6_2363_4792_b35e_621a18d222d9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install/service_ws:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws:/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('GOPATH', '/home/byd/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/byd/src/ros2/action_ws/build/action_ws'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/byd/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/service_ws/install/service_ws:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws:/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble')]), 'shell': False}
+[2.307203] (-) TimerEvent: {}
+[2.379751] (action_ws) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/action_ser.dir/src/action_ser.cpp.o\x1b[0m\n'}
+[2.407385] (-) TimerEvent: {}
+[2.508016] (-) TimerEvent: {}
+[2.608655] (-) TimerEvent: {}
+[2.709296] (-) TimerEvent: {}
+[2.809962] (-) TimerEvent: {}
+[2.910616] (-) TimerEvent: {}
+[3.011285] (-) TimerEvent: {}
+[3.111927] (-) TimerEvent: {}
+[3.212571] (-) TimerEvent: {}
+[3.313226] (-) TimerEvent: {}
+[3.413873] (-) TimerEvent: {}
+[3.514519] (-) TimerEvent: {}
+[3.615166] (-) TimerEvent: {}
+[3.715804] (-) TimerEvent: {}
+[3.816449] (-) TimerEvent: {}
+[3.917099] (-) TimerEvent: {}
+[4.017771] (-) TimerEvent: {}
+[4.118421] (-) TimerEvent: {}
+[4.219076] (-) TimerEvent: {}
+[4.319727] (-) TimerEvent: {}
+[4.420388] (-) TimerEvent: {}
+[4.521050] (-) TimerEvent: {}
+[4.621704] (-) TimerEvent: {}
+[4.722369] (-) TimerEvent: {}
+[4.823026] (-) TimerEvent: {}
+[4.923668] (-) TimerEvent: {}
+[5.024311] (-) TimerEvent: {}
+[5.124943] (-) TimerEvent: {}
+[5.225569] (-) TimerEvent: {}
+[5.326237] (-) TimerEvent: {}
+[5.426871] (-) TimerEvent: {}
+[5.527531] (-) TimerEvent: {}
+[5.628178] (-) TimerEvent: {}
+[5.728833] (-) TimerEvent: {}
+[5.829526] (-) TimerEvent: {}
+[5.930195] (-) TimerEvent: {}
+[6.030854] (-) TimerEvent: {}
+[6.131519] (-) TimerEvent: {}
+[6.232184] (-) TimerEvent: {}
+[6.332850] (-) TimerEvent: {}
+[6.433750] (-) TimerEvent: {}
+[6.534398] (-) TimerEvent: {}
+[6.635058] (-) TimerEvent: {}
+[6.735723] (-) TimerEvent: {}
+[6.836392] (-) TimerEvent: {}
+[6.937046] (-) TimerEvent: {}
+[7.037688] (-) TimerEvent: {}
+[7.138355] (-) TimerEvent: {}
+[7.239017] (-) TimerEvent: {}
+[7.339685] (-) TimerEvent: {}
+[7.440345] (-) TimerEvent: {}
+[7.486546] (action_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/action_ws/src/action_ser.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KSanTzuChingServer::SanTzuChingServer(const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.487168] (action_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/action_ws/src/action_ser.cpp:20:90:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcreate_server<action_interface_ws::action::Book>(SanTzuChingServer*, const char [12], std::_Bind_helper<false, rclcpp_action::GoalResponse (SanTzuChingServer::*)(const std::array<unsigned char, 16>&, std::shared_ptr<action_interface_ws::action::Book_Goal_<std::allocator<void> > >), SanTzuChingServer*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type, std::_Bind_helper<false, rclcpp_action::CancelResponse (SanTzuChingServer::*)(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_interface_ws::action::Book> >), SanTzuChingServer*, const std::_Placeholder<1>&>::type, std::_Bind_helper<false, void (SanTzuChingServer::*)(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_interface_ws::action::Book> >), SanTzuChingServer*, const std::_Placeholder<1>&>::type, rcl_action_server_options_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.487368] (action_ws) StderrLine: {'line': b'   20 |       this->action_ser_ = \x1b[01;31m\x1b[Krclcpp_action::create_server<action_interface_ws::action::Book>(\x1b[m\x1b[K\n'}
+[7.487503] (action_ws) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[7.487620] (action_ws) StderrLine: {'line': b'   21 | \x1b[01;31m\x1b[K        this, "santzuching",\x1b[m\x1b[K\n'}
+[7.487733] (action_ws) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                                              \n'}
+[7.487858] (action_ws) StderrLine: {'line': b'   22 | \x1b[01;31m\x1b[K      std::bind(&SanTzuChingServer::goal_cb,this,std::placeholders::_1, std::placeholders::_2),\x1b[m\x1b[K\n'}
+[7.487965] (action_ws) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.488065] (action_ws) StderrLine: {'line': b'   23 | \x1b[01;31m\x1b[K      std::bind(&SanTzuChingServer::cancel_cb,this,std::placeholders::_1),\x1b[m\x1b[K\n'}
+[7.488167] (action_ws) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                \n'}
+[7.488280] (action_ws) StderrLine: {'line': b'   24 | \x1b[01;31m\x1b[K      std::bind(&SanTzuChingServer::execute_cb,this,std::placeholders::_1),\x1b[m\x1b[K\n'}
+[7.488379] (action_ws) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K               \n'}
+[7.488475] (action_ws) StderrLine: {'line': b'   25 | \x1b[01;31m\x1b[K      rcl_action_server_get_default_options())\x1b[m\x1b[K;\n'}
+[7.488574] (action_ws) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                            \n'}
+[7.488667] (action_ws) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39\x1b[m\x1b[K,\n'}
+[7.488759] (action_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/byd/src/ros2/action_ws/src/action_ser.cpp:13\x1b[m\x1b[K:\n'}
+[7.488855] (action_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktypename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr) [with ActionT = action_interface_ws::action::Book; typename rclcpp_action::Server<ActionT>::SharedPtr = std::shared_ptr<rclcpp_action::Server<action_interface_ws::action::Book> >; rclcpp::node_interfaces::NodeBaseInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>; rclcpp::node_interfaces::NodeClockInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeClockInterface>; rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeLoggingInterface>; rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeWaitablesInterface>; std::string = std::__cxx11::basic_string<char>; typename rclcpp_action::Server<ActionT>::GoalCallback = std::function<rclcpp_action::GoalResponse(const std::array<unsigned char, 16>&, std::shared_ptr<const action_interface_ws::action::Book_Goal_<std::allocator<void> > >)>; typename rclcpp_action::Server<ActionT>::CancelCallback = std::function<rclcpp_action::CancelResponse(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_interface_ws::action::Book> >)>; typename rclcpp_action::Server<ActionT>::AcceptedCallback = std::function<void(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_interface_ws::action::Book> >)>; rcl_action_server_options_t = rcl_action_server_options_s; rclcpp::CallbackGroup::SharedPtr = std::shared_ptr<rclcpp::CallbackGroup>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.489007] (action_ws) StderrLine: {'line': b'   58 | \x1b[01;36m\x1b[Kcreate_server\x1b[m\x1b[K(\n'}
+[7.489109] (action_ws) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.489206] (action_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 10 arguments, 6 provided\n'}
+[7.489304] (action_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ActionT, class NodeT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(NodeT, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.489418] (action_ws) StderrLine: {'line': b'  132 | \x1b[01;36m\x1b[Kcreate_server\x1b[m\x1b[K(\n'}
+[7.489512] (action_ws) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.489619] (action_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[7.489750] (action_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/action_ws/src/action_ser.cpp:22:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::bind(_Func&&, _BoundArgs&& ...) [with _Func = rclcpp_action::GoalResponse (SanTzuChingServer::*)(const std::array<unsigned char, 16>&, std::shared_ptr<action_interface_ws::action::Book_Goal_<std::allocator<void> > >); _BoundArgs = {SanTzuChingServer*, const std::_Placeholder<1>&, const std::_Placeholder<2>&}; typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type = std::_Bind_helper<false, rclcpp_action::GoalResponse (SanTzuChingServer::*)(const std::array<unsigned char, 16>&, std::shared_ptr<action_interface_ws::action::Book_Goal_<std::allocator<void> > >), SanTzuChingServer*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type; std::__is_socketlike<_Func> = std::__is_socketlike<rclcpp_action::GoalResponse (SanTzuChingServer::*)(const std::array<unsigned char, 16>&, std::shared_ptr<action_interface_ws::action::Book_Goal_<std::allocator<void> > >), rclcpp_action::GoalResponse (SanTzuChingServer::*)(const std::array<unsigned char, 16>&, std::shared_ptr<action_interface_ws::action::Book_Goal_<std::allocator<void> > >)>; typename std::decay<_Tp>::type = rclcpp_action::GoalResponse (SanTzuChingServer::*)(const std::array<unsigned char, 16>&, std::shared_ptr<action_interface_ws::action::Book_Goal_<std::allocator<void> > >)](((SanTzuChingServer*)this), std::placeholders::_1, std::placeholders::_2)\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, rclcpp_action::GoalResponse (SanTzuChingServer::*)(const std::array<unsigned char, 16>&, std::shared_ptr<action_interface_ws::action::Book_Goal_<std::allocator<void> > >), SanTzuChingServer*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Krclcpp_action::Server<action_interface_ws::action::Book>::GoalCallback\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::function<rclcpp_action::GoalResponse(const std::array<unsigned char, 16>&, std::shared_ptr<const action_interface_ws::action::Book_Goal_<std::allocator<void> > >)>\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[7.489888] (action_ws) StderrLine: {'line': b'   22 |       \x1b[01;36m\x1b[Kstd::bind(&SanTzuChingServer::goal_cb,this,std::placeholders::_1, std::placeholders::_2)\x1b[m\x1b[K,\n'}
+[7.489991] (action_ws) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.494367] (action_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/action_ws/src/action_ser.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SanTzuChingServer::execute_cb(std::shared_ptr<rclcpp_action::ServerGoalHandle<action_interface_ws::action::Book> >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.494670] (action_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/action_ws/src/action_ser.cpp:53:111:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kexe_handle\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.494827] (action_ws) StderrLine: {'line': b'   53 |     void execute_cb(\x1b[01;35m\x1b[Kconst std::shared_ptr<rclcpp_action::ServerGoalHandle<action_interface_ws::action::Book>> exe_handle\x1b[m\x1b[K) {\n'}
+[7.494952] (action_ws) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.540502] (-) TimerEvent: {}
+[7.641137] (-) TimerEvent: {}
+[7.741802] (-) TimerEvent: {}
+[7.842446] (-) TimerEvent: {}
+[7.943081] (-) TimerEvent: {}
+[8.043715] (-) TimerEvent: {}
+[8.144355] (-) TimerEvent: {}
+[8.245000] (-) TimerEvent: {}
+[8.345637] (-) TimerEvent: {}
+[8.446291] (-) TimerEvent: {}
+[8.501073] (action_ws) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/action_ser.dir/build.make:76\xef\xbc\x9aCMakeFiles/action_ser.dir/src/action_ser.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[8.501569] (action_ws) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/action_ser.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[8.501832] (action_ws) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[8.506155] (action_ws) CommandEnded: {'returncode': 2}
+[8.548648] (-) TimerEvent: {}
+[8.559454] (action_ws) JobEnded: {'identifier': 'action_ws', 'rc': 2}
+[8.570247] (-) EventReactorShutdown: {}

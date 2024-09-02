@@ -1,0 +1,6 @@
+{
+  "package_name": "action_interface_ws",
+  "non_idl_tuples": [
+    "/home/byd/src/ros2/action_interface_ws:action/Book.action"
+  ]
+}

@@ -1,0 +1,31 @@
+[0.021s] Invoking command in '/home/byd/src/ros2/action_ws/build/action_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/action_ws/build/action_ws -- -j8 -l8
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target action_cli[0m
+[0.116s] [ 25%] [32mBuilding CXX object CMakeFiles/action_ser.dir/src/action_ser.cpp.o[0m
+[0.126s] [ 50%] [32mBuilding CXX object CMakeFiles/action_cli.dir/src/action_cli.cpp.o[0m
+[8.651s] [ 75%] [32m[1mLinking CXX executable action_ser[0m
+[8.714s] [100%] [32m[1mLinking CXX executable action_cli[0m
+[9.106s] [100%] Built target action_ser
+[9.195s] [100%] Built target action_cli
+[9.223s] Invoked command in '/home/byd/src/ros2/action_ws/build/action_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/action_ws/build/action_ws -- -j8 -l8
+[9.300s] Invoking command in '/home/byd/src/ros2/action_ws/build/action_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/action_ws/build/action_ws
+[9.318s] -- Install configuration: ""
+[9.319s] -- Installing: /home/byd/src/ros2/action_ws/install/action_ws/lib/action_ws/action_ser
+[9.322s] -- Set runtime path of "/home/byd/src/ros2/action_ws/install/action_ws/lib/action_ws/action_ser" to ""
+[9.322s] -- Installing: /home/byd/src/ros2/action_ws/install/action_ws/lib/action_ws/action_cli
+[9.324s] -- Set runtime path of "/home/byd/src/ros2/action_ws/install/action_ws/lib/action_ws/action_cli" to ""
+[9.324s] -- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/ament_index/resource_index/package_run_dependencies/action_ws
+[9.325s] -- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/ament_index/resource_index/parent_prefix_path/action_ws
+[9.325s] -- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/environment/ament_prefix_path.sh
+[9.325s] -- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/environment/ament_prefix_path.dsv
+[9.325s] -- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/environment/path.sh
+[9.325s] -- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/environment/path.dsv
+[9.325s] -- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/local_setup.bash
+[9.326s] -- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/local_setup.sh
+[9.326s] -- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/local_setup.zsh
+[9.326s] -- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/local_setup.dsv
+[9.326s] -- Installing: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/package.dsv
+[9.326s] -- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/ament_index/resource_index/packages/action_ws
+[9.326s] -- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/cmake/action_wsConfig.cmake
+[9.326s] -- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/cmake/action_wsConfig-version.cmake
+[9.327s] -- Up-to-date: /home/byd/src/ros2/action_ws/install/action_ws/share/action_ws/package.xml
+[9.336s] Invoked command in '/home/byd/src/ros2/action_ws/build/action_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/action_ws/build/action_ws

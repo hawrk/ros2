@@ -1,0 +1,26 @@
+[0.018s] Invoking command in '/home/byd/src/ros2/topic_ws/build/topic_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/topic_ws/build/topic_ws -- -j8 -l8
+[0.084s] [35m[1mConsolidate compiler generated dependencies of target publisher[0m
+[0.115s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher.cpp.o[0m
+[8.721s] [100%] [32m[1mLinking CXX executable publisher[0m
+[9.170s] [100%] Built target publisher
+[9.199s] Invoked command in '/home/byd/src/ros2/topic_ws/build/topic_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/topic_ws/build/topic_ws -- -j8 -l8
+[9.264s] Invoking command in '/home/byd/src/ros2/topic_ws/build/topic_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/topic_ws/build/topic_ws
+[9.282s] -- Install configuration: ""
+[9.282s] -- Installing: /home/byd/src/ros2/topic_ws/install/topic_ws/lib/topic_ws/publisher
+[9.287s] -- Set runtime path of "/home/byd/src/ros2/topic_ws/install/topic_ws/lib/topic_ws/publisher" to ""
+[9.287s] -- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/ament_index/resource_index/package_run_dependencies/topic_ws
+[9.288s] -- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/ament_index/resource_index/parent_prefix_path/topic_ws
+[9.288s] -- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/environment/ament_prefix_path.sh
+[9.288s] -- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/environment/ament_prefix_path.dsv
+[9.288s] -- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/environment/path.sh
+[9.288s] -- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/environment/path.dsv
+[9.288s] -- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/local_setup.bash
+[9.289s] -- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/local_setup.sh
+[9.289s] -- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/local_setup.zsh
+[9.289s] -- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/local_setup.dsv
+[9.289s] -- Installing: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/package.dsv
+[9.289s] -- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/ament_index/resource_index/packages/topic_ws
+[9.289s] -- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/cmake/topic_wsConfig.cmake
+[9.289s] -- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/cmake/topic_wsConfig-version.cmake
+[9.289s] -- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/package.xml
+[9.296s] Invoked command in '/home/byd/src/ros2/topic_ws/build/topic_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/topic_ws/build/topic_ws

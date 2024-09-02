@@ -1,0 +1,4 @@
+Invoking command in '/home/byd/src/ros2/action_ws/build/action_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/byd/src/ros2/action_ws -DCMAKE_INSTALL_PREFIX=/home/byd/src/ros2/action_ws/install/action_ws
+Invoked command in '/home/byd/src/ros2/action_ws/build/action_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/byd/src/ros2/action_ws -DCMAKE_INSTALL_PREFIX=/home/byd/src/ros2/action_ws/install/action_ws
+Invoking command in '/home/byd/src/ros2/action_ws/build/action_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/action_ws/build/action_ws -- -j8 -l8
+Invoked command in '/home/byd/src/ros2/action_ws/build/action_ws' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/action_ws/build/action_ws -- -j8 -l8

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240829-0122-Experimental"
+	Name="byd-desktop"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="byd-desktop"
+	OSRelease="5.10.120-tegra"
+	OSVersion="#1 SMP PREEMPT Tue Aug 1 12:32:50 PDT 2023"
+	OSPlatform="aarch64"
+	Is64Bits="1"
+	VendorString=""
+	VendorID="Unknown Manufacturer"
+	FamilyID="8"
+	ModelID="0"
+	ProcessorCacheSize="0"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="1"
+	TotalVirtualMemory="31400"
+	TotalPhysicalMemory="62800"
+	LogicalProcessorsPerPhysical="8"
+	ProcessorClockFrequency="0"
+	>
+	<Testing>
+		<StartDateTime>Aug 29 09:46 CST</StartDateTime>
+		<StartTestTime>1724895965</StartTestTime>
+		<TestList/>
+		<EndDateTime>Aug 29 09:46 CST</EndDateTime>
+		<EndTestTime>1724895965</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target publisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher.cpp.o[0m
+[100%] [32m[1mLinking CXX executable publisher[0m
+[100%] Built target publisher
+-- Install configuration: ""
+-- Installing: /home/byd/src/ros2/topic_ws/install/topic_ws/lib/topic_ws/publisher
+-- Set runtime path of "/home/byd/src/ros2/topic_ws/install/topic_ws/lib/topic_ws/publisher" to ""
+-- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/ament_index/resource_index/package_run_dependencies/topic_ws
+-- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/ament_index/resource_index/parent_prefix_path/topic_ws
+-- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/environment/ament_prefix_path.sh
+-- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/environment/path.sh
+-- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/environment/path.dsv
+-- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/local_setup.bash
+-- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/local_setup.sh
+-- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/local_setup.zsh
+-- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/local_setup.dsv
+-- Installing: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/package.dsv
+-- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/ament_index/resource_index/packages/topic_ws
+-- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/cmake/topic_wsConfig.cmake
+-- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/cmake/topic_wsConfig-version.cmake
+-- Up-to-date: /home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/package.xml

@@ -1,0 +1,9 @@
+#goal 要读的书本
+string book_name
+---
+#result 最后输出该书的总行数
+int32 line_num
+---
+#feedback 反馈当前行数和文字内容
+int32 cur_line
+string line_words

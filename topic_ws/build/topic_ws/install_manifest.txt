@@ -1,0 +1,17 @@
+/home/byd/src/ros2/topic_ws/install/topic_ws/lib/topic_ws/publisher
+/home/byd/src/ros2/topic_ws/install/topic_ws/lib/topic_ws/subscriber
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/ament_index/resource_index/package_run_dependencies/topic_ws
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/ament_index/resource_index/parent_prefix_path/topic_ws
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/environment/ament_prefix_path.sh
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/environment/ament_prefix_path.dsv
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/environment/path.sh
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/environment/path.dsv
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/local_setup.bash
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/local_setup.sh
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/local_setup.zsh
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/local_setup.dsv
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/package.dsv
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/ament_index/resource_index/packages/topic_ws
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/cmake/topic_wsConfig.cmake
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/cmake/topic_wsConfig-version.cmake
+/home/byd/src/ros2/topic_ws/install/topic_ws/share/topic_ws/package.xml
