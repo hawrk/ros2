@@ -1,0 +1,232 @@
+[0.000000] (-) TimerEvent: {}
+[0.000999] (param_ws) JobQueued: {'identifier': 'param_ws', 'dependencies': OrderedDict()}
+[0.001280] (param_ws) JobStarted: {'identifier': 'param_ws'}
+[0.019317] (param_ws) JobProgress: {'identifier': 'param_ws', 'progress': 'cmake'}
+[0.020474] (param_ws) JobProgress: {'identifier': 'param_ws', 'progress': 'build'}
+[0.021575] (param_ws) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/byd/src/ros2/param_ws/build/param_ws', '--', '-j8', '-l8'], 'cwd': '/home/byd/src/ros2/param_ws/build/param_ws', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'byd'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/byd/src/ros2/action_interface_ws/install/action_interface_ws/lib:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '3877'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/param_ws/install:/home/byd/src/ros2/action_ws/install:/home/byd/src/ros2/action_interface_ws/install:/home/byd/src/ros2/service_ws/install:/home/byd/src/ros2/service_interface_ws/install:/home/byd/src/ros2/topic_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/home/byd/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/byd-desktop:@/tmp/.ICE-unix/2479,unix/byd-desktop:/tmp/.ICE-unix/2479'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5caffac6_2363_4792_b35e_621a18d222d9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/param_ws/install/param_ws:/home/byd/src/ros2/action_interface_ws/install/action_interface_ws:/home/byd/src/ros2/action_ws/install/action_ws:/home/byd/src/ros2/service_ws/install/service_ws:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws:/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('GOPATH', '/home/byd/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/byd/src/ros2/param_ws/build/param_ws'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/byd/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/src/ros2/action_interface_ws/install/action_interface_ws/local/lib/python3.10/dist-packages:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/param_ws/install/param_ws:/home/byd/src/ros2/action_interface_ws/install/action_interface_ws:/home/byd/src/ros2/action_ws/install/action_ws:/home/byd/src/ros2/service_ws/install/service_ws:/home/byd/src/ros2/service_interface_ws/install/service_interface_ws:/home/byd/src/ros2/topic_ws/install/topic_ws:/opt/ros/humble')]), 'shell': False}
+[0.067484] (param_ws) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099429] (-) TimerEvent: {}
+[0.199987] (-) TimerEvent: {}
+[0.300600] (-) TimerEvent: {}
+[0.309082] (param_ws) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.358686] (param_ws) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.362542] (param_ws) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.371860] (param_ws) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.387569] (param_ws) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.400720] (-) TimerEvent: {}
+[0.407717] (param_ws) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.459718] (param_ws) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.461945] (param_ws) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500905] (-) TimerEvent: {}
+[0.601564] (-) TimerEvent: {}
+[0.646983] (param_ws) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.701743] (-) TimerEvent: {}
+[0.727680] (param_ws) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.801930] (-) TimerEvent: {}
+[0.873421] (param_ws) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.874097] (param_ws) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/byd/src/ros2/param_ws/include>\n'}
+[0.874433] (param_ws) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.875960] (param_ws) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.880571] (param_ws) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.882652] (param_ws) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.898109] (param_ws) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.898517] (param_ws) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.900304] (param_ws) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.901675] (param_ws) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.901899] (-) TimerEvent: {}
+[0.920710] (param_ws) StdoutLine: {'line': b'-- Generating done\n'}
+[0.924377] (param_ws) StdoutLine: {'line': b'-- Build files have been written to: /home/byd/src/ros2/param_ws/build/param_ws\n'}
+[0.976532] (param_ws) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target param\x1b[0m\n'}
+[1.002104] (-) TimerEvent: {}
+[1.007545] (param_ws) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/param.dir/src/param.cpp.o\x1b[0m\n'}
+[1.102283] (-) TimerEvent: {}
+[1.202931] (-) TimerEvent: {}
+[1.303585] (-) TimerEvent: {}
+[1.410959] (-) TimerEvent: {}
+[1.511657] (-) TimerEvent: {}
+[1.612299] (-) TimerEvent: {}
+[1.712949] (-) TimerEvent: {}
+[1.813595] (-) TimerEvent: {}
+[1.914243] (-) TimerEvent: {}
+[2.014902] (-) TimerEvent: {}
+[2.115586] (-) TimerEvent: {}
+[2.216247] (-) TimerEvent: {}
+[2.316895] (-) TimerEvent: {}
+[2.417560] (-) TimerEvent: {}
+[2.518220] (-) TimerEvent: {}
+[2.618881] (-) TimerEvent: {}
+[2.719578] (-) TimerEvent: {}
+[2.820232] (-) TimerEvent: {}
+[2.920933] (-) TimerEvent: {}
+[3.021594] (-) TimerEvent: {}
+[3.122252] (-) TimerEvent: {}
+[3.222914] (-) TimerEvent: {}
+[3.323583] (-) TimerEvent: {}
+[3.424268] (-) TimerEvent: {}
+[3.525084] (-) TimerEvent: {}
+[3.625878] (-) TimerEvent: {}
+[3.726561] (-) TimerEvent: {}
+[3.827248] (-) TimerEvent: {}
+[3.927920] (-) TimerEvent: {}
+[4.028588] (-) TimerEvent: {}
+[4.130027] (-) TimerEvent: {}
+[4.230696] (-) TimerEvent: {}
+[4.331375] (-) TimerEvent: {}
+[4.432038] (-) TimerEvent: {}
+[4.532705] (-) TimerEvent: {}
+[4.633376] (-) TimerEvent: {}
+[4.734053] (-) TimerEvent: {}
+[4.834754] (-) TimerEvent: {}
+[4.936101] (-) TimerEvent: {}
+[5.036758] (-) TimerEvent: {}
+[5.137415] (-) TimerEvent: {}
+[5.238195] (-) TimerEvent: {}
+[5.339291] (-) TimerEvent: {}
+[5.440376] (-) TimerEvent: {}
+[5.541422] (-) TimerEvent: {}
+[5.642460] (-) TimerEvent: {}
+[5.743536] (-) TimerEvent: {}
+[5.844632] (-) TimerEvent: {}
+[5.945752] (-) TimerEvent: {}
+[6.009685] (param_ws) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[6.010569] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[6.010730] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.010870] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.010997] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.011122] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.011265] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.011382] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.011496] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.011646] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.011763] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.011878] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/byd/src/ros2/param_ws/src/param.cpp:11\x1b[m\x1b[K:\n'}
+[6.012000] (param_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/param_ws/src/param.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KParamMonitor::ParamMonitor(const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.012122] (param_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/param_ws/src/param.cpp:23:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 6 has type \xe2\x80\x98\x1b[01m\x1b[Kint64_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.012258] (param_ws) StderrLine: {'line': b'   23 |       RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"rank:{%s}\\t salary[%d]\\t, venhicle:[%s]"\x1b[m\x1b[K,\n'}
+[6.012419] (param_ws) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.012535] (param_ws) StderrLine: {'line': b'   24 |        this->get_parameter("my_rank").as_string().c_str(),\n'}
+[6.012647] (param_ws) StderrLine: {'line': b'   25 |        \x1b[32m\x1b[Kthis->get_parameter("salary").as_int()\x1b[m\x1b[K,\n'}
+[6.012762] (param_ws) StderrLine: {'line': b'      |        \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.012874] (param_ws) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[6.012983] (param_ws) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[Kint64_t {aka long int}\x1b[m\x1b[K\n'}
+[6.013090] (param_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/param_ws/src/param.cpp:23:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[6.013226] (param_ws) StderrLine: {'line': b'   23 |       RCLCPP_INFO(this->get_logger(), "rank:{%s}\\t salary[\x1b[01;36m\x1b[K%d\x1b[m\x1b[K]\\t, venhicle:[%s]",\n'}
+[6.013339] (param_ws) StderrLine: {'line': b'      |                                                           \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[6.013450] (param_ws) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[6.013559] (param_ws) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[6.013674] (param_ws) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[6.015515] (param_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/param_ws/src/param.cpp:34:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kduplicate \xe2\x80\x98\x1b[01m\x1b[Kconst\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.015679] (param_ws) StderrLine: {'line': b'   34 |       auto cb2 = [this](const \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K rclcpp::Parameter& p) {\n'}
+[6.015804] (param_ws) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.015919] (param_ws) StderrLine: {'line': b'      |                               \x1b[31m\x1b[K-----\x1b[m\x1b[K\n'}
+[6.016033] (param_ws) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[6.016154] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[6.016283] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.016398] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.016510] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.016624] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.016744] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.016856] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.016968] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.017083] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.017193] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.017319] (param_ws) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/byd/src/ros2/param_ws/src/param.cpp:11\x1b[m\x1b[K:\n'}
+[6.017436] (param_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/param_ws/src/param.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[6.017546] (param_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/param_ws/src/param.cpp:35:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kint64_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.017673] (param_ws) StderrLine: {'line': b'   35 |         RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"\xe7\x9b\xae\xe5\x89\x8d\xe8\x96\xaa\xe9\x85\xac:[%d]"\x1b[m\x1b[K,\n'}
+[6.017786] (param_ws) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.017901] (param_ws) StderrLine: {'line': b'   36 |         \x1b[32m\x1b[Kp.as_int()\x1b[m\x1b[K);\n'}
+[6.018011] (param_ws) StderrLine: {'line': b'      |         \x1b[32m\x1b[K~~~~~~~~~~\x1b[m\x1b[K                       \n'}
+[6.018118] (param_ws) StderrLine: {'line': b'      |                 \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[6.018227] (param_ws) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Kint64_t {aka long int}\x1b[m\x1b[K\n'}
+[6.018339] (param_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/param_ws/src/param.cpp:35:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[6.018452] (param_ws) StderrLine: {'line': b'   35 |         RCLCPP_INFO(this->get_logger(), "\xe7\x9b\xae\xe5\x89\x8d\xe8\x96\xaa\xe9\x85\xac:[\x1b[01;36m\x1b[K%d\x1b[m\x1b[K]",\n'}
+[6.018570] (param_ws) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[6.018681] (param_ws) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[6.018791] (param_ws) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[6.018919] (param_ws) StderrLine: {'line': b'      |                                                    \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[6.019031] (param_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/param_ws/src/param.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KParamMonitor::ParamMonitor(const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.019175] (param_ws) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/param_ws/src/param.cpp:39:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kduplicate \xe2\x80\x98\x1b[01m\x1b[Kconst\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.019300] (param_ws) StderrLine: {'line': b'   39 |       auto cb3 = [this](const \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K rclcpp::Parameter& p) {\n'}
+[6.019416] (param_ws) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.019535] (param_ws) StderrLine: {'line': b'      |                               \x1b[31m\x1b[K-----\x1b[m\x1b[K\n'}
+[6.045992] (-) TimerEvent: {}
+[6.147120] (-) TimerEvent: {}
+[6.248345] (-) TimerEvent: {}
+[6.349475] (-) TimerEvent: {}
+[6.450687] (-) TimerEvent: {}
+[6.551924] (-) TimerEvent: {}
+[6.652976] (-) TimerEvent: {}
+[6.754069] (-) TimerEvent: {}
+[6.855151] (-) TimerEvent: {}
+[6.956225] (-) TimerEvent: {}
+[7.057283] (-) TimerEvent: {}
+[7.158366] (-) TimerEvent: {}
+[7.259412] (-) TimerEvent: {}
+[7.360501] (-) TimerEvent: {}
+[7.461592] (-) TimerEvent: {}
+[7.562674] (-) TimerEvent: {}
+[7.663745] (-) TimerEvent: {}
+[7.764804] (-) TimerEvent: {}
+[7.865878] (-) TimerEvent: {}
+[7.966935] (-) TimerEvent: {}
+[8.068043] (-) TimerEvent: {}
+[8.169156] (-) TimerEvent: {}
+[8.270208] (-) TimerEvent: {}
+[8.371329] (-) TimerEvent: {}
+[8.472380] (-) TimerEvent: {}
+[8.573425] (-) TimerEvent: {}
+[8.674495] (-) TimerEvent: {}
+[8.775553] (-) TimerEvent: {}
+[8.876614] (-) TimerEvent: {}
+[8.977689] (-) TimerEvent: {}
+[9.078721] (-) TimerEvent: {}
+[9.179825] (-) TimerEvent: {}
+[9.280855] (-) TimerEvent: {}
+[9.381902] (-) TimerEvent: {}
+[9.482945] (-) TimerEvent: {}
+[9.584000] (-) TimerEvent: {}
+[9.685060] (-) TimerEvent: {}
+[9.786171] (-) TimerEvent: {}
+[9.887309] (-) TimerEvent: {}
+[9.988346] (-) TimerEvent: {}
+[10.089411] (-) TimerEvent: {}
+[10.190460] (-) TimerEvent: {}
+[10.291527] (-) TimerEvent: {}
+[10.392568] (-) TimerEvent: {}
+[10.493625] (-) TimerEvent: {}
+[10.594667] (-) TimerEvent: {}
+[10.695751] (-) TimerEvent: {}
+[10.796822] (-) TimerEvent: {}
+[10.897873] (-) TimerEvent: {}
+[10.998945] (-) TimerEvent: {}
+[11.100046] (-) TimerEvent: {}
+[11.201138] (-) TimerEvent: {}
+[11.302274] (-) TimerEvent: {}
+[11.403347] (-) TimerEvent: {}
+[11.504456] (-) TimerEvent: {}
+[11.605589] (-) TimerEvent: {}
+[11.706709] (-) TimerEvent: {}
+[11.807820] (-) TimerEvent: {}
+[11.908878] (-) TimerEvent: {}
+[12.009923] (-) TimerEvent: {}
+[12.110985] (-) TimerEvent: {}
+[12.212071] (-) TimerEvent: {}
+[12.313379] (-) TimerEvent: {}
+[12.414597] (-) TimerEvent: {}
+[12.515845] (-) TimerEvent: {}
+[12.617053] (-) TimerEvent: {}
+[12.718290] (-) TimerEvent: {}
+[12.819520] (-) TimerEvent: {}
+[12.920714] (-) TimerEvent: {}
+[13.021901] (-) TimerEvent: {}
+[13.123118] (-) TimerEvent: {}
+[13.224358] (-) TimerEvent: {}
+[13.325501] (-) TimerEvent: {}
+[13.345914] (param_ws) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/param.dir/build.make:76\xef\xbc\x9aCMakeFiles/param.dir/src/param.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[13.346903] (param_ws) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/param.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[13.347422] (param_ws) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[13.354048] (param_ws) CommandEnded: {'returncode': 2}
+[13.426014] (-) TimerEvent: {}
+[13.438834] (param_ws) JobEnded: {'identifier': 'param_ws', 'rc': 2}
+[13.450130] (-) EventReactorShutdown: {}

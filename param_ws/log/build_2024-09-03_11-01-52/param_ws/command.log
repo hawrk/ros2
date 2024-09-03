@@ -1,0 +1,4 @@
+Invoking command in '/home/byd/src/ros2/param_ws/build/param_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/param_ws/build/param_ws -- -j8 -l8
+Invoked command in '/home/byd/src/ros2/param_ws/build/param_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/param_ws/build/param_ws -- -j8 -l8
+Invoking command in '/home/byd/src/ros2/param_ws/build/param_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/param_ws/build/param_ws
+Invoked command in '/home/byd/src/ros2/param_ws/build/param_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/param_ws/build/param_ws

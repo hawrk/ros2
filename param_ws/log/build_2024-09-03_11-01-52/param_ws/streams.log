@@ -1,0 +1,26 @@
+[0.030s] Invoking command in '/home/byd/src/ros2/param_ws/build/param_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/param_ws/build/param_ws -- -j8 -l8
+[0.122s] [35m[1mConsolidate compiler generated dependencies of target param[0m
+[0.162s] [ 50%] [32mBuilding CXX object CMakeFiles/param.dir/src/param.cpp.o[0m
+[21.269s] [100%] [32m[1mLinking CXX executable param[0m
+[22.236s] [100%] Built target param
+[22.265s] Invoked command in '/home/byd/src/ros2/param_ws/build/param_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/param_ws/build/param_ws -- -j8 -l8
+[22.339s] Invoking command in '/home/byd/src/ros2/param_ws/build/param_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/param_ws/build/param_ws
+[22.357s] -- Install configuration: ""
+[22.358s] -- Installing: /home/byd/src/ros2/param_ws/install/param_ws/lib/param_ws/param
+[22.368s] -- Set runtime path of "/home/byd/src/ros2/param_ws/install/param_ws/lib/param_ws/param" to ""
+[22.369s] -- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/ament_index/resource_index/package_run_dependencies/param_ws
+[22.369s] -- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/ament_index/resource_index/parent_prefix_path/param_ws
+[22.369s] -- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/environment/ament_prefix_path.sh
+[22.369s] -- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/environment/ament_prefix_path.dsv
+[22.369s] -- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/environment/path.sh
+[22.369s] -- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/environment/path.dsv
+[22.369s] -- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/local_setup.bash
+[22.370s] -- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/local_setup.sh
+[22.370s] -- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/local_setup.zsh
+[22.370s] -- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/local_setup.dsv
+[22.370s] -- Installing: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/package.dsv
+[22.370s] -- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/ament_index/resource_index/packages/param_ws
+[22.370s] -- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/cmake/param_wsConfig.cmake
+[22.370s] -- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/cmake/param_wsConfig-version.cmake
+[22.370s] -- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/package.xml
+[22.380s] Invoked command in '/home/byd/src/ros2/param_ws/build/param_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/param_ws/build/param_ws

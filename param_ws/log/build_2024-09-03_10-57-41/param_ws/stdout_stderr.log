@@ -1,0 +1,75 @@
+[35m[1mConsolidate compiler generated dependencies of target param[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/param.dir/src/param.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/byd/src/ros2/param_ws/src/param.cpp:11[m[K:
+[01m[K/home/byd/src/ros2/param_ws/src/param.cpp:[m[K In constructor ‘[01m[KParamMonitor::ParamMonitor(const string&)[m[K’:
+[01m[K/home/byd/src/ros2/param_ws/src/param.cpp:23:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kint64_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   23 |       RCLCPP_INFO(this->get_logger(), [01;35m[K"rank:{%s}\t salary[%d]\t, venhicle:[%s]"[m[K,
+      |                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   24 |        this->get_parameter("my_rank").as_string().c_str(),
+   25 |        [32m[Kthis->get_parameter("salary").as_int()[m[K,
+      |        [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                            [32m[K|[m[K
+      |                                            [32m[Kint64_t {aka long int}[m[K
+[01m[K/home/byd/src/ros2/param_ws/src/param.cpp:23:60:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   23 |       RCLCPP_INFO(this->get_logger(), "rank:{%s}\t salary[[01;36m[K%d[m[K]\t, venhicle:[%s]",
+      |                                                           [01;36m[K~^[m[K
+      |                                                            [01;36m[K|[m[K
+      |                                                            [01;36m[Kint[m[K
+      |                                                           [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/byd/src/ros2/param_ws/src/param.cpp:11[m[K:
+[01m[K/home/byd/src/ros2/param_ws/src/param.cpp:[m[K In lambda function:
+[01m[K/home/byd/src/ros2/param_ws/src/param.cpp:35:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kint64_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   35 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"目前薪酬:[%d]"[m[K,
+      |                                         [01;35m[K^~~~~~~~~~~~~~~[m[K
+   36 |         [32m[Kp.as_int()[m[K);
+      |         [32m[K~~~~~~~~~~[m[K                       
+      |                 [32m[K|[m[K
+      |                 [32m[Kint64_t {aka long int}[m[K
+[01m[K/home/byd/src/ros2/param_ws/src/param.cpp:35:53:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   35 |         RCLCPP_INFO(this->get_logger(), "目前薪酬:[[01;36m[K%d[m[K]",
+      |                                                    [01;36m[K~^[m[K
+      |                                                     [01;36m[K|[m[K
+      |                                                     [01;36m[Kint[m[K
+      |                                                    [32m[K%ld[m[K
+[100%] [32m[1mLinking CXX executable param[0m
+[100%] Built target param
+-- Install configuration: ""
+-- Installing: /home/byd/src/ros2/param_ws/install/param_ws/lib/param_ws/param
+-- Set runtime path of "/home/byd/src/ros2/param_ws/install/param_ws/lib/param_ws/param" to ""
+-- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/ament_index/resource_index/package_run_dependencies/param_ws
+-- Installing: /home/byd/src/ros2/param_ws/install/param_ws/share/ament_index/resource_index/parent_prefix_path/param_ws
+-- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/environment/ament_prefix_path.sh
+-- Installing: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/environment/path.sh
+-- Installing: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/environment/path.dsv
+-- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/local_setup.bash
+-- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/local_setup.sh
+-- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/local_setup.zsh
+-- Installing: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/local_setup.dsv
+-- Installing: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/package.dsv
+-- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/ament_index/resource_index/packages/param_ws
+-- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/cmake/param_wsConfig.cmake
+-- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/cmake/param_wsConfig-version.cmake
+-- Up-to-date: /home/byd/src/ros2/param_ws/install/param_ws/share/param_ws/package.xml
