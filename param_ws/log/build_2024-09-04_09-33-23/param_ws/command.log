@@ -1,0 +1,6 @@
+Invoking command in '/home/byd/github/ros/hawrk/ros2/param_ws/build/param_ws': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/byd/github/ros/hawrk/ros2/param_ws -DCMAKE_INSTALL_PREFIX=/home/byd/github/ros/hawrk/ros2/param_ws/install/param_ws
+Invoked command in '/home/byd/github/ros/hawrk/ros2/param_ws/build/param_ws' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/byd/github/ros/hawrk/ros2/param_ws -DCMAKE_INSTALL_PREFIX=/home/byd/github/ros/hawrk/ros2/param_ws/install/param_ws
+Invoking command in '/home/byd/github/ros/hawrk/ros2/param_ws/build/param_ws': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/byd/github/ros/hawrk/ros2/param_ws/build/param_ws -- -j8 -l8
+Invoked command in '/home/byd/github/ros/hawrk/ros2/param_ws/build/param_ws' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/byd/github/ros/hawrk/ros2/param_ws/build/param_ws -- -j8 -l8
+Invoking command in '/home/byd/github/ros/hawrk/ros2/param_ws/build/param_ws': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/byd/github/ros/hawrk/ros2/param_ws/build/param_ws
+Invoked command in '/home/byd/github/ros/hawrk/ros2/param_ws/build/param_ws' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/byd/github/ros/hawrk/ros2/param_ws/build/param_ws
