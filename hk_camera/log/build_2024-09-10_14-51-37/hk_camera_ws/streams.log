@@ -1,0 +1,26 @@
+[0.021s] Invoking command in '/home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws -- -j8 -l8
+[0.109s] [35m[1mConsolidate compiler generated dependencies of target camera[0m
+[0.153s] [ 50%] [32mBuilding CXX object CMakeFiles/camera.dir/src/camera.cpp.o[0m
+[19.178s] [100%] [32m[1mLinking CXX executable camera[0m
+[20.222s] [100%] Built target camera
+[20.247s] Invoked command in '/home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws -- -j8 -l8
+[20.313s] Invoking command in '/home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws
+[20.325s] -- Install configuration: ""
+[20.326s] -- Installing: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/lib/hk_camera_ws/camera
+[20.336s] -- Set runtime path of "/home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/lib/hk_camera_ws/camera" to ""
+[20.337s] -- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/ament_index/resource_index/package_run_dependencies/hk_camera_ws
+[20.337s] -- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/ament_index/resource_index/parent_prefix_path/hk_camera_ws
+[20.337s] -- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/environment/ament_prefix_path.sh
+[20.338s] -- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/environment/ament_prefix_path.dsv
+[20.338s] -- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/environment/path.sh
+[20.338s] -- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/environment/path.dsv
+[20.338s] -- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/local_setup.bash
+[20.339s] -- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/local_setup.sh
+[20.339s] -- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/local_setup.zsh
+[20.339s] -- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/local_setup.dsv
+[20.339s] -- Installing: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/package.dsv
+[20.340s] -- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/ament_index/resource_index/packages/hk_camera_ws
+[20.341s] -- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/cmake/hk_camera_wsConfig.cmake
+[20.341s] -- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/cmake/hk_camera_wsConfig-version.cmake
+[20.343s] -- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/package.xml
+[20.344s] Invoked command in '/home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws

@@ -1,0 +1,4 @@
+Invoking command in '/home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws -- -j8 -l8
+Invoked command in '/home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws -- -j8 -l8
+Invoking command in '/home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws
+Invoked command in '/home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws

@@ -1,0 +1,27 @@
+[35m[1mConsolidate compiler generated dependencies of target camera[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/camera.dir/src/camera.cpp.o[0m
+In file included from [01m[K/home/byd/src/ros2/hk_camera_ws/src/camera.cpp:15[m[K:
+[01m[K/home/byd/src/ros2/hk_camera_ws/include/hk_camera_ws/hk_camera.hpp:[m[K In member function ‘[01m[Kint HKCamera::start_camera()[m[K’:
+[01m[K/home/byd/src/ros2/hk_camera_ws/include/hk_camera_ws/hk_camera.hpp:120:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KnRet[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  120 |     int [01;35m[KnRet[m[K = MV_OK;
+      |         [01;35m[K^~~~[m[K
+[100%] [32m[1mLinking CXX executable camera[0m
+[100%] Built target camera
+-- Install configuration: ""
+-- Installing: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/lib/hk_camera_ws/camera
+-- Set runtime path of "/home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/lib/hk_camera_ws/camera" to ""
+-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/ament_index/resource_index/package_run_dependencies/hk_camera_ws
+-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/ament_index/resource_index/parent_prefix_path/hk_camera_ws
+-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/environment/ament_prefix_path.sh
+-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/environment/path.sh
+-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/environment/path.dsv
+-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/local_setup.bash
+-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/local_setup.sh
+-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/local_setup.zsh
+-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/local_setup.dsv
+-- Installing: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/package.dsv
+-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/ament_index/resource_index/packages/hk_camera_ws
+-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/cmake/hk_camera_wsConfig.cmake
+-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/cmake/hk_camera_wsConfig-version.cmake
+-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/package.xml

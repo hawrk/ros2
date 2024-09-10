@@ -1,0 +1,5 @@
+In file included from [01m[K/home/byd/src/ros2/hk_camera_ws/src/camera.cpp:15[m[K:
+[01m[K/home/byd/src/ros2/hk_camera_ws/include/hk_camera_ws/hk_camera.hpp:[m[K In member function ‘[01m[Kint HKCamera::start_camera(HKCamera::callback_func_)[m[K’:
+[01m[K/home/byd/src/ros2/hk_camera_ws/include/hk_camera_ws/hk_camera.hpp:137:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  137 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K

@@ -1,0 +1,233 @@
+[0.000000] (-) TimerEvent: {}
+[0.000568] (hk_camera_ws) JobQueued: {'identifier': 'hk_camera_ws', 'dependencies': OrderedDict()}
+[0.001033] (hk_camera_ws) JobStarted: {'identifier': 'hk_camera_ws'}
+[0.015589] (hk_camera_ws) JobProgress: {'identifier': 'hk_camera_ws', 'progress': 'cmake'}
+[0.016908] (hk_camera_ws) JobProgress: {'identifier': 'hk_camera_ws', 'progress': 'build'}
+[0.018082] (hk_camera_ws) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws', '--', '-j8', '-l8'], 'cwd': '/home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'byd'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/aarch64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/opt/MVS/lib/aarch64:/opt/MVS/lib/aarch64:'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2/hk_camera_ws/build'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '3317'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/hk_camera_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2228,unix/ubuntu:/tmp/.ICE-unix/2228'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fcd97e00_8a89_4b12_953b_abd09f22cb66'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.90'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.096097] (hk_camera_ws) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera\x1b[0m\n'}
+[0.099391] (-) TimerEvent: {}
+[0.132867] (hk_camera_ws) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera.dir/src/camera.cpp.o\x1b[0m\n'}
+[0.199603] (-) TimerEvent: {}
+[0.300275] (-) TimerEvent: {}
+[0.400927] (-) TimerEvent: {}
+[0.501583] (-) TimerEvent: {}
+[0.602266] (-) TimerEvent: {}
+[0.702972] (-) TimerEvent: {}
+[0.803644] (-) TimerEvent: {}
+[0.904314] (-) TimerEvent: {}
+[1.005006] (-) TimerEvent: {}
+[1.105730] (-) TimerEvent: {}
+[1.206439] (-) TimerEvent: {}
+[1.307181] (-) TimerEvent: {}
+[1.407874] (-) TimerEvent: {}
+[1.508539] (-) TimerEvent: {}
+[1.609208] (-) TimerEvent: {}
+[1.709887] (-) TimerEvent: {}
+[1.810562] (-) TimerEvent: {}
+[1.911289] (-) TimerEvent: {}
+[2.011982] (-) TimerEvent: {}
+[2.112668] (-) TimerEvent: {}
+[2.213326] (-) TimerEvent: {}
+[2.314006] (-) TimerEvent: {}
+[2.414677] (-) TimerEvent: {}
+[2.515346] (-) TimerEvent: {}
+[2.616023] (-) TimerEvent: {}
+[2.716703] (-) TimerEvent: {}
+[2.817376] (-) TimerEvent: {}
+[2.918098] (-) TimerEvent: {}
+[3.018799] (-) TimerEvent: {}
+[3.119528] (-) TimerEvent: {}
+[3.220240] (-) TimerEvent: {}
+[3.320929] (-) TimerEvent: {}
+[3.421594] (-) TimerEvent: {}
+[3.522262] (-) TimerEvent: {}
+[3.622988] (-) TimerEvent: {}
+[3.723663] (-) TimerEvent: {}
+[3.824572] (-) TimerEvent: {}
+[3.925258] (-) TimerEvent: {}
+[4.025970] (-) TimerEvent: {}
+[4.126685] (-) TimerEvent: {}
+[4.227379] (-) TimerEvent: {}
+[4.328061] (-) TimerEvent: {}
+[4.428758] (-) TimerEvent: {}
+[4.529448] (-) TimerEvent: {}
+[4.630130] (-) TimerEvent: {}
+[4.730841] (-) TimerEvent: {}
+[4.831503] (-) TimerEvent: {}
+[4.932194] (-) TimerEvent: {}
+[5.032921] (-) TimerEvent: {}
+[5.133613] (-) TimerEvent: {}
+[5.234299] (-) TimerEvent: {}
+[5.335014] (-) TimerEvent: {}
+[5.435715] (-) TimerEvent: {}
+[5.536433] (-) TimerEvent: {}
+[5.637125] (-) TimerEvent: {}
+[5.737812] (-) TimerEvent: {}
+[5.838513] (-) TimerEvent: {}
+[5.939259] (-) TimerEvent: {}
+[6.039918] (-) TimerEvent: {}
+[6.140594] (-) TimerEvent: {}
+[6.241270] (-) TimerEvent: {}
+[6.341948] (-) TimerEvent: {}
+[6.442637] (-) TimerEvent: {}
+[6.543349] (-) TimerEvent: {}
+[6.644038] (-) TimerEvent: {}
+[6.744732] (-) TimerEvent: {}
+[6.845413] (-) TimerEvent: {}
+[6.946074] (-) TimerEvent: {}
+[7.046729] (-) TimerEvent: {}
+[7.147412] (-) TimerEvent: {}
+[7.248087] (-) TimerEvent: {}
+[7.348767] (-) TimerEvent: {}
+[7.449433] (-) TimerEvent: {}
+[7.550095] (-) TimerEvent: {}
+[7.650779] (-) TimerEvent: {}
+[7.751446] (-) TimerEvent: {}
+[7.852118] (-) TimerEvent: {}
+[7.952804] (-) TimerEvent: {}
+[8.053473] (-) TimerEvent: {}
+[8.154144] (-) TimerEvent: {}
+[8.254817] (-) TimerEvent: {}
+[8.355485] (-) TimerEvent: {}
+[8.456215] (-) TimerEvent: {}
+[8.556940] (-) TimerEvent: {}
+[8.657617] (-) TimerEvent: {}
+[8.758308] (-) TimerEvent: {}
+[8.859062] (-) TimerEvent: {}
+[8.959762] (-) TimerEvent: {}
+[9.060434] (-) TimerEvent: {}
+[9.161089] (-) TimerEvent: {}
+[9.261786] (-) TimerEvent: {}
+[9.362460] (-) TimerEvent: {}
+[9.463155] (-) TimerEvent: {}
+[9.563828] (-) TimerEvent: {}
+[9.664507] (-) TimerEvent: {}
+[9.765182] (-) TimerEvent: {}
+[9.865872] (-) TimerEvent: {}
+[9.966557] (-) TimerEvent: {}
+[10.067252] (-) TimerEvent: {}
+[10.167925] (-) TimerEvent: {}
+[10.268597] (-) TimerEvent: {}
+[10.369272] (-) TimerEvent: {}
+[10.469953] (-) TimerEvent: {}
+[10.570618] (-) TimerEvent: {}
+[10.671307] (-) TimerEvent: {}
+[10.772000] (-) TimerEvent: {}
+[10.872678] (-) TimerEvent: {}
+[10.973356] (-) TimerEvent: {}
+[11.074039] (-) TimerEvent: {}
+[11.174694] (-) TimerEvent: {}
+[11.275381] (-) TimerEvent: {}
+[11.376030] (-) TimerEvent: {}
+[11.476683] (-) TimerEvent: {}
+[11.577346] (-) TimerEvent: {}
+[11.678051] (-) TimerEvent: {}
+[11.778718] (-) TimerEvent: {}
+[11.879400] (-) TimerEvent: {}
+[11.980060] (-) TimerEvent: {}
+[12.080732] (-) TimerEvent: {}
+[12.181397] (-) TimerEvent: {}
+[12.282046] (-) TimerEvent: {}
+[12.382722] (-) TimerEvent: {}
+[12.483400] (-) TimerEvent: {}
+[12.584082] (-) TimerEvent: {}
+[12.684749] (-) TimerEvent: {}
+[12.785406] (-) TimerEvent: {}
+[12.886068] (-) TimerEvent: {}
+[12.986736] (-) TimerEvent: {}
+[13.087419] (-) TimerEvent: {}
+[13.188079] (-) TimerEvent: {}
+[13.288746] (-) TimerEvent: {}
+[13.389386] (-) TimerEvent: {}
+[13.490064] (-) TimerEvent: {}
+[13.590773] (-) TimerEvent: {}
+[13.691445] (-) TimerEvent: {}
+[13.792140] (-) TimerEvent: {}
+[13.892814] (-) TimerEvent: {}
+[13.993477] (-) TimerEvent: {}
+[14.094145] (-) TimerEvent: {}
+[14.194823] (-) TimerEvent: {}
+[14.295443] (-) TimerEvent: {}
+[14.396073] (-) TimerEvent: {}
+[14.496726] (-) TimerEvent: {}
+[14.597370] (-) TimerEvent: {}
+[14.698032] (-) TimerEvent: {}
+[14.798708] (-) TimerEvent: {}
+[14.899395] (-) TimerEvent: {}
+[15.000054] (-) TimerEvent: {}
+[15.100750] (-) TimerEvent: {}
+[15.201425] (-) TimerEvent: {}
+[15.302061] (-) TimerEvent: {}
+[15.402715] (-) TimerEvent: {}
+[15.503394] (-) TimerEvent: {}
+[15.604062] (-) TimerEvent: {}
+[15.704710] (-) TimerEvent: {}
+[15.805327] (-) TimerEvent: {}
+[15.905953] (-) TimerEvent: {}
+[16.006598] (-) TimerEvent: {}
+[16.107265] (-) TimerEvent: {}
+[16.207926] (-) TimerEvent: {}
+[16.308567] (-) TimerEvent: {}
+[16.409202] (-) TimerEvent: {}
+[16.509858] (-) TimerEvent: {}
+[16.610534] (-) TimerEvent: {}
+[16.711188] (-) TimerEvent: {}
+[16.811829] (-) TimerEvent: {}
+[16.912451] (-) TimerEvent: {}
+[17.013115] (-) TimerEvent: {}
+[17.114020] (-) TimerEvent: {}
+[17.214681] (-) TimerEvent: {}
+[17.315313] (-) TimerEvent: {}
+[17.415948] (-) TimerEvent: {}
+[17.516851] (-) TimerEvent: {}
+[17.617521] (-) TimerEvent: {}
+[17.718182] (-) TimerEvent: {}
+[17.818848] (-) TimerEvent: {}
+[17.919497] (-) TimerEvent: {}
+[18.020123] (-) TimerEvent: {}
+[18.120742] (-) TimerEvent: {}
+[18.221438] (-) TimerEvent: {}
+[18.322258] (-) TimerEvent: {}
+[18.423034] (-) TimerEvent: {}
+[18.523874] (-) TimerEvent: {}
+[18.624687] (-) TimerEvent: {}
+[18.725499] (-) TimerEvent: {}
+[18.826307] (-) TimerEvent: {}
+[18.864948] (hk_camera_ws) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable camera\x1b[0m\n'}
+[18.926485] (-) TimerEvent: {}
+[19.027184] (-) TimerEvent: {}
+[19.127869] (-) TimerEvent: {}
+[19.228544] (-) TimerEvent: {}
+[19.329204] (-) TimerEvent: {}
+[19.429882] (-) TimerEvent: {}
+[19.530588] (-) TimerEvent: {}
+[19.631309] (-) TimerEvent: {}
+[19.732010] (-) TimerEvent: {}
+[19.832712] (-) TimerEvent: {}
+[19.895040] (hk_camera_ws) StdoutLine: {'line': b'[100%] Built target camera\n'}
+[19.917416] (hk_camera_ws) CommandEnded: {'returncode': 0}
+[19.932897] (-) TimerEvent: {}
+[19.961661] (hk_camera_ws) JobProgress: {'identifier': 'hk_camera_ws', 'progress': 'install'}
+[19.979576] (hk_camera_ws) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws'], 'cwd': '/home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'byd'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/aarch64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/opt/MVS/lib/aarch64:/opt/MVS/lib/aarch64:'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2/hk_camera_ws/build'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '3317'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/hk_camera_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2228,unix/ubuntu:/tmp/.ICE-unix/2228'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fcd97e00_8a89_4b12_953b_abd09f22cb66'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.90'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/byd/src/ros2/hk_camera_ws/build/hk_camera_ws'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[19.997973] (hk_camera_ws) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.998510] (hk_camera_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/lib/hk_camera_ws/camera\n'}
+[20.009049] (hk_camera_ws) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/lib/hk_camera_ws/camera" to ""\n'}
+[20.009616] (hk_camera_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/ament_index/resource_index/package_run_dependencies/hk_camera_ws\n'}
+[20.009840] (hk_camera_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/ament_index/resource_index/parent_prefix_path/hk_camera_ws\n'}
+[20.009977] (hk_camera_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/environment/ament_prefix_path.sh\n'}
+[20.010139] (hk_camera_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/environment/ament_prefix_path.dsv\n'}
+[20.010350] (hk_camera_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/environment/path.sh\n'}
+[20.010479] (hk_camera_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/environment/path.dsv\n'}
+[20.010598] (hk_camera_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/local_setup.bash\n'}
+[20.010711] (hk_camera_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/local_setup.sh\n'}
+[20.010848] (hk_camera_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/local_setup.zsh\n'}
+[20.010962] (hk_camera_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/local_setup.dsv\n'}
+[20.011072] (hk_camera_ws) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/package.dsv\n'}
+[20.011182] (hk_camera_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/ament_index/resource_index/packages/hk_camera_ws\n'}
+[20.011293] (hk_camera_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/cmake/hk_camera_wsConfig.cmake\n'}
+[20.011403] (hk_camera_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/cmake/hk_camera_wsConfig-version.cmake\n'}
+[20.011511] (hk_camera_ws) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/hk_camera_ws/install/hk_camera_ws/share/hk_camera_ws/package.xml\n'}
+[20.014496] (hk_camera_ws) CommandEnded: {'returncode': 0}
+[20.033021] (-) TimerEvent: {}
+[20.114503] (hk_camera_ws) JobEnded: {'identifier': 'hk_camera_ws', 'rc': 0}
+[20.116892] (-) EventReactorShutdown: {}
