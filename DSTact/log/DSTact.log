@@ -1,0 +1,20 @@
+2024-10-09 10:40:42,577 - show3d.py[line:33] - DEBUG: Loading neural network model from ../model/nnmini.pt
+2024-10-09 10:40:59,919 - show3d.py[line:33] - DEBUG: Loading neural network model from ../model/nnmini.pt
+2024-10-09 10:49:09,524 - show3d.py[line:33] - DEBUG: Loading neural network model from ../model/nnmini.pt
+2024-10-09 10:49:55,893 - show3d.py[line:33] - DEBUG: Loading neural network model from ../model/nnmini.pt
+2024-10-09 10:56:46,662 - show3d.py[line:33] - DEBUG: Loading neural network model from ../model/nnmini.pt
+2024-10-09 10:56:47,946 - show3d.py[line:61] - DEBUG: ROI: (0, 0, 320, 240)
+2024-10-09 11:00:35,948 - show3d.py[line:31] - DEBUG: Loading neural network model from ../model/nnmini.pt
+2024-10-09 11:00:37,245 - show3d.py[line:59] - DEBUG: ROI: (0, 0, 320, 240)
+2024-10-09 11:22:19,770 - showimage.py[line:20] - DEBUG: raw image size = 320 x 240
+2024-10-09 14:32:49,964 - show3d.py[line:31] - DEBUG: Loading neural network model from ../model/nnmini.pt
+2024-10-09 14:32:51,190 - show3d.py[line:59] - DEBUG: ROI: (0, 0, 320, 240)
+2024-10-09 14:36:39,146 - show3d.py[line:31] - DEBUG: Loading neural network model from ../model/nnmini.pt
+2024-10-09 14:36:40,516 - show3d.py[line:59] - DEBUG: ROI: (0, 0, 320, 240)
+2024-10-11 09:41:18,218 - showimage.py[line:25] - DEBUG: raw image size = 320 x 240
+2024-10-11 14:03:19,081 - showimage.py[line:25] - DEBUG: raw image size = 320 x 240
+2024-10-11 14:12:24,643 - showimage.py[line:25] - DEBUG: raw image size = 320 x 240
+2024-10-11 14:12:46,325 - show3d.py[line:31] - DEBUG: Loading neural network model from ../model/nnmini.pt
+2024-10-11 14:12:47,487 - show3d.py[line:59] - DEBUG: ROI: (0, 0, 320, 240)
+2024-10-11 14:16:54,905 - show3d.py[line:31] - DEBUG: Loading neural network model from ../model/nnmini.pt
+2024-10-11 14:16:56,090 - show3d.py[line:59] - DEBUG: ROI: (0, 0, 320, 240)

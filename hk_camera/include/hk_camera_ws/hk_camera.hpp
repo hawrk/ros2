@@ -1,9 +1,9 @@
 /*
  * @Author: hawrkchen hawrk2012@163.com
  * @Date: 2024-09-09 09:56:04
- * @LastEditors: hawrkchen hawrk2012@163.com
- * @LastEditTime: 2024-09-10 15:50:29
- * @FilePath: /hk_camera_ws/include/hk_camera_ws/fd_camera.hpp
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2024-09-11 15:01:31
+ * @FilePath: /hk_camera/include/hk_camera_ws/hk_camera.hpp
  * @Description: 对海康工业相机SDK的C++封装 (v3.0)
  */
 #include <functional>

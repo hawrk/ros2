@@ -1,9 +1,9 @@
 /*
  * @Author: hawrkchen hawrk2012@163.com
  * @Date: 2024-09-06 09:21:12
- * @LastEditors: hawrkchen hawrk2012@163.com
- * @LastEditTime: 2024-09-10 15:53:06
- * @FilePath: /hk_camera_ws/src/camera.cpp
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2024-09-18 15:48:04
+ * @FilePath: /hk_camera/src/camera.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 #include <cstdio>
@@ -58,6 +58,7 @@ class CameraNode: public rclcpp::Node {
       //调试输出
       cv::imshow("hk_version", dst);
       cv::waitKey(0);
+
 
     }
 
