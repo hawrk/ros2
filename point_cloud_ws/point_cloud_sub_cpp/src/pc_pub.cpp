@@ -2,7 +2,7 @@
  * @Author: hawrkchen hawrk2012@163.com
  * @Date: 2024-10-16 09:08:32
  * @LastEditors: hawrkchen hawrk2012@163.com
- * @LastEditTime: 2024-10-16 10:10:41
+ * @LastEditTime: 2024-10-16 10:17:02
  * @FilePath: /point_cloud_sub_cpp/src/pc_pub.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -79,6 +79,9 @@ class PointCloudPublisher : public rclcpp::Node {
              RCLCPP_INFO(this->get_logger(), "Publish point cloud %d", count);
              // 转换    
              sensor_msgs::msg::PointCloud2 ros_cloud;
+             //or
+             //sensor_msgs::msg::PointCloud2::UniquePtr ros_cloud_ptr(new sensor_msgs::msg::PointCloud2);
+             //pcl::toROSMsg(*pcl_cloud, *ros_cloud_ptr);
              pcl::toROSMsg(*pcl_cloud, ros_cloud);
              ros_cloud.header.frame_id = "camera_link";
              ros_cloud.header.stamp = this->get_clock()->now();
