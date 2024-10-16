@@ -2,7 +2,7 @@
  * @Author: hawrkchen hawrk2012@163.com
  * @Date: 2024-10-16 09:08:32
  * @LastEditors: hawrkchen hawrk2012@163.com
- * @LastEditTime: 2024-10-16 09:32:16
+ * @LastEditTime: 2024-10-16 10:10:41
  * @FilePath: /point_cloud_sub_cpp/src/pc_pub.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -34,11 +34,14 @@ class PointCloudPublisher : public rclcpp::Node {
     private:
         rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr pub_;
         rclcpp::TimerBase::SharedPtr timer_;
+        int count{0};
 
         void timer_callback() {
             RCLCPP_INFO(this->get_logger(), "Publishing point cloud");
 
             sensor_msgs::msg::PointCloud2 msg;
+            msg.header.frame_id = "camera_link";
+            msg.header.stamp = this->get_clock()->now();
             msg.height = 480;
             msg.width = 640;
 
@@ -61,15 +64,28 @@ class PointCloudPublisher : public rclcpp::Node {
                 *iter_g = 0;
                 *iter_b = 0;
             }
-            // PCL转换 ROS2  msg
-            /*
-            // PCL 点云数据转换成ROS2 msg
-             pcl::PointCloud<pcl::PointXYZRGB>::Ptr pcl_cloud;
-             pcl::toROSMsg(*pcl_cloud, msg);
-             pub_->publish(msg);
-             */
-
             pub_->publish(msg);
+            // PCL转换 ROS2  msg
+            
+            // PCL 点云数据转换成ROS2 msg
+             pcl::PointCloud<pcl::PointXYZRGB>::Ptr pcl_cloud(new pcl::PointCloud<pcl::PointXYZRGB>);
+             // 从文件中读取点云数据
+             std::string file_name = "/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/test.pcd";
+             if(pcl::io::loadPCDFile(file_name, *pcl_cloud) == -1) {
+                 RCLCPP_ERROR(this->get_logger(), "Error loading point cloud file: %s", file_name.c_str());
+                 return;
+             }
+             count++;
+             RCLCPP_INFO(this->get_logger(), "Publish point cloud %d", count);
+             // 转换    
+             sensor_msgs::msg::PointCloud2 ros_cloud;
+             pcl::toROSMsg(*pcl_cloud, ros_cloud);
+             ros_cloud.header.frame_id = "camera_link";
+             ros_cloud.header.stamp = this->get_clock()->now();
+             // 发布
+             pub_->publish(std::move(ros_cloud));
+             
+
         }
 };
 
