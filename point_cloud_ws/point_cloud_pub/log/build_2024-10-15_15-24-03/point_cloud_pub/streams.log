@@ -1,0 +1,21 @@
+[1.154s] Invoking command in '/home/byd/src/ros2/point_cloud_ws/point_cloud_pub': PYTHONPATH=/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/build/point_cloud_pub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/point_cloud_pub build --build-base /home/byd/src/ros2/point_cloud_ws/point_cloud_pub/build/point_cloud_pub/build install --record /home/byd/src/ros2/point_cloud_ws/point_cloud_pub/build/point_cloud_pub/install.log --single-version-externally-managed install_data
+[1.589s] running egg_info
+[1.590s] writing build/point_cloud_pub/point_cloud_pub.egg-info/PKG-INFO
+[1.591s] writing dependency_links to build/point_cloud_pub/point_cloud_pub.egg-info/dependency_links.txt
+[1.591s] writing entry points to build/point_cloud_pub/point_cloud_pub.egg-info/entry_points.txt
+[1.592s] writing requirements to build/point_cloud_pub/point_cloud_pub.egg-info/requires.txt
+[1.592s] writing top-level names to build/point_cloud_pub/point_cloud_pub.egg-info/top_level.txt
+[1.595s] reading manifest file 'build/point_cloud_pub/point_cloud_pub.egg-info/SOURCES.txt'
+[1.596s] writing manifest file 'build/point_cloud_pub/point_cloud_pub.egg-info/SOURCES.txt'
+[1.596s] running build
+[1.597s] running build_py
+[1.597s] running install
+[1.598s] running install_lib
+[1.600s] running install_data
+[1.600s] running install_egg_info
+[1.603s] removing '/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub/lib/python3.10/site-packages/point_cloud_pub-0.0.0-py3.10.egg-info' (and everything under it)
+[1.604s] Copying build/point_cloud_pub/point_cloud_pub.egg-info to /home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub/lib/python3.10/site-packages/point_cloud_pub-0.0.0-py3.10.egg-info
+[1.606s] running install_scripts
+[1.648s] Installing point_cloud_pub script to /home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub/lib/point_cloud_pub
+[1.648s] writing list of installed files to '/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/build/point_cloud_pub/install.log'
+[1.710s] Invoked command in '/home/byd/src/ros2/point_cloud_ws/point_cloud_pub' returned '0': PYTHONPATH=/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/build/point_cloud_pub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/point_cloud_pub build --build-base /home/byd/src/ros2/point_cloud_ws/point_cloud_pub/build/point_cloud_pub/build install --record /home/byd/src/ros2/point_cloud_ws/point_cloud_pub/build/point_cloud_pub/install.log --single-version-externally-managed install_data

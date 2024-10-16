@@ -1,0 +1,67 @@
+[0.024s] Invoking command in '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp -- -j8 -l8
+[0.077s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.333s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.407s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.412s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.422s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.438s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.459s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.512s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.514s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.696s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.776s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.822s] -- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+[0.851s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.903s] -- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+[1.431s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.443s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.444s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[1.717s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.728s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.742s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.987s] -- Found Qhull version 8.0.2
+[2.245s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.488s] -- looking for PCL_COMMON
+[2.488s] -- looking for PCL_KDTREE
+[2.488s] -- looking for PCL_OCTREE
+[2.489s] -- looking for PCL_SEARCH
+[2.490s] -- looking for PCL_SAMPLE_CONSENSUS
+[2.490s] -- looking for PCL_FILTERS
+[2.491s] -- looking for PCL_2D
+[2.491s] -- looking for PCL_GEOMETRY
+[2.492s] -- looking for PCL_IO
+[2.492s] -- looking for PCL_FEATURES
+[2.493s] -- looking for PCL_ML
+[2.493s] -- looking for PCL_SEGMENTATION
+[2.494s] -- looking for PCL_VISUALIZATION
+[2.495s] -- looking for PCL_SURFACE
+[2.496s] -- looking for PCL_REGISTRATION
+[2.496s] -- looking for PCL_KEYPOINTS
+[2.497s] -- looking for PCL_TRACKING
+[2.498s] -- looking for PCL_RECOGNITION
+[2.498s] -- looking for PCL_STEREO
+[2.499s] -- looking for PCL_APPS
+[2.501s] -- looking for PCL_IN_HAND_SCANNER
+[2.501s] -- looking for PCL_MODELER
+[2.501s] -- looking for PCL_POINT_CLOUD_EDITOR
+[2.502s] -- looking for PCL_OUTOFCORE
+[2.502s] -- looking for PCL_PEOPLE
+[2.505s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.562s] [31mCMake Error at CMakeLists.txt:56 (install):
+[2.563s]   install TARGETS given target "pc_sub　pc_pub" which does not exist.
+[2.563s] 
+[2.563s] [0m
+[2.563s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.718s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.718s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/include>
+[2.718s] -- Configured cppcheck exclude dirs and/or files: 
+[2.722s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.728s] -- Added test 'lint_cmake' to check CMake code style
+[2.731s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.754s] -- Added test 'uncrustify' to check C / C++ code style
+[2.755s] -- Configured uncrustify additional arguments: 
+[2.757s] -- Added test 'xmllint' to check XML markup files
+[2.759s] -- Configuring incomplete, errors occurred!
+[2.759s] See also "/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp/CMakeFiles/CMakeOutput.log".
+[2.797s] gmake: *** [Makefile:267：cmake_check_build_system] 错误 1
+[2.802s] Invoked command in '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp -- -j8 -l8

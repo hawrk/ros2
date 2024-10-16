@@ -1,0 +1,29 @@
+[0.023s] Invoking command in '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp -- -j8 -l8
+[0.112s] [35m[1mConsolidate compiler generated dependencies of target pc_pub[0m
+[0.119s] [35m[1mConsolidate compiler generated dependencies of target pc_sub[0m
+[0.165s] [ 25%] [32mBuilding CXX object CMakeFiles/pc_pub.dir/src/pc_pub.cpp.o[0m
+[0.173s] [ 75%] Built target pc_sub
+[15.644s] [100%] [32m[1mLinking CXX executable pc_pub[0m
+[16.506s] [100%] Built target pc_pub
+[16.531s] Invoked command in '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp -- -j8 -l8
+[16.604s] Invoking command in '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp
+[16.617s] -- Install configuration: ""
+[16.618s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/lib/point_cloud_sub_cpp/pc_sub
+[16.618s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/lib/point_cloud_sub_cpp/pc_pub
+[16.621s] -- Set runtime path of "/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/lib/point_cloud_sub_cpp/pc_pub" to ""
+[16.622s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/package_run_dependencies/point_cloud_sub_cpp
+[16.622s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/parent_prefix_path/point_cloud_sub_cpp
+[16.622s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/ament_prefix_path.sh
+[16.623s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/ament_prefix_path.dsv
+[16.623s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/path.sh
+[16.623s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/path.dsv
+[16.623s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.bash
+[16.623s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.sh
+[16.623s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.zsh
+[16.623s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.dsv
+[16.623s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/package.dsv
+[16.623s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/packages/point_cloud_sub_cpp
+[16.624s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/cmake/point_cloud_sub_cppConfig.cmake
+[16.624s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/cmake/point_cloud_sub_cppConfig-version.cmake
+[16.624s] -- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/package.xml
+[16.627s] Invoked command in '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp

@@ -1,0 +1,5 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[01m[K/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/src/pc_pub.cpp:[m[K In member function ‘[01m[Kvoid PointCloudPublisher::timer_callback()[m[K’:
+[01m[K/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/src/pc_pub.cpp:56:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >::_width_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   56 |             for (int i = 0; [01;35m[Ki < msg.width * msg.height[m[K; ++i, ++iter_x, ++iter_y, ++iter_z, ++iter_r, ++iter_g, ++iter_b) {
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K

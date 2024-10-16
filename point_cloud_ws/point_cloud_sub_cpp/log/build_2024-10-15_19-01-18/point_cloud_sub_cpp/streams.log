@@ -1,0 +1,86 @@
+[0.019s] Invoking command in '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp': CMAKE_PREFIX_PATH=/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp -- -j8 -l8
+[0.069s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.320s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.390s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.394s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.404s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.419s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.440s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.491s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.493s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.663s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.743s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.789s] -- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+[0.813s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.865s] -- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+[1.404s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.414s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.414s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[1.664s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.674s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.684s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.918s] -- Found Qhull version 8.0.2
+[2.173s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.423s] -- looking for PCL_COMMON
+[2.423s] -- looking for PCL_KDTREE
+[2.424s] -- looking for PCL_OCTREE
+[2.424s] -- looking for PCL_SEARCH
+[2.425s] -- looking for PCL_SAMPLE_CONSENSUS
+[2.425s] -- looking for PCL_FILTERS
+[2.426s] -- looking for PCL_2D
+[2.427s] -- looking for PCL_GEOMETRY
+[2.427s] -- looking for PCL_IO
+[2.428s] -- looking for PCL_FEATURES
+[2.428s] -- looking for PCL_ML
+[2.429s] -- looking for PCL_SEGMENTATION
+[2.430s] -- looking for PCL_VISUALIZATION
+[2.430s] -- looking for PCL_SURFACE
+[2.431s] -- looking for PCL_REGISTRATION
+[2.432s] -- looking for PCL_KEYPOINTS
+[2.432s] -- looking for PCL_TRACKING
+[2.433s] -- looking for PCL_RECOGNITION
+[2.434s] -- looking for PCL_STEREO
+[2.434s] -- looking for PCL_APPS
+[2.436s] -- looking for PCL_IN_HAND_SCANNER
+[2.436s] -- looking for PCL_MODELER
+[2.437s] -- looking for PCL_POINT_CLOUD_EDITOR
+[2.437s] -- looking for PCL_OUTOFCORE
+[2.438s] -- looking for PCL_PEOPLE
+[2.440s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.488s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.638s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.639s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/include>
+[2.639s] -- Configured cppcheck exclude dirs and/or files: 
+[2.642s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.647s] -- Added test 'lint_cmake' to check CMake code style
+[2.650s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.668s] -- Added test 'uncrustify' to check C / C++ code style
+[2.669s] -- Configured uncrustify additional arguments: 
+[2.671s] -- Added test 'xmllint' to check XML markup files
+[2.673s] -- Configuring done
+[2.736s] -- Generating done
+[2.741s] -- Build files have been written to: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp
+[2.842s] [ 50%] [32mBuilding CXX object CMakeFiles/pc_sub.dir/src/pc_sub.cpp.o[0m
+[19.114s] [100%] [32m[1mLinking CXX executable pc_sub[0m
+[19.719s] [100%] Built target pc_sub
+[19.746s] Invoked command in '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp' returned '0': CMAKE_PREFIX_PATH=/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble /usr/bin/cmake --build /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp -- -j8 -l8
+[19.813s] Invoking command in '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp': CMAKE_PREFIX_PATH=/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp
+[19.829s] -- Install configuration: ""
+[19.829s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/lib/point_cloud_sub_cpp/pc_sub
+[19.830s] -- Set runtime path of "/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/lib/point_cloud_sub_cpp/pc_sub" to ""
+[19.830s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/package_run_dependencies/point_cloud_sub_cpp
+[19.831s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/parent_prefix_path/point_cloud_sub_cpp
+[19.831s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/ament_prefix_path.sh
+[19.831s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/ament_prefix_path.dsv
+[19.831s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/path.sh
+[19.832s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/path.dsv
+[19.832s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.bash
+[19.832s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.sh
+[19.833s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.zsh
+[19.833s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.dsv
+[19.833s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/package.dsv
+[19.834s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/packages/point_cloud_sub_cpp
+[19.834s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/cmake/point_cloud_sub_cppConfig.cmake
+[19.834s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/cmake/point_cloud_sub_cppConfig-version.cmake
+[19.834s] -- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/package.xml
+[19.840s] Invoked command in '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp' returned '0': CMAKE_PREFIX_PATH=/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble /usr/bin/cmake --install /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp

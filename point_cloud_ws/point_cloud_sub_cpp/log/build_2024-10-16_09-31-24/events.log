@@ -1,0 +1,389 @@
+[0.000000] (-) TimerEvent: {}
+[0.000764] (point_cloud_sub_cpp) JobQueued: {'identifier': 'point_cloud_sub_cpp', 'dependencies': OrderedDict()}
+[0.001324] (point_cloud_sub_cpp) JobStarted: {'identifier': 'point_cloud_sub_cpp'}
+[0.018906] (point_cloud_sub_cpp) JobProgress: {'identifier': 'point_cloud_sub_cpp', 'progress': 'cmake'}
+[0.021165] (point_cloud_sub_cpp) JobProgress: {'identifier': 'point_cloud_sub_cpp', 'progress': 'build'}
+[0.023024] (point_cloud_sub_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp', '--', '-j8', '-l8'], 'cwd': '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'byd'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/aarch64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/opt/MVS/lib/aarch64:/opt/MVS/lib/aarch64:'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '5036'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3390,unix/ubuntu:/tmp/.ICE-unix/3390'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afd3dad5_036f_4b5a_b887_252690f2254b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('GOPATH', '/home/byd/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.083789] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099275] (-) TimerEvent: {}
+[0.199981] (-) TimerEvent: {}
+[0.301027] (-) TimerEvent: {}
+[0.336105] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.401232] (-) TimerEvent: {}
+[0.410215] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.414378] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.425781] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.443810] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.465711] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.501322] (-) TimerEvent: {}
+[0.519918] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.522078] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.601508] (-) TimerEvent: {}
+[0.693863] (point_cloud_sub_cpp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.701616] (-) TimerEvent: {}
+[0.776861] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.801802] (-) TimerEvent: {}
+[0.823205] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)\n'}
+[0.847766] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.899961] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)\n'}
+[0.901869] (-) TimerEvent: {}
+[1.002350] (-) TimerEvent: {}
+[1.103011] (-) TimerEvent: {}
+[1.203720] (-) TimerEvent: {}
+[1.304460] (-) TimerEvent: {}
+[1.405157] (-) TimerEvent: {}
+[1.417936] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.428257] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.428754] (point_cloud_sub_cpp) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[1.505324] (-) TimerEvent: {}
+[1.606041] (-) TimerEvent: {}
+[1.687435] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.700070] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.706197] (-) TimerEvent: {}
+[1.712785] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.806378] (-) TimerEvent: {}
+[1.907084] (-) TimerEvent: {}
+[1.957603] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.007263] (-) TimerEvent: {}
+[2.108033] (-) TimerEvent: {}
+[2.208842] (-) TimerEvent: {}
+[2.209452] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.309012] (-) TimerEvent: {}
+[2.409700] (-) TimerEvent: {}
+[2.451959] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[2.452744] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[2.453125] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[2.453571] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[2.454121] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[2.454671] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[2.455281] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[2.455765] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[2.456190] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[2.457026] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[2.457673] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[2.458240] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[2.458927] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[2.459631] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[2.460269] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[2.460949] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[2.461514] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[2.462126] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[2.462894] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[2.463477] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[2.465093] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[2.465607] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[2.466028] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[2.466456] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[2.467079] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[2.469366] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[2.509858] (-) TimerEvent: {}
+[2.527390] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.609997] (-) TimerEvent: {}
+[2.678575] (point_cloud_sub_cpp) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.679315] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/include>\n'}
+[2.679632] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.682512] (point_cloud_sub_cpp) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.689908] (point_cloud_sub_cpp) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.693680] (point_cloud_sub_cpp) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.710077] (-) TimerEvent: {}
+[2.716510] (point_cloud_sub_cpp) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.716804] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.720026] (point_cloud_sub_cpp) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.721558] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.810266] (-) TimerEvent: {}
+[2.812186] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Generating done\n'}
+[2.817734] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Build files have been written to: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp\n'}
+[2.900802] (point_cloud_sub_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pc_sub\x1b[0m\n'}
+[2.910412] (-) TimerEvent: {}
+[2.918261] (point_cloud_sub_cpp) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/pc_pub.dir/src/pc_pub.cpp.o\x1b[0m\n'}
+[2.955862] (point_cloud_sub_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pc_sub.dir/src/pc_sub.cpp.o\x1b[0m\n'}
+[3.010595] (-) TimerEvent: {}
+[3.111256] (-) TimerEvent: {}
+[3.211935] (-) TimerEvent: {}
+[3.312638] (-) TimerEvent: {}
+[3.413321] (-) TimerEvent: {}
+[3.514026] (-) TimerEvent: {}
+[3.614755] (-) TimerEvent: {}
+[3.715463] (-) TimerEvent: {}
+[3.816156] (-) TimerEvent: {}
+[3.916812] (-) TimerEvent: {}
+[4.017482] (-) TimerEvent: {}
+[4.118140] (-) TimerEvent: {}
+[4.218805] (-) TimerEvent: {}
+[4.319469] (-) TimerEvent: {}
+[4.420179] (-) TimerEvent: {}
+[4.520867] (-) TimerEvent: {}
+[4.621559] (-) TimerEvent: {}
+[4.722227] (-) TimerEvent: {}
+[4.822894] (-) TimerEvent: {}
+[4.923574] (-) TimerEvent: {}
+[5.024252] (-) TimerEvent: {}
+[5.124905] (-) TimerEvent: {}
+[5.225573] (-) TimerEvent: {}
+[5.326237] (-) TimerEvent: {}
+[5.426902] (-) TimerEvent: {}
+[5.527550] (-) TimerEvent: {}
+[5.628234] (-) TimerEvent: {}
+[5.728886] (-) TimerEvent: {}
+[5.829561] (-) TimerEvent: {}
+[5.930236] (-) TimerEvent: {}
+[6.030929] (-) TimerEvent: {}
+[6.131653] (-) TimerEvent: {}
+[6.232360] (-) TimerEvent: {}
+[6.333038] (-) TimerEvent: {}
+[6.433708] (-) TimerEvent: {}
+[6.534396] (-) TimerEvent: {}
+[6.635069] (-) TimerEvent: {}
+[6.735747] (-) TimerEvent: {}
+[6.836453] (-) TimerEvent: {}
+[6.937140] (-) TimerEvent: {}
+[7.037807] (-) TimerEvent: {}
+[7.138492] (-) TimerEvent: {}
+[7.239194] (-) TimerEvent: {}
+[7.339893] (-) TimerEvent: {}
+[7.440612] (-) TimerEvent: {}
+[7.541272] (-) TimerEvent: {}
+[7.641947] (-) TimerEvent: {}
+[7.742622] (-) TimerEvent: {}
+[7.843307] (-) TimerEvent: {}
+[7.943980] (-) TimerEvent: {}
+[8.044681] (-) TimerEvent: {}
+[8.145361] (-) TimerEvent: {}
+[8.246038] (-) TimerEvent: {}
+[8.346709] (-) TimerEvent: {}
+[8.447357] (-) TimerEvent: {}
+[8.548015] (-) TimerEvent: {}
+[8.648696] (-) TimerEvent: {}
+[8.749361] (-) TimerEvent: {}
+[8.850020] (-) TimerEvent: {}
+[8.950691] (-) TimerEvent: {}
+[9.051354] (-) TimerEvent: {}
+[9.152067] (-) TimerEvent: {}
+[9.252772] (-) TimerEvent: {}
+[9.353584] (-) TimerEvent: {}
+[9.454270] (-) TimerEvent: {}
+[9.554981] (-) TimerEvent: {}
+[9.655672] (-) TimerEvent: {}
+[9.756383] (-) TimerEvent: {}
+[9.857309] (-) TimerEvent: {}
+[9.958251] (-) TimerEvent: {}
+[10.058990] (-) TimerEvent: {}
+[10.159675] (-) TimerEvent: {}
+[10.260379] (-) TimerEvent: {}
+[10.361079] (-) TimerEvent: {}
+[10.461798] (-) TimerEvent: {}
+[10.562481] (-) TimerEvent: {}
+[10.663192] (-) TimerEvent: {}
+[10.763914] (-) TimerEvent: {}
+[10.864630] (-) TimerEvent: {}
+[10.965296] (-) TimerEvent: {}
+[11.065977] (-) TimerEvent: {}
+[11.166646] (-) TimerEvent: {}
+[11.267323] (-) TimerEvent: {}
+[11.367988] (-) TimerEvent: {}
+[11.468648] (-) TimerEvent: {}
+[11.569566] (-) TimerEvent: {}
+[11.670496] (-) TimerEvent: {}
+[11.771173] (-) TimerEvent: {}
+[11.871838] (-) TimerEvent: {}
+[11.972512] (-) TimerEvent: {}
+[12.073448] (-) TimerEvent: {}
+[12.174371] (-) TimerEvent: {}
+[12.275311] (-) TimerEvent: {}
+[12.376006] (-) TimerEvent: {}
+[12.476704] (-) TimerEvent: {}
+[12.577383] (-) TimerEvent: {}
+[12.678036] (-) TimerEvent: {}
+[12.778700] (-) TimerEvent: {}
+[12.879369] (-) TimerEvent: {}
+[12.980012] (-) TimerEvent: {}
+[13.080681] (-) TimerEvent: {}
+[13.164900] (point_cloud_sub_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/src/pc_pub.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PointCloudPublisher::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.165383] (point_cloud_sub_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/src/pc_pub.cpp:56:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >::_width_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.165589] (point_cloud_sub_cpp) StderrLine: {'line': b'   56 |             for (int i = 0; \x1b[01;35m\x1b[Ki < msg.width * msg.height\x1b[m\x1b[K; ++i, ++iter_x, ++iter_y, ++iter_z, ++iter_r, ++iter_g, ++iter_b) {\n'}
+[13.165720] (point_cloud_sub_cpp) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.180793] (-) TimerEvent: {}
+[13.281630] (-) TimerEvent: {}
+[13.382314] (-) TimerEvent: {}
+[13.482993] (-) TimerEvent: {}
+[13.583681] (-) TimerEvent: {}
+[13.684366] (-) TimerEvent: {}
+[13.785034] (-) TimerEvent: {}
+[13.885706] (-) TimerEvent: {}
+[13.986366] (-) TimerEvent: {}
+[14.087050] (-) TimerEvent: {}
+[14.187734] (-) TimerEvent: {}
+[14.288416] (-) TimerEvent: {}
+[14.389073] (-) TimerEvent: {}
+[14.489729] (-) TimerEvent: {}
+[14.590380] (-) TimerEvent: {}
+[14.691036] (-) TimerEvent: {}
+[14.791695] (-) TimerEvent: {}
+[14.892402] (-) TimerEvent: {}
+[14.993098] (-) TimerEvent: {}
+[15.093774] (-) TimerEvent: {}
+[15.194461] (-) TimerEvent: {}
+[15.295136] (-) TimerEvent: {}
+[15.395824] (-) TimerEvent: {}
+[15.496525] (-) TimerEvent: {}
+[15.597191] (-) TimerEvent: {}
+[15.697846] (-) TimerEvent: {}
+[15.798528] (-) TimerEvent: {}
+[15.899206] (-) TimerEvent: {}
+[15.999869] (-) TimerEvent: {}
+[16.100530] (-) TimerEvent: {}
+[16.201187] (-) TimerEvent: {}
+[16.301844] (-) TimerEvent: {}
+[16.402488] (-) TimerEvent: {}
+[16.503129] (-) TimerEvent: {}
+[16.603757] (-) TimerEvent: {}
+[16.704415] (-) TimerEvent: {}
+[16.805063] (-) TimerEvent: {}
+[16.905706] (-) TimerEvent: {}
+[17.006332] (-) TimerEvent: {}
+[17.106958] (-) TimerEvent: {}
+[17.207595] (-) TimerEvent: {}
+[17.308248] (-) TimerEvent: {}
+[17.408907] (-) TimerEvent: {}
+[17.509559] (-) TimerEvent: {}
+[17.610206] (-) TimerEvent: {}
+[17.710858] (-) TimerEvent: {}
+[17.811527] (-) TimerEvent: {}
+[17.912216] (-) TimerEvent: {}
+[18.012886] (-) TimerEvent: {}
+[18.113661] (-) TimerEvent: {}
+[18.115086] (point_cloud_sub_cpp) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable pc_pub\x1b[0m\n'}
+[18.213830] (-) TimerEvent: {}
+[18.314533] (-) TimerEvent: {}
+[18.415189] (-) TimerEvent: {}
+[18.515874] (-) TimerEvent: {}
+[18.616598] (-) TimerEvent: {}
+[18.717336] (-) TimerEvent: {}
+[18.818052] (-) TimerEvent: {}
+[18.918950] (-) TimerEvent: {}
+[18.933947] (point_cloud_sub_cpp) StdoutLine: {'line': b'[ 75%] Built target pc_pub\n'}
+[19.019117] (-) TimerEvent: {}
+[19.119828] (-) TimerEvent: {}
+[19.220696] (-) TimerEvent: {}
+[19.321515] (-) TimerEvent: {}
+[19.422336] (-) TimerEvent: {}
+[19.523170] (-) TimerEvent: {}
+[19.623990] (-) TimerEvent: {}
+[19.724845] (-) TimerEvent: {}
+[19.825660] (-) TimerEvent: {}
+[19.926458] (-) TimerEvent: {}
+[20.027277] (-) TimerEvent: {}
+[20.128090] (-) TimerEvent: {}
+[20.228938] (-) TimerEvent: {}
+[20.329702] (-) TimerEvent: {}
+[20.430478] (-) TimerEvent: {}
+[20.531259] (-) TimerEvent: {}
+[20.632048] (-) TimerEvent: {}
+[20.732883] (-) TimerEvent: {}
+[20.833670] (-) TimerEvent: {}
+[20.934471] (-) TimerEvent: {}
+[21.035217] (-) TimerEvent: {}
+[21.135853] (-) TimerEvent: {}
+[21.236522] (-) TimerEvent: {}
+[21.337156] (-) TimerEvent: {}
+[21.437800] (-) TimerEvent: {}
+[21.538446] (-) TimerEvent: {}
+[21.639072] (-) TimerEvent: {}
+[21.739756] (-) TimerEvent: {}
+[21.840513] (-) TimerEvent: {}
+[21.941315] (-) TimerEvent: {}
+[22.042136] (-) TimerEvent: {}
+[22.142960] (-) TimerEvent: {}
+[22.243798] (-) TimerEvent: {}
+[22.344637] (-) TimerEvent: {}
+[22.445443] (-) TimerEvent: {}
+[22.546249] (-) TimerEvent: {}
+[22.647048] (-) TimerEvent: {}
+[22.747862] (-) TimerEvent: {}
+[22.848710] (-) TimerEvent: {}
+[22.949510] (-) TimerEvent: {}
+[23.050323] (-) TimerEvent: {}
+[23.151135] (-) TimerEvent: {}
+[23.251956] (-) TimerEvent: {}
+[23.352777] (-) TimerEvent: {}
+[23.453566] (-) TimerEvent: {}
+[23.554372] (-) TimerEvent: {}
+[23.655174] (-) TimerEvent: {}
+[23.755981] (-) TimerEvent: {}
+[23.857080] (-) TimerEvent: {}
+[23.958147] (-) TimerEvent: {}
+[24.058979] (-) TimerEvent: {}
+[24.159784] (-) TimerEvent: {}
+[24.260608] (-) TimerEvent: {}
+[24.361632] (-) TimerEvent: {}
+[24.462456] (-) TimerEvent: {}
+[24.563272] (-) TimerEvent: {}
+[24.664074] (-) TimerEvent: {}
+[24.764916] (-) TimerEvent: {}
+[24.865708] (-) TimerEvent: {}
+[24.966732] (-) TimerEvent: {}
+[25.067550] (-) TimerEvent: {}
+[25.168351] (-) TimerEvent: {}
+[25.269163] (-) TimerEvent: {}
+[25.369982] (-) TimerEvent: {}
+[25.470771] (-) TimerEvent: {}
+[25.571418] (-) TimerEvent: {}
+[25.672306] (-) TimerEvent: {}
+[25.772945] (-) TimerEvent: {}
+[25.873574] (-) TimerEvent: {}
+[25.974225] (-) TimerEvent: {}
+[26.074852] (-) TimerEvent: {}
+[26.175473] (-) TimerEvent: {}
+[26.276144] (-) TimerEvent: {}
+[26.376798] (-) TimerEvent: {}
+[26.477453] (-) TimerEvent: {}
+[26.578102] (-) TimerEvent: {}
+[26.678759] (-) TimerEvent: {}
+[26.777665] (point_cloud_sub_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pc_sub\x1b[0m\n'}
+[26.778836] (-) TimerEvent: {}
+[26.879348] (-) TimerEvent: {}
+[26.980620] (-) TimerEvent: {}
+[27.081463] (-) TimerEvent: {}
+[27.182274] (-) TimerEvent: {}
+[27.282977] (-) TimerEvent: {}
+[27.383686] (-) TimerEvent: {}
+[27.484376] (-) TimerEvent: {}
+[27.585125] (-) TimerEvent: {}
+[27.685845] (-) TimerEvent: {}
+[27.786514] (-) TimerEvent: {}
+[27.887173] (-) TimerEvent: {}
+[27.987828] (-) TimerEvent: {}
+[28.088484] (-) TimerEvent: {}
+[28.189156] (-) TimerEvent: {}
+[28.289818] (-) TimerEvent: {}
+[28.390463] (-) TimerEvent: {}
+[28.491094] (-) TimerEvent: {}
+[28.506448] (point_cloud_sub_cpp) StdoutLine: {'line': b'[100%] Built target pc_sub\n'}
+[28.531768] (point_cloud_sub_cpp) CommandEnded: {'returncode': 0}
+[28.585324] (point_cloud_sub_cpp) JobProgress: {'identifier': 'point_cloud_sub_cpp', 'progress': 'install'}
+[28.591187] (-) TimerEvent: {}
+[28.603261] (point_cloud_sub_cpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp'], 'cwd': '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'byd'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/aarch64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/opt/MVS/lib/aarch64:/opt/MVS/lib/aarch64:'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '5036'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3390,unix/ubuntu:/tmp/.ICE-unix/3390'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afd3dad5_036f_4b5a_b887_252690f2254b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('GOPATH', '/home/byd/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[28.620580] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[28.621102] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/lib/point_cloud_sub_cpp/pc_sub\n'}
+[28.629266] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/lib/point_cloud_sub_cpp/pc_sub" to ""\n'}
+[28.629713] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/lib/point_cloud_sub_cpp/pc_pub\n'}
+[28.631633] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/lib/point_cloud_sub_cpp/pc_pub" to ""\n'}
+[28.631884] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/package_run_dependencies/point_cloud_sub_cpp\n'}
+[28.632022] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/parent_prefix_path/point_cloud_sub_cpp\n'}
+[28.632237] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/ament_prefix_path.sh\n'}
+[28.632406] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/ament_prefix_path.dsv\n'}
+[28.632592] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/path.sh\n'}
+[28.632762] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/path.dsv\n'}
+[28.632943] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.bash\n'}
+[28.633150] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.sh\n'}
+[28.633311] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.zsh\n'}
+[28.633460] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.dsv\n'}
+[28.633622] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/package.dsv\n'}
+[28.633863] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/packages/point_cloud_sub_cpp\n'}
+[28.634144] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/cmake/point_cloud_sub_cppConfig.cmake\n'}
+[28.634351] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/cmake/point_cloud_sub_cppConfig-version.cmake\n'}
+[28.634540] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/package.xml\n'}
+[28.638228] (point_cloud_sub_cpp) CommandEnded: {'returncode': 0}
+[28.691354] (-) TimerEvent: {}
+[28.749568] (point_cloud_sub_cpp) JobEnded: {'identifier': 'point_cloud_sub_cpp', 'rc': 0}
+[28.752358] (-) EventReactorShutdown: {}

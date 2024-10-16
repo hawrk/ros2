@@ -1,0 +1,215 @@
+[0.000000] (-) TimerEvent: {}
+[0.000945] (point_cloud_sub_cpp) JobQueued: {'identifier': 'point_cloud_sub_cpp', 'dependencies': OrderedDict()}
+[0.001270] (point_cloud_sub_cpp) JobStarted: {'identifier': 'point_cloud_sub_cpp'}
+[0.015273] (point_cloud_sub_cpp) JobProgress: {'identifier': 'point_cloud_sub_cpp', 'progress': 'cmake'}
+[0.015730] (point_cloud_sub_cpp) Command: {'cmd': ['/usr/bin/cmake', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp', '-DCMAKE_INSTALL_PREFIX=/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp'], 'cwd': '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'byd'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/aarch64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/opt/MVS/lib/aarch64:/opt/MVS/lib/aarch64:'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2/point_cloud_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '5036'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3390,unix/ubuntu:/tmp/.ICE-unix/3390'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afd3dad5_036f_4b5a_b887_252690f2254b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('GOPATH', '/home/byd/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble')]), 'shell': False}
+[0.098877] (-) TimerEvent: {}
+[0.118313] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199062] (-) TimerEvent: {}
+[0.231563] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.249955] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299269] (-) TimerEvent: {}
+[0.392356] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.399352] (-) TimerEvent: {}
+[0.416871] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.417664] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.419118] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.428323] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.499558] (-) TimerEvent: {}
+[0.581011] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.599709] (-) TimerEvent: {}
+[0.607105] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.608078] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.609690] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.617176] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.699894] (-) TimerEvent: {}
+[0.800617] (-) TimerEvent: {}
+[0.901171] (-) TimerEvent: {}
+[0.921299] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.001388] (-) TimerEvent: {}
+[1.102396] (-) TimerEvent: {}
+[1.117193] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.184957] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.192187] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.202544] (-) TimerEvent: {}
+[1.205491] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.224476] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.250290] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.302719] (-) TimerEvent: {}
+[1.317787] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.321509] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.402932] (-) TimerEvent: {}
+[1.490294] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.503080] (-) TimerEvent: {}
+[1.556723] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.603256] (-) TimerEvent: {}
+[1.632064] (point_cloud_sub_cpp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.645445] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.703431] (-) TimerEvent: {}
+[1.781421] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.782191] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.803598] (-) TimerEvent: {}
+[1.904240] (-) TimerEvent: {}
+[1.922746] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.926854] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.004421] (-) TimerEvent: {}
+[2.035316] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.104603] (-) TimerEvent: {}
+[2.109094] (point_cloud_sub_cpp) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[2.132567] (point_cloud_sub_cpp) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[2.194161] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[2.195816] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.204756] (-) TimerEvent: {}
+[2.233341] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[2.261357] (point_cloud_sub_cpp) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[2.286213] (point_cloud_sub_cpp) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[2.304927] (-) TimerEvent: {}
+[2.373295] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  \n'}
+[2.373801] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)\n'}
+[2.405080] (-) TimerEvent: {}
+[2.434243] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/aarch64-linux-gnu/libGLEW.so  \n'}
+[2.443407] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[2.505245] (-) TimerEvent: {}
+[2.605883] (-) TimerEvent: {}
+[2.702041] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/aarch64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[2.702979] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[2.705969] (-) TimerEvent: {}
+[2.709245] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/aarch64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[2.735919] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[2.770153] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[2.789041] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[2.806103] (-) TimerEvent: {}
+[2.906741] (-) TimerEvent: {}
+[2.968162] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[2.969012] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so\n'}
+[3.006918] (-) TimerEvent: {}
+[3.107586] (-) TimerEvent: {}
+[3.118997] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found\n'}
+[3.119522] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[3.207752] (-) TimerEvent: {}
+[3.267202] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[3.267932] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Looking for connect\n'}
+[3.307944] (-) TimerEvent: {}
+[3.408779] (-) TimerEvent: {}
+[3.418225] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[3.419019] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Looking for remove\n'}
+[3.508951] (-) TimerEvent: {}
+[3.571239] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[3.571958] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[3.609141] (-) TimerEvent: {}
+[3.708771] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[3.709234] (-) TimerEvent: {}
+[3.709485] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[3.809450] (-) TimerEvent: {}
+[3.851568] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[3.909612] (-) TimerEvent: {}
+[4.010249] (-) TimerEvent: {}
+[4.033569] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/aarch64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[4.038469] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/aarch64-linux-gnu/libdouble-conversion.so  \n'}
+[4.043905] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/aarch64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[4.047405] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/aarch64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[4.071996] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/aarch64-linux-gnu/libjpeg.so (found version "80") \n'}
+[4.081686] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/aarch64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[4.087854] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/aarch64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[4.096821] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[4.110355] (-) TimerEvent: {}
+[4.210903] (-) TimerEvent: {}
+[4.262215] (point_cloud_sub_cpp) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[4.293707] (point_cloud_sub_cpp) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[4.311086] (-) TimerEvent: {}
+[4.368639] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  \n'}
+[4.371907] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[4.372299] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[4.411272] (-) TimerEvent: {}
+[4.497814] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[4.498396] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[4.498662] (point_cloud_sub_cpp) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[4.511362] (-) TimerEvent: {}
+[4.611897] (-) TimerEvent: {}
+[4.712532] (-) TimerEvent: {}
+[4.768215] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[4.781677] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[4.793382] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[4.812644] (-) TimerEvent: {}
+[4.913296] (-) TimerEvent: {}
+[5.013913] (-) TimerEvent: {}
+[5.041422] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[5.114109] (-) TimerEvent: {}
+[5.214877] (-) TimerEvent: {}
+[5.299159] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[5.314996] (-) TimerEvent: {}
+[5.415598] (-) TimerEvent: {}
+[5.516416] (-) TimerEvent: {}
+[5.543286] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[5.545866] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  \n'}
+[5.546119] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[5.547731] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  \n'}
+[5.548219] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[5.549346] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  \n'}
+[5.549684] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[5.550673] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  \n'}
+[5.550980] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[5.552174] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[5.552496] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[5.553568] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  \n'}
+[5.553868] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[5.554208] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[5.554474] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[5.554852] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[5.555057] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[5.556262] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  \n'}
+[5.556666] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[5.557854] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  \n'}
+[5.558181] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[5.559486] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  \n'}
+[5.559733] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[5.560848] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  \n'}
+[5.561273] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[5.562401] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  \n'}
+[5.562852] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[5.564250] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  \n'}
+[5.564668] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[5.565905] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  \n'}
+[5.566322] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[5.567517] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  \n'}
+[5.567874] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[5.569030] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  \n'}
+[5.569346] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[5.570504] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  \n'}
+[5.570990] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[5.572172] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  \n'}
+[5.572476] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[5.573555] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  \n'}
+[5.574456] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[5.574893] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[5.575404] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[5.575871] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[5.576142] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[5.576472] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[5.576628] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[5.577836] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  \n'}
+[5.578422] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[5.579382] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  \n'}
+[5.580635] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[5.597179] (point_cloud_sub_cpp) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:13 (find_package):\n'}
+[5.597491] (point_cloud_sub_cpp) StderrLine: {'line': b'  By not providing "Findusb.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[5.597615] (point_cloud_sub_cpp) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "usb", but\n'}
+[5.597727] (point_cloud_sub_cpp) StderrLine: {'line': b'  CMake did not find one.\n'}
+[5.597834] (point_cloud_sub_cpp) StderrLine: {'line': b'\n'}
+[5.597938] (point_cloud_sub_cpp) StderrLine: {'line': b'  Could not find a package configuration file provided by "usb" with any of\n'}
+[5.598073] (point_cloud_sub_cpp) StderrLine: {'line': b'  the following names:\n'}
+[5.598244] (point_cloud_sub_cpp) StderrLine: {'line': b'\n'}
+[5.598459] (point_cloud_sub_cpp) StderrLine: {'line': b'    usbConfig.cmake\n'}
+[5.598676] (point_cloud_sub_cpp) StderrLine: {'line': b'    usb-config.cmake\n'}
+[5.598930] (point_cloud_sub_cpp) StderrLine: {'line': b'\n'}
+[5.599146] (point_cloud_sub_cpp) StderrLine: {'line': b'  Add the installation prefix of "usb" to CMAKE_PREFIX_PATH or set "usb_DIR"\n'}
+[5.599360] (point_cloud_sub_cpp) StderrLine: {'line': b'  to a directory containing one of the above files.  If "usb" provides a\n'}
+[5.599572] (point_cloud_sub_cpp) StderrLine: {'line': b'  separate development package or SDK, be sure it has been installed.\n'}
+[5.599785] (point_cloud_sub_cpp) StderrLine: {'line': b'\n'}
+[5.599995] (point_cloud_sub_cpp) StderrLine: {'line': b'\x1b[0m\n'}
+[5.600188] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[5.600305] (point_cloud_sub_cpp) StdoutLine: {'line': b'See also "/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp/CMakeFiles/CMakeOutput.log".\n'}
+[5.616501] (-) TimerEvent: {}
+[5.638910] (point_cloud_sub_cpp) CommandEnded: {'returncode': 1}
+[5.692990] (point_cloud_sub_cpp) JobEnded: {'identifier': 'point_cloud_sub_cpp', 'rc': 1}
+[5.704427] (-) EventReactorShutdown: {}

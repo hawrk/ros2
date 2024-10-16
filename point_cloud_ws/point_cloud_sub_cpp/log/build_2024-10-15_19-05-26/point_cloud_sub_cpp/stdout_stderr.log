@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target pc_sub[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pc_sub.dir/src/pc_sub.cpp.o[0m
+[100%] [32m[1mLinking CXX executable pc_sub[0m
+[100%] Built target pc_sub
+-- Install configuration: ""
+-- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/lib/point_cloud_sub_cpp/pc_sub
+-- Set runtime path of "/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/lib/point_cloud_sub_cpp/pc_sub" to ""
+-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/package_run_dependencies/point_cloud_sub_cpp
+-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/parent_prefix_path/point_cloud_sub_cpp
+-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/ament_prefix_path.sh
+-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/path.sh
+-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/path.dsv
+-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.bash
+-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.sh
+-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.zsh
+-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.dsv
+-- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/package.dsv
+-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/packages/point_cloud_sub_cpp
+-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/cmake/point_cloud_sub_cppConfig.cmake
+-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/cmake/point_cloud_sub_cppConfig-version.cmake
+-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/package.xml

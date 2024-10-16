@@ -1,0 +1,17 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[31mCMake Error at CMakeLists.txt:13 (find_package):
+  By not providing "Findusb.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "usb", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "usb" with any of
+  the following names:
+
+    usbConfig.cmake
+    usb-config.cmake
+
+  Add the installation prefix of "usb" to CMAKE_PREFIX_PATH or set "usb_DIR"
+  to a directory containing one of the above files.  If "usb" provides a
+  separate development package or SDK, be sure it has been installed.
+
+[0m

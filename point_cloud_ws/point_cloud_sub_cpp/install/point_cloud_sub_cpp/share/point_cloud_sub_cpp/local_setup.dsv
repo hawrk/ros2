@@ -1,0 +1,2 @@
+source;share/point_cloud_sub_cpp/environment/ament_prefix_path.sh
+source;share/point_cloud_sub_cpp/environment/path.sh

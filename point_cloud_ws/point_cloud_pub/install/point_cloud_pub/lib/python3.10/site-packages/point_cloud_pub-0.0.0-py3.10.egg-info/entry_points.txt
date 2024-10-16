@@ -1,0 +1,3 @@
+[console_scripts]
+pc_pub = point_cloud_pub.pc_pub:main
+

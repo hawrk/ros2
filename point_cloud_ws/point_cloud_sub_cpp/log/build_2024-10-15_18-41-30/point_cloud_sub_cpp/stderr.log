@@ -1,0 +1,8 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[01m[K/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/src/pc_sub.cpp:16:10:[m[K [01;31m[Kfatal error: [m[Kpcl_conversions/pcl_conversions.h: 没有那个文件或目录
+   16 | #include [01;31m[K<pcl_conversions/pcl_conversions.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/pc_sub.dir/build.make:76：CMakeFiles/pc_sub.dir/src/pc_sub.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/pc_sub.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,295 @@
+[0.000000] (-) TimerEvent: {}
+[0.000558] (point_cloud_sub_cpp) JobQueued: {'identifier': 'point_cloud_sub_cpp', 'dependencies': OrderedDict()}
+[0.000997] (point_cloud_sub_cpp) JobStarted: {'identifier': 'point_cloud_sub_cpp'}
+[0.016201] (point_cloud_sub_cpp) JobProgress: {'identifier': 'point_cloud_sub_cpp', 'progress': 'cmake'}
+[0.018269] (point_cloud_sub_cpp) JobProgress: {'identifier': 'point_cloud_sub_cpp', 'progress': 'build'}
+[0.019796] (point_cloud_sub_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp', '--', '-j8', '-l8'], 'cwd': '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'byd'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/aarch64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/opt/MVS/lib/aarch64:/opt/MVS/lib/aarch64:'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '5036'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3390,unix/ubuntu:/tmp/.ICE-unix/3390'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afd3dad5_036f_4b5a_b887_252690f2254b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('GOPATH', '/home/byd/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.099485] (-) TimerEvent: {}
+[0.107817] (point_cloud_sub_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pc_sub\x1b[0m\n'}
+[0.162968] (point_cloud_sub_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pc_sub.dir/src/pc_sub.cpp.o\x1b[0m\n'}
+[0.199655] (-) TimerEvent: {}
+[0.300354] (-) TimerEvent: {}
+[0.401009] (-) TimerEvent: {}
+[0.501667] (-) TimerEvent: {}
+[0.602353] (-) TimerEvent: {}
+[0.703028] (-) TimerEvent: {}
+[0.803704] (-) TimerEvent: {}
+[0.904354] (-) TimerEvent: {}
+[1.005010] (-) TimerEvent: {}
+[1.105685] (-) TimerEvent: {}
+[1.206350] (-) TimerEvent: {}
+[1.307014] (-) TimerEvent: {}
+[1.407662] (-) TimerEvent: {}
+[1.508299] (-) TimerEvent: {}
+[1.608962] (-) TimerEvent: {}
+[1.709597] (-) TimerEvent: {}
+[1.810256] (-) TimerEvent: {}
+[1.910927] (-) TimerEvent: {}
+[2.011581] (-) TimerEvent: {}
+[2.112235] (-) TimerEvent: {}
+[2.212882] (-) TimerEvent: {}
+[2.313537] (-) TimerEvent: {}
+[2.415921] (-) TimerEvent: {}
+[2.516569] (-) TimerEvent: {}
+[2.617211] (-) TimerEvent: {}
+[2.717871] (-) TimerEvent: {}
+[2.818505] (-) TimerEvent: {}
+[2.919170] (-) TimerEvent: {}
+[3.019817] (-) TimerEvent: {}
+[3.120485] (-) TimerEvent: {}
+[3.221160] (-) TimerEvent: {}
+[3.321826] (-) TimerEvent: {}
+[3.422507] (-) TimerEvent: {}
+[3.523154] (-) TimerEvent: {}
+[3.623796] (-) TimerEvent: {}
+[3.724413] (-) TimerEvent: {}
+[3.825041] (-) TimerEvent: {}
+[3.925682] (-) TimerEvent: {}
+[4.026387] (-) TimerEvent: {}
+[4.127269] (-) TimerEvent: {}
+[4.227906] (-) TimerEvent: {}
+[4.328522] (-) TimerEvent: {}
+[4.429145] (-) TimerEvent: {}
+[4.529777] (-) TimerEvent: {}
+[4.630426] (-) TimerEvent: {}
+[4.731084] (-) TimerEvent: {}
+[4.831758] (-) TimerEvent: {}
+[4.932404] (-) TimerEvent: {}
+[5.033067] (-) TimerEvent: {}
+[5.133744] (-) TimerEvent: {}
+[5.234441] (-) TimerEvent: {}
+[5.335128] (-) TimerEvent: {}
+[5.435802] (-) TimerEvent: {}
+[5.536454] (-) TimerEvent: {}
+[5.637092] (-) TimerEvent: {}
+[5.737740] (-) TimerEvent: {}
+[5.838419] (-) TimerEvent: {}
+[5.939075] (-) TimerEvent: {}
+[6.039730] (-) TimerEvent: {}
+[6.140390] (-) TimerEvent: {}
+[6.241049] (-) TimerEvent: {}
+[6.341707] (-) TimerEvent: {}
+[6.442398] (-) TimerEvent: {}
+[6.543059] (-) TimerEvent: {}
+[6.643722] (-) TimerEvent: {}
+[6.744401] (-) TimerEvent: {}
+[6.845093] (-) TimerEvent: {}
+[6.945759] (-) TimerEvent: {}
+[7.046446] (-) TimerEvent: {}
+[7.147122] (-) TimerEvent: {}
+[7.247778] (-) TimerEvent: {}
+[7.348437] (-) TimerEvent: {}
+[7.449120] (-) TimerEvent: {}
+[7.549804] (-) TimerEvent: {}
+[7.650480] (-) TimerEvent: {}
+[7.751140] (-) TimerEvent: {}
+[7.851809] (-) TimerEvent: {}
+[7.952493] (-) TimerEvent: {}
+[8.053170] (-) TimerEvent: {}
+[8.153836] (-) TimerEvent: {}
+[8.254516] (-) TimerEvent: {}
+[8.355182] (-) TimerEvent: {}
+[8.455847] (-) TimerEvent: {}
+[8.556523] (-) TimerEvent: {}
+[8.657203] (-) TimerEvent: {}
+[8.757892] (-) TimerEvent: {}
+[8.858528] (-) TimerEvent: {}
+[8.959201] (-) TimerEvent: {}
+[9.059870] (-) TimerEvent: {}
+[9.160558] (-) TimerEvent: {}
+[9.261218] (-) TimerEvent: {}
+[9.361873] (-) TimerEvent: {}
+[9.462521] (-) TimerEvent: {}
+[9.563153] (-) TimerEvent: {}
+[9.663802] (-) TimerEvent: {}
+[9.764475] (-) TimerEvent: {}
+[9.865188] (-) TimerEvent: {}
+[9.965886] (-) TimerEvent: {}
+[10.066539] (-) TimerEvent: {}
+[10.167192] (-) TimerEvent: {}
+[10.267848] (-) TimerEvent: {}
+[10.368478] (-) TimerEvent: {}
+[10.469133] (-) TimerEvent: {}
+[10.569797] (-) TimerEvent: {}
+[10.670488] (-) TimerEvent: {}
+[10.771156] (-) TimerEvent: {}
+[10.871795] (-) TimerEvent: {}
+[10.972470] (-) TimerEvent: {}
+[11.073135] (-) TimerEvent: {}
+[11.173815] (-) TimerEvent: {}
+[11.274495] (-) TimerEvent: {}
+[11.375134] (-) TimerEvent: {}
+[11.475772] (-) TimerEvent: {}
+[11.576435] (-) TimerEvent: {}
+[11.677398] (-) TimerEvent: {}
+[11.779030] (-) TimerEvent: {}
+[11.880100] (-) TimerEvent: {}
+[11.980970] (-) TimerEvent: {}
+[12.081629] (-) TimerEvent: {}
+[12.182298] (-) TimerEvent: {}
+[12.283012] (-) TimerEvent: {}
+[12.383679] (-) TimerEvent: {}
+[12.484328] (-) TimerEvent: {}
+[12.584964] (-) TimerEvent: {}
+[12.685616] (-) TimerEvent: {}
+[12.786269] (-) TimerEvent: {}
+[12.886939] (-) TimerEvent: {}
+[12.987599] (-) TimerEvent: {}
+[13.088249] (-) TimerEvent: {}
+[13.188888] (-) TimerEvent: {}
+[13.289528] (-) TimerEvent: {}
+[13.390168] (-) TimerEvent: {}
+[13.490825] (-) TimerEvent: {}
+[13.591468] (-) TimerEvent: {}
+[13.692127] (-) TimerEvent: {}
+[13.792785] (-) TimerEvent: {}
+[13.893415] (-) TimerEvent: {}
+[13.994068] (-) TimerEvent: {}
+[14.094738] (-) TimerEvent: {}
+[14.195400] (-) TimerEvent: {}
+[14.296045] (-) TimerEvent: {}
+[14.396690] (-) TimerEvent: {}
+[14.497342] (-) TimerEvent: {}
+[14.597993] (-) TimerEvent: {}
+[14.698660] (-) TimerEvent: {}
+[14.799320] (-) TimerEvent: {}
+[14.899981] (-) TimerEvent: {}
+[15.000624] (-) TimerEvent: {}
+[15.101294] (-) TimerEvent: {}
+[15.201947] (-) TimerEvent: {}
+[15.302590] (-) TimerEvent: {}
+[15.403244] (-) TimerEvent: {}
+[15.503901] (-) TimerEvent: {}
+[15.604556] (-) TimerEvent: {}
+[15.705226] (-) TimerEvent: {}
+[15.805877] (-) TimerEvent: {}
+[15.906504] (-) TimerEvent: {}
+[16.007108] (-) TimerEvent: {}
+[16.107768] (-) TimerEvent: {}
+[16.208407] (-) TimerEvent: {}
+[16.309042] (-) TimerEvent: {}
+[16.409693] (-) TimerEvent: {}
+[16.510315] (-) TimerEvent: {}
+[16.610998] (-) TimerEvent: {}
+[16.711685] (-) TimerEvent: {}
+[16.812381] (-) TimerEvent: {}
+[16.913017] (-) TimerEvent: {}
+[17.013660] (-) TimerEvent: {}
+[17.114313] (-) TimerEvent: {}
+[17.214972] (-) TimerEvent: {}
+[17.315637] (-) TimerEvent: {}
+[17.416300] (-) TimerEvent: {}
+[17.516995] (-) TimerEvent: {}
+[17.617827] (-) TimerEvent: {}
+[17.718684] (-) TimerEvent: {}
+[17.819534] (-) TimerEvent: {}
+[17.920385] (-) TimerEvent: {}
+[18.021280] (-) TimerEvent: {}
+[18.122107] (-) TimerEvent: {}
+[18.222978] (-) TimerEvent: {}
+[18.323783] (-) TimerEvent: {}
+[18.424562] (-) TimerEvent: {}
+[18.525251] (-) TimerEvent: {}
+[18.626060] (-) TimerEvent: {}
+[18.726868] (-) TimerEvent: {}
+[18.827497] (-) TimerEvent: {}
+[18.928124] (-) TimerEvent: {}
+[19.028764] (-) TimerEvent: {}
+[19.129383] (-) TimerEvent: {}
+[19.230023] (-) TimerEvent: {}
+[19.330841] (-) TimerEvent: {}
+[19.431629] (-) TimerEvent: {}
+[19.532403] (-) TimerEvent: {}
+[19.633142] (-) TimerEvent: {}
+[19.733840] (-) TimerEvent: {}
+[19.834659] (-) TimerEvent: {}
+[19.935433] (-) TimerEvent: {}
+[20.036110] (-) TimerEvent: {}
+[20.136897] (-) TimerEvent: {}
+[20.237707] (-) TimerEvent: {}
+[20.338540] (-) TimerEvent: {}
+[20.439335] (-) TimerEvent: {}
+[20.540152] (-) TimerEvent: {}
+[20.640932] (-) TimerEvent: {}
+[20.741712] (-) TimerEvent: {}
+[20.842539] (-) TimerEvent: {}
+[20.943334] (-) TimerEvent: {}
+[21.044123] (-) TimerEvent: {}
+[21.144931] (-) TimerEvent: {}
+[21.245740] (-) TimerEvent: {}
+[21.346548] (-) TimerEvent: {}
+[21.447339] (-) TimerEvent: {}
+[21.548128] (-) TimerEvent: {}
+[21.648914] (-) TimerEvent: {}
+[21.749718] (-) TimerEvent: {}
+[21.850542] (-) TimerEvent: {}
+[21.951340] (-) TimerEvent: {}
+[22.052131] (-) TimerEvent: {}
+[22.152927] (-) TimerEvent: {}
+[22.253719] (-) TimerEvent: {}
+[22.354532] (-) TimerEvent: {}
+[22.455330] (-) TimerEvent: {}
+[22.556127] (-) TimerEvent: {}
+[22.656921] (-) TimerEvent: {}
+[22.757723] (-) TimerEvent: {}
+[22.858541] (-) TimerEvent: {}
+[22.959313] (-) TimerEvent: {}
+[23.060131] (-) TimerEvent: {}
+[23.160927] (-) TimerEvent: {}
+[23.261750] (-) TimerEvent: {}
+[23.362537] (-) TimerEvent: {}
+[23.463311] (-) TimerEvent: {}
+[23.564099] (-) TimerEvent: {}
+[23.664859] (-) TimerEvent: {}
+[23.765636] (-) TimerEvent: {}
+[23.866410] (-) TimerEvent: {}
+[23.967161] (-) TimerEvent: {}
+[24.067948] (-) TimerEvent: {}
+[24.168735] (-) TimerEvent: {}
+[24.269529] (-) TimerEvent: {}
+[24.370332] (-) TimerEvent: {}
+[24.412424] (point_cloud_sub_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pc_sub\x1b[0m\n'}
+[24.470492] (-) TimerEvent: {}
+[24.571147] (-) TimerEvent: {}
+[24.671928] (-) TimerEvent: {}
+[24.772772] (-) TimerEvent: {}
+[24.873587] (-) TimerEvent: {}
+[24.974412] (-) TimerEvent: {}
+[25.075135] (-) TimerEvent: {}
+[25.175857] (-) TimerEvent: {}
+[25.276693] (-) TimerEvent: {}
+[25.377520] (-) TimerEvent: {}
+[25.478334] (-) TimerEvent: {}
+[25.579177] (-) TimerEvent: {}
+[25.679981] (-) TimerEvent: {}
+[25.780782] (-) TimerEvent: {}
+[25.881552] (-) TimerEvent: {}
+[25.982356] (-) TimerEvent: {}
+[26.083187] (-) TimerEvent: {}
+[26.098643] (point_cloud_sub_cpp) StdoutLine: {'line': b'[100%] Built target pc_sub\n'}
+[26.123548] (point_cloud_sub_cpp) CommandEnded: {'returncode': 0}
+[26.167810] (point_cloud_sub_cpp) JobProgress: {'identifier': 'point_cloud_sub_cpp', 'progress': 'install'}
+[26.183294] (-) TimerEvent: {}
+[26.187919] (point_cloud_sub_cpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp'], 'cwd': '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'byd'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/aarch64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/opt/MVS/lib/aarch64:/opt/MVS/lib/aarch64:'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '5036'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'byd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/usr/local/go/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3390,unix/ubuntu:/tmp/.ICE-unix/3390'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afd3dad5_036f_4b5a_b887_252690f2254b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('GOPATH', '/home/byd/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/build/point_cloud_sub_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp:/home/byd/src/ros2/point_cloud_ws/point_cloud_pub/install/point_cloud_pub:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[26.203522] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[26.203966] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/lib/point_cloud_sub_cpp/pc_sub\n'}
+[26.211946] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/lib/point_cloud_sub_cpp/pc_sub" to ""\n'}
+[26.212292] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/package_run_dependencies/point_cloud_sub_cpp\n'}
+[26.212506] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/parent_prefix_path/point_cloud_sub_cpp\n'}
+[26.212679] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/ament_prefix_path.sh\n'}
+[26.212845] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/ament_prefix_path.dsv\n'}
+[26.212966] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/path.sh\n'}
+[26.213082] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/environment/path.dsv\n'}
+[26.213192] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.bash\n'}
+[26.213343] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.sh\n'}
+[26.213494] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.zsh\n'}
+[26.213608] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/local_setup.dsv\n'}
+[26.213717] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Installing: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/package.dsv\n'}
+[26.213823] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/ament_index/resource_index/packages/point_cloud_sub_cpp\n'}
+[26.213930] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/cmake/point_cloud_sub_cppConfig.cmake\n'}
+[26.214036] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/cmake/point_cloud_sub_cppConfig-version.cmake\n'}
+[26.214144] (point_cloud_sub_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/byd/src/ros2/point_cloud_ws/point_cloud_sub_cpp/install/point_cloud_sub_cpp/share/point_cloud_sub_cpp/package.xml\n'}
+[26.217718] (point_cloud_sub_cpp) CommandEnded: {'returncode': 0}
+[26.283442] (-) TimerEvent: {}
+[26.328151] (point_cloud_sub_cpp) JobEnded: {'identifier': 'point_cloud_sub_cpp', 'rc': 0}
+[26.330635] (-) EventReactorShutdown: {}
