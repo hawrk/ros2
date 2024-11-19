@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/hawrk/github/hawrk/ros2/hk_camera/build",
-  "command": "/usr/bin/g++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/hawrk/github/hawrk/ros2/hk_camera/include -isystem /usr/include/opencv4 -isystem /opt/ros/galactic/include   -O2 -g   -g -std=gnu++17 -o CMakeFiles/camera.dir/src/camera.cpp.o -c /home/hawrk/github/hawrk/ros2/hk_camera/src/camera.cpp",
-  "file": "/home/hawrk/github/hawrk/ros2/hk_camera/src/camera.cpp"
-}
-]
