@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "subscriber"
+			"path" : "publisher"
 		}
 	],
 	"backtrace" : 1,
@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 29,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 40,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 34,
+				"line" : 19,
 				"parent" : 0
 			},
 			{
@@ -60,7 +60,7 @@
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 30,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
@@ -107,7 +107,7 @@
 			[
 				{
 					"backtrace" : 6,
-					"path" : "/home/byd/src/ros2/topic_ws/include"
+					"path" : "/home/byd/github/ros2/topic_ws/include"
 				},
 				{
 					"backtrace" : 7,
@@ -247,7 +247,7 @@
 			]
 		}
 	],
-	"id" : "subscriber::@6890427a1f51a3e7e1df",
+	"id" : "publisher::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -542,8 +542,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "subscriber",
-	"nameOnDisk" : "subscriber",
+	"name" : "publisher",
+	"nameOnDisk" : "publisher",
 	"paths" : 
 	{
 		"build" : ".",
@@ -564,7 +564,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/subscriber.cpp",
+			"path" : "src/publisher.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
