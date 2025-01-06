@@ -1,0 +1,4 @@
+Invoking command in '/home/byd/dros/data_collection_service/build/data_collection_service': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/byd/dros/data_collection_service/build/data_collection_service -- -j8 -l8
+Invoked command in '/home/byd/dros/data_collection_service/build/data_collection_service' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/byd/dros/data_collection_service/build/data_collection_service -- -j8 -l8
+Invoking command in '/home/byd/dros/data_collection_service/build/data_collection_service': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/byd/dros/data_collection_service/build/data_collection_service
+Invoked command in '/home/byd/dros/data_collection_service/build/data_collection_service' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/byd/dros/data_collection_service/build/data_collection_service

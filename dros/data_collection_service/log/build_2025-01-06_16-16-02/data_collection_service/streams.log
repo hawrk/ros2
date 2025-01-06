@@ -1,0 +1,50 @@
+[0.018s] Invoking command in '/home/byd/dros/data_collection_service/build/data_collection_service': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/byd/dros/data_collection_service/build/data_collection_service -- -j8 -l8
+[0.065s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.313s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.360s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.364s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.375s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.392s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.414s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.470s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.471s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.646s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.729s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.885s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.886s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/byd/dros/data_collection_service/include>
+[0.886s] -- Configured cppcheck exclude dirs and/or files: 
+[0.889s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.896s] -- Added test 'lint_cmake' to check CMake code style
+[0.899s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.923s] -- Added test 'uncrustify' to check C / C++ code style
+[0.923s] -- Configured uncrustify additional arguments: 
+[0.927s] -- Added test 'xmllint' to check XML markup files
+[0.928s] -- Configuring done
+[0.947s] -- Generating done
+[0.954s] -- Build files have been written to: /home/byd/dros/data_collection_service/build/data_collection_service
+[1.022s] [35m[1mConsolidate compiler generated dependencies of target manager[0m
+[1.066s] [ 66%] [32mBuilding CXX object CMakeFiles/manager.dir/src/data_collection_manager.cpp.o[0m
+[1.066s] [ 66%] [32mBuilding CXX object CMakeFiles/manager.dir/src/main.cpp.o[0m
+[7.026s] [100%] [32m[1mLinking CXX executable manager[0m
+[7.240s] [100%] Built target manager
+[7.263s] Invoked command in '/home/byd/dros/data_collection_service/build/data_collection_service' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/byd/dros/data_collection_service/build/data_collection_service -- -j8 -l8
+[7.286s] Invoking command in '/home/byd/dros/data_collection_service/build/data_collection_service': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/byd/dros/data_collection_service/build/data_collection_service
+[7.302s] -- Install configuration: ""
+[7.302s] -- Installing: /home/byd/dros/data_collection_service/install/data_collection_service/lib/data_collection_service/manager
+[7.303s] -- Set runtime path of "/home/byd/dros/data_collection_service/install/data_collection_service/lib/data_collection_service/manager" to ""
+[7.303s] -- Up-to-date: /home/byd/dros/data_collection_service/install/data_collection_service/share/ament_index/resource_index/package_run_dependencies/data_collection_service
+[7.303s] -- Installing: /home/byd/dros/data_collection_service/install/data_collection_service/share/ament_index/resource_index/parent_prefix_path/data_collection_service
+[7.303s] -- Up-to-date: /home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/ament_prefix_path.sh
+[7.304s] -- Installing: /home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/ament_prefix_path.dsv
+[7.304s] -- Up-to-date: /home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/path.sh
+[7.304s] -- Installing: /home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/path.dsv
+[7.304s] -- Up-to-date: /home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.bash
+[7.305s] -- Up-to-date: /home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.sh
+[7.305s] -- Up-to-date: /home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.zsh
+[7.305s] -- Installing: /home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.dsv
+[7.305s] -- Installing: /home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.dsv
+[7.305s] -- Up-to-date: /home/byd/dros/data_collection_service/install/data_collection_service/share/ament_index/resource_index/packages/data_collection_service
+[7.306s] -- Up-to-date: /home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/cmake/data_collection_serviceConfig.cmake
+[7.306s] -- Up-to-date: /home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/cmake/data_collection_serviceConfig-version.cmake
+[7.306s] -- Up-to-date: /home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.xml
+[7.311s] Invoked command in '/home/byd/dros/data_collection_service/build/data_collection_service' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/byd/dros/data_collection_service/build/data_collection_service

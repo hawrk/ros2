@@ -1,0 +1,16 @@
+/home/byd/dros/data_collection_service/install/data_collection_service/lib/data_collection_service/manager
+/home/byd/dros/data_collection_service/install/data_collection_service/share/ament_index/resource_index/package_run_dependencies/data_collection_service
+/home/byd/dros/data_collection_service/install/data_collection_service/share/ament_index/resource_index/parent_prefix_path/data_collection_service
+/home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/ament_prefix_path.sh
+/home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/ament_prefix_path.dsv
+/home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/path.sh
+/home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/path.dsv
+/home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.bash
+/home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.sh
+/home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.zsh
+/home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.dsv
+/home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.dsv
+/home/byd/dros/data_collection_service/install/data_collection_service/share/ament_index/resource_index/packages/data_collection_service
+/home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/cmake/data_collection_serviceConfig.cmake
+/home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/cmake/data_collection_serviceConfig-version.cmake
+/home/byd/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.xml
