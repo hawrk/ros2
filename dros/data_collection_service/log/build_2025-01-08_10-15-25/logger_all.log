@@ -1,0 +1,117 @@
+[0.192s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.192s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffac83d600>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffac9de9e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffac9de9e0>>)
+[0.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.266s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/byd/github/ros2/dros/data_collection_service'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.301s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'data_collection_service'
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.337s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.339s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.340s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.341s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/byd/github/ros2/dros/data_collection_service/install
+[0.342s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/byd/github/ros2/dros/dros_common_interfaces/install
+[0.344s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'data_collection_service' build argument 'cmake_args' from command line to 'None'
+[0.413s] Level 5:colcon.colcon_core.verb:set package 'data_collection_service' build argument 'cmake_target' from command line to 'None'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'data_collection_service' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'data_collection_service' build argument 'cmake_clean_cache' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'data_collection_service' build argument 'cmake_clean_first' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'data_collection_service' build argument 'cmake_force_configure' from command line to 'False'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'data_collection_service' build argument 'ament_cmake_args' from command line to 'None'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'data_collection_service' build argument 'catkin_cmake_args' from command line to 'None'
+[0.414s] Level 5:colcon.colcon_core.verb:set package 'data_collection_service' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.414s] DEBUG:colcon.colcon_core.verb:Building package 'data_collection_service' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service', 'merge_install': False, 'path': '/home/byd/github/ros2/dros/data_collection_service', 'symlink_install': False, 'test_result_base': None}
+[0.414s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.416s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.417s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/byd/github/ros2/dros/data_collection_service' with build type 'ament_cmake'
+[0.417s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/byd/github/ros2/dros/data_collection_service'
+[0.421s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.421s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.421s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.438s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/byd/github/ros2/dros/data_collection_service -DCMAKE_INSTALL_PREFIX=/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service
+[3.476s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/byd/github/ros2/dros/data_collection_service -DCMAKE_INSTALL_PREFIX=/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service
+[3.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/github/ros2/dros/data_collection_service/build/data_collection_service -- -j8 -l8
+[42.644s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/github/ros2/dros/data_collection_service/build/data_collection_service -- -j8 -l8
+[42.666s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/github/ros2/dros/data_collection_service/build/data_collection_service
+[42.767s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(data_collection_service)
+[42.769s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/github/ros2/dros/data_collection_service/build/data_collection_service
+[42.778s] Level 1:colcon.colcon_core.environment:checking '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service' for CMake module files
+[42.780s] Level 1:colcon.colcon_core.environment:checking '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service' for CMake config files
+[42.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_collection_service', 'cmake_prefix_path')
+[42.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/hook/cmake_prefix_path.ps1'
+[42.784s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/hook/cmake_prefix_path.dsv'
+[42.785s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/hook/cmake_prefix_path.sh'
+[42.788s] Level 1:colcon.colcon_core.environment:checking '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib'
+[42.788s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_collection_service', 'ld_library_path_lib')
+[42.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/hook/ld_library_path_lib.ps1'
+[42.790s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/hook/ld_library_path_lib.dsv'
+[42.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/hook/ld_library_path_lib.sh'
+[42.792s] Level 1:colcon.colcon_core.environment:checking '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/bin'
+[42.793s] Level 1:colcon.colcon_core.environment:checking '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/pkgconfig/data_collection_service.pc'
+[42.794s] Level 1:colcon.colcon_core.environment:checking '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/python3.10/site-packages'
+[42.794s] Level 1:colcon.colcon_core.environment:checking '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/bin'
+[42.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.ps1'
+[42.798s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.dsv'
+[42.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.sh'
+[42.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.bash'
+[42.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.zsh'
+[42.808s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/colcon-core/packages/data_collection_service)
+[42.811s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(data_collection_service)
+[42.811s] Level 1:colcon.colcon_core.environment:checking '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service' for CMake module files
+[42.814s] Level 1:colcon.colcon_core.environment:checking '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service' for CMake config files
+[42.814s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_collection_service', 'cmake_prefix_path')
+[42.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/hook/cmake_prefix_path.ps1'
+[42.817s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/hook/cmake_prefix_path.dsv'
+[42.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/hook/cmake_prefix_path.sh'
+[42.821s] Level 1:colcon.colcon_core.environment:checking '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib'
+[42.821s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_collection_service', 'ld_library_path_lib')
+[42.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/hook/ld_library_path_lib.ps1'
+[42.823s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/hook/ld_library_path_lib.dsv'
+[42.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/hook/ld_library_path_lib.sh'
+[42.826s] Level 1:colcon.colcon_core.environment:checking '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/bin'
+[42.827s] Level 1:colcon.colcon_core.environment:checking '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/pkgconfig/data_collection_service.pc'
+[42.827s] Level 1:colcon.colcon_core.environment:checking '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/python3.10/site-packages'
+[42.828s] Level 1:colcon.colcon_core.environment:checking '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/bin'
+[42.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.ps1'
+[42.832s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.dsv'
+[42.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.sh'
+[42.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.bash'
+[42.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.zsh'
+[42.838s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/colcon-core/packages/data_collection_service)
+[42.839s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[42.840s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[42.840s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[42.840s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[42.858s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[42.859s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[42.859s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[42.903s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[42.904s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/byd/github/ros2/dros/data_collection_service/install/local_setup.ps1'
+[42.908s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/byd/github/ros2/dros/data_collection_service/install/_local_setup_util_ps1.py'
+[42.913s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/byd/github/ros2/dros/data_collection_service/install/setup.ps1'
+[42.917s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/byd/github/ros2/dros/data_collection_service/install/local_setup.sh'
+[42.919s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/byd/github/ros2/dros/data_collection_service/install/_local_setup_util_sh.py'
+[42.921s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/byd/github/ros2/dros/data_collection_service/install/setup.sh'
+[42.925s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/byd/github/ros2/dros/data_collection_service/install/local_setup.bash'
+[42.927s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/byd/github/ros2/dros/data_collection_service/install/setup.bash'
+[42.930s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/byd/github/ros2/dros/data_collection_service/install/local_setup.zsh'
+[42.932s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/byd/github/ros2/dros/data_collection_service/install/setup.zsh'
