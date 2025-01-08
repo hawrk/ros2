@@ -1,0 +1,291 @@
+[0.000000] (-) TimerEvent: {}
+[0.000628] (data_collection_service) JobQueued: {'identifier': 'data_collection_service', 'dependencies': OrderedDict()}
+[0.001117] (data_collection_service) JobStarted: {'identifier': 'data_collection_service'}
+[0.016012] (data_collection_service) JobProgress: {'identifier': 'data_collection_service', 'progress': 'cmake'}
+[0.017437] (data_collection_service) JobProgress: {'identifier': 'data_collection_service', 'progress': 'build'}
+[0.018623] (data_collection_service) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service', '--', '-j8', '-l8'], 'cwd': '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('USER', 'byd'), ('LC_TIME', 'en_US.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/aarch64:/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/aarch64:/opt/MVS/lib/aarch64:'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/github/ros2/dros/data_collection_service/install'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '4547'), ('GOROOT', '/home/byd/Documents/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/byd/github/ros2/dros/data_collection_service/install:/home/byd/github/ros2/dros/dros_common_interfaces/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'byd'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/byd/isaac_ros-dev/'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/opt/ros/humble/bin:/home/byd/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/byd/third_party/real_sense/bin:/home/byd/third_party/real_sense/bin:/home/byd/Documents/go/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2136,unix/ubuntu:/tmp/.ICE-unix/2136'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ff6aea6b_c30f_47e4_bdec_c5e078cc71ee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service:/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('GOPROXY', 'https://goproxy.io,direct'), ('GOPATH', '/home/byd/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service:/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.076781] (data_collection_service) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099270] (-) TimerEvent: {}
+[0.199876] (-) TimerEvent: {}
+[0.300655] (-) TimerEvent: {}
+[0.326561] (data_collection_service) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.377969] (data_collection_service) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.382500] (data_collection_service) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.392216] (data_collection_service) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.400700] (-) TimerEvent: {}
+[0.407434] (data_collection_service) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.427369] (data_collection_service) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.445901] (data_collection_service) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.500856] (-) TimerEvent: {}
+[0.528185] (data_collection_service) StdoutLine: {'line': b'-- Found image_transport: 3.1.10 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[0.574518] (data_collection_service) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.576769] (data_collection_service) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600968] (-) TimerEvent: {}
+[0.701511] (-) TimerEvent: {}
+[0.752667] (data_collection_service) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.801658] (-) TimerEvent: {}
+[0.844002] (data_collection_service) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[0.872512] (data_collection_service) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.898845] (data_collection_service) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.901724] (-) TimerEvent: {}
+[0.993816] (data_collection_service) StdoutLine: {'line': b'-- Found diagnostic_updater: 4.0.0 (/opt/ros/humble/share/diagnostic_updater/cmake)\n'}
+[1.001821] (-) TimerEvent: {}
+[1.019741] (data_collection_service) StdoutLine: {'line': b'-- Found dros_common_interfaces: 0.0.0 (/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake)\n'}
+[1.060284] (data_collection_service) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.102109] (-) TimerEvent: {}
+[1.202738] (-) TimerEvent: {}
+[1.225473] (data_collection_service) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.226082] (data_collection_service) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/include;$<BUILD_INTERFACE:/home/byd/github/ros2/dros/data_collection_service/include>\n'}
+[1.226247] (data_collection_service) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.230554] (data_collection_service) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.239077] (data_collection_service) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.243654] (data_collection_service) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.273756] (data_collection_service) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.274118] (data_collection_service) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.278378] (data_collection_service) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.282149] (data_collection_service) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.302872] (-) TimerEvent: {}
+[1.334214] (data_collection_service) StdoutLine: {'line': b'-- Generating done\n'}
+[1.350400] (data_collection_service) StdoutLine: {'line': b'-- Build files have been written to: /home/byd/github/ros2/dros/data_collection_service/build/data_collection_service\n'}
+[1.403084] (-) TimerEvent: {}
+[1.417058] (data_collection_service) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_node\x1b[0m\n'}
+[1.417832] (data_collection_service) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target manager\x1b[0m\n'}
+[1.434149] (data_collection_service) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target data_collection_service\x1b[0m\n'}
+[1.453818] (data_collection_service) StdoutLine: {'line': b'[ 25%] Built target manager\n'}
+[1.454287] (data_collection_service) StdoutLine: {'line': b'[ 25%] Built target realsense2_camera_node\n'}
+[1.503242] (-) TimerEvent: {}
+[1.542294] (data_collection_service) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.o\x1b[0m\n'}
+[1.603437] (-) TimerEvent: {}
+[1.704239] (-) TimerEvent: {}
+[1.804881] (-) TimerEvent: {}
+[1.905592] (-) TimerEvent: {}
+[2.006385] (-) TimerEvent: {}
+[2.107077] (-) TimerEvent: {}
+[2.207825] (-) TimerEvent: {}
+[2.308776] (-) TimerEvent: {}
+[2.409755] (-) TimerEvent: {}
+[2.510555] (-) TimerEvent: {}
+[2.611234] (-) TimerEvent: {}
+[2.712074] (-) TimerEvent: {}
+[2.812871] (-) TimerEvent: {}
+[2.913693] (-) TimerEvent: {}
+[3.014561] (-) TimerEvent: {}
+[3.115356] (-) TimerEvent: {}
+[3.216037] (-) TimerEvent: {}
+[3.316854] (-) TimerEvent: {}
+[3.417649] (-) TimerEvent: {}
+[3.518472] (-) TimerEvent: {}
+[3.619324] (-) TimerEvent: {}
+[3.720204] (-) TimerEvent: {}
+[3.821026] (-) TimerEvent: {}
+[3.921849] (-) TimerEvent: {}
+[4.022805] (-) TimerEvent: {}
+[4.123682] (-) TimerEvent: {}
+[4.224538] (-) TimerEvent: {}
+[4.325351] (-) TimerEvent: {}
+[4.426186] (-) TimerEvent: {}
+[4.527022] (-) TimerEvent: {}
+[4.627980] (-) TimerEvent: {}
+[4.728861] (-) TimerEvent: {}
+[4.829703] (-) TimerEvent: {}
+[4.930527] (-) TimerEvent: {}
+[5.031216] (-) TimerEvent: {}
+[5.132028] (-) TimerEvent: {}
+[5.232837] (-) TimerEvent: {}
+[5.333632] (-) TimerEvent: {}
+[5.434444] (-) TimerEvent: {}
+[5.535237] (-) TimerEvent: {}
+[5.635958] (-) TimerEvent: {}
+[5.736784] (-) TimerEvent: {}
+[5.837595] (-) TimerEvent: {}
+[5.938408] (-) TimerEvent: {}
+[6.039229] (-) TimerEvent: {}
+[6.140126] (-) TimerEvent: {}
+[6.240928] (-) TimerEvent: {}
+[6.341709] (-) TimerEvent: {}
+[6.442385] (-) TimerEvent: {}
+[6.543193] (-) TimerEvent: {}
+[6.643979] (-) TimerEvent: {}
+[6.744640] (-) TimerEvent: {}
+[6.845457] (-) TimerEvent: {}
+[6.946243] (-) TimerEvent: {}
+[7.046920] (-) TimerEvent: {}
+[7.147733] (-) TimerEvent: {}
+[7.248516] (-) TimerEvent: {}
+[7.349193] (-) TimerEvent: {}
+[7.450006] (-) TimerEvent: {}
+[7.550790] (-) TimerEvent: {}
+[7.651494] (-) TimerEvent: {}
+[7.752307] (-) TimerEvent: {}
+[7.853111] (-) TimerEvent: {}
+[7.953926] (-) TimerEvent: {}
+[8.054706] (-) TimerEvent: {}
+[8.155376] (-) TimerEvent: {}
+[8.256210] (-) TimerEvent: {}
+[8.357017] (-) TimerEvent: {}
+[8.457819] (-) TimerEvent: {}
+[8.558636] (-) TimerEvent: {}
+[8.659448] (-) TimerEvent: {}
+[8.760306] (-) TimerEvent: {}
+[8.861106] (-) TimerEvent: {}
+[8.961896] (-) TimerEvent: {}
+[9.062685] (-) TimerEvent: {}
+[9.163497] (-) TimerEvent: {}
+[9.264319] (-) TimerEvent: {}
+[9.365122] (-) TimerEvent: {}
+[9.466069] (-) TimerEvent: {}
+[9.566876] (-) TimerEvent: {}
+[9.667685] (-) TimerEvent: {}
+[9.768531] (-) TimerEvent: {}
+[9.869354] (-) TimerEvent: {}
+[9.970173] (-) TimerEvent: {}
+[10.071016] (-) TimerEvent: {}
+[10.171924] (-) TimerEvent: {}
+[10.272725] (-) TimerEvent: {}
+[10.373423] (-) TimerEvent: {}
+[10.474223] (-) TimerEvent: {}
+[10.575106] (-) TimerEvent: {}
+[10.676049] (-) TimerEvent: {}
+[10.776906] (-) TimerEvent: {}
+[10.877741] (-) TimerEvent: {}
+[10.978609] (-) TimerEvent: {}
+[11.079412] (-) TimerEvent: {}
+[11.180122] (-) TimerEvent: {}
+[11.280956] (-) TimerEvent: {}
+[11.381757] (-) TimerEvent: {}
+[11.482569] (-) TimerEvent: {}
+[11.583439] (-) TimerEvent: {}
+[11.684282] (-) TimerEvent: {}
+[11.785312] (-) TimerEvent: {}
+[11.886135] (-) TimerEvent: {}
+[11.987094] (-) TimerEvent: {}
+[12.088078] (-) TimerEvent: {}
+[12.188921] (-) TimerEvent: {}
+[12.289872] (-) TimerEvent: {}
+[12.390739] (-) TimerEvent: {}
+[12.491561] (-) TimerEvent: {}
+[12.592419] (-) TimerEvent: {}
+[12.693488] (-) TimerEvent: {}
+[12.794527] (-) TimerEvent: {}
+[12.822956] (data_collection_service) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libdata_collection_service.so\x1b[0m\n'}
+[12.894711] (-) TimerEvent: {}
+[12.995423] (-) TimerEvent: {}
+[13.096111] (-) TimerEvent: {}
+[13.196794] (-) TimerEvent: {}
+[13.297605] (-) TimerEvent: {}
+[13.398534] (-) TimerEvent: {}
+[13.499270] (-) TimerEvent: {}
+[13.600029] (-) TimerEvent: {}
+[13.700778] (-) TimerEvent: {}
+[13.801548] (-) TimerEvent: {}
+[13.902307] (-) TimerEvent: {}
+[14.003065] (-) TimerEvent: {}
+[14.103847] (-) TimerEvent: {}
+[14.204610] (-) TimerEvent: {}
+[14.305401] (-) TimerEvent: {}
+[14.406185] (-) TimerEvent: {}
+[14.506938] (-) TimerEvent: {}
+[14.607686] (-) TimerEvent: {}
+[14.708507] (-) TimerEvent: {}
+[14.809267] (-) TimerEvent: {}
+[14.910031] (-) TimerEvent: {}
+[15.010786] (-) TimerEvent: {}
+[15.111576] (-) TimerEvent: {}
+[15.212338] (-) TimerEvent: {}
+[15.313013] (-) TimerEvent: {}
+[15.413655] (-) TimerEvent: {}
+[15.514312] (-) TimerEvent: {}
+[15.614963] (-) TimerEvent: {}
+[15.715643] (-) TimerEvent: {}
+[15.816287] (-) TimerEvent: {}
+[15.916910] (-) TimerEvent: {}
+[16.017534] (-) TimerEvent: {}
+[16.118177] (-) TimerEvent: {}
+[16.218863] (-) TimerEvent: {}
+[16.319524] (-) TimerEvent: {}
+[16.420159] (-) TimerEvent: {}
+[16.520819] (-) TimerEvent: {}
+[16.585338] (data_collection_service) StdoutLine: {'line': b'[100%] Built target data_collection_service\n'}
+[16.608951] (data_collection_service) CommandEnded: {'returncode': 0}
+[16.610966] (data_collection_service) JobProgress: {'identifier': 'data_collection_service', 'progress': 'install'}
+[16.620898] (-) TimerEvent: {}
+[16.628653] (data_collection_service) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service'], 'cwd': '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('USER', 'byd'), ('LC_TIME', 'en_US.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/aarch64:/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/aarch64:/opt/MVS/lib/aarch64:'), ('HOME', '/home/byd'), ('OLDPWD', '/home/byd/github/ros2/dros/data_collection_service/install'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '4547'), ('GOROOT', '/home/byd/Documents/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/byd/github/ros2/dros/data_collection_service/install:/home/byd/github/ros2/dros/dros_common_interfaces/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'byd'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/byd/isaac_ros-dev/'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/opt/ros/humble/bin:/home/byd/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/byd/third_party/real_sense/bin:/home/byd/third_party/real_sense/bin:/home/byd/Documents/go/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2136,unix/ubuntu:/tmp/.ICE-unix/2136'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ff6aea6b_c30f_47e4_bdec_c5e078cc71ee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service:/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('GOPROXY', 'https://goproxy.io,direct'), ('GOPATH', '/home/byd/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service:/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[16.644215] (data_collection_service) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.644669] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/data_collection_service/realsense2_camera_node\n'}
+[16.644966] (data_collection_service) StdoutLine: {'line': b'-- Installing: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/libdata_collection_service.so\n'}
+[16.673665] (data_collection_service) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/libdata_collection_service.so" to ""\n'}
+[16.674148] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib\n'}
+[16.674393] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librealsense-file.a\n'}
+[16.675205] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/pkgconfig\n'}
+[16.675393] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/pkgconfig/realsense2-gl.pc\n'}
+[16.675581] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/pkgconfig/realsense2.pc\n'}
+[16.675736] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/pkgconfig/glfw3.pc\n'}
+[16.675939] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librealsense2-gl.so\n'}
+[16.676071] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librsutils.a\n'}
+[16.676218] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librealsense2-gl.so.2.55.1\n'}
+[16.676374] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librealsense2.so.2.55.1\n'}
+[16.676489] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librealsense2.so.2.55\n'}
+[16.676604] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librealsense2.so\n'}
+[16.676738] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/libglfw3.a\n'}
+[16.676894] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake\n'}
+[16.677036] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2\n'}
+[16.677150] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2/realsense2Targets.cmake\n'}
+[16.677284] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2/realsense2ConfigVersion.cmake\n'}
+[16.677423] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2/realsense2Targets-release.cmake\n'}
+[16.677537] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2/realsense2Config.cmake\n'}
+[16.677669] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/glfw3\n'}
+[16.677875] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/glfw3/glfw3Targets.cmake\n'}
+[16.677998] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/glfw3/glfw3Targets-release.cmake\n'}
+[16.678132] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/glfw3/glfw3ConfigVersion.cmake\n'}
+[16.678249] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/glfw3/glfw3Config.cmake\n'}
+[16.678360] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2-gl\n'}
+[16.678538] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2-gl/realsense2-glConfigVersion.cmake\n'}
+[16.678736] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2-gl/realsense2-glTargets.cmake\n'}
+[16.678891] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2-gl/realsense2-glConfig.cmake\n'}
+[16.679030] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2-gl/realsense2-glTargets-release.cmake\n'}
+[16.679144] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librealsense2-gl.so.2.55\n'}
+[16.679256] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/libfw.a\n'}
+[16.679369] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include\n'}
+[16.679476] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/named_filter.h\n'}
+[16.679583] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/gl_window.h\n'}
+[16.679691] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/ros_sensor.h\n'}
+[16.679817] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/ros_utils.h\n'}
+[16.679934] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/dynamic_params.h\n'}
+[16.680044] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/sensor_params.h\n'}
+[16.680181] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/realsense_node_factory.h\n'}
+[16.680292] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/image_publisher.h\n'}
+[16.680400] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/ros_param_backend.h\n'}
+[16.680507] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/constants.h\n'}
+[16.680617] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/base_realsense_node.h\n'}
+[16.680725] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/profile_manager.h\n'}
+[16.680831] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/launch\n'}
+[16.680937] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/launch/default.rviz\n'}
+[16.681061] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/launch/rs_intra_process_demo_launch.py\n'}
+[16.681169] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/launch/rs_launch.py\n'}
+[16.681278] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/launch/rs_multi_camera_launch.py\n'}
+[16.681386] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/data_collection_service/manager\n'}
+[16.681494] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/library_path.sh\n'}
+[16.681602] (data_collection_service) StdoutLine: {'line': b'-- Installing: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/library_path.dsv\n'}
+[16.681974] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/ament_index/resource_index/package_run_dependencies/data_collection_service\n'}
+[16.682556] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/ament_index/resource_index/parent_prefix_path/data_collection_service\n'}
+[16.683498] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/ament_prefix_path.sh\n'}
+[16.684925] (data_collection_service) StdoutLine: {'line': b'-- Installing: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/ament_prefix_path.dsv\n'}
+[16.685483] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/path.sh\n'}
+[16.686120] (data_collection_service) StdoutLine: {'line': b'-- Installing: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/path.dsv\n'}
+[16.686748] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.bash\n'}
+[16.687132] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.sh\n'}
+[16.687683] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.zsh\n'}
+[16.688311] (data_collection_service) StdoutLine: {'line': b'-- Installing: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.dsv\n'}
+[16.688816] (data_collection_service) StdoutLine: {'line': b'-- Installing: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.dsv\n'}
+[16.689172] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/ament_index/resource_index/packages/data_collection_service\n'}
+[16.690025] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/ament_index/resource_index/rclcpp_components/data_collection_service\n'}
+[16.690648] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.691205] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[16.691521] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.692090] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/cmake/data_collection_serviceConfig.cmake\n'}
+[16.692691] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/cmake/data_collection_serviceConfig-version.cmake\n'}
+[16.693003] (data_collection_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.xml\n'}
+[16.693521] (data_collection_service) CommandEnded: {'returncode': 0}
+[16.721940] (-) TimerEvent: {}
+[16.760017] (data_collection_service) JobEnded: {'identifier': 'data_collection_service', 'rc': 0}
+[16.761940] (-) EventReactorShutdown: {}

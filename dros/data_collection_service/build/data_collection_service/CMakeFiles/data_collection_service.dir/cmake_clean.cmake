@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o.d"
   "CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.o"
   "CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.o.d"
+  "CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.o"
+  "CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.o.d"
   "CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o"
   "CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o.d"
   "CMakeFiles/data_collection_service.dir/wrapper/realsense/src/named_filter.cpp.o"

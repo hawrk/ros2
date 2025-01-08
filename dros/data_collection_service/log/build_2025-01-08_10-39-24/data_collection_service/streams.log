@@ -1,0 +1,117 @@
+[0.019s] Invoking command in '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/github/ros2/dros/data_collection_service/build/data_collection_service -- -j8 -l8
+[0.076s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.326s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.377s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.381s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.391s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.406s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.426s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.445s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.527s] -- Found image_transport: 3.1.10 (/opt/ros/humble/share/image_transport/cmake)
+[0.574s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.576s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.752s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.843s] -- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.872s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.898s] -- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.993s] -- Found diagnostic_updater: 4.0.0 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[1.019s] -- Found dros_common_interfaces: 0.0.0 (/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake)
+[1.059s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.224s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.225s] -- Configured cppcheck include dirs: /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/include;$<BUILD_INTERFACE:/home/byd/github/ros2/dros/data_collection_service/include>
+[1.225s] -- Configured cppcheck exclude dirs and/or files: 
+[1.229s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.238s] -- Added test 'lint_cmake' to check CMake code style
+[1.242s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.273s] -- Added test 'uncrustify' to check C / C++ code style
+[1.273s] -- Configured uncrustify additional arguments: 
+[1.277s] -- Added test 'xmllint' to check XML markup files
+[1.281s] -- Configuring done
+[1.333s] -- Generating done
+[1.349s] -- Build files have been written to: /home/byd/github/ros2/dros/data_collection_service/build/data_collection_service
+[1.416s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_node[0m
+[1.417s] [35m[1mConsolidate compiler generated dependencies of target manager[0m
+[1.433s] [35m[1mConsolidate compiler generated dependencies of target data_collection_service[0m
+[1.453s] [ 25%] Built target manager
+[1.453s] [ 25%] Built target realsense2_camera_node
+[1.541s] [ 30%] [32mBuilding CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.o[0m
+[12.822s] [ 35%] [32m[1mLinking CXX shared library libdata_collection_service.so[0m
+[16.584s] [100%] Built target data_collection_service
+[16.608s] Invoked command in '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/github/ros2/dros/data_collection_service/build/data_collection_service -- -j8 -l8
+[16.629s] Invoking command in '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/github/ros2/dros/data_collection_service/build/data_collection_service
+[16.643s] -- Install configuration: ""
+[16.643s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/data_collection_service/realsense2_camera_node
+[16.644s] -- Installing: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/libdata_collection_service.so
+[16.673s] -- Set runtime path of "/home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/libdata_collection_service.so" to ""
+[16.673s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib
+[16.674s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librealsense-file.a
+[16.674s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/pkgconfig
+[16.674s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/pkgconfig/realsense2-gl.pc
+[16.674s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/pkgconfig/realsense2.pc
+[16.675s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/pkgconfig/glfw3.pc
+[16.675s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librealsense2-gl.so
+[16.675s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librsutils.a
+[16.675s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librealsense2-gl.so.2.55.1
+[16.675s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librealsense2.so.2.55.1
+[16.675s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librealsense2.so.2.55
+[16.675s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librealsense2.so
+[16.676s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/libglfw3.a
+[16.676s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake
+[16.676s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2
+[16.676s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2/realsense2Targets.cmake
+[16.676s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2/realsense2ConfigVersion.cmake
+[16.676s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2/realsense2Targets-release.cmake
+[16.676s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2/realsense2Config.cmake
+[16.676s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/glfw3
+[16.677s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/glfw3/glfw3Targets.cmake
+[16.677s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/glfw3/glfw3Targets-release.cmake
+[16.677s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/glfw3/glfw3ConfigVersion.cmake
+[16.677s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/glfw3/glfw3Config.cmake
+[16.677s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2-gl
+[16.677s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2-gl/realsense2-glConfigVersion.cmake
+[16.678s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2-gl/realsense2-glTargets.cmake
+[16.678s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2-gl/realsense2-glConfig.cmake
+[16.678s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/cmake/realsense2-gl/realsense2-glTargets-release.cmake
+[16.678s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/librealsense2-gl.so.2.55
+[16.678s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/libfw.a
+[16.678s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include
+[16.678s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/named_filter.h
+[16.678s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/gl_window.h
+[16.678s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/ros_sensor.h
+[16.679s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/ros_utils.h
+[16.679s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/dynamic_params.h
+[16.679s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/sensor_params.h
+[16.679s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/realsense_node_factory.h
+[16.679s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/image_publisher.h
+[16.679s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/ros_param_backend.h
+[16.679s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/constants.h
+[16.679s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/base_realsense_node.h
+[16.679s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/include/profile_manager.h
+[16.680s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/launch
+[16.680s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/launch/default.rviz
+[16.680s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/launch/rs_intra_process_demo_launch.py
+[16.680s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/launch/rs_launch.py
+[16.680s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/launch/rs_multi_camera_launch.py
+[16.680s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/lib/data_collection_service/manager
+[16.680s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/library_path.sh
+[16.680s] -- Installing: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/library_path.dsv
+[16.681s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/ament_index/resource_index/package_run_dependencies/data_collection_service
+[16.682s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/ament_index/resource_index/parent_prefix_path/data_collection_service
+[16.683s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/ament_prefix_path.sh
+[16.684s] -- Installing: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/ament_prefix_path.dsv
+[16.685s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/path.sh
+[16.685s] -- Installing: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/environment/path.dsv
+[16.686s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.bash
+[16.686s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.sh
+[16.687s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.zsh
+[16.687s] -- Installing: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/local_setup.dsv
+[16.688s] -- Installing: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.dsv
+[16.689s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/ament_index/resource_index/packages/data_collection_service
+[16.689s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/ament_index/resource_index/rclcpp_components/data_collection_service
+[16.690s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.690s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/cmake/ament_cmake_export_libraries-extras.cmake
+[16.691s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.691s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/cmake/data_collection_serviceConfig.cmake
+[16.692s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/cmake/data_collection_serviceConfig-version.cmake
+[16.692s] -- Up-to-date: /home/byd/github/ros2/dros/data_collection_service/install/data_collection_service/share/data_collection_service/package.xml
+[16.693s] Invoked command in '/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/github/ros2/dros/data_collection_service/build/data_collection_service

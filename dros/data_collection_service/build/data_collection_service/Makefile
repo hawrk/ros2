@@ -428,6 +428,30 @@ wrapper/realsense/src/dynamic_params.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_collection_service.dir/build.make CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.s
 .PHONY : wrapper/realsense/src/dynamic_params.cpp.s
 
+wrapper/realsense/src/gl_gpu_processing.o: wrapper/realsense/src/gl_gpu_processing.cpp.o
+.PHONY : wrapper/realsense/src/gl_gpu_processing.o
+
+# target to build an object file
+wrapper/realsense/src/gl_gpu_processing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_collection_service.dir/build.make CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.o
+.PHONY : wrapper/realsense/src/gl_gpu_processing.cpp.o
+
+wrapper/realsense/src/gl_gpu_processing.i: wrapper/realsense/src/gl_gpu_processing.cpp.i
+.PHONY : wrapper/realsense/src/gl_gpu_processing.i
+
+# target to preprocess a source file
+wrapper/realsense/src/gl_gpu_processing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_collection_service.dir/build.make CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.i
+.PHONY : wrapper/realsense/src/gl_gpu_processing.cpp.i
+
+wrapper/realsense/src/gl_gpu_processing.s: wrapper/realsense/src/gl_gpu_processing.cpp.s
+.PHONY : wrapper/realsense/src/gl_gpu_processing.s
+
+# target to generate assembly for a file
+wrapper/realsense/src/gl_gpu_processing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_collection_service.dir/build.make CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.s
+.PHONY : wrapper/realsense/src/gl_gpu_processing.cpp.s
+
 wrapper/realsense/src/image_publisher.o: wrapper/realsense/src/image_publisher.cpp.o
 .PHONY : wrapper/realsense/src/image_publisher.o
 
@@ -662,6 +686,9 @@ help:
 	@echo "... wrapper/realsense/src/dynamic_params.o"
 	@echo "... wrapper/realsense/src/dynamic_params.i"
 	@echo "... wrapper/realsense/src/dynamic_params.s"
+	@echo "... wrapper/realsense/src/gl_gpu_processing.o"
+	@echo "... wrapper/realsense/src/gl_gpu_processing.i"
+	@echo "... wrapper/realsense/src/gl_gpu_processing.s"
 	@echo "... wrapper/realsense/src/image_publisher.o"
 	@echo "... wrapper/realsense/src/image_publisher.i"
 	@echo "... wrapper/realsense/src/image_publisher.s"

@@ -79,7 +79,7 @@ include_directories(${OpenCV_INCLUDE_DIRS})  # add OpenCV includes to the includ
 
 set(REALSENSE_PREFIX "wrapper/realsense")
 
-set(SOURCES
+#[[set(SOURCES
     ${REALSENSE_PREFIX}/src/realsense_node_factory.cpp
     ${REALSENSE_PREFIX}/src/base_realsense_node.cpp
     ${REALSENSE_PREFIX}/src/base_parameters.cpp
@@ -94,6 +94,10 @@ set(SOURCES
     ${REALSENSE_PREFIX}/src/base_tfs.cpp
     ${REALSENSE_PREFIX}/src/ros_param_backend.cpp
   )
+    ]]
+#or
+file(GLOB SOURCES
+  "${REALSENSE_PREFIX}/src/*.cpp")
 
 if (BUILD_ACCELERATE_GPU_WITH_GLSL)
   list(APPEND SOURCES ${REALSENSE_PREFIX}/src/gl_gpu_processing.cpp)
@@ -114,7 +118,7 @@ if (BUILD_ACCELERATE_GPU_WITH_GLSL)
   add_definitions(-DACCELERATE_GPU_WITH_GLSL)
 endif()
 
-set(INCLUDES
+#[[set(INCLUDES
     ${REALSENSE_PREFIX}/include/constants.h
     ${REALSENSE_PREFIX}/include/realsense_node_factory.h
     ${REALSENSE_PREFIX}/include/base_realsense_node.h
@@ -126,6 +130,11 @@ set(INCLUDES
     ${REALSENSE_PREFIX}/include/ros_param_backend.h
     ${REALSENSE_PREFIX}/include/profile_manager.h
     ${REALSENSE_PREFIX}/include/image_publisher.h)
+    ]]
+
+#or
+file(GLOB INCLUDES
+  "${REALSENSE_PREFIX}/include/*.h")
 
 if (BUILD_ACCELERATE_GPU_WITH_GLSL)
   list(APPEND INCLUDES ${REALSENSE_PREFIX}/include/gl_window.h)

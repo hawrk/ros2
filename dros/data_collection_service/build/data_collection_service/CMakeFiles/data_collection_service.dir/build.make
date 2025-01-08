@@ -69,52 +69,10 @@ include CMakeFiles/data_collection_service.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/data_collection_service.dir/flags.make
 
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o: ../../wrapper/realsense/src/realsense_node_factory.cpp
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/realsense_node_factory.cpp
-
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/realsense_node_factory.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.i
-
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/realsense_node_factory.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.s
-
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o: ../../wrapper/realsense/src/base_realsense_node.cpp
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_realsense_node.cpp
-
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_realsense_node.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.i
-
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_realsense_node.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.s
-
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o: ../../wrapper/realsense/src/base_parameters.cpp
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_parameters.cpp
-
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_parameters.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.i
-
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_parameters.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.s
-
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_node_setup.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_node_setup.cpp.o: ../../wrapper/realsense/src/base_node_setup.cpp
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_node_setup.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_node_setup.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_node_setup.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_node_setup.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_node_setup.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_node_setup.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_node_setup.cpp
 
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_node_setup.cpp.i: cmake_force
@@ -125,38 +83,52 @@ CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_node_setup.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_node_setup.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_node_setup.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_node_setup.cpp.s
 
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o: ../../wrapper/realsense/src/ros_sensor.cpp
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/ros_sensor.cpp
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o: ../../wrapper/realsense/src/base_parameters.cpp
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_parameters.cpp
 
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/ros_sensor.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.i
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_parameters.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.i
 
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/ros_sensor.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.s
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_parameters.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.s
 
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o: ../../wrapper/realsense/src/ros_utils.cpp
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/ros_utils.cpp
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o: ../../wrapper/realsense/src/base_realsense_node.cpp
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_realsense_node.cpp
 
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/ros_utils.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.i
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_realsense_node.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.i
 
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/ros_utils.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.s
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_realsense_node.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.s
+
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o: ../../wrapper/realsense/src/base_tfs.cpp
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_tfs.cpp
+
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_tfs.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.i
+
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_tfs.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.s
 
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.o: ../../wrapper/realsense/src/dynamic_params.cpp
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/dynamic_params.cpp
 
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.i: cmake_force
@@ -167,24 +139,38 @@ CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/dynamic_params.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.s
 
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o: ../../wrapper/realsense/src/sensor_params.cpp
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/sensor_params.cpp
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.o: ../../wrapper/realsense/src/gl_gpu_processing.cpp
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/gl_gpu_processing.cpp
 
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/sensor_params.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.i
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/gl_gpu_processing.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.i
 
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/sensor_params.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.s
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/gl_gpu_processing.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.s
+
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o: ../../wrapper/realsense/src/image_publisher.cpp
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/image_publisher.cpp
+
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/image_publisher.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.i
+
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/image_publisher.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.s
 
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/named_filter.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/named_filter.cpp.o: ../../wrapper/realsense/src/named_filter.cpp
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/named_filter.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/named_filter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/named_filter.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/named_filter.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/named_filter.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/named_filter.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/named_filter.cpp
 
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/named_filter.cpp.i: cmake_force
@@ -198,7 +184,7 @@ CMakeFiles/data_collection_service.dir/wrapper/realsense/src/named_filter.cpp.s:
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/profile_manager.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/profile_manager.cpp.o: ../../wrapper/realsense/src/profile_manager.cpp
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/profile_manager.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/profile_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/profile_manager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/profile_manager.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/profile_manager.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/profile_manager.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/profile_manager.cpp
 
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/profile_manager.cpp.i: cmake_force
@@ -209,38 +195,24 @@ CMakeFiles/data_collection_service.dir/wrapper/realsense/src/profile_manager.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/profile_manager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/profile_manager.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/profile_manager.cpp.s
 
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o: ../../wrapper/realsense/src/image_publisher.cpp
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/image_publisher.cpp
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o: ../../wrapper/realsense/src/realsense_node_factory.cpp
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/realsense_node_factory.cpp
 
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/image_publisher.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.i
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/realsense_node_factory.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.i
 
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/image_publisher.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.s
-
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o: ../../wrapper/realsense/src/base_tfs.cpp
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_tfs.cpp
-
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_tfs.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.i
-
-CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/base_tfs.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.s
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/realsense_node_factory.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.s
 
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.cpp.o: ../../wrapper/realsense/src/ros_param_backend.cpp
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/ros_param_backend.cpp
 
 CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.cpp.i: cmake_force
@@ -251,38 +223,82 @@ CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/ros_param_backend.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.cpp.s
 
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o: ../../wrapper/realsense/src/ros_sensor.cpp
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/ros_sensor.cpp
+
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/ros_sensor.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.i
+
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/ros_sensor.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.s
+
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o: ../../wrapper/realsense/src/ros_utils.cpp
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/ros_utils.cpp
+
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/ros_utils.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.i
+
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/ros_utils.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.s
+
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o: CMakeFiles/data_collection_service.dir/flags.make
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o: ../../wrapper/realsense/src/sensor_params.cpp
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o: CMakeFiles/data_collection_service.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o -MF CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o.d -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o -c /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/sensor_params.cpp
+
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/sensor_params.cpp > CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.i
+
+CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/byd/github/ros2/dros/data_collection_service/wrapper/realsense/src/sensor_params.cpp -o CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.s
+
 # Object files for target data_collection_service
 data_collection_service_OBJECTS = \
-"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o" \
-"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o" \
-"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o" \
 "CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_node_setup.cpp.o" \
-"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o" \
-"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o" \
+"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o" \
+"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o" \
+"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o" \
 "CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.o" \
-"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o" \
+"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.o" \
+"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o" \
 "CMakeFiles/data_collection_service.dir/wrapper/realsense/src/named_filter.cpp.o" \
 "CMakeFiles/data_collection_service.dir/wrapper/realsense/src/profile_manager.cpp.o" \
-"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o" \
-"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o" \
-"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.cpp.o"
+"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o" \
+"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.cpp.o" \
+"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o" \
+"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o" \
+"CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o"
 
 # External object files for target data_collection_service
 data_collection_service_EXTERNAL_OBJECTS =
 
-libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o
-libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o
-libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o
 libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_node_setup.cpp.o
-libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o
-libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o
+libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_parameters.cpp.o
+libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_realsense_node.cpp.o
+libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o
 libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/dynamic_params.cpp.o
-libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o
+libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/gl_gpu_processing.cpp.o
+libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o
 libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/named_filter.cpp.o
 libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/profile_manager.cpp.o
-libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/image_publisher.cpp.o
-libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/base_tfs.cpp.o
+libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/realsense_node_factory.cpp.o
 libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_param_backend.cpp.o
+libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_sensor.cpp.o
+libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/ros_utils.cpp.o
+libdata_collection_service.so: CMakeFiles/data_collection_service.dir/wrapper/realsense/src/sensor_params.cpp.o
 libdata_collection_service.so: CMakeFiles/data_collection_service.dir/build.make
 libdata_collection_service.so: /home/byd/third_party/real_sense/lib/librealsense2.so.2.55.1
 libdata_collection_service.so: /usr/lib/aarch64-linux-gnu/libopencv_stitching.so.4.5.4d
@@ -486,7 +502,7 @@ libdata_collection_service.so: /opt/ros/humble/lib/librcpputils.so
 libdata_collection_service.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libdata_collection_service.so: /opt/ros/humble/lib/librcutils.so
 libdata_collection_service.so: CMakeFiles/data_collection_service.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX shared library libdata_collection_service.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/byd/github/ros2/dros/data_collection_service/build/data_collection_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX shared library libdata_collection_service.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/data_collection_service.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
