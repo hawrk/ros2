@@ -1,0 +1,379 @@
+[0.020s] Invoking command in '/home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/byd/github/ros2/dros/dros_common_interfaces -DCMAKE_INSTALL_PREFIX=/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces
+[0.137s] -- The C compiler identification is GNU 11.4.0
+[0.238s] -- The CXX compiler identification is GNU 11.4.0
+[0.260s] -- Detecting C compiler ABI info
+[0.400s] -- Detecting C compiler ABI info - done
+[0.425s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.426s] -- Detecting C compile features
+[0.427s] -- Detecting C compile features - done
+[0.439s] -- Detecting CXX compiler ABI info
+[0.592s] -- Detecting CXX compiler ABI info - done
+[0.615s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.615s] -- Detecting CXX compile features
+[0.616s] -- Detecting CXX compile features - done
+[0.623s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.365s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.567s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.573s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.590s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.660s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.712s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[1.734s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[1.754s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.480s] -- Found ament_cmake_cppcheck: 0.12.11 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[2.483s] -- Found ament_cmake_cpplint: 0.12.11 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[2.487s] -- Found ament_cmake_uncrustify: 0.12.11 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[2.491s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.049s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.799s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.851s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.854s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.916s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.916s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.917s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.917s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[3.962s] -- Found PythonExtra: .so  
+[4.115s] -- Found ament_cmake_flake8: 0.12.11 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[4.118s] -- Found ament_cmake_pep257: 0.12.11 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[4.123s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.174s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.175s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_c>;$<BUILD_INTERFACE:/home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces/rosidl_typesupport_introspection_cpp>;/home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_c;/home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_py
+[4.175s] -- Configured cppcheck exclude dirs and/or files: 
+[4.206s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.206s] -- Configured cpplint exclude dirs and/or files: 
+[4.237s] -- Added test 'uncrustify' to check C / C++ code style
+[4.238s] -- Configured uncrustify additional arguments: 
+[4.242s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.246s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.254s] -- Added test 'lint_cmake' to check CMake code style
+[4.259s] -- Added test 'xmllint' to check XML markup files
+[4.264s] -- Configuring done
+[4.348s] -- Generating done
+[4.372s] -- Build files have been written to: /home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces
+[4.397s] Invoked command in '/home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/byd/github/ros2/dros/dros_common_interfaces -DCMAKE_INSTALL_PREFIX=/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces
+[4.403s] Invoking command in '/home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces -- -j8 -l8
+[4.485s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.507s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.521s] [  3%] Built target ament_cmake_python_copy_dros_common_interfaces
+[4.930s] running egg_info
+[4.932s] creating dros_common_interfaces.egg-info
+[4.962s] writing dros_common_interfaces.egg-info/PKG-INFO
+[4.963s] writing dependency_links to dros_common_interfaces.egg-info/dependency_links.txt
+[4.963s] writing top-level names to dros_common_interfaces.egg-info/top_level.txt
+[4.964s] writing manifest file 'dros_common_interfaces.egg-info/SOURCES.txt'
+[5.053s] reading manifest file 'dros_common_interfaces.egg-info/SOURCES.txt'
+[5.054s] writing manifest file 'dros_common_interfaces.egg-info/SOURCES.txt'
+[5.127s] [  3%] Built target ament_cmake_python_build_dros_common_interfaces_egg
+[5.530s] [  3%] Built target dros_common_interfaces__cpp
+[5.535s] [  6%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dros_common_interfaces/msg/detail/extrinsics__functions.c.o[0m
+[5.536s] [  6%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dros_common_interfaces/msg/detail/imu_info__functions.c.o[0m
+[5.536s] [  9%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dros_common_interfaces/msg/detail/metadata__functions.c.o[0m
+[5.538s] [  9%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dros_common_interfaces/msg/detail/rgbd__functions.c.o[0m
+[5.542s] [ 11%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dros_common_interfaces/srv/detail/device_info__functions.c.o[0m
+[5.553s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.558s] [ 14%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.558s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.672s] [ 17%] [32m[1mLinking C shared library libdros_common_interfaces__rosidl_generator_c.so[0m
+[5.741s] [ 17%] Built target dros_common_interfaces__rosidl_generator_c
+[5.762s] [ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.762s] [ 22%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.763s] [ 22%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[6.293s] [ 25%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dros_common_interfaces/msg/metadata__type_support.cpp.o[0m
+[6.293s] [ 25%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dros_common_interfaces/msg/extrinsics__type_support.cpp.o[0m
+[6.294s] [ 26%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dros_common_interfaces/msg/imu_info__type_support.cpp.o[0m
+[6.519s] [ 28%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dros_common_interfaces/msg/detail/imu_info__type_support.cpp.o[0m
+[6.543s] [ 30%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp.o[0m
+[6.612s] [ 31%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/msg/extrinsics__type_support.cpp.o[0m
+[6.680s] [ 33%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/msg/metadata__type_support.cpp.o[0m
+[6.695s] [ 34%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/imu_info__type_support.cpp.o[0m
+[6.748s] [ 36%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/msg/rgbd__type_support.cpp.o[0m
+[6.809s] [ 38%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dros_common_interfaces/msg/detail/imu_info__type_support.c.o[0m
+[6.815s] [ 39%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dros_common_interfaces/msg/detail/imu_info__type_support_c.cpp.o[0m
+[6.843s] [ 41%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/srv/device_info__type_support.cpp.o[0m
+[6.889s] [ 44%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dros_common_interfaces/msg/detail/extrinsics__type_support_c.cpp.o[0m
+[6.889s] [ 44%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/extrinsics__type_support.cpp.o[0m
+[6.890s] [ 46%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dros_common_interfaces/msg/rgbd__type_support.cpp.o[0m
+[6.898s] [ 47%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dros_common_interfaces/msg/detail/extrinsics__type_support.c.o[0m
+[6.928s] [ 49%] [32m[1mLinking CXX shared library libdros_common_interfaces__rosidl_typesupport_c.so[0m
+[6.984s] [ 50%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dros_common_interfaces/msg/detail/metadata__type_support.c.o[0m
+[7.030s] [ 50%] Built target dros_common_interfaces__rosidl_typesupport_c
+[7.050s] [ 52%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dros_common_interfaces/msg/detail/rgbd__type_support.c.o[0m
+[7.058s] [ 53%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dros_common_interfaces/srv/detail/device_info__type_support.c.o[0m
+[7.129s] [ 55%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/metadata__type_support.cpp.o[0m
+[7.135s] [ 57%] [32m[1mLinking C shared library libdros_common_interfaces__rosidl_typesupport_introspection_c.so[0m
+[7.206s] [ 57%] Built target dros_common_interfaces__rosidl_typesupport_introspection_c
+[7.225s] [ 58%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/rgbd__type_support.cpp.o[0m
+[7.422s] [ 60%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dros_common_interfaces/msg/detail/extrinsics__type_support.cpp.o[0m
+[7.490s] [ 61%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dros_common_interfaces/srv/device_info__type_support.cpp.o[0m
+[7.574s] [ 63%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dros_common_interfaces/msg/detail/metadata__type_support_c.cpp.o[0m
+[7.722s] [ 65%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/srv/detail/dds_fastrtps/device_info__type_support.cpp.o[0m
+[7.755s] [ 66%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dros_common_interfaces/msg/detail/rgbd__type_support_c.cpp.o[0m
+[7.821s] [ 68%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dros_common_interfaces/srv/detail/device_info__type_support_c.cpp.o[0m
+[8.073s] [ 69%] [32m[1mLinking CXX shared library libdros_common_interfaces__rosidl_typesupport_cpp.so[0m
+[8.090s] [ 71%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dros_common_interfaces/msg/detail/metadata__type_support.cpp.o[0m
+[8.099s] [ 73%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dros_common_interfaces/msg/detail/rgbd__type_support.cpp.o[0m
+[8.158s] [ 73%] Built target dros_common_interfaces__rosidl_typesupport_cpp
+[8.181s] [ 74%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dros_common_interfaces/srv/detail/device_info__type_support.cpp.o[0m
+[8.599s] [ 76%] [32m[1mLinking CXX shared library libdros_common_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[8.602s] [ 77%] [32m[1mLinking CXX shared library libdros_common_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[8.765s] [ 77%] Built target dros_common_interfaces__rosidl_typesupport_fastrtps_c
+[8.765s] [ 77%] Built target dros_common_interfaces__rosidl_typesupport_fastrtps_cpp
+[8.994s] [ 79%] [32m[1mLinking CXX shared library libdros_common_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[9.131s] [ 79%] Built target dros_common_interfaces__rosidl_typesupport_introspection_cpp
+[9.174s] [ 79%] Built target dros_common_interfaces
+[9.216s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[10.675s] [ 80%] Built target dros_common_interfaces__py
+[10.716s] [ 88%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dros_common_interfaces/msg/_extrinsics_s.c.o[0m
+[10.716s] [ 88%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dros_common_interfaces/srv/_device_info_s.c.o[0m
+[10.716s] [ 88%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dros_common_interfaces/msg/_imu_info_s.c.o[0m
+[10.718s] [ 88%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dros_common_interfaces/msg/_metadata_s.c.o[0m
+[10.718s] [ 88%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dros_common_interfaces/msg/_rgbd_s.c.o[0m
+[10.953s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/dros_common_interfaces/libdros_common_interfaces__rosidl_generator_py.so[0m
+[11.037s] [ 90%] Built target dros_common_interfaces__rosidl_generator_py
+[11.077s] [ 95%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/dros_common_interfaces/_dros_common_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[11.077s] [ 95%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/dros_common_interfaces/_dros_common_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[11.077s] [ 95%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/dros_common_interfaces/_dros_common_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[11.292s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[11.293s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[11.293s] [100%] [32m[1mLinking C shared library rosidl_generator_py/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[11.374s] [100%] Built target dros_common_interfaces__rosidl_typesupport_introspection_c__pyext
+[11.375s] [100%] Built target dros_common_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[11.375s] [100%] Built target dros_common_interfaces__rosidl_typesupport_c__pyext
+[11.402s] Invoked command in '/home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces -- -j8 -l8
+[11.424s] Invoking command in '/home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces
+[11.440s] -- Install configuration: ""
+[11.441s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/ament_index/resource_index/rosidl_interfaces/dros_common_interfaces
+[11.441s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces
+[11.441s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg
+[11.441s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/rosidl_generator_c__visibility_control.h
+[11.442s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/imu_info.h
+[11.442s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/metadata.h
+[11.442s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail
+[11.442s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__functions.h
+[11.443s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__type_support.h
+[11.443s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__struct.h
+[11.443s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__struct.h
+[11.443s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__struct.h
+[11.443s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__functions.c
+[11.444s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__struct.h
+[11.444s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__type_support.h
+[11.444s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__type_support.h
+[11.444s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__functions.c
+[11.444s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__type_support.h
+[11.445s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__functions.h
+[11.445s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__functions.c
+[11.445s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__functions.h
+[11.445s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__functions.h
+[11.445s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__functions.c
+[11.446s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/rgbd.h
+[11.446s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/extrinsics.h
+[11.446s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv
+[11.446s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail
+[11.446s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__type_support.h
+[11.447s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__functions.h
+[11.447s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__struct.h
+[11.448s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__functions.c
+[11.448s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/device_info.h
+[11.448s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/library_path.sh
+[11.448s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/library_path.dsv
+[11.449s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_generator_c.so
+[11.449s] -- Set runtime path of "/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_generator_c.so" to ""
+[11.449s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces
+[11.450s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg
+[11.450s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[11.450s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail
+[11.450s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__rosidl_typesupport_fastrtps_c.h
+[11.450s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h
+[11.450s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h
+[11.451s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__rosidl_typesupport_fastrtps_c.h
+[11.451s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv
+[11.451s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail
+[11.451s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__rosidl_typesupport_fastrtps_c.h
+[11.451s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_fastrtps_c.so
+[11.452s] -- Set runtime path of "/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[11.452s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces
+[11.452s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg
+[11.452s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[11.453s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail
+[11.453s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__type_support.c
+[11.453s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__rosidl_typesupport_introspection_c.h
+[11.453s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__type_support.c
+[11.454s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h
+[11.454s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__rosidl_typesupport_introspection_c.h
+[11.454s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__type_support.c
+[11.455s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__type_support.c
+[11.455s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__rosidl_typesupport_introspection_c.h
+[11.455s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv
+[11.456s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail
+[11.456s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__type_support.c
+[11.458s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__rosidl_typesupport_introspection_c.h
+[11.458s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_introspection_c.so
+[11.458s] -- Set runtime path of "/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[11.458s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_c.so
+[11.458s] -- Set runtime path of "/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_c.so" to ""
+[11.458s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces
+[11.458s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg
+[11.459s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/extrinsics.hpp
+[11.459s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/rgbd.hpp
+[11.459s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/imu_info.hpp
+[11.459s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[11.459s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail
+[11.459s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__builder.hpp
+[11.459s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__type_support.hpp
+[11.459s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__traits.hpp
+[11.460s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__struct.hpp
+[11.460s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__builder.hpp
+[11.460s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__type_support.hpp
+[11.460s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__traits.hpp
+[11.460s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__struct.hpp
+[11.460s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__type_support.hpp
+[11.461s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__struct.hpp
+[11.461s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__builder.hpp
+[11.461s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__traits.hpp
+[11.461s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__type_support.hpp
+[11.461s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__struct.hpp
+[11.462s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__builder.hpp
+[11.462s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__traits.hpp
+[11.462s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/metadata.hpp
+[11.462s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv
+[11.463s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/device_info.hpp
+[11.463s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail
+[11.463s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__traits.hpp
+[11.463s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__struct.hpp
+[11.463s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__type_support.hpp
+[11.464s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__builder.hpp
+[11.464s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces
+[11.464s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg
+[11.464s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[11.464s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail
+[11.464s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__rosidl_typesupport_fastrtps_cpp.hpp
+[11.465s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp
+[11.465s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp
+[11.465s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__rosidl_typesupport_fastrtps_cpp.hpp
+[11.465s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/dds_fastrtps
+[11.465s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv
+[11.466s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail
+[11.466s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/dds_fastrtps
+[11.466s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp
+[11.466s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[11.467s] -- Set runtime path of "/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[11.467s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces
+[11.467s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg
+[11.467s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail
+[11.467s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp
+[11.467s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp
+[11.468s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__type_support.cpp
+[11.468s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__type_support.cpp
+[11.468s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__rosidl_typesupport_introspection_cpp.hpp
+[11.468s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__type_support.cpp
+[11.468s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__type_support.cpp
+[11.469s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__rosidl_typesupport_introspection_cpp.hpp
+[11.469s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv
+[11.469s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail
+[11.469s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__rosidl_typesupport_introspection_cpp.hpp
+[11.469s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__type_support.cpp
+[11.470s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_introspection_cpp.so
+[11.471s] -- Set runtime path of "/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[11.471s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_cpp.so
+[11.471s] -- Set runtime path of "/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_cpp.so" to ""
+[11.471s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/pythonpath.sh
+[11.472s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/pythonpath.dsv
+[11.472s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces-0.0.0-py3.10.egg-info
+[11.472s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[11.472s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[11.473s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[11.473s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[11.473s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces
+[11.473s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[11.473s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[11.474s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/_dros_common_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[11.474s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/libdros_common_interfaces__rosidl_generator_py.so
+[11.474s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg
+[11.474s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_extrinsics.py
+[11.475s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_extrinsics_s.c
+[11.475s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_imu_info.py
+[11.475s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_rgbd_s.c
+[11.475s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_imu_info_s.c
+[11.476s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_rgbd.py
+[11.476s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_metadata_s.c
+[11.476s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_metadata.py
+[11.476s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/__init__.py
+[11.476s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/_dros_common_interfaces_s.ep.rosidl_typesupport_c.c
+[11.477s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv
+[11.477s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/_device_info.py
+[11.477s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/__init__.py
+[11.477s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/_device_info_s.c
+[11.478s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/_dros_common_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[11.478s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/__init__.py
+[11.478s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[11.550s] Listing '/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces'...
+[11.550s] Compiling '/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/__init__.py'...
+[11.550s] Listing '/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg'...
+[11.550s] Compiling '/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/__init__.py'...
+[11.551s] Compiling '/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_extrinsics.py'...
+[11.551s] Compiling '/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_imu_info.py'...
+[11.551s] Compiling '/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_metadata.py'...
+[11.551s] Compiling '/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_rgbd.py'...
+[11.551s] Listing '/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv'...
+[11.552s] Compiling '/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/__init__.py'...
+[11.552s] Compiling '/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/_device_info.py'...
+[11.561s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[11.561s] -- Set runtime path of "/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[11.562s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[11.562s] -- Set runtime path of "/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[11.563s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[11.563s] -- Set runtime path of "/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[11.564s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_generator_py.so
+[11.565s] -- Set runtime path of "/home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_generator_py.so" to ""
+[11.565s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/msg/IMUInfo.idl
+[11.565s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/msg/Extrinsics.idl
+[11.566s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/msg/Metadata.idl
+[11.566s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/msg/RGBD.idl
+[11.567s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/srv/DeviceInfo.idl
+[11.567s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/IMUInfo.msg
+[11.568s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/Extrinsics.msg
+[11.568s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/Metadata.msg
+[11.568s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/RGBD.msg
+[11.569s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/DeviceInfo.srv
+[11.569s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/DeviceInfo_Request.msg
+[11.569s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/DeviceInfo_Response.msg
+[11.569s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/ament_index/resource_index/package_run_dependencies/dros_common_interfaces
+[11.570s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/ament_index/resource_index/parent_prefix_path/dros_common_interfaces
+[11.570s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/ament_prefix_path.sh
+[11.570s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/ament_prefix_path.dsv
+[11.571s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/path.sh
+[11.571s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/path.dsv
+[11.571s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/local_setup.bash
+[11.571s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/local_setup.sh
+[11.572s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/local_setup.zsh
+[11.572s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/local_setup.dsv
+[11.572s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/package.dsv
+[11.572s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/ament_index/resource_index/packages/dros_common_interfaces
+[11.573s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_generator_cExport.cmake
+[11.573s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_generator_cExport-noconfig.cmake
+[11.573s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[11.574s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[11.574s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[11.574s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[11.574s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_cExport.cmake
+[11.575s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[11.575s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_generator_cppExport.cmake
+[11.575s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[11.575s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[11.576s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[11.576s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[11.576s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_cppExport.cmake
+[11.576s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[11.577s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_generator_pyExport.cmake
+[11.577s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[11.578s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/rosidl_cmake-extras.cmake
+[11.578s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.578s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.578s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[11.579s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[11.579s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[11.580s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[11.580s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfacesConfig.cmake
+[11.580s] -- Installing: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfacesConfig-version.cmake
+[11.581s] -- Up-to-date: /home/byd/github/ros2/dros/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/package.xml
+[11.587s] Invoked command in '/home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/byd/github/ros2/dros/dros_common_interfaces/build/dros_common_interfaces
