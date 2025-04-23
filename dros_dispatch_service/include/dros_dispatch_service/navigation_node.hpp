@@ -1,0 +1,186 @@
+/*
+ * @Author: hawrkchen
+ * @Date: 2025-04-16 17:02:29
+ * @LastEditors: Do not edit
+ * @LastEditTime: 2025-04-23 10:32:30
+ * @Description: 
+ * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/navigation_node.hpp
+ */
+
+#pragma once
+
+#include <rclcpp/rclcpp.hpp>
+
+#include "rclcpp_action/rclcpp_action.hpp"
+
+#include "nav2_msgs/action/navigate_to_pose.hpp"
+
+#include "behaviortree_cpp/bt_factory.h"
+
+class NavigationNode : public rclcpp::Node {
+    public:
+        NavigationNode(const std::string& node_name):Node(node_name) {
+            RCLCPP_INFO(this->get_logger(), "NavigationNode start......");
+    
+            // 创建客户端
+            this->action_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "navigate_to_pose"); 
+            // 等待action服务器
+            while(!this->action_client_->wait_for_action_server(std::chrono::seconds(1)))   {
+                RCLCPP_INFO(this->get_logger(), "waitting for action server....");
+            }
+            
+        }
+
+        rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr get_action_client() {
+            return this->action_client_;
+        }
+        
+    private:
+        rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr action_client_;
+};
+
+
+
+class NavigateToPoseAction :  public BT::SyncActionNode {
+    public:
+        NavigateToPoseAction(const std::string& name, const BT::NodeConfig& config, 
+        std::shared_ptr<NavigationNode> nav_node):
+         BT::SyncActionNode(name, config), nav_node_(nav_node) {
+
+            RCLCPP_INFO(nav_node_->get_logger(), "NavigateToPoseAction start......");
+            //nav_node_ = std::make_shared<NavigationNode>("NavigationNode");    
+        }
+
+        static BT::PortsList providedPorts() {
+            return {BT::InputPort<geometry_msgs::msg::PoseStamped>("goal_pose")};
+        }
+
+
+        BT::NodeStatus tick() override {
+            RCLCPP_INFO(nav_node_->get_logger(), "NavigateToPoseAction tick......");
+            auto origoal_pose = this->getInput<geometry_msgs::msg::PoseStamped>("goal_pose");
+            
+            if(!origoal_pose) {
+                RCLCPP_ERROR(nav_node_->get_logger(), "goal_pose is null");
+                //return BT::NodeStatus::FAILURE;
+            }
+
+            RCLCPP_INFO(nav_node_->get_logger(), "test ::get goal_pose:%lf, %lf, %lf", 
+            origoal_pose->pose.position.x, 
+            origoal_pose->pose.position.y,  
+            origoal_pose->pose.position.z);
+
+            // 创建一个PoseStamped消息，设置你的目标姿态
+            // geometry_msgs::msg::PoseStamped goal_pose;
+            // goal_pose.header.frame_id = "navigation";
+            // goal_pose.header.stamp = nav_node_->now();
+            // goal_pose.pose.position.x = 1.0;  // 设置目标位置的x坐标
+            // goal_pose.pose.position.y = 2.0;  // 设置目标位置的y坐标
+            // goal_pose.pose.position.z = 3.0;  // 设置目标位置的z坐标
+
+            nav2_msgs::action::NavigateToPose::Goal goal_msg;
+            goal_msg.pose = origoal_pose.value();
+
+            auto send_goal_options = rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SendGoalOptions();
+            send_goal_options.goal_response_callback = std::bind(&NavigateToPoseAction::goal_response_callback,this,std::placeholders::_1);
+            send_goal_options.feedback_callback = std::bind(&NavigateToPoseAction::feedback_callback, this, std::placeholders::_1, std::placeholders::_2);
+            send_goal_options.result_callback = std::bind(&NavigateToPoseAction::result_callback, this, std::placeholders::_1);
+
+            auto nav_client = nav_node_->get_action_client();
+
+            auto goal_future = nav_client->async_send_goal(goal_msg, send_goal_options);
+            if(rclcpp::spin_until_future_complete(nav_node_->get_node_base_interface(), 
+            goal_future) != rclcpp::FutureReturnCode::SUCCESS) {
+                RCLCPP_ERROR(nav_node_->get_logger(), "Send goal_msg failed");
+                return BT::NodeStatus::FAILURE;
+            }
+            // 获取 目标 句柄 goal_future只是表明 发送了goal，并没有得到结果
+            auto future = goal_future.get();
+            if(!future) {
+                RCLCPP_ERROR(nav_node_->get_logger(), "goal_msg rejected");
+                return BT::NodeStatus::FAILURE;
+            }
+            // 异步获取结果
+            auto reult_future = nav_client->async_get_result(future);
+            // 等待结果返回
+            if(rclcpp::spin_until_future_complete(nav_node_->get_node_base_interface(), 
+                reult_future) != rclcpp::FutureReturnCode::SUCCESS) {
+                    RCLCPP_ERROR(nav_node_->get_logger(), "Get result failed");
+                    return BT::NodeStatus::FAILURE;
+            }
+            RCLCPP_INFO(nav_node_->get_logger(), "我在等待导航结果");
+            // 处理结果
+            auto result = reult_future.get();
+            if(result.code != rclcpp_action::ResultCode::SUCCEEDED) {
+                RCLCPP_ERROR(nav_node_->get_logger(), "Navigation failed");
+                return BT::NodeStatus::FAILURE;
+            }
+            RCLCPP_INFO(nav_node_->get_logger(), "Navigation succeeded");
+            return BT::NodeStatus::SUCCESS;
+        }
+
+    private:
+        // action 请求回调
+        void goal_response_callback(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr& goal_handle) {
+            if (!goal_handle) {
+                RCLCPP_ERROR(nav_node_->get_logger(), "Goal handle is null");
+                return;
+            }
+            RCLCPP_INFO(nav_node_->get_logger(), "Goal accepted");
+        }
+
+        // action 反馈回调
+        void feedback_callback(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, 
+                    const std::shared_ptr<const nav2_msgs::action::NavigateToPose::Feedback>& feedback) {
+            RCLCPP_INFO(nav_node_->get_logger(), "Received feedback");
+            const geometry_msgs::msg::PoseStamped &current_pose = feedback->current_pose;
+            RCLCPP_INFO(nav_node_->get_logger(), "get pos:%lf, %lf, %lf", current_pose.pose.position.x, 
+            current_pose.pose.position.y, 
+            current_pose.pose.position.z);
+        }
+
+        // action 结果回调
+        void result_callback(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult& result) {
+            RCLCPP_INFO(nav_node_->get_logger(), "Received result");
+            switch(result.code) {
+                case rclcpp_action::ResultCode::SUCCEEDED:
+                    RCLCPP_INFO(nav_node_->get_logger(), "goal process successful");
+                    break;
+                case rclcpp_action::ResultCode::ABORTED:
+                    RCLCPP_ERROR(nav_node_->get_logger(), "goal was aborted");
+                    return;
+                case rclcpp_action::ResultCode::CANCELED:
+                    RCLCPP_ERROR(nav_node_->get_logger(), "goal was cancel");
+                    return;
+                default:
+                    RCLCPP_ERROR(nav_node_->get_logger(), "unknown result code");
+                    return;
+                /*
+                case nav2_msgs::action::NavigateToPose::Result::SUCCEEDED:
+                    RCLCPP_INFO(this->get_logger(), "Succeeded");
+                    break;
+                case nav2_msgs::action::NavigateToPose::Result::CANCELED:
+                    RCLCPP_INFO(this->get_logger(), "Canceled");
+                    break;
+                case nav2_msgs::action::NavigateToPose::Result::ABORTED:
+                    RCLCPP_INFO(this->get_logger(), "Aborted");
+                    break;
+                case nav2_msgs::action::NavigateToPose::Result::REJECTED:
+                    RCLCPP_INFO(this->get_logger(), "Rejected");
+                    break;
+                case nav2_msgs::action::NavigateToPose::Result::PREEMPTED:
+                    RCLCPP_INFO(this->get_logger(), "Preempted");
+                    break;
+                default:
+                    RCLCPP_INFO(this->get_logger(), "Unknown status");
+                    break;
+                */
+            }
+            // 打印最终结果
+            RCLCPP_INFO(nav_node_->get_logger(), "get result:code:%d, msg:%s", 
+            result.result->error_code, result.result->error_msg.c_str());
+        }
+
+    private:    
+        std::shared_ptr<NavigationNode> nav_node_;
+};
