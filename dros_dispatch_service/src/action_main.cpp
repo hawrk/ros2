@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-17 15:07:21
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-04-23 10:30:11
+ * @LastEditTime: 2025-04-28 11:24:33
  * @Description: 
  * @FilePath: /dros_dispatch_service/src/action_main.cpp
  */
@@ -62,8 +62,8 @@ class NavigateToPoseServer: public rclcpp::Node {
                 for(int i = 0; i < 10; i++) {
                     if(goal_handle->is_canceling()) {
                         RCLCPP_INFO(this->get_logger(), "Goal is being canceled");
-                        result->error_code = 304;
-                        result->error_msg = "goal is being canceled";
+                        //result->error_code = 304;
+                        //result->error_msg = "goal is being canceled";
                         goal_handle->canceled(result);
                         return;
                     }
@@ -73,8 +73,8 @@ class NavigateToPoseServer: public rclcpp::Node {
                     loop_rate.sleep();
                 }
                 // 完成任务
-                result->error_code = 0;
-                result->error_msg = "success";
+                //result->error_code = 0;
+                //result->error_msg = "success";
                 goal_handle->succeed(result);
                 RCLCPP_INFO(this->get_logger(), "Goal succeeded");
             };

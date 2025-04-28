@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 15:28:43
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-04-23 10:34:02
+ * @LastEditTime: 2025-04-28 11:13:39
  * @Description: 任务分发，初始化BehaviorTreeFactory
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/dispatch_node.hpp
  */
@@ -64,33 +64,12 @@ class DispatchNode : public rclcpp::Node
             // 解析任务字符串，并设置树的输入参数
             std::string task_string = msg->data;
             try {
-                // json 串转化为 bt xml 串
-                // std::string xml_string = R"(
-                // <root BTCPP_format="4">
-                //     <BehaviorTree ID="MainTree">
-                //         <Sequence name="root">
-                //             <NavigateToPoseAction goal_pose="{goal_pose}" />
-                //             <PickupAction item_name="{item_name}" />
-                //         </Sequence>
-                //     </BehaviorTree>
-                // </root>
-                // )";
-
-                std::string xml_string = R"(
-                <root BTCPP_format="4">
-                    <BehaviorTree ID="MainTree">
-                        <Sequence name="root">
-                            <NavigateToPoseAction goal_pose="{goal_pose}" />
-                            <PickupAction item_name="{item_name}" />
-                        </Sequence>
-                    </BehaviorTree>
-                </root>
-                )";
+                std::string xml_string = create_bt_xml_from_message(task_string);
                 
                 BT::Blackboard::Ptr blackboard = BT::Blackboard::create();
                 // 这里可以设置 多个值，供不同的模块节点
                 blackboard->set("goal_pose", create_goal_pose_from_message(task_string));
-                blackboard->set("item_name", std::string{"pickup_item"});
+                blackboard->set("item_name", create_pickup_item_from_message(task_string));
                 tree_ = factory_.createTreeFromText(xml_string, blackboard);
 
             } catch(const std::exception& e) {
@@ -101,23 +80,75 @@ class DispatchNode : public rclcpp::Node
         }
 
         geometry_msgs::msg::PoseStamped create_goal_pose_from_message(const std::string& message) {
-            std::cout <<"create_goal_pose_from_message"<< message << std::endl;
+            //std::cout <<"create_goal_pose_from_message"<< message << std::endl;
             geometry_msgs::msg::PoseStamped goal_pose;
 
             json j = json::parse(message);
             // 设置目标姿态的各个字段
-            goal_pose.header.frame_id = j.at("frame_id").get<std::string>();
-            goal_pose.header.stamp = nav_node_->now();
+            const auto& pan_seq = j["data"]["pan_seq"];
+            for(const auto& item : pan_seq) {
+                if(item.contains("go_to")) {
+                    const auto& go_to = item["go_to"];
+                    goal_pose.header.frame_id = go_to.at("obj_name").get<std::string>();
+                    goal_pose.header.stamp = nav_node_->now();
 
-            goal_pose.pose.position.x = j.at("position").at("x").get<double>();
-            goal_pose.pose.position.y = j.at("position").at("y").get<double>();
-            goal_pose.pose.position.z = j.at("position").at("z").get<double>();
-            goal_pose.pose.orientation.x = j.at("orientation").at("x").get<double>();
-            goal_pose.pose.orientation.y = j.at("orientation").at("y").get<double>();
-            goal_pose.pose.orientation.z = j.at("orientation").at("z").get<double>();
-            goal_pose.pose.orientation.w = j.at("orientation").at("w").get<double>();
+                    goal_pose.pose.position.x = go_to.at("obj_loc").at("x").get<double>();
+                    goal_pose.pose.position.y = go_to.at("obj_loc").at("y").get<double>();
+                    goal_pose.pose.position.z = go_to.at("obj_loc").at("z").get<double>();
+                    goal_pose.pose.orientation.x = go_to.at("obj_loc").at("dx").get<double>();
+                    goal_pose.pose.orientation.y = go_to.at("obj_loc").at("dy").get<double>();
+                    goal_pose.pose.orientation.z = go_to.at("obj_loc").at("dz").get<double>();
+                    //goal_pose.pose.orientation.w = go_to.at("obj_loc").at("w").get<double>();
+                    break;
+                }
+            }
 
             return goal_pose;
+        }
+
+        std::string create_pickup_item_from_message(const std::string& message) {
+            json j = json::parse(message);
+            const auto& pan_seq = j["data"]["pan_seq"];
+            for(const auto& item : pan_seq) {
+                if(item.contains("pick_up")) {
+                    const auto& pick_up = item["pick_up"];
+                    return pick_up.at("obj_name").get<std::string>();
+                }
+            }
+            return "";
+        }
+
+
+        std::string create_bt_xml_from_message(const std::string& message) {
+            std::cout <<"create_bt_xml_from_message" << std::endl;
+            std::string xml_template = R"(
+                <root BTCPP_format="4">
+                    <BehaviorTree ID="MainTree">
+                        <Sequence name="root">
+                            {actions}
+                        </Sequence>
+                    </BehaviorTree>
+                </root>
+            )";
+
+            std::string actions = "";
+            json j = json::parse(message);
+            if(j.contains("data") && j["data"].contains("pan_seq") && j["data"]["pan_seq"].is_array()) {
+                const auto& pan_seq = j["data"]["pan_seq"];
+                for(const auto& item : pan_seq) {
+                    if(item.contains("go_to")) {
+                        actions += "    <NavigateToPoseAction  goal_pose=\"{goal_pose}\" />\n";
+                    }
+                    if(item.contains("pick_up")) {
+                        actions += "\t\t\t\t<PickupAction item_name=\"{item_name}\" />";     
+                    }
+                }
+            }
+            std::string xml_string = xml_template;
+            xml_string = xml_string.replace(xml_string.find("{actions}"), 9, actions);
+
+            std::cout << "xml_string: " << xml_string << std::endl;
+            return xml_string;
         }
 
 

@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 17:02:29
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-04-23 10:32:30
+ * @LastEditTime: 2025-04-28 11:23:10
  * @Description: 
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/navigation_node.hpp
  */
@@ -25,7 +25,7 @@ class NavigationNode : public rclcpp::Node {
             // 创建客户端
             this->action_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "navigate_to_pose"); 
             // 等待action服务器
-            while(!this->action_client_->wait_for_action_server(std::chrono::seconds(1)))   {
+            while(!this->action_client_->wait_for_action_server(std::chrono::seconds(10)))   {
                 RCLCPP_INFO(this->get_logger(), "waitting for action server....");
             }
             
@@ -177,8 +177,9 @@ class NavigateToPoseAction :  public BT::SyncActionNode {
                 */
             }
             // 打印最终结果
-            RCLCPP_INFO(nav_node_->get_logger(), "get result:code:%d, msg:%s", 
-            result.result->error_code, result.result->error_msg.c_str());
+            RCLCPP_INFO(nav_node_->get_logger(), "get result end");
+            //RCLCPP_INFO(nav_node_->get_logger(), "get result:code:%d, msg:%s", 
+            //result.result->error_code, result.result->error_msg.c_str());
         }
 
     private:    
