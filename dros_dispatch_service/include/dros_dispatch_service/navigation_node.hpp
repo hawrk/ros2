@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 17:02:29
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-04-28 11:23:10
+ * @LastEditTime: 2025-04-28 18:05:45
  * @Description: 
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/navigation_node.hpp
  */
@@ -13,9 +13,11 @@
 
 #include "rclcpp_action/rclcpp_action.hpp"
 
-#include "nav2_msgs/action/navigate_to_pose.hpp"
+#include "dros_common_interfaces/action/navigate_to_pose.hpp"
 
 #include "behaviortree_cpp/bt_factory.h"
+
+using NavigateToPose = dros_common_interfaces::action::NavigateToPose;
 
 class NavigationNode : public rclcpp::Node {
     public:
@@ -23,7 +25,7 @@ class NavigationNode : public rclcpp::Node {
             RCLCPP_INFO(this->get_logger(), "NavigationNode start......");
     
             // 创建客户端
-            this->action_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "navigate_to_pose"); 
+            this->action_client_ = rclcpp_action::create_client<NavigateToPose>(this, "navigate_to_pose"); 
             // 等待action服务器
             while(!this->action_client_->wait_for_action_server(std::chrono::seconds(10)))   {
                 RCLCPP_INFO(this->get_logger(), "waitting for action server....");
@@ -31,12 +33,12 @@ class NavigationNode : public rclcpp::Node {
             
         }
 
-        rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr get_action_client() {
+        rclcpp_action::Client<NavigateToPose>::SharedPtr get_action_client() {
             return this->action_client_;
         }
         
     private:
-        rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr action_client_;
+        rclcpp_action::Client<NavigateToPose>::SharedPtr action_client_;
 };
 
 
@@ -78,10 +80,10 @@ class NavigateToPoseAction :  public BT::SyncActionNode {
             // goal_pose.pose.position.y = 2.0;  // 设置目标位置的y坐标
             // goal_pose.pose.position.z = 3.0;  // 设置目标位置的z坐标
 
-            nav2_msgs::action::NavigateToPose::Goal goal_msg;
+            NavigateToPose::Goal goal_msg;
             goal_msg.pose = origoal_pose.value();
 
-            auto send_goal_options = rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SendGoalOptions();
+            auto send_goal_options = rclcpp_action::Client<NavigateToPose>::SendGoalOptions();
             send_goal_options.goal_response_callback = std::bind(&NavigateToPoseAction::goal_response_callback,this,std::placeholders::_1);
             send_goal_options.feedback_callback = std::bind(&NavigateToPoseAction::feedback_callback, this, std::placeholders::_1, std::placeholders::_2);
             send_goal_options.result_callback = std::bind(&NavigateToPoseAction::result_callback, this, std::placeholders::_1);
@@ -121,7 +123,7 @@ class NavigateToPoseAction :  public BT::SyncActionNode {
 
     private:
         // action 请求回调
-        void goal_response_callback(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr& goal_handle) {
+        void goal_response_callback(const rclcpp_action::ClientGoalHandle<NavigateToPose>::SharedPtr& goal_handle) {
             if (!goal_handle) {
                 RCLCPP_ERROR(nav_node_->get_logger(), "Goal handle is null");
                 return;
@@ -130,8 +132,8 @@ class NavigateToPoseAction :  public BT::SyncActionNode {
         }
 
         // action 反馈回调
-        void feedback_callback(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, 
-                    const std::shared_ptr<const nav2_msgs::action::NavigateToPose::Feedback>& feedback) {
+        void feedback_callback(const rclcpp_action::ClientGoalHandle<NavigateToPose>::SharedPtr, 
+                    const std::shared_ptr<const NavigateToPose::Feedback>& feedback) {
             RCLCPP_INFO(nav_node_->get_logger(), "Received feedback");
             const geometry_msgs::msg::PoseStamped &current_pose = feedback->current_pose;
             RCLCPP_INFO(nav_node_->get_logger(), "get pos:%lf, %lf, %lf", current_pose.pose.position.x, 
@@ -140,7 +142,7 @@ class NavigateToPoseAction :  public BT::SyncActionNode {
         }
 
         // action 结果回调
-        void result_callback(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult& result) {
+        void result_callback(const rclcpp_action::ClientGoalHandle<NavigateToPose>::WrappedResult& result) {
             RCLCPP_INFO(nav_node_->get_logger(), "Received result");
             switch(result.code) {
                 case rclcpp_action::ResultCode::SUCCEEDED:

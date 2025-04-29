@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 15:28:43
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-04-28 11:13:39
+ * @LastEditTime: 2025-04-28 18:10:17
  * @Description: 任务分发，初始化BehaviorTreeFactory
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/dispatch_node.hpp
  */
@@ -13,6 +13,7 @@
 
 #include "dros_dispatch_service/navigation_node.hpp"
 #include "dros_dispatch_service/pickup_node.hpp"
+#include "dros_dispatch_service/grasp_node.hpp"
 
 #include "behaviortree_cpp/bt_factory.h"
 
@@ -31,6 +32,7 @@ class DispatchNode : public rclcpp::Node
             // 初始化 NavigationNode
             nav_node_ = std::make_shared<NavigationNode>("navigation_node");
             pickup_node_ = std::make_shared<PickupNode>("pickup_node");
+            grasp_node_ = std::make_shared<GraspNode>("grasp_node");
             // 初始化BehaviorTreeFactory
             // factory_.registerNodeType<NavigateToPoseAction>("NavigateToPoseAction",
             //     [this](const std::string& name, const BT::NodeConfig& config) {
@@ -38,6 +40,9 @@ class DispatchNode : public rclcpp::Node
             //     });
             factory_.registerNodeType<NavigateToPoseAction>("NavigateToPoseAction", nav_node_);
             factory_.registerNodeType<PickupAction>("PickupAction", pickup_node_);
+            factory_.registerNodeType<GraspAction>("GraspAction", grasp_node_);
+
+            // <PickupAction item_name="{item_name}" />
 
             // 初始行为树XML字符串
             std::string xml_string = R"(
@@ -46,6 +51,7 @@ class DispatchNode : public rclcpp::Node
                     <Sequence name="root">
                         <NavigateToPoseAction  goal_pose="{goal_pose}" />
                         <PickupAction item_name="{item_name}" />
+                        <GraspAction grasp_name="{grasp_name}" />
                     </Sequence>
                 </BehaviorTree>
             </root>
@@ -53,6 +59,7 @@ class DispatchNode : public rclcpp::Node
             BT::Blackboard::Ptr blackboard = BT::Blackboard::create();
             blackboard->set("goal_pose", geometry_msgs::msg::PoseStamped{});
             blackboard->set("item_name", std::string{"pickup_item"});
+            blackboard->set("grasp_name", std::string{"grasp_item"});
             // 解析XML字符串
             tree_ = factory_.createTreeFromText(xml_string, blackboard);
         }
@@ -70,6 +77,7 @@ class DispatchNode : public rclcpp::Node
                 // 这里可以设置 多个值，供不同的模块节点
                 blackboard->set("goal_pose", create_goal_pose_from_message(task_string));
                 blackboard->set("item_name", create_pickup_item_from_message(task_string));
+                blackboard->set("grasp_name", create_pickup_item_from_message(task_string));
                 tree_ = factory_.createTreeFromText(xml_string, blackboard);
 
             } catch(const std::exception& e) {
@@ -140,7 +148,7 @@ class DispatchNode : public rclcpp::Node
                         actions += "    <NavigateToPoseAction  goal_pose=\"{goal_pose}\" />\n";
                     }
                     if(item.contains("pick_up")) {
-                        actions += "\t\t\t\t<PickupAction item_name=\"{item_name}\" />";     
+                        actions += "\t\t\t\t<GraspAction grasp_name=\"{grasp_name}\" />";     
                     }
                 }
             }
@@ -158,6 +166,7 @@ class DispatchNode : public rclcpp::Node
 
         std::shared_ptr<NavigationNode> nav_node_;
         std::shared_ptr<PickupNode> pickup_node_;
+        std::shared_ptr<GraspNode> grasp_node_;
 
         rclcpp::Subscription<std_msgs::msg::String>::SharedPtr module_sub_;   // 接受思模块任务派发
 

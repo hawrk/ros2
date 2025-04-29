@@ -2,18 +2,20 @@
  * @Author: hawrkchen
  * @Date: 2025-04-17 15:07:21
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-04-28 11:24:33
+ * @LastEditTime: 2025-04-29 13:53:16
  * @Description: 
  * @FilePath: /dros_dispatch_service/src/action_main.cpp
  */
 #include <rclcpp/rclcpp.hpp>
 
 #include "rclcpp_action/rclcpp_action.hpp"
-#include "nav2_msgs/action/navigate_to_pose.hpp"
+#include "dros_common_interfaces/action/navigate_to_pose.hpp"
 #include "turtlesim/action/rotate_absolute.hpp"
+#include "dros_common_interfaces/srv/grasp.hpp"
 
-using NavigateToPose = nav2_msgs::action::NavigateToPose;
+using NavigateToPose = dros_common_interfaces::action::NavigateToPose;
 using RotateAbsolute = turtlesim::action::RotateAbsolute;
+using Grasp = dros_common_interfaces::srv::Grasp;
 
 class NavigateToPoseServer: public rclcpp::Node {
     public:
@@ -154,6 +156,26 @@ class PickupActionServer: public rclcpp::Node {
         rclcpp_action::Server<RotateAbsolute>::SharedPtr action_server_;
 };
 
+class GraspServer: public rclcpp::Node {
+    public:
+        GraspServer(const std::string& node_name): Node(node_name) {
+            RCLCPP_INFO(this->get_logger(), "GraspServer has been started");
+            grasp_service_ = this->create_service<Grasp>("grasp", std::bind(&GraspServer::grasp_callback, 
+                this, std::placeholders::_1, std::placeholders::_2));
+        }
+
+    private:
+        rclcpp::Service<Grasp>::SharedPtr grasp_service_;
+        
+        void grasp_callback(const std::shared_ptr<Grasp::Request>& request, const std::shared_ptr<Grasp::Response>& response) {
+            RCLCPP_INFO(this->get_logger(), "Received request to grasp object");
+            RCLCPP_INFO(this->get_logger(), "Grasping object:%s", request->object_name.c_str());
+
+            response->err_code = 0;
+            response->err_msg = "success";
+        }
+    
+};
 
 
 int main(int argc, char *argv[])
@@ -162,10 +184,12 @@ int main(int argc, char *argv[])
     
     auto navigate_to_pose_server = std::make_shared<NavigateToPoseServer>("navigate_to_pose_server");
     auto pickup_action_server = std::make_shared<PickupActionServer>("pickup_action_server");
+    auto grasp_server = std::make_shared<GraspServer>("grasp_server");
 
     rclcpp::executors::MultiThreadedExecutor executor;
     executor.add_node(pickup_action_server);
     executor.add_node(navigate_to_pose_server);
+    executor.add_node(grasp_server);
 
     executor.spin();
     rclcpp::shutdown();

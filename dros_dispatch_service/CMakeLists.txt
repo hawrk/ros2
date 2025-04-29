@@ -10,10 +10,12 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rclcpp_action REQUIRED)
-
-find_package(nav2_msgs REQUIRED)
-
 find_package(turtlesim REQUIRED)
+
+#set(CMAKE_PREFIX_PATH /home/hawrk/src/ros2/dros_common_interfaces/build/ament_cmake_core/)
+
+find_package(dros_common_interfaces REQUIRED)
+
 
 add_executable(main src/main.cpp)
 target_include_directories(main PUBLIC
@@ -25,7 +27,7 @@ ament_target_dependencies(
   "rclcpp"
   "std_msgs"
   "rclcpp_action"
-  "nav2_msgs"
+  "dros_common_interfaces"
   "turtlesim"
 )
 
@@ -60,7 +62,7 @@ ament_target_dependencies(
   "rclcpp"
   "std_msgs"
   "rclcpp_action"
-  "nav2_msgs"
+  "dros_common_interfaces"
   "turtlesim"
 )
 
