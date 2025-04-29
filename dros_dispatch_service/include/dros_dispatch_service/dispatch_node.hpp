@@ -97,8 +97,8 @@ class DispatchNode : public rclcpp::Node
 
             json j = json::parse(message);
             // 设置目标姿态的各个字段
-            const auto& pan_seq = j["data"]["pan_seq"];
-            for(const auto& item : pan_seq) {
+            const auto& plan_seq = j["data"]["plan_seq"];
+            for(const auto& item : plan_seq) {
                 if(item.contains("go_to")) {
                     const auto& go_to = item["go_to"];
                     goal_pose.header.frame_id = go_to.at("obj_name").get<std::string>();
@@ -120,8 +120,8 @@ class DispatchNode : public rclcpp::Node
 
         std::string create_pickup_item_from_message(const std::string& message) {
             json j = json::parse(message);
-            const auto& pan_seq = j["data"]["pan_seq"];
-            for(const auto& item : pan_seq) {
+            const auto& plan_seq = j["data"]["plan_seq"];
+            for(const auto& item : plan_seq) {
                 if(item.contains("pick_up")) {
                     const auto& pick_up = item["pick_up"];
                     return pick_up.at("obj_name").get<std::string>();
@@ -147,8 +147,8 @@ class DispatchNode : public rclcpp::Node
             json j = json::parse(message);
             if(j.contains("data") && j["data"].contains("plan_seq") 
                 && j["data"]["plan_seq"].is_array() && !j["data"]["plan_seq"].empty()) {
-                const auto& pan_seq = j["data"]["plan_seq"];
-                for(const auto& item : pan_seq) {
+                const auto& plan_seq = j["data"]["plan_seq"];
+                for(const auto& item : plan_seq) {
                     if(item.contains("go_to")) {
                         actions += "    <NavigateToPoseAction  goal_pose=\"{goal_pose}\" />\n";
                     }

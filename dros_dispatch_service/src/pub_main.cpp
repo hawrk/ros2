@@ -34,7 +34,7 @@ private:
         {"data", {
             {"task", "给我一杯水"},
             {"task_match", "帮我拿一杯水"},
-            {"pan_seq", {
+            {"plan_seq", {
                 {{"go_to", {
                     {"obj_name", "table"},
                     {"obj_loc", {
