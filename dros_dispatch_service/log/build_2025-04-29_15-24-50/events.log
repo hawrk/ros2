@@ -1,0 +1,281 @@
+[0.000000] (-) TimerEvent: {}
+[0.000763] (dros_dispatch_service) JobQueued: {'identifier': 'dros_dispatch_service', 'dependencies': OrderedDict()}
+[0.001006] (dros_dispatch_service) JobStarted: {'identifier': 'dros_dispatch_service'}
+[0.012953] (dros_dispatch_service) JobProgress: {'identifier': 'dros_dispatch_service', 'progress': 'cmake'}
+[0.014089] (dros_dispatch_service) JobProgress: {'identifier': 'dros_dispatch_service', 'progress': 'build'}
+[0.015180] (dros_dispatch_service) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/byd/hawrk/ros2/dros_dispatch_service/build/dros_dispatch_service', '--', '-j12', '-l12'], 'cwd': '/home/byd/hawrk/ros2/dros_dispatch_service/build/dros_dispatch_service', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'byd'), ('all_proxy', 'socks://127.0.0.1:7891/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/byd/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:'), ('HOME', '/home/byd'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/byd/hawrk/ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('SYSTEMD_EXEC_PID', '3577'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/byd/hawrk/ros2/dros_dispatch_service/install:/home/byd/hawrk/ros2/dros_common_interfaces/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'byd'), ('ALL_PROXY', 'socks://127.0.0.1:7891/'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1424324318636'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/byd/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/cuda/bin:/home/byd/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2921,unix/ubuntu:/tmp/.ICE-unix/2921'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea3a9fa1_fec1_473f_bc66_fbb41ea30419'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service:/home/byd/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/byd/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/byd/hawrk/ros2/dros_dispatch_service/build/dros_dispatch_service'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/byd/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service:/home/byd/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[0.088474] (dros_dispatch_service) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target main\x1b[0m\n'}
+[0.099349] (-) TimerEvent: {}
+[0.109628] (dros_dispatch_service) StdoutLine: {'line': b'[ 33%] Built target action_main\n'}
+[0.111512] (dros_dispatch_service) StdoutLine: {'line': b'[ 66%] Built target pub_main\n'}
+[0.121724] (dros_dispatch_service) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o\x1b[0m\n'}
+[0.199491] (-) TimerEvent: {}
+[0.299995] (-) TimerEvent: {}
+[0.400500] (-) TimerEvent: {}
+[0.501010] (-) TimerEvent: {}
+[0.601512] (-) TimerEvent: {}
+[0.702026] (-) TimerEvent: {}
+[0.802535] (-) TimerEvent: {}
+[0.903068] (-) TimerEvent: {}
+[1.003592] (-) TimerEvent: {}
+[1.104122] (-) TimerEvent: {}
+[1.204657] (-) TimerEvent: {}
+[1.305172] (-) TimerEvent: {}
+[1.405698] (-) TimerEvent: {}
+[1.506222] (-) TimerEvent: {}
+[1.606762] (-) TimerEvent: {}
+[1.707451] (-) TimerEvent: {}
+[1.808065] (-) TimerEvent: {}
+[1.908681] (-) TimerEvent: {}
+[2.009192] (-) TimerEvent: {}
+[2.109744] (-) TimerEvent: {}
+[2.210465] (-) TimerEvent: {}
+[2.311198] (-) TimerEvent: {}
+[2.411928] (-) TimerEvent: {}
+[2.512639] (-) TimerEvent: {}
+[2.613381] (-) TimerEvent: {}
+[2.714182] (-) TimerEvent: {}
+[2.814904] (-) TimerEvent: {}
+[2.915520] (-) TimerEvent: {}
+[3.016072] (-) TimerEvent: {}
+[3.116654] (-) TimerEvent: {}
+[3.217189] (-) TimerEvent: {}
+[3.317716] (-) TimerEvent: {}
+[3.418238] (-) TimerEvent: {}
+[3.518768] (-) TimerEvent: {}
+[3.619283] (-) TimerEvent: {}
+[3.719975] (-) TimerEvent: {}
+[3.820678] (-) TimerEvent: {}
+[3.921375] (-) TimerEvent: {}
+[4.022086] (-) TimerEvent: {}
+[4.122684] (-) TimerEvent: {}
+[4.223431] (-) TimerEvent: {}
+[4.324077] (-) TimerEvent: {}
+[4.424580] (-) TimerEvent: {}
+[4.525076] (-) TimerEvent: {}
+[4.625601] (-) TimerEvent: {}
+[4.726281] (-) TimerEvent: {}
+[4.826887] (-) TimerEvent: {}
+[4.927604] (-) TimerEvent: {}
+[5.028333] (-) TimerEvent: {}
+[5.129047] (-) TimerEvent: {}
+[5.229805] (-) TimerEvent: {}
+[5.330532] (-) TimerEvent: {}
+[5.431279] (-) TimerEvent: {}
+[5.531946] (-) TimerEvent: {}
+[5.632769] (-) TimerEvent: {}
+[5.733521] (-) TimerEvent: {}
+[5.834224] (-) TimerEvent: {}
+[5.934898] (-) TimerEvent: {}
+[6.035548] (-) TimerEvent: {}
+[6.136225] (-) TimerEvent: {}
+[6.236961] (-) TimerEvent: {}
+[6.337681] (-) TimerEvent: {}
+[6.438409] (-) TimerEvent: {}
+[6.539137] (-) TimerEvent: {}
+[6.639795] (-) TimerEvent: {}
+[6.740443] (-) TimerEvent: {}
+[6.841104] (-) TimerEvent: {}
+[6.941800] (-) TimerEvent: {}
+[7.042505] (-) TimerEvent: {}
+[7.143192] (-) TimerEvent: {}
+[7.244048] (-) TimerEvent: {}
+[7.344735] (-) TimerEvent: {}
+[7.445425] (-) TimerEvent: {}
+[7.546129] (-) TimerEvent: {}
+[7.646686] (-) TimerEvent: {}
+[7.747395] (-) TimerEvent: {}
+[7.848082] (-) TimerEvent: {}
+[7.948778] (-) TimerEvent: {}
+[8.049479] (-) TimerEvent: {}
+[8.150177] (-) TimerEvent: {}
+[8.250879] (-) TimerEvent: {}
+[8.351581] (-) TimerEvent: {}
+[8.452185] (-) TimerEvent: {}
+[8.552893] (-) TimerEvent: {}
+[8.653607] (-) TimerEvent: {}
+[8.754286] (-) TimerEvent: {}
+[8.854876] (-) TimerEvent: {}
+[8.955597] (-) TimerEvent: {}
+[9.056310] (-) TimerEvent: {}
+[9.157008] (-) TimerEvent: {}
+[9.257712] (-) TimerEvent: {}
+[9.358423] (-) TimerEvent: {}
+[9.459148] (-) TimerEvent: {}
+[9.559867] (-) TimerEvent: {}
+[9.660589] (-) TimerEvent: {}
+[9.761269] (-) TimerEvent: {}
+[9.861855] (-) TimerEvent: {}
+[9.962560] (-) TimerEvent: {}
+[10.063294] (-) TimerEvent: {}
+[10.164047] (-) TimerEvent: {}
+[10.264758] (-) TimerEvent: {}
+[10.365476] (-) TimerEvent: {}
+[10.466187] (-) TimerEvent: {}
+[10.566893] (-) TimerEvent: {}
+[10.667628] (-) TimerEvent: {}
+[10.768320] (-) TimerEvent: {}
+[10.868879] (-) TimerEvent: {}
+[10.969607] (-) TimerEvent: {}
+[11.070319] (-) TimerEvent: {}
+[11.171070] (-) TimerEvent: {}
+[11.271783] (-) TimerEvent: {}
+[11.372483] (-) TimerEvent: {}
+[11.473200] (-) TimerEvent: {}
+[11.573918] (-) TimerEvent: {}
+[11.674628] (-) TimerEvent: {}
+[11.775341] (-) TimerEvent: {}
+[11.876028] (-) TimerEvent: {}
+[11.976762] (-) TimerEvent: {}
+[12.077492] (-) TimerEvent: {}
+[12.178169] (-) TimerEvent: {}
+[12.278695] (-) TimerEvent: {}
+[12.379229] (-) TimerEvent: {}
+[12.479756] (-) TimerEvent: {}
+[12.580259] (-) TimerEvent: {}
+[12.680750] (-) TimerEvent: {}
+[12.781234] (-) TimerEvent: {}
+[12.881732] (-) TimerEvent: {}
+[12.982338] (-) TimerEvent: {}
+[13.083005] (-) TimerEvent: {}
+[13.183666] (-) TimerEvent: {}
+[13.284356] (-) TimerEvent: {}
+[13.385048] (-) TimerEvent: {}
+[13.485753] (-) TimerEvent: {}
+[13.586471] (-) TimerEvent: {}
+[13.687198] (-) TimerEvent: {}
+[13.787879] (-) TimerEvent: {}
+[13.888563] (-) TimerEvent: {}
+[13.989319] (-) TimerEvent: {}
+[14.090041] (-) TimerEvent: {}
+[14.190792] (-) TimerEvent: {}
+[14.291497] (-) TimerEvent: {}
+[14.392206] (-) TimerEvent: {}
+[14.492932] (-) TimerEvent: {}
+[14.593653] (-) TimerEvent: {}
+[14.694339] (-) TimerEvent: {}
+[14.795022] (-) TimerEvent: {}
+[14.895682] (-) TimerEvent: {}
+[14.996358] (-) TimerEvent: {}
+[15.097019] (-) TimerEvent: {}
+[15.197676] (-) TimerEvent: {}
+[15.298341] (-) TimerEvent: {}
+[15.399008] (-) TimerEvent: {}
+[15.499644] (-) TimerEvent: {}
+[15.600318] (-) TimerEvent: {}
+[15.701021] (-) TimerEvent: {}
+[15.801696] (-) TimerEvent: {}
+[15.902373] (-) TimerEvent: {}
+[16.003081] (-) TimerEvent: {}
+[16.103782] (-) TimerEvent: {}
+[16.204471] (-) TimerEvent: {}
+[16.305118] (-) TimerEvent: {}
+[16.405614] (-) TimerEvent: {}
+[16.506120] (-) TimerEvent: {}
+[16.606619] (-) TimerEvent: {}
+[16.707139] (-) TimerEvent: {}
+[16.807630] (-) TimerEvent: {}
+[16.908122] (-) TimerEvent: {}
+[17.008623] (-) TimerEvent: {}
+[17.109115] (-) TimerEvent: {}
+[17.209608] (-) TimerEvent: {}
+[17.310086] (-) TimerEvent: {}
+[17.410575] (-) TimerEvent: {}
+[17.511086] (-) TimerEvent: {}
+[17.611577] (-) TimerEvent: {}
+[17.712070] (-) TimerEvent: {}
+[17.812559] (-) TimerEvent: {}
+[17.913050] (-) TimerEvent: {}
+[18.013540] (-) TimerEvent: {}
+[18.114038] (-) TimerEvent: {}
+[18.214537] (-) TimerEvent: {}
+[18.315047] (-) TimerEvent: {}
+[18.415552] (-) TimerEvent: {}
+[18.516056] (-) TimerEvent: {}
+[18.616583] (-) TimerEvent: {}
+[18.717262] (-) TimerEvent: {}
+[18.817916] (-) TimerEvent: {}
+[18.918586] (-) TimerEvent: {}
+[19.019288] (-) TimerEvent: {}
+[19.119971] (-) TimerEvent: {}
+[19.220700] (-) TimerEvent: {}
+[19.321400] (-) TimerEvent: {}
+[19.422108] (-) TimerEvent: {}
+[19.522850] (-) TimerEvent: {}
+[19.623553] (-) TimerEvent: {}
+[19.724241] (-) TimerEvent: {}
+[19.824904] (-) TimerEvent: {}
+[19.925594] (-) TimerEvent: {}
+[20.026296] (-) TimerEvent: {}
+[20.127017] (-) TimerEvent: {}
+[20.227702] (-) TimerEvent: {}
+[20.328385] (-) TimerEvent: {}
+[20.429083] (-) TimerEvent: {}
+[20.529793] (-) TimerEvent: {}
+[20.630426] (-) TimerEvent: {}
+[20.731171] (-) TimerEvent: {}
+[20.831847] (-) TimerEvent: {}
+[20.932411] (-) TimerEvent: {}
+[21.033071] (-) TimerEvent: {}
+[21.133616] (-) TimerEvent: {}
+[21.234294] (-) TimerEvent: {}
+[21.334984] (-) TimerEvent: {}
+[21.435686] (-) TimerEvent: {}
+[21.536383] (-) TimerEvent: {}
+[21.637091] (-) TimerEvent: {}
+[21.737798] (-) TimerEvent: {}
+[21.838484] (-) TimerEvent: {}
+[21.939185] (-) TimerEvent: {}
+[22.039884] (-) TimerEvent: {}
+[22.140605] (-) TimerEvent: {}
+[22.241321] (-) TimerEvent: {}
+[22.342023] (-) TimerEvent: {}
+[22.442753] (-) TimerEvent: {}
+[22.543430] (-) TimerEvent: {}
+[22.644128] (-) TimerEvent: {}
+[22.744834] (-) TimerEvent: {}
+[22.845504] (-) TimerEvent: {}
+[22.946176] (-) TimerEvent: {}
+[23.046881] (-) TimerEvent: {}
+[23.137939] (dros_dispatch_service) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable main\x1b[0m\n'}
+[23.146961] (-) TimerEvent: {}
+[23.247511] (-) TimerEvent: {}
+[23.348218] (-) TimerEvent: {}
+[23.448922] (-) TimerEvent: {}
+[23.549446] (-) TimerEvent: {}
+[23.650066] (-) TimerEvent: {}
+[23.750710] (-) TimerEvent: {}
+[23.851372] (-) TimerEvent: {}
+[23.951981] (-) TimerEvent: {}
+[24.052495] (-) TimerEvent: {}
+[24.153001] (-) TimerEvent: {}
+[24.253566] (-) TimerEvent: {}
+[24.354181] (-) TimerEvent: {}
+[24.396193] (dros_dispatch_service) StdoutLine: {'line': b'[100%] Built target main\n'}
+[24.419078] (dros_dispatch_service) CommandEnded: {'returncode': 0}
+[24.420506] (dros_dispatch_service) JobProgress: {'identifier': 'dros_dispatch_service', 'progress': 'install'}
+[24.435503] (dros_dispatch_service) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/byd/hawrk/ros2/dros_dispatch_service/build/dros_dispatch_service'], 'cwd': '/home/byd/hawrk/ros2/dros_dispatch_service/build/dros_dispatch_service', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'byd'), ('all_proxy', 'socks://127.0.0.1:7891/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/byd/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:'), ('HOME', '/home/byd'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/byd/hawrk/ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('SYSTEMD_EXEC_PID', '3577'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/byd/hawrk/ros2/dros_dispatch_service/install:/home/byd/hawrk/ros2/dros_common_interfaces/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'byd'), ('ALL_PROXY', 'socks://127.0.0.1:7891/'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1424324318636'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'byd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/byd/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/cuda/bin:/home/byd/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2921,unix/ubuntu:/tmp/.ICE-unix/2921'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ea3a9fa1_fec1_473f_bc66_fbb41ea30419'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service:/home/byd/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/byd/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/byd/hawrk/ros2/dros_dispatch_service/build/dros_dispatch_service'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/byd/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/byd/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service:/home/byd/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[24.451262] (dros_dispatch_service) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.451849] (dros_dispatch_service) StdoutLine: {'line': b'-- Installing: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/lib/dros_dispatch_service/main\n'}
+[24.454239] (-) TimerEvent: {}
+[24.467644] (dros_dispatch_service) StdoutLine: {'line': b'-- Set runtime path of "/home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/lib/dros_dispatch_service/main" to ""\n'}
+[24.468073] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/lib/dros_dispatch_service/pub_main\n'}
+[24.468364] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/lib/dros_dispatch_service/action_main\n'}
+[24.468733] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/ament_index/resource_index/package_run_dependencies/dros_dispatch_service\n'}
+[24.469273] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/ament_index/resource_index/parent_prefix_path/dros_dispatch_service\n'}
+[24.469448] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/dros_dispatch_service/environment/ament_prefix_path.sh\n'}
+[24.469648] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/dros_dispatch_service/environment/ament_prefix_path.dsv\n'}
+[24.469918] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/dros_dispatch_service/environment/path.sh\n'}
+[24.470107] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/dros_dispatch_service/environment/path.dsv\n'}
+[24.470284] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/dros_dispatch_service/local_setup.bash\n'}
+[24.470453] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/dros_dispatch_service/local_setup.sh\n'}
+[24.470622] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/dros_dispatch_service/local_setup.zsh\n'}
+[24.470821] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/dros_dispatch_service/local_setup.dsv\n'}
+[24.470996] (dros_dispatch_service) StdoutLine: {'line': b'-- Installing: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/dros_dispatch_service/package.dsv\n'}
+[24.471161] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/ament_index/resource_index/packages/dros_dispatch_service\n'}
+[24.471324] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/dros_dispatch_service/cmake/dros_dispatch_serviceConfig.cmake\n'}
+[24.471485] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/dros_dispatch_service/cmake/dros_dispatch_serviceConfig-version.cmake\n'}
+[24.471615] (dros_dispatch_service) StdoutLine: {'line': b'-- Up-to-date: /home/byd/hawrk/ros2/dros_dispatch_service/install/dros_dispatch_service/share/dros_dispatch_service/package.xml\n'}
+[24.473020] (dros_dispatch_service) CommandEnded: {'returncode': 0}
+[24.526520] (dros_dispatch_service) JobEnded: {'identifier': 'dros_dispatch_service', 'rc': 0}
+[24.528355] (-) EventReactorShutdown: {}

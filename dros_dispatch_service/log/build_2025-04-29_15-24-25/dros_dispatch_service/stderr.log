@@ -1,0 +1,8 @@
+In file included from [01m[K/home/byd/hawrk/ros2/dros_dispatch_service/src/main.cpp:11[m[K:
+[01m[K/home/byd/hawrk/ros2/dros_dispatch_service/include/dros_dispatch_service/dispatch_node.hpp:[m[K In member function ‘[01m[Kvoid DispatchNode::module_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/byd/hawrk/ros2/dros_dispatch_service/include/dros_dispatch_service/dispatch_node.hpp:77:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+   77 |                     [01;31m[Kreturn[m[K;
+      |                     [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:76：CMakeFiles/main.dir/src/main.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:141：CMakeFiles/main.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

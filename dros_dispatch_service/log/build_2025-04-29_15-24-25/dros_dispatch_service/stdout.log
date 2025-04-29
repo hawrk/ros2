@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target main[0m
+[ 66%] Built target pub_main
+[ 66%] Built target action_main
+[ 83%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m

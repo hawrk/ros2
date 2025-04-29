@@ -1,0 +1,14 @@
+[0.018s] Invoking command in '/home/byd/hawrk/ros2/dros_dispatch_service/build/dros_dispatch_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/hawrk/ros2/dros_dispatch_service/build/dros_dispatch_service -- -j12 -l12
+[0.088s] [35m[1mConsolidate compiler generated dependencies of target main[0m
+[0.109s] [ 66%] Built target pub_main
+[0.110s] [ 66%] Built target action_main
+[0.121s] [ 83%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[5.499s] In file included from [01m[K/home/byd/hawrk/ros2/dros_dispatch_service/src/main.cpp:11[m[K:
+[5.499s] [01m[K/home/byd/hawrk/ros2/dros_dispatch_service/include/dros_dispatch_service/dispatch_node.hpp:[m[K In member function ‘[01m[Kvoid DispatchNode::module_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.500s] [01m[K/home/byd/hawrk/ros2/dros_dispatch_service/include/dros_dispatch_service/dispatch_node.hpp:77:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+[5.500s]    77 |                     [01;31m[Kreturn[m[K;
+[5.500s]       |                     [01;31m[K^~~~~~[m[K
+[13.244s] gmake[2]: *** [CMakeFiles/main.dir/build.make:76：CMakeFiles/main.dir/src/main.cpp.o] 错误 1
+[13.245s] gmake[1]: *** [CMakeFiles/Makefile2:141：CMakeFiles/main.dir/all] 错误 2
+[13.245s] gmake: *** [Makefile:146：all] 错误 2
+[13.251s] Invoked command in '/home/byd/hawrk/ros2/dros_dispatch_service/build/dros_dispatch_service' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/byd/hawrk/ros2/dros_dispatch_service/build/dros_dispatch_service -- -j12 -l12

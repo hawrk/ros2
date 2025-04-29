@@ -1,0 +1,7 @@
+/home/byd/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces:msg/IMUInfo.idl
+/home/byd/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces:msg/Extrinsics.idl
+/home/byd/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces:msg/Metadata.idl
+/home/byd/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces:msg/RGBD.idl
+/home/byd/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces:srv/DeviceInfo.idl
+/home/byd/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces:srv/Grasp.idl
+/home/byd/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces:action/NavigateToPose.idl

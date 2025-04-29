@@ -28,7 +28,7 @@ class DispatchNode : public rclcpp::Node
             RCLCPP_INFO(this->get_logger(), "Initializing DispatchNode");
 
             module_sub_ = this->create_subscription<std_msgs::msg::String>(
-                "module_task", 10, std::bind(&DispatchNode::module_callback, this, std::placeholders::_1));
+                "/task_planning", 10, std::bind(&DispatchNode::module_callback, this, std::placeholders::_1));
             // 初始化 NavigationNode
             nav_node_ = std::make_shared<NavigationNode>("navigation_node");
             pickup_node_ = std::make_shared<PickupNode>("pickup_node");
@@ -72,6 +72,10 @@ class DispatchNode : public rclcpp::Node
             std::string task_string = msg->data;
             try {
                 std::string xml_string = create_bt_xml_from_message(task_string);
+                if(xml_string.empty()) {
+                    RCLCPP_INFO(this->get_logger(), "Failed to create BT XML from message, skip...");
+                    return;
+                }
                 
                 BT::Blackboard::Ptr blackboard = BT::Blackboard::create();
                 // 这里可以设置 多个值，供不同的模块节点
@@ -141,16 +145,19 @@ class DispatchNode : public rclcpp::Node
 
             std::string actions = "";
             json j = json::parse(message);
-            if(j.contains("data") && j["data"].contains("pan_seq") && j["data"]["pan_seq"].is_array()) {
-                const auto& pan_seq = j["data"]["pan_seq"];
+            if(j.contains("data") && j["data"].contains("plan_seq") 
+                && j["data"]["plan_seq"].is_array() && !j["data"]["plan_seq"].empty()) {
+                const auto& pan_seq = j["data"]["plan_seq"];
                 for(const auto& item : pan_seq) {
                     if(item.contains("go_to")) {
                         actions += "    <NavigateToPoseAction  goal_pose=\"{goal_pose}\" />\n";
                     }
                     if(item.contains("pick_up")) {
-                        actions += "\t\t\t\t<GraspAction grasp_name=\"{grasp_name}\" />";     
+                        actions += "\t\t\t\t<GraspAction grasp_name=\"{grasp_name}\" />\n";     
                     }
                 }
+            } else {
+                return "";
             }
             std::string xml_string = xml_template;
             xml_string = xml_string.replace(xml_string.find("{actions}"), 9, actions);

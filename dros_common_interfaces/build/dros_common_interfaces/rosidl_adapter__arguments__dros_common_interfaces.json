@@ -1,0 +1,12 @@
+{
+  "package_name": "dros_common_interfaces",
+  "non_idl_tuples": [
+    "/home/byd/hawrk/ros2/dros_common_interfaces:msg/realsense/IMUInfo.msg",
+    "/home/byd/hawrk/ros2/dros_common_interfaces:msg/realsense/Extrinsics.msg",
+    "/home/byd/hawrk/ros2/dros_common_interfaces:msg/realsense/Metadata.msg",
+    "/home/byd/hawrk/ros2/dros_common_interfaces:msg/realsense/RGBD.msg",
+    "/home/byd/hawrk/ros2/dros_common_interfaces:srv/realsense/DeviceInfo.srv",
+    "/home/byd/hawrk/ros2/dros_common_interfaces:srv/Grasp.srv",
+    "/home/byd/hawrk/ros2/dros_common_interfaces:action/nav2/NavigateToPose.action"
+  ]
+}
