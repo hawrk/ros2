@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 15:28:43
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-04-28 18:10:17
+ * @LastEditTime: 2025-04-30 10:18:35
  * @Description: 任务分发，初始化BehaviorTreeFactory
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/dispatch_node.hpp
  */
@@ -64,6 +64,29 @@ class DispatchNode : public rclcpp::Node
             tree_ = factory_.createTreeFromText(xml_string, blackboard);
         }
 
+        void receive_task(const std::string& task_string) {
+            try {
+                std::string xml_string = create_bt_xml_from_message(task_string);
+                if(xml_string.empty()) {
+                    RCLCPP_INFO(this->get_logger(), "Failed to create BT XML from message, skip...");
+                    return ;
+                }
+                
+                BT::Blackboard::Ptr blackboard = BT::Blackboard::create();
+                // 这里可以设置 多个值，供不同的模块节点
+                blackboard->set("goal_pose", create_goal_pose_from_message(task_string));
+                blackboard->set("item_name", create_pickup_item_from_message(task_string));
+                blackboard->set("grasp_name", create_pickup_item_from_message(task_string));
+                tree_ = factory_.createTreeFromText(xml_string, blackboard);
+
+            } catch(const std::exception& e) {
+                RCLCPP_ERROR(this->get_logger(), "Failed to create tree from text: %s", e.what());
+                return ;
+            }
+
+            tree_.tickWhileRunning();
+        }
+
     private:
 
         void module_callback(const std_msgs::msg::String::SharedPtr msg) {
@@ -86,10 +109,12 @@ class DispatchNode : public rclcpp::Node
 
             } catch(const std::exception& e) {
                 RCLCPP_ERROR(this->get_logger(), "Failed to create tree from text: %s", e.what());
+                return;
             }
 
             tree_.tickWhileRunning();
         }
+
 
         geometry_msgs::msg::PoseStamped create_goal_pose_from_message(const std::string& message) {
             //std::cout <<"create_goal_pose_from_message"<< message << std::endl;
