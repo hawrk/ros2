@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 15:28:43
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-04-30 10:18:35
+ * @LastEditTime: 2025-05-07 13:40:05
  * @Description: 任务分发，初始化BehaviorTreeFactory
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/dispatch_node.hpp
  */
@@ -28,7 +28,7 @@ class DispatchNode : public rclcpp::Node
             RCLCPP_INFO(this->get_logger(), "Initializing DispatchNode");
 
             module_sub_ = this->create_subscription<std_msgs::msg::String>(
-                "/task_planning", 10, std::bind(&DispatchNode::module_callback, this, std::placeholders::_1));
+                "/task_planning", 10, std::bind(&DispatchNode::receive_module_callback, this, std::placeholders::_1));
             // 初始化 NavigationNode
             nav_node_ = std::make_shared<NavigationNode>("navigation_node");
             pickup_node_ = std::make_shared<PickupNode>("pickup_node");
@@ -64,7 +64,7 @@ class DispatchNode : public rclcpp::Node
             tree_ = factory_.createTreeFromText(xml_string, blackboard);
         }
 
-        void receive_task(const std::string& task_string) {
+        void process_policy(const std::string& task_string) {
             try {
                 std::string xml_string = create_bt_xml_from_message(task_string);
                 if(xml_string.empty()) {
@@ -87,34 +87,19 @@ class DispatchNode : public rclcpp::Node
             tree_.tickWhileRunning();
         }
 
-    private:
+        // 处理来自http的请求
+        void receive_http_task(const std::string& body_string) {
+            process_policy(body_string);
+        }
 
-        void module_callback(const std_msgs::msg::String::SharedPtr msg) {
+    private:
+        // 处理来自ros2 topic的任务
+        void receive_module_callback(const std_msgs::msg::String::SharedPtr msg) {
             RCLCPP_INFO(this->get_logger(), "Received module task: %s", msg->data.c_str());
             // 解析任务字符串，并设置树的输入参数
             std::string task_string = msg->data;
-            try {
-                std::string xml_string = create_bt_xml_from_message(task_string);
-                if(xml_string.empty()) {
-                    RCLCPP_INFO(this->get_logger(), "Failed to create BT XML from message, skip...");
-                    return;
-                }
-                
-                BT::Blackboard::Ptr blackboard = BT::Blackboard::create();
-                // 这里可以设置 多个值，供不同的模块节点
-                blackboard->set("goal_pose", create_goal_pose_from_message(task_string));
-                blackboard->set("item_name", create_pickup_item_from_message(task_string));
-                blackboard->set("grasp_name", create_pickup_item_from_message(task_string));
-                tree_ = factory_.createTreeFromText(xml_string, blackboard);
-
-            } catch(const std::exception& e) {
-                RCLCPP_ERROR(this->get_logger(), "Failed to create tree from text: %s", e.what());
-                return;
-            }
-
-            tree_.tickWhileRunning();
+            process_policy(task_string);
         }
-
 
         geometry_msgs::msg::PoseStamped create_goal_pose_from_message(const std::string& message) {
             //std::cout <<"create_goal_pose_from_message"<< message << std::endl;

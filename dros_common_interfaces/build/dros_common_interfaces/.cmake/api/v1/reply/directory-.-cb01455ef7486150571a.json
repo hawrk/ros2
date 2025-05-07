@@ -1001,7 +1001,7 @@
 			"destination" : "local/lib/python3.10/dist-packages/dros_common_interfaces",
 			"paths" : 
 			[
-				"rosidl_generator_py/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so"
+				"rosidl_generator_py/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so"
 			],
 			"targetId" : "dros_common_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
 			"targetIndex" : 11,
@@ -1013,7 +1013,7 @@
 			"destination" : "local/lib/python3.10/dist-packages/dros_common_interfaces",
 			"paths" : 
 			[
-				"rosidl_generator_py/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so"
+				"rosidl_generator_py/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so"
 			],
 			"targetId" : "dros_common_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
 			"targetIndex" : 14,
@@ -1025,7 +1025,7 @@
 			"destination" : "local/lib/python3.10/dist-packages/dros_common_interfaces",
 			"paths" : 
 			[
-				"rosidl_generator_py/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so"
+				"rosidl_generator_py/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so"
 			],
 			"targetId" : "dros_common_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
 			"targetIndex" : 8,

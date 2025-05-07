@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 14:46:56
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-04-30 10:28:31
+ * @LastEditTime: 2025-05-07 13:37:16
  * @Description: 
  * @FilePath: /dros_dispatch_service/src/main.cpp
  */
@@ -24,7 +24,7 @@ int main(int argc, char ** argv)
         std::string task_string = req.body;
 
         std::thread task_thread([dispatch_node = dispatch_node, task_string]() {
-            dispatch_node->receive_task(task_string);
+            dispatch_node->receive_http_task(task_string);
         });
         task_thread.detach();
 

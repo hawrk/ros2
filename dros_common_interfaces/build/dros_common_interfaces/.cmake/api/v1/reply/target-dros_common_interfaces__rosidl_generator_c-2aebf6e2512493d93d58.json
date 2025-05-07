@@ -208,7 +208,7 @@
 			[
 				{
 					"backtrace" : 24,
-					"path" : "/home/byd/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_c"
+					"path" : "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_c"
 				},
 				{
 					"backtrace" : 13,
@@ -303,7 +303,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "/home/byd/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces"
+			"path" : "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces"
 		}
 	},
 	"link" : 

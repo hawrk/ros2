@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "rosidl_generator_py/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so"
+			"path" : "rosidl_generator_py/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so"
 		}
 	],
 	"backtrace" : 5,
@@ -369,11 +369,11 @@
 			[
 				{
 					"backtrace" : 40,
-					"path" : "/home/byd/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_c"
+					"path" : "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_c"
 				},
 				{
 					"backtrace" : 40,
-					"path" : "/home/byd/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_py"
+					"path" : "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_py"
 				},
 				{
 					"backtrace" : 40,
@@ -381,7 +381,7 @@
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/byd/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_typesupport_introspection_c"
+					"path" : "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_typesupport_introspection_c"
 				},
 				{
 					"backtrace" : 41,
@@ -530,7 +530,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "/home/byd/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces"
+			"path" : "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces"
 		}
 	},
 	"link" : 
@@ -542,7 +542,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/byd/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_py/dros_common_interfaces:/home/byd/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces:/opt/ros/humble/lib:",
+				"fragment" : "-Wl,-rpath,/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_py/dros_common_interfaces:/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces:/opt/ros/humble/lib:",
 				"role" : "libraries"
 			},
 			{
@@ -552,7 +552,7 @@
 			},
 			{
 				"backtrace" : 7,
-				"fragment" : "/usr/lib/aarch64-linux-gnu/libpython3.10.so",
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libpython3.10.so",
 				"role" : "libraries"
 			},
 			{
@@ -717,7 +717,7 @@
 			},
 			{
 				"backtrace" : 7,
-				"fragment" : "/usr/lib/aarch64-linux-gnu/libpython3.10.so",
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libpython3.10.so",
 				"role" : "libraries"
 			},
 			{
@@ -950,7 +950,7 @@
 		"language" : "C"
 	},
 	"name" : "dros_common_interfaces__rosidl_typesupport_introspection_c__pyext",
-	"nameOnDisk" : "dros_common_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so",
+	"nameOnDisk" : "dros_common_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so",
 	"paths" : 
 	{
 		"build" : ".",
