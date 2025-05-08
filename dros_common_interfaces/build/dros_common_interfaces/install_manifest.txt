@@ -11,8 +11,13 @@
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/grasp.h
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__functions.h
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__type_support.h
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__functions.c
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__struct.h
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__functions.c
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__functions.h
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__struct.h
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__type_support.h
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/dexterous_hand.h
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/navigate_to_pose.h
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__functions.c
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__functions.c
@@ -41,6 +46,7 @@
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__rosidl_typesupport_fastrtps_c.h
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__rosidl_typesupport_fastrtps_c.h
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__rosidl_typesupport_fastrtps_c.h
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__rosidl_typesupport_fastrtps_c.h
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__rosidl_typesupport_fastrtps_c.h
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__rosidl_typesupport_fastrtps_c.h
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h
@@ -51,8 +57,10 @@
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__rosidl_typesupport_introspection_c.h
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__type_support.c
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__type_support.c
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__rosidl_typesupport_introspection_c.h
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__type_support.c
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__rosidl_typesupport_introspection_c.h
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__type_support.c
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__rosidl_typesupport_introspection_c.h
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__rosidl_typesupport_introspection_c.h
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h
@@ -76,9 +84,14 @@
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/grasp.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/navigate_to_pose.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__builder.hpp
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__struct.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__struct.hpp
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__builder.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__traits.hpp
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__type_support.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__type_support.hpp
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__traits.hpp
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/dexterous_hand.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__builder.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__traits.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__type_support.hpp
@@ -103,6 +116,7 @@
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__rosidl_typesupport_fastrtps_cpp.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__rosidl_typesupport_fastrtps_cpp.hpp
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__rosidl_typesupport_fastrtps_cpp.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__rosidl_typesupport_fastrtps_cpp.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp
@@ -115,6 +129,8 @@
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__rosidl_typesupport_introspection_cpp.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__type_support.cpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__rosidl_typesupport_introspection_cpp.hpp
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__rosidl_typesupport_introspection_cpp.hpp
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__type_support.cpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__rosidl_typesupport_introspection_cpp.hpp
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__type_support.cpp
@@ -138,7 +154,9 @@
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/__init__.py
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/_grasp_s.c
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action/_navigate_to_pose_s.c
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action/_dexterous_hand_s.c
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action/__init__.py
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action/_dexterous_hand.py
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action/_navigate_to_pose.py
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/libdros_common_interfaces__rosidl_generator_py.so
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/__init__.py
@@ -167,6 +185,7 @@
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/srv/DeviceInfo.idl
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/srv/Grasp.idl
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/action/NavigateToPose.idl
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/action/DexterousHand.idl
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/IMUInfo.msg
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/Extrinsics.msg
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/Metadata.msg
@@ -178,6 +197,7 @@
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/srv/Grasp_Request.msg
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/srv/Grasp_Response.msg
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/nav2/NavigateToPose.action
+/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/action/DexterousHand.action
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/ament_index/resource_index/package_run_dependencies/dros_common_interfaces
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/ament_index/resource_index/parent_prefix_path/dros_common_interfaces
 /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/ament_prefix_path.sh

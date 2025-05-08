@@ -1,0 +1,9 @@
+#goal
+int32 target_position
+---
+#result
+bool success
+string msg
+---
+#feedback
+float32 progress

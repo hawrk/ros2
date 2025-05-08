@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 15:28:43
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-05-07 13:40:05
+ * @LastEditTime: 2025-05-08 13:55:50
  * @Description: 任务分发，初始化BehaviorTreeFactory
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/dispatch_node.hpp
  */
@@ -14,6 +14,7 @@
 #include "dros_dispatch_service/navigation_node.hpp"
 #include "dros_dispatch_service/pickup_node.hpp"
 #include "dros_dispatch_service/grasp_node.hpp"
+#include "dros_dispatch_service/dexterous_hand_node.hpp"
 
 #include "behaviortree_cpp/bt_factory.h"
 
@@ -33,6 +34,7 @@ class DispatchNode : public rclcpp::Node
             nav_node_ = std::make_shared<NavigationNode>("navigation_node");
             pickup_node_ = std::make_shared<PickupNode>("pickup_node");
             grasp_node_ = std::make_shared<GraspNode>("grasp_node");
+            dexterous_hand_node_ = std::make_shared<DexterousHandNode>("dexterous_hand_node");
             // 初始化BehaviorTreeFactory
             // factory_.registerNodeType<NavigateToPoseAction>("NavigateToPoseAction",
             //     [this](const std::string& name, const BT::NodeConfig& config) {
@@ -41,6 +43,7 @@ class DispatchNode : public rclcpp::Node
             factory_.registerNodeType<NavigateToPoseAction>("NavigateToPoseAction", nav_node_);
             factory_.registerNodeType<PickupAction>("PickupAction", pickup_node_);
             factory_.registerNodeType<GraspAction>("GraspAction", grasp_node_);
+            factory_.registerNodeType<DexterousHandAction>("DexterousHandAction", dexterous_hand_node_);
 
             // <PickupAction item_name="{item_name}" />
 
@@ -52,6 +55,7 @@ class DispatchNode : public rclcpp::Node
                         <NavigateToPoseAction  goal_pose="{goal_pose}" />
                         <PickupAction item_name="{item_name}" />
                         <GraspAction grasp_name="{grasp_name}" />
+                        <DexterousHandAction target_position="{target_position}" />
                     </Sequence>
                 </BehaviorTree>
             </root>
@@ -60,6 +64,7 @@ class DispatchNode : public rclcpp::Node
             blackboard->set("goal_pose", geometry_msgs::msg::PoseStamped{});
             blackboard->set("item_name", std::string{"pickup_item"});
             blackboard->set("grasp_name", std::string{"grasp_item"});
+            blackboard->set("target_position", std::string{"target_position"});
             // 解析XML字符串
             tree_ = factory_.createTreeFromText(xml_string, blackboard);
         }
@@ -77,6 +82,7 @@ class DispatchNode : public rclcpp::Node
                 blackboard->set("goal_pose", create_goal_pose_from_message(task_string));
                 blackboard->set("item_name", create_pickup_item_from_message(task_string));
                 blackboard->set("grasp_name", create_pickup_item_from_message(task_string));
+                blackboard->set("target_position", create_pickup_item_from_message(task_string));
                 tree_ = factory_.createTreeFromText(xml_string, blackboard);
 
             } catch(const std::exception& e) {
@@ -163,7 +169,8 @@ class DispatchNode : public rclcpp::Node
                         actions += "    <NavigateToPoseAction  goal_pose=\"{goal_pose}\" />\n";
                     }
                     if(item.contains("pick_up")) {
-                        actions += "\t\t\t\t<GraspAction grasp_name=\"{grasp_name}\" />\n";     
+                        //actions += "\t\t\t\t<GraspAction grasp_name=\"{grasp_name}\" />\n";  
+                        actions += "\t\t\t\t<DexterousHandAction target_position=\"{target_position}\" />\n";     
                     }
                 }
             } else {
@@ -184,6 +191,7 @@ class DispatchNode : public rclcpp::Node
         std::shared_ptr<NavigationNode> nav_node_;
         std::shared_ptr<PickupNode> pickup_node_;
         std::shared_ptr<GraspNode> grasp_node_;
+        std::shared_ptr<DexterousHandNode> dexterous_hand_node_;
 
         rclcpp::Subscription<std_msgs::msg::String>::SharedPtr module_sub_;   // 接受思模块任务派发
 

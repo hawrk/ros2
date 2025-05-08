@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dros_common_interfaces/srv/Grasp.srv
+// generated code does not contain a copyright notice
+
+
+module dros_common_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "for the Grasp service definition.")
+    struct Grasp_Request {
+      string object_name;
+    };
+    @verbatim (language="comment", text=
+      "result")
+    struct Grasp_Response {
+      int32 err_code;
+
+      string err_msg;
+    };
+  };
+};

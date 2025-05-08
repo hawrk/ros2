@@ -1,3 +1,5 @@
+action/DexterousHand.action
+action/DexterousHand.idl
 action/NavigateToPose.idl
 msg/Extrinsics.idl
 msg/IMUInfo.idl

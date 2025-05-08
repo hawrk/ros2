@@ -82,6 +82,7 @@ rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp: rosi
 rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp: rosidl_adapter/dros_common_interfaces/srv/DeviceInfo.idl
 rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp: rosidl_adapter/dros_common_interfaces/srv/Grasp.idl
 rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp: rosidl_adapter/dros_common_interfaces/action/NavigateToPose.idl
+rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp: rosidl_adapter/dros_common_interfaces/action/DexterousHand.idl
 rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -228,6 +229,9 @@ rosidl_typesupport_c/dros_common_interfaces/srv/grasp__type_support.cpp: rosidl_
 rosidl_typesupport_c/dros_common_interfaces/action/navigate_to_pose__type_support.cpp: rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/dros_common_interfaces/action/navigate_to_pose__type_support.cpp
 
+rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp: rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp
+
 CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp.o: CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/flags.make
 CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp.o: rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp
 CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp.o: CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
@@ -326,6 +330,20 @@ CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/navigate_to_pose__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_typesupport_c/dros_common_interfaces/action/navigate_to_pose__type_support.cpp -o CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/navigate_to_pose__type_support.cpp.s
 
+CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.o: CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.o: rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp
+CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.o: CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.o -MF CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.o.d -o CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.o -c /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp
+
+CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp > CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.i
+
+CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp -o CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.s
+
 # Object files for target dros_common_interfaces__rosidl_typesupport_c
 dros_common_interfaces__rosidl_typesupport_c_OBJECTS = \
 "CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp.o" \
@@ -334,7 +352,8 @@ dros_common_interfaces__rosidl_typesupport_c_OBJECTS = \
 "CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/msg/rgbd__type_support.cpp.o" \
 "CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/srv/device_info__type_support.cpp.o" \
 "CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/srv/grasp__type_support.cpp.o" \
-"CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/navigate_to_pose__type_support.cpp.o"
+"CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/navigate_to_pose__type_support.cpp.o" \
+"CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.o"
 
 # External object files for target dros_common_interfaces__rosidl_typesupport_c
 dros_common_interfaces__rosidl_typesupport_c_EXTERNAL_OBJECTS =
@@ -346,6 +365,7 @@ libdros_common_interfaces__rosidl_typesupport_c.so: CMakeFiles/dros_common_inter
 libdros_common_interfaces__rosidl_typesupport_c.so: CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/srv/device_info__type_support.cpp.o
 libdros_common_interfaces__rosidl_typesupport_c.so: CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/srv/grasp__type_support.cpp.o
 libdros_common_interfaces__rosidl_typesupport_c.so: CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/navigate_to_pose__type_support.cpp.o
+libdros_common_interfaces__rosidl_typesupport_c.so: CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.o
 libdros_common_interfaces__rosidl_typesupport_c.so: CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/build.make
 libdros_common_interfaces__rosidl_typesupport_c.so: libdros_common_interfaces__rosidl_generator_c.so
 libdros_common_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
@@ -368,7 +388,7 @@ libdros_common_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libuniqu
 libdros_common_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libdros_common_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/librcutils.so
 libdros_common_interfaces__rosidl_typesupport_c.so: CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared library libdros_common_interfaces__rosidl_typesupport_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library libdros_common_interfaces__rosidl_typesupport_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -379,6 +399,7 @@ CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/clean
 
+CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp
 CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/dros_common_interfaces/action/navigate_to_pose__type_support.cpp
 CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/dros_common_interfaces/msg/extrinsics__type_support.cpp
 CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp

@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from dros_common_interfaces/action/DexterousHand.action
+// generated code does not contain a copyright notice
+
+
+module dros_common_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "goal")
+    struct DexterousHand_Goal {
+      int32 target_position;
+    };
+    @verbatim (language="comment", text=
+      "result")
+    struct DexterousHand_Result {
+      boolean success;
+
+      string msg;
+    };
+    @verbatim (language="comment", text=
+      "feedback")
+    struct DexterousHand_Feedback {
+      float progress;
+    };
+  };
+};

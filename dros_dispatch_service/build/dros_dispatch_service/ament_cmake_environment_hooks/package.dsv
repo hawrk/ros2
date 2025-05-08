@@ -1,4 +1,0 @@
-source;share/dros_dispatch_service/local_setup.bash
-source;share/dros_dispatch_service/local_setup.dsv
-source;share/dros_dispatch_service/local_setup.sh
-source;share/dros_dispatch_service/local_setup.zsh

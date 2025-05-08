@@ -235,4 +235,7 @@ CMakeFiles/dros_common_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_genera
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.h \
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
- /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_c/dros_common_interfaces/action/detail/navigate_to_pose__functions.h
+ /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_c/dros_common_interfaces/action/detail/navigate_to_pose__functions.h \
+ /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_c/dros_common_interfaces/action/detail/dexterous_hand__type_support.h \
+ /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_c/dros_common_interfaces/action/detail/dexterous_hand__struct.h \
+ /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_c/dros_common_interfaces/action/detail/dexterous_hand__functions.h

@@ -384,6 +384,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dros_common_interfaces/action" TYPE FILE FILES "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces/action/DexterousHand.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dros_common_interfaces/realsense" TYPE FILE FILES "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/msg/realsense/IMUInfo.msg")
 endif()
 
@@ -425,6 +429,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dros_common_interfaces/nav2" TYPE FILE FILES "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/action/nav2/NavigateToPose.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dros_common_interfaces/action" TYPE FILE FILES "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/action/DexterousHand.action")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

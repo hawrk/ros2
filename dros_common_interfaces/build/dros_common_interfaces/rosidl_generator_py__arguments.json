@@ -9,7 +9,8 @@
     "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces:msg/RGBD.idl",
     "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces:srv/DeviceInfo.idl",
     "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces:srv/Grasp.idl",
-    "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces:action/NavigateToPose.idl"
+    "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces:action/NavigateToPose.idl",
+    "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces:action/DexterousHand.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
@@ -159,6 +160,7 @@
     "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces/srv/DeviceInfo.idl",
     "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces/srv/Grasp.idl",
     "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces/action/NavigateToPose.idl",
+    "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_adapter/dros_common_interfaces/action/DexterousHand.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",

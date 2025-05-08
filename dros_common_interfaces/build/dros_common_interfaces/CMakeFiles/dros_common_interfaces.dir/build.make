@@ -77,6 +77,7 @@ CMakeFiles/dros_common_interfaces: ../../srv/Grasp.srv
 CMakeFiles/dros_common_interfaces: rosidl_cmake/srv/Grasp_Request.msg
 CMakeFiles/dros_common_interfaces: rosidl_cmake/srv/Grasp_Response.msg
 CMakeFiles/dros_common_interfaces: ../../action/nav2/NavigateToPose.action
+CMakeFiles/dros_common_interfaces: ../../action/DexterousHand.action
 CMakeFiles/dros_common_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/dros_common_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 CMakeFiles/dros_common_interfaces: /opt/ros/humble/share/std_msgs/msg/Bool.idl

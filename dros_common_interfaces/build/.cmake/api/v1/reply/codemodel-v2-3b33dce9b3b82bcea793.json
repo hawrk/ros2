@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-8520cc9f0b72a037fe50.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "dros_common_interfaces__py",
+					"jsonFile" : "directory-dros_common_interfaces__py-Debug-1c009097d88716c42ef0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "build/dros_common_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "dros_common_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_dros_common_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_dros_common_interfaces_egg-Debug-8c13611d032b46f599ba.json",
+					"name" : "ament_cmake_python_build_dros_common_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_dros_common_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_dros_common_interfaces-Debug-9eca426b2439066d9312.json",
+					"name" : "ament_cmake_python_copy_dros_common_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dros_common_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dros_common_interfaces-Debug-a136819c31899980faae.json",
+					"name" : "dros_common_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dros_common_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dros_common_interfaces__cpp-Debug-8e5ccd595fd903c66142.json",
+					"name" : "dros_common_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "dros_common_interfaces__py::@ab6cb35dbedcb674065d",
+					"jsonFile" : "target-dros_common_interfaces__py-Debug-79f7e5fda0861a757242.json",
+					"name" : "dros_common_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dros_common_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dros_common_interfaces__rosidl_generator_c-Debug-dc81f46192c14f2ed9dd.json",
+					"name" : "dros_common_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dros_common_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dros_common_interfaces__rosidl_generator_py-Debug-b70ba9094256165f095d.json",
+					"name" : "dros_common_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dros_common_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dros_common_interfaces__rosidl_typesupport_c-Debug-cb251748c6cd8713498c.json",
+					"name" : "dros_common_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dros_common_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dros_common_interfaces__rosidl_typesupport_c__pyext-Debug-0075ff993dabf35d8f3b.json",
+					"name" : "dros_common_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dros_common_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dros_common_interfaces__rosidl_typesupport_cpp-Debug-ab745a2ecd469a3bf200.json",
+					"name" : "dros_common_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dros_common_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dros_common_interfaces__rosidl_typesupport_fastrtps_c-Debug-91e9787b49fdbab3aa53.json",
+					"name" : "dros_common_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dros_common_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dros_common_interfaces__rosidl_typesupport_fastrtps_c__pyext-Debug-69546c1eb6d1fbfd92ec.json",
+					"name" : "dros_common_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dros_common_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dros_common_interfaces__rosidl_typesupport_fastrtps_cpp-Debug-b1cd59ee22b76a45a472.json",
+					"name" : "dros_common_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dros_common_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dros_common_interfaces__rosidl_typesupport_introspection_c-Debug-8ae9bc186e162db1f29b.json",
+					"name" : "dros_common_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dros_common_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dros_common_interfaces__rosidl_typesupport_introspection_c__pyext-Debug-2efb919abdaabb342c27.json",
+					"name" : "dros_common_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dros_common_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dros_common_interfaces__rosidl_typesupport_introspection_cpp-Debug-c71fcdd10ad67bcb1953.json",
+					"name" : "dros_common_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dros_common_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dros_common_interfaces_uninstall-Debug-0fb8af224cda87a4b15d.json",
+					"name" : "dros_common_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-93bf964b580c9ce80795.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build",
+		"source" : "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

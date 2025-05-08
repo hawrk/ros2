@@ -101,6 +101,11 @@ CMakeFiles/dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfa
 CMakeFiles/dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/navigate_to_pose__struct.hpp
 CMakeFiles/dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/navigate_to_pose__traits.hpp
 CMakeFiles/dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/navigate_to_pose__type_support.hpp
+CMakeFiles/dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/dexterous_hand.hpp
+CMakeFiles/dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__builder.hpp
+CMakeFiles/dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__struct.hpp
+CMakeFiles/dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__traits.hpp
+CMakeFiles/dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__type_support.hpp
 CMakeFiles/dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -125,6 +130,7 @@ rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp: rosidl_adapter/dro
 rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp: rosidl_adapter/dros_common_interfaces/srv/DeviceInfo.idl
 rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp: rosidl_adapter/dros_common_interfaces/srv/Grasp.idl
 rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp: rosidl_adapter/dros_common_interfaces/action/NavigateToPose.idl
+rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp: rosidl_adapter/dros_common_interfaces/action/DexterousHand.idl
 rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -355,11 +361,31 @@ rosidl_generator_cpp/dros_common_interfaces/action/detail/navigate_to_pose__trai
 rosidl_generator_cpp/dros_common_interfaces/action/detail/navigate_to_pose__type_support.hpp: rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dros_common_interfaces/action/detail/navigate_to_pose__type_support.hpp
 
+rosidl_generator_cpp/dros_common_interfaces/action/dexterous_hand.hpp: rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dros_common_interfaces/action/dexterous_hand.hpp
+
+rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__builder.hpp: rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__builder.hpp
+
+rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__struct.hpp: rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__struct.hpp
+
+rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__traits.hpp: rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__traits.hpp
+
+rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__type_support.hpp: rosidl_generator_cpp/dros_common_interfaces/msg/imu_info.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__type_support.hpp
+
 dros_common_interfaces__cpp: CMakeFiles/dros_common_interfaces__cpp
+dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__builder.hpp
+dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__struct.hpp
+dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__traits.hpp
+dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/dexterous_hand__type_support.hpp
 dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/navigate_to_pose__builder.hpp
 dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/navigate_to_pose__struct.hpp
 dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/navigate_to_pose__traits.hpp
 dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/detail/navigate_to_pose__type_support.hpp
+dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/dexterous_hand.hpp
 dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/action/navigate_to_pose.hpp
 dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/msg/detail/extrinsics__builder.hpp
 dros_common_interfaces__cpp: rosidl_generator_cpp/dros_common_interfaces/msg/detail/extrinsics__struct.hpp

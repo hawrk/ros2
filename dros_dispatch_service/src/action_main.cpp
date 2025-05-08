@@ -2,20 +2,23 @@
  * @Author: hawrkchen
  * @Date: 2025-04-17 15:07:21
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-04-29 13:53:16
+ * @LastEditTime: 2025-05-08 14:02:01
  * @Description: 
  * @FilePath: /dros_dispatch_service/src/action_main.cpp
  */
 #include <rclcpp/rclcpp.hpp>
 
 #include "rclcpp_action/rclcpp_action.hpp"
+
 #include "dros_common_interfaces/action/navigate_to_pose.hpp"
 #include "turtlesim/action/rotate_absolute.hpp"
 #include "dros_common_interfaces/srv/grasp.hpp"
+#include "dros_common_interfaces/action/dexterous_hand.hpp"
 
 using NavigateToPose = dros_common_interfaces::action::NavigateToPose;
 using RotateAbsolute = turtlesim::action::RotateAbsolute;
 using Grasp = dros_common_interfaces::srv::Grasp;
+using DexterousHand = dros_common_interfaces::action::DexterousHand;
 
 class NavigateToPoseServer: public rclcpp::Node {
     public:
@@ -154,6 +157,74 @@ class PickupActionServer: public rclcpp::Node {
 
     private:
         rclcpp_action::Server<RotateAbsolute>::SharedPtr action_server_;
+};
+
+// 灵巧手 动作action
+class DexterousHandActionServer: public rclcpp::Node {
+    public:
+        DexterousHandActionServer(const std::string& node_name): Node(node_name) {
+            RCLCPP_INFO(this->get_logger(), "DexterousHandActionServer has been started");
+            action_server_ = rclcpp_action::create_server<DexterousHand>(
+                this, "hand_control_module",
+                std::bind(&DexterousHandActionServer::goal_callback, this, std::placeholders::_1, std::placeholders::_2),
+                std::bind(&DexterousHandActionServer::cancel_callback, this, std::placeholders::_1),
+                std::bind(&DexterousHandActionServer::accept_callback, this, std::placeholders::_1));
+            
+        }
+    
+    private:
+        rclcpp_action::GoalResponse goal_callback(
+            const rclcpp_action::GoalUUID& uuid,
+            const std::shared_ptr<const DexterousHand::Goal>& goal)
+        {
+            (void)uuid;
+            RCLCPP_INFO(this->get_logger(), "Received goal request with angle %d", goal->target_position);
+            return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
+        }
+
+        rclcpp_action::CancelResponse cancel_callback(
+            const std::shared_ptr<rclcpp_action::ServerGoalHandle<DexterousHand>>& theta)
+        {
+            RCLCPP_INFO(this->get_logger(), "Received request to cancel goal");
+            (void)theta;
+            return rclcpp_action::CancelResponse::ACCEPT;
+        }
+
+        void accept_callback(
+            const std::shared_ptr<rclcpp_action::ServerGoalHandle<DexterousHand>>& goal_handle)
+        {
+            RCLCPP_INFO(this->get_logger(), "Accepting goal");
+            //goal_handle->accpet();
+            // 开启新的线程
+            auto execute_task = [this, goal_handle]() {
+                rclcpp::Rate loop_rate(2);
+                const auto& goal = goal_handle->get_goal();
+                auto feedback = std::make_shared<DexterousHand::Feedback>();
+                auto result = std::make_shared<DexterousHand::Result>();
+
+                for(int i = 0; i < 10; i++) {
+                    if(goal_handle->is_canceling()) {
+                        RCLCPP_INFO(this->get_logger(), "Goal is being canceled");
+                        result->msg = "success";
+                        goal_handle->canceled(result);
+                        return;
+                    }
+                    feedback->progress++;
+                    goal_handle->publish_feedback(feedback);
+                    RCLCPP_INFO(this->get_logger(), "Publishing feedback: %f", feedback->progress);
+                    loop_rate.sleep();
+                }
+                // 完成任务
+                result->success = true;
+                result->msg = "success";
+                goal_handle->succeed(result);
+                RCLCPP_INFO(this->get_logger(), "Goal succeeded");
+            };
+        }
+
+
+    private:
+        rclcpp_action::Server<DexterousHand>::SharedPtr action_server_;
 };
 
 class GraspServer: public rclcpp::Node {

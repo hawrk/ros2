@@ -34,7 +34,8 @@ set(srv_files
 
 # generate action headers
 set(action_files
-  "action/nav2/NavigateToPose.action")
+  "action/nav2/NavigateToPose.action"
+  "action/DexterousHand.action")
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
