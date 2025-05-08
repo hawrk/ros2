@@ -83,6 +83,7 @@ class DexterousHandAction : public BT::SyncActionNode {
                     RCLCPP_ERROR(dexterous_hand_node_->get_logger(), "Failed to get result");
                     return BT::NodeStatus::FAILURE;
             }
+            RCLCPP_INFO(dexterous_hand_node_->get_logger(), "我在等待灵巧手抓取结果");
             // 处理结果
             auto result = result_future.get();
             if(result.code != rclcpp_action::ResultCode::SUCCEEDED) {

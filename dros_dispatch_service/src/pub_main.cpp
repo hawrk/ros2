@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-17 14:53:58
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-04-28 11:07:41
+ * @LastEditTime: 2025-05-08 16:30:27
  * @Description: 
  * @FilePath: /dros_dispatch_service/src/pub_main.cpp
  */
@@ -19,7 +19,7 @@ public:
     PubNode() : Node("pub_node")
     {
         RCLCPP_INFO(this->get_logger(), " publisher node start...");
-        pub_ = this->create_publisher<std_msgs::msg::String>("module_task", 10);
+        pub_ = this->create_publisher<std_msgs::msg::String>("/task_planning", 10);
         timer_ = this->create_wall_timer(std::chrono::milliseconds(30000), std::bind(&PubNode::timer_callback, this));
     }
 

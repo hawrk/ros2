@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-17 15:07:21
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-05-08 14:02:01
+ * @LastEditTime: 2025-05-08 16:38:15
  * @Description: 
  * @FilePath: /dros_dispatch_service/src/action_main.cpp
  */
@@ -220,6 +220,7 @@ class DexterousHandActionServer: public rclcpp::Node {
                 goal_handle->succeed(result);
                 RCLCPP_INFO(this->get_logger(), "Goal succeeded");
             };
+            std::thread{execute_task}.detach();
         }
 
 
@@ -256,11 +257,13 @@ int main(int argc, char *argv[])
     auto navigate_to_pose_server = std::make_shared<NavigateToPoseServer>("navigate_to_pose_server");
     auto pickup_action_server = std::make_shared<PickupActionServer>("pickup_action_server");
     auto grasp_server = std::make_shared<GraspServer>("grasp_server");
+    auto dex_server = std::make_shared<DexterousHandActionServer>("dex_server");
 
     rclcpp::executors::MultiThreadedExecutor executor;
     executor.add_node(pickup_action_server);
     executor.add_node(navigate_to_pose_server);
     executor.add_node(grasp_server);
+    executor.add_node(dex_server);
 
     executor.spin();
     rclcpp::shutdown();
