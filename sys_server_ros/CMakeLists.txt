@@ -8,6 +8,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
 
 add_executable(main src/main.cpp)
 target_include_directories(main PUBLIC
@@ -17,6 +18,7 @@ target_compile_features(main PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++1
 ament_target_dependencies(
   main
   "rclcpp"
+  "std_msgs"
 )
 
 install(TARGETS main
