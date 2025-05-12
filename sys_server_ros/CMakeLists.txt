@@ -10,7 +10,23 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 
-add_executable(main src/main.cpp)
+find_package(SQLite3 REQUIRED)
+find_package(SqliteOrm REQUIRED)
+
+# common dir to so lib
+file(GLOB COMM_SRC_FILES common/*.cpp)
+
+add_library(hv_common SHARED ${COMM_SRC_FILES})
+
+set(OTA_SRC_LIST internal/ota/ota_mng_query.cpp
+        internal/ota/ota_mng_upgrade.cpp
+        internal/ota/ota_mng_rollback.cpp
+        internal/ota/ota_app_manager.cpp)
+
+set(HANDLER_SRC_LIST handler/sys_handler.cpp
+        handler/router.cpp)
+
+add_executable(main src/main.cpp ${HANDLER_SRC_LIST} ${OTA_SRC_LIST})
 target_include_directories(main PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
@@ -21,8 +37,20 @@ ament_target_dependencies(
   "std_msgs"
 )
 
+target_link_libraries(main hv_common hv z archive udev sqlite3)
+target_link_libraries(main ssl crypto curl)
+
+
 install(TARGETS main
   DESTINATION lib/${PROJECT_NAME})
+
+#安装生成的共享库
+install(TARGETS hv_common
+  DESTINATION lib/)
+  
+#安装配置文件
+install(DIRECTORY etc
+  DESTINATION share/${PROJECT_NAME}/)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

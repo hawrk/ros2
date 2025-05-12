@@ -1,0 +1,19 @@
+{
+    "server": {
+        "server": "127.0.0.1",
+        "port": 8090
+    },
+
+    "log":{
+        "file": "sys_server.log",
+        "level": "info",
+        "dye": true
+    },
+
+    "ota":{
+        "app_dir": "/home/hawrk/ota/app_dir",
+        "backup_dir": "/home/hawrk/ota/backup_dir",
+        "download_dir": "/home/hawrk/ota/download_dir",
+        "gcm_key": "1234567890123456"
+    }
+}
