@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2024-12-09 14:17:45
  * @Description: 
- * @FilePath: /sys_server/internal/ota/ota_app_manager.cpp
+ * @FilePath: /sys_server_ros/internal/ota/ota_app_manager.cpp
  */
 
 
@@ -30,7 +30,8 @@ void OTAAppManager::start()
     std::vector<std::string> env = {};
 
     std::cout << "Starting OTA app..." << std::endl;
-    LOGI("App path: %s", app_path.c_str());
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "app path: %s", app_path.c_str());
+    //LOGI("App path: %s", app_path.c_str());
 
 }
 
@@ -40,14 +41,18 @@ std::tuple<long long, long long, long long> OTAAppManager::get_sys_space()
     // 默认检查根目录，可根据需要修改
     struct statvfs st;
     if (statvfs("/", &st) != 0) {
-        LOGE("statvfs failed");
+        //LOGE("statvfs failed");
+        RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "statvfs failed");
         return std::make_tuple(0, 0, 0);
     }
     long long free_size = st.f_bfree * st.f_frsize;
     long long total_size = st.f_blocks * st.f_frsize;
     long long available = st.f_frsize * st.f_bavail;
 
-    LOGI("总空间: %lld MB, 可用空间: %lld MB, 剩余空间: %lld MB", total_size/(1024*1024), available/(1024*1024), free_size/(1024*1024));
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), 
+        "总空间: %lld MB, 可用空间: %lld MB, 剩余空间: %lld MB", total_size/(1024*1024), available/(1024*1024), free_size/(1024*1024));
+
+    //LOGI("总空间: %lld MB, 可用空间: %lld MB, 剩余空间: %lld MB", total_size/(1024*1024), available/(1024*1024), free_size/(1024*1024));
 
     //std::cout << "总空间: " << total_size/(1024*1024) << " MB" << std::endl;
     //std::cout << "可用空间:" << available/(1024*1024) << " MB" << std::endl;
@@ -62,7 +67,9 @@ bool OTAAppManager::copy_app_files(const std::filesystem::path& source_dir,
     namespace fs = std::filesystem;
     // 检查源目录是否存在
     if (!fs::exists(source_dir) || !fs::is_directory(source_dir)) {
-        std::cerr << "Source directory does not exist or is not a directory: " << source_dir << std::endl;
+        RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "Source directory does not exist or is not a directory:, \
+            source_dir: %s", source_dir.c_str());
+        //std::cerr << "Source directory does not exist or is not a directory: " << source_dir << std::endl;
         return false;
     }
 

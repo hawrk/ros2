@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2024-12-09 11:55:40
  * @Description: 
- * @FilePath: /sys_server/internal/ota/ota_mng_rollback.cpp
+ * @FilePath: /sys_server_ros/internal/ota/ota_mng_rollback.cpp
  */
 
 #include "ota_mng_rollback.hpp"
@@ -24,12 +24,14 @@ bool OTAManagerRollback::parse_param() {
             rollback_version_ = body["rollback_version"].get<std::string>();
         }
         if(app_name_.empty() || cur_version_.empty() || rollback_version_.empty()) {
-            LOGE("in OTAManagerRollback, app_name or cur_version or rollback_version is empty");
+            RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "in OTAManagerRollback, app_name or cur_version or rollback_version is empty");
+            //LOGE("in OTAManagerRollback, app_name or cur_version or rollback_version is empty");
             return false;
         }
 
     } catch(const std::exception& e) {
-        LOGE("in OTAManagerRollback, Parse body error: %s", e.what());
+        RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "in OTAManagerRollback, Parse body error: %s", e.what());
+        //LOGE("in OTAManagerRollback, Parse body error: %s", e.what());
         return false;
     }
 
@@ -37,10 +39,12 @@ bool OTAManagerRollback::parse_param() {
 }
 
 bool OTAManagerRollback::process() {
-    LOGI("in OTAManagerRollback, process start...");
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "in OTAManagerRollback, process start...");
+    //LOGI("in OTAManagerRollback, process start...");
     // 1. 校验参数
     if(!parse_param()) {
-        LOGE("in OTAManagerRollback, parse_param error");
+        RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "in OTAManagerRollback, parse_param error");
+        //LOGE("in OTAManagerRollback, parse_param error");
         set_http_resp(ErrorCode::ERR_PARAM_INVALID, "");
         return false;
     }
@@ -49,13 +53,15 @@ bool OTAManagerRollback::process() {
     // select * from app_version where app_name = app_name_;
     auto version = storage.get_all<AppVersion>(where(c(&AppVersion::app_name) == app_name_));
     if(version.empty()) {
-        LOGE("in OTAManagerRollback, no app version data");
+        RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "in OTAManagerRollback, no app version data");
+        //LOGE("in OTAManagerRollback, no app version data");
         set_http_resp(ErrorCode::ERR_APP_VERSION_NO_DATA, "");
         return false;
     }
     for(auto& v : version) {  // 原则上只有一条数据
         if(v.version != cur_version_) {  // 当前版本是否匹配
-            LOGE("cur_version is not equal to current version");
+            RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "in OTAManagerRollback, cur_version is not equal to current version");
+            //LOGE("cur_version is not equal to current version");
             set_http_resp(ErrorCode::ERR_PARAM_INVALID, "");
             return false;
         }
@@ -63,9 +69,11 @@ bool OTAManagerRollback::process() {
         // 回滚版本命名规则：{app_name}_v{version}
         std::string rollback_file = g_config_json["ota"]["backup_dir"].get<std::string>() + "/" 
             + app_name_ + "_v" + rollback_version_;
-        LOGI("rollback_file: %s", rollback_file.c_str());
+        RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "in OTAManagerRollback, rollback_file: %s", rollback_file.c_str());
+        //LOGI("rollback_file: %s", rollback_file.c_str());
         if(!std::filesystem::exists(rollback_file)) {
-            LOGE("rollback_file not exists");
+            RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "in OTAManagerRollback, rollback_file not exists");
+            //LOGE("rollback_file not exists");
             set_http_resp(ErrorCode::ERR_ROLLBACK_FILE_NOT_EXIST, "");
             return false;
         }

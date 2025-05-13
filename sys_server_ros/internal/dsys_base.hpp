@@ -2,12 +2,13 @@
  * @Author: hawrkchen
  * @Date: 2024-12-09 10:30:00
  * @Description: 
- * @FilePath: /sys_server/internal/dsys_base.hpp
+ * @FilePath: /sys_server_ros/internal/dsys_base.hpp
  */
 #pragma once
 
 #include <string>
 #include <iostream>
+#include <rclcpp/rclcpp.hpp>
 #include "ota/ota_app_manager.hpp"
 #include "err_code.hpp"
 #include <memory>

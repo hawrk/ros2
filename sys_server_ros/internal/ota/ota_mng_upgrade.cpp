@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2024-12-09 11:55:28
  * @Description: 
- * @FilePath: /sys_server/internal/ota/ota_mng_upgrade.cpp
+ * @FilePath: /sys_server_ros/internal/ota/ota_mng_upgrade.cpp
  */
 
 #include "ota_mng_upgrade.hpp"
@@ -35,23 +35,27 @@ bool OTAManagerUpgrade::parse_param() {
         // check 
         if(app_name_.empty()|| version_.empty()|| 
             url_.empty()) {
-            LOGE("in OTAManagerUpgrade, not enough param");
+            RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "in OTAManagerUpgrade, not enough param");
+            //LOGE("in OTAManagerUpgrade, not enough param");
             return false;
         }
 
     } catch(const std::exception& e) {
-        LOGE("in OTAManagerUpgrade, Parse body error: %s", e.what());
+        RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "in OTAManagerUpgrade, Parse body error: %s", e.what());
+        //LOGE("in OTAManagerUpgrade, Parse body error: %s", e.what());
         return false;
     }
     return true;
 }
 
 bool OTAManagerUpgrade::process() {
-    LOGI("OTAManagerUpgrade,process start");
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,process start");
+    //LOGI("OTAManagerUpgrade,process start");
 
     // 1.检查入参
     if(!parse_param()) {
-        LOGE("Check param Error");
+        RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,process, parse_param Error");
+        //LOGE("Check param Error");
         set_http_resp(ErrorCode::ERR_PARAM_INVALID, "");
         return false;
     }
@@ -60,7 +64,9 @@ bool OTAManagerUpgrade::process() {
     auto ret_size = app_manager_->get_sys_space();
     avaiable_space_size_ = std::get<1>(ret_size);
     if(avaiable_space_size_ < constant::MIN_AVAILABLE_SPACE) {
-        LOGE("OTAManagerUpgrade,Check sys space Error, available_size: %lld", avaiable_space_size_);
+        RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,process, Check sys space Error, available_size: %lld", 
+            avaiable_space_size_);
+        //LOGE("OTAManagerUpgrade,Check sys space Error, available_size: %lld", avaiable_space_size_);
         set_http_resp(ErrorCode::ERR_SYS_SPACE_NOT_ENOUGH,  "");
         return false;
     }
@@ -70,7 +76,9 @@ bool OTAManagerUpgrade::process() {
         //std::this_thread::sleep_for(std::chrono::milliseconds(10000));
         // 在该异步线程内，避免直接使用原生类的成员变量，主线程的类提前析构有可能资源被释放
         // 采用 self-> 方式访问类成员变量
-        LOGI("get app_name: %s, version: %s, url: %s", self->app_name_.c_str(), self->version_.c_str(), self->url_.c_str());
+        RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "get app_name: %s, version: %s, url: %s",
+            self->app_name_.c_str(), self->version_.c_str(), self->url_.c_str());
+        //LOGI("get app_name: %s, version: %s, url: %s", self->app_name_.c_str(), self->version_.c_str(), self->url_.c_str());
 
         // 先查一下表
         auto& storage = Database::getInstance();
@@ -86,7 +94,8 @@ bool OTAManagerUpgrade::process() {
         // 查机器人本地状态表
         auto robot = storage.get_all<RobotStatus>();
         if(robot.empty()) {
-            LOGE("OTAManagerUpgrade,get_robot_version Error");
+            RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,process, get_robot_version Error");
+            //LOGE("OTAManagerUpgrade,get_robot_version Error");
             // 本地机器人无数据时，发更新回执没用了，因为找不到robot_sn，只能更新本地版本表
             self->update_status(storage, 2, "robot_sn not found");
         }
@@ -94,14 +103,16 @@ bool OTAManagerUpgrade::process() {
             self->robot_sn_ = r.robot_sn;
             break;
         }
-        LOGI("get robot sn: %s",  self->robot_sn_.c_str());
+        RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "get robot sn: %s",  self->robot_sn_.c_str());
+        //LOGI("get robot sn: %s",  self->robot_sn_.c_str());
         // TODO. 这里还是需要检查一下机器人本身的状态，在运行中、故障等状态不能更新
         // 电量过低不能更新，还有在更新状态下是否可以更新等
         
         // 3. 下载升级包
         int pkg_size = self->get_upgrade_pkg(self->url_);    
         if(pkg_size == 0) {
-            LOGE("OTAManagerUpgrade,get_upgrade_pkg Error");
+            RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,process, get_upgrade_pkg Error");
+            //LOGE("OTAManagerUpgrade,get_upgrade_pkg Error");
             auto err_msg = "download pkg file failed";
             //　更新表状态
             self->update_status(storage, 2, err_msg);
@@ -113,9 +124,11 @@ bool OTAManagerUpgrade::process() {
         std::string decrypto_file;
         std::string gcm_key = g_config_json["ota"]["gcm_key"].get<std::string>();
         std::vector<unsigned char> keyVec(gcm_key.begin(), gcm_key.end());
-        LOGI("get decrypt file: %s, key:[%s]", self->local_file_.c_str(), gcm_key.c_str());
+        RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "get gcm_key: %s", gcm_key.c_str());
+        //LOGI("get decrypt file: %s, key:[%s]", self->local_file_.c_str(), gcm_key.c_str());
         if(!g_crypto_suite.aes_gcm_decrypt(self->local_file_,decrypto_file, keyVec)) {
-            LOGE("OTAManagerUpgrade,gcm_decrypt failed");
+            RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,process, gcm_decrypt failed");
+            //LOGE("OTAManagerUpgrade,gcm_decrypt failed");
             auto err_msg = "gcm_decrypt failed";
             self->update_status(storage, 2, err_msg);
             self->send_http_upgrade_result(self->robot_sn_, self->app_name_, 2, err_msg);
@@ -125,7 +138,8 @@ bool OTAManagerUpgrade::process() {
 
         // 4.2 解压升级包
         if(!FileSys::extract_tar_gz_v2(decrypto_file, g_config_json["ota"]["download_dir"].get<std::string>())) {
-            LOGE("OTAManagerUpgrade,extract_tar_gz Error");
+            RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,process, extract_tar_gz Error");
+            //LOGE("OTAManagerUpgrade,extract_tar_gz Error");
             auto err_msg = "extract_tar_gz Error";
             self->update_status(storage, 2, err_msg);
             self->send_http_upgrade_result(self->robot_sn_, self->app_name_, 2, err_msg);
@@ -135,7 +149,8 @@ bool OTAManagerUpgrade::process() {
 
         // 4.3. 停止原有程序
         if(!self->app_manager_->stop_app_nodes(self->app_name_)) {
-            LOGE("OTAManagerUpgrade,stop_app_nodes Error");
+            RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,process, stop_app_nodes Error");
+            //LOGE("OTAManagerUpgrade,stop_app_nodes Error");
             auto err_msg = "stop_app_nodes Error";
             self->update_status(storage, 2, err_msg);
             self->send_http_upgrade_result(self->robot_sn_, self->app_name_, 2, err_msg);
@@ -145,12 +160,16 @@ bool OTAManagerUpgrade::process() {
         // 5. 备份原有文件
         std::string app_dir = g_config_json["ota"]["app_dir"].get<std::string>() + "/" + self->app_name_;
         std::string backup_dir = g_config_json["ota"]["backup_dir"].get<std::string>() + "/" + self->app_name_;
-        LOGI("OTAManagerUpgrade,process, app_dir: %s, backup_dir: %s", app_dir.c_str(), backup_dir.c_str());
+        RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "app_dir: %s, backup_dir: %s", 
+            app_dir.c_str(), backup_dir.c_str());
+        //LOGI("OTAManagerUpgrade,process, app_dir: %s, backup_dir: %s", app_dir.c_str(), backup_dir.c_str());
         if(!std::filesystem::exists(app_dir)) {   // 原服务不存在，表示是第一次部署，跳过备份
-            LOGI("OTAManagerUpgrade,process, app_dir not exist, skip backup");
+            RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,process, app_dir not exist, skip backup");
+            //LOGI("OTAManagerUpgrade,process, app_dir not exist, skip backup");
         } else {
             if(!self->app_manager_->copy_app_files(app_dir, backup_dir)) {
-                LOGE("OTAManagerUpgrade,backup_app_files Error");
+                RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,process, backup_app_files Error");
+                //LOGE("OTAManagerUpgrade,backup_app_files Error");
                 auto err_msg = "backup_app_files Error";
                 self->update_status(storage, 2, err_msg);
                 self->send_http_upgrade_result(self->robot_sn_, self->app_name_, 2, err_msg);
@@ -160,9 +179,11 @@ bool OTAManagerUpgrade::process() {
 
         // 6. 升级文件
         std::string download_app_dir = g_config_json["ota"]["download_dir"].get<std::string>() + "/" + self->app_name_;
-        LOGI("OTAManagerUpgrade,process, new_app_dir: %s", download_app_dir.c_str());
+        RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "download_app_dir: %s", download_app_dir.c_str());
+        //LOGI("OTAManagerUpgrade,process, new_app_dir: %s", download_app_dir.c_str());
         if(!self->app_manager_->copy_app_files(download_app_dir, app_dir)) {
-            LOGE("OTAManagerUpgrade, replace_app_files Error");
+            RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,process, replace_app_files Error");
+            //LOGE("OTAManagerUpgrade, replace_app_files Error");
             auto err_msg = "replace_app_files Error";
             self->update_status(storage, 2, err_msg);
             self->send_http_upgrade_result(self->robot_sn_, self->app_name_, 2, err_msg);
@@ -173,14 +194,16 @@ bool OTAManagerUpgrade::process() {
         // 7. 启动新版本程序
 
         // 8. 验证各项服务是否正常
-        
-        LOGI("OTAManagerUpgrade,process, verify_services");
+
+        RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,process, verify_services");
+        //LOGI("OTAManagerUpgrade,process, verify_services");
         return;
 
     };
     std::thread {thread_pro}.detach();
 
-    LOGI("OTAManagerUpgrade, ret response");
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,process end"); 
+    //LOGI("OTAManagerUpgrade, ret response");
     // 回包
     set_http_resp(ErrorCode::SUCCESS, "");
     return true;
@@ -195,21 +218,27 @@ int32_t OTAManagerUpgrade::get_upgrade_pkg(const std::string& url) {
         return 0;
     }
     local_file_ = g_config_json["ota"]["download_dir"].get<std::string>() + "/" + url.substr(last_slash_pos+1);
-    LOGI("get download local file: %s", local_file_.c_str());
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "get download local file: %s", local_file_.c_str());
+    //LOGI("get download local file: %s", local_file_.c_str());
     // 先获取远程文件的大小 
     
     
     long long remote_file_size =  curl_mngr_.get_upgrade_pkg_size(url);
     if(remote_file_size == 0) {
-        LOGE("OTAManagerUpgrade,get_upgrade_pkg, get remote file size failed");
+        RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,get_upgrade_pkg, get remote file size failed");
+        //LOGE("OTAManagerUpgrade,get_upgrade_pkg, get remote file size failed");
         return 0;
     }
     // check 本地空间是否足够远程文件大小
-    LOGI("OTAManagerUpgrade,get_upgrade_pkg, avaiable_size: %lld, remote_size: %lld", 
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,get_upgrade_pkg, avaiable_size: %lld, remote_size: %lld", 
         avaiable_space_size_, remote_file_size);
+    //LOGI("OTAManagerUpgrade,get_upgrade_pkg, avaiable_size: %lld, remote_size: %lld", 
+    //    avaiable_space_size_, remote_file_size);
     if(avaiable_space_size_ < remote_file_size*3) {  //本地空间要大于3倍远程文件大小
-        LOGE("OTAManagerUpgrade,get_upgrade_pkg, not enough space, avaiable_size: %lld, remote_size: %lld", 
+        RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,get_upgrade_pkg, not enough space, avaiable_size: %lld, remote_size: %lld", 
             avaiable_space_size_, remote_file_size);
+        //LOGE("OTAManagerUpgrade,get_upgrade_pkg, not enough space, avaiable_size: %lld, remote_size: %lld", 
+        //    avaiable_space_size_, remote_file_size);
         return 0;
     }
     
@@ -222,12 +251,16 @@ int32_t OTAManagerUpgrade::get_upgrade_pkg(const std::string& url) {
 
     // 计算下载的升级包大小
     if(!std::filesystem::exists(local_file_)) {
-        LOGE("OTAManagerUpgrade,get_upgrade_pkg, pkg_file: %s not exist", local_file_.c_str());
+        RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "OTAManagerUpgrade,get_upgrade_pkg, pkg_file: %s not exist", 
+            local_file_.c_str());
+        //LOGE("OTAManagerUpgrade,get_upgrade_pkg, pkg_file: %s not exist", local_file_.c_str());
         return 0;
     }
 
     int64_t size = std::filesystem::file_size(local_file_);
-    LOGI("OTAManagerUpgrade,get_upgrade_pkg, pkg_file: %s, size: %lld ", local_file_.c_str(), size);
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "get_upgrade_pkg, pkg_file: %s, size: %ld ", 
+        local_file_.c_str(), size);
+    //LOGI("OTAManagerUpgrade,get_upgrade_pkg, pkg_file: %s, size: %lld ", local_file_.c_str(), size);
     return size;  
 }
 
@@ -249,9 +282,11 @@ void OTAManagerUpgrade::send_http_upgrade_result(const std::string& robot_sn, co
     body["result"] = ret_code;
     body["message"] = msg;
     std::string req_body = body.dump();
-    LOGI("send_http_upgrade_result, req_body: %s", req_body.c_str());
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "send_http_upgrade_result, req_url: %s, req_body: %s",
+        req_url.c_str(), req_body.c_str());
+    //LOGI("send_http_upgrade_result, req_body: %s", req_body.c_str());
     std::string response;
     curl_mngr_.send_http_request(req_url, req_body, response);
-
-    LOGI("send_http_upgrade_result, response: %s", response.c_str());
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "send_http_upgrade_result, response: %s", response.c_str());
+    //LOGI("send_http_upgrade_result, response: %s", response.c_str());
 }

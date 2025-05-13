@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2024-12-12 14:13:16
  * @Description: 
- * @FilePath: /sys_server/handler/sys_handler.cpp
+ * @FilePath: /sys_server_ros/handler/sys_handler.cpp
  */
 
 #include "sys_handler.hpp"
@@ -39,7 +39,8 @@ int DHttpHandler::ota_upgrade_handler(HttpRequest* req, HttpResponse* res)
 {
     // print the request body
     hv::Json body_json = req->GetJson();
-    LOGI("OTA request body:%s", body_json.dump().c_str());
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "OTA request body:%s", body_json.dump().c_str());
+    //LOGI("OTA request body:%s", body_json.dump().c_str());
     //
     
     //std::unique_ptr<DsysBase> task = std::make_unique<OTAManagerUpgrade>();
@@ -50,7 +51,8 @@ int DHttpHandler::ota_upgrade_handler(HttpRequest* req, HttpResponse* res)
     task->process();
 
     auto [code, message, data] = task->get_http_resp();
-    LOGI("OTA response:%d, %s, %s", code, message.c_str(), data.c_str());
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "OTA response:%d, %s, %s", code, message.c_str(), data.c_str());
+    //LOGI("OTA response:%d, %s, %s", code, message.c_str(), data.c_str());
     response_status(res, code, message.c_str(), data.c_str());
 
     return HTTP_STATUS_OK;
@@ -59,7 +61,8 @@ int DHttpHandler::ota_upgrade_handler(HttpRequest* req, HttpResponse* res)
 int DHttpHandler::ota_query_handler(HttpRequest* req, HttpResponse* res) {
     // print the request body
     hv::Json body_json = req->GetJson();
-    LOGI("OTA request body:%s", body_json.dump().c_str());
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "OTA request body:%s", body_json.dump().c_str());
+    //LOGI("OTA request body:%s", body_json.dump().c_str());
     //
     
     std::unique_ptr<DsysBase> task = std::make_unique<OTAManagerQuery>();
@@ -69,7 +72,8 @@ int DHttpHandler::ota_query_handler(HttpRequest* req, HttpResponse* res) {
     task->process();
 
     auto [code, message, data] = task->get_http_resp();
-    LOGI("OTA response:%d, %s, %s", code, message.c_str(), data.c_str());
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "OTA response:%d, %s, %s", code, message.c_str(), data.c_str());
+    //LOGI("OTA response:%d, %s, %s", code, message.c_str(), data.c_str());
     response_status(res, code, message.c_str(), data.c_str());
 
     return HTTP_STATUS_OK;
@@ -78,7 +82,8 @@ int DHttpHandler::ota_query_handler(HttpRequest* req, HttpResponse* res) {
  int DHttpHandler::ota_rollback_handler(HttpRequest* req, HttpResponse* res) {
     // print the request body
     hv::Json body_json = req->GetJson();
-    LOGI("OTA request body:%s", body_json.dump().c_str());
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "OTA request body:%s", body_json.dump().c_str());
+    //LOGI("OTA request body:%s", body_json.dump().c_str());
     //
     
     std::unique_ptr<DsysBase> task = std::make_unique<OTAManagerRollback>();
@@ -88,7 +93,8 @@ int DHttpHandler::ota_query_handler(HttpRequest* req, HttpResponse* res) {
     task->process();
 
     auto [code, message, data] = task->get_http_resp();
-    LOGI("OTA response:%d, %s, %s", code, message.c_str(), data.c_str());
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "OTA response:%d, %s, %s", code, message.c_str(), data.c_str());
+    //LOGI("OTA response:%d, %s, %s", code, message.c_str(), data.c_str());
     response_status(res, code, message.c_str(), data.c_str());
 
     return HTTP_STATUS_OK;

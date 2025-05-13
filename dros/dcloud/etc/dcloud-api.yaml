@@ -1,0 +1,22 @@
+Name: dcloud-api
+Host: 127.0.0.1
+Port: 8866
+
+#日志
+Log:
+  ServiceName: dcloud-api
+  Mode: console  # console 终端打印      file 落地日志文件
+  Level: info
+  Encoding: json   #options=[json,plain]
+  KeepDays: 7
+
+#密钥相关
+Secret:
+  GcmKey: "1234567890123456"
+
+Mysql:
+  DataSource: root:pass.1234@tcp(127.0.0.1:3306)/dros?charset=utf8mb4&parseTime=true&loc=Local
+  IdleConn : 10
+
+  MaxOpenConn : 100
+  EnablePrintSQL : 1       #是否允许打印Sql语句，1打印， 0 不打印

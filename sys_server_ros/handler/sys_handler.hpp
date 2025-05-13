@@ -2,9 +2,11 @@
  * @Author: hawrkchen
  * @Date: 2024-12-12 14:13:10
  * @Description: 
- * @FilePath: /sys_server/handler/sys_handler.hpp
+ * @FilePath: /sys_server_ros/handler/sys_handler.hpp
  */
 #pragma once
+
+#include <rclcpp/rclcpp.hpp>
 
 #include "hv/HttpService.h"
 #include "../internal/dsys_base.hpp"

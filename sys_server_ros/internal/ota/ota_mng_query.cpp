@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2024-12-09 11:25:56
  * @Description: 
- * @FilePath: /sys_server/internal/ota/ota_mng_query.cpp
+ * @FilePath: /sys_server_ros/internal/ota/ota_mng_query.cpp
  */
 
 #include "ota_mng_query.hpp"
@@ -23,12 +23,14 @@ bool OTAManagerQuery::parse_param() {
         }
 
         if(query_type_ == 2 && app_name_.empty()) {
-            LOGE("in OTAManagerQuery, query_type 2 but app_name is empty");
+            //LOGE("in OTAManagerQuery, query_type 2 but app_name is empty");
+            RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "in OTAManagerQuery, query_type 2 but app_name is empty");
             return false;
         }
 
     } catch(const std::exception& e) {
-        LOGE("in OTAManagerQuery, Parse body error: %s", e.what());
+        RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "in OTAManagerQuery, Parse body error: %s", e.what());
+        //LOGE("in OTAManagerQuery, Parse body error: %s", e.what());
         return false;
     }
 
@@ -36,11 +38,12 @@ bool OTAManagerQuery::parse_param() {
 }
 
 bool OTAManagerQuery::process() {
-    LOGI("OTAManagerQuery,process start");
+    //LOGI("OTAManagerQuery,process start");
+    RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "OTAManagerQuery,process start");
 
     // 1.检查入参
     if(!parse_param()) {
-        LOGE("Check param Error");
+        RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "Check param Error");
         set_http_resp(ErrorCode::ERR_PARAM_INVALID, "");
         return false;
     }
@@ -51,9 +54,11 @@ bool OTAManagerQuery::process() {
     if(query_type_ == 1) {
         // 查询全部应用版本
         auto versions = storage.get_all<AppVersion>();
-        LOGI("OTAManagerQuery, get all app version size:%d", versions.size());
+        RCLCPP_INFO(rclcpp::get_logger("sys_server_ros"), "OTAManagerQuery, get all app version size:%ld", versions.size());
+        //LOGI("OTAManagerQuery, get all app version size:%ld", versions.size());
         if (versions.empty()) {
-            LOGE("in OTAManagerQuery, no app version data");
+            RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "in OTAManagerQuery, no app version data");
+            //LOGE("in OTAManagerQuery, no app version data");
             set_http_resp(ErrorCode::ERR_APP_VERSION_NO_DATA, "");
             return false;
         }
@@ -67,7 +72,8 @@ bool OTAManagerQuery::process() {
         // select * from app_version where app_name = app_name_;
         auto version = storage.get_all<AppVersion>(where(c(&AppVersion::app_name) == app_name_));
         if(version.empty()) {
-            LOGE("in OTAManagerQuery, no app version data");
+            RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "in OTAManagerQuery, no app version data");
+            //LOGE("in OTAManagerQuery, no app version data");
             set_http_resp(ErrorCode::ERR_APP_VERSION_NO_DATA, "");
             return false;
         }
@@ -76,7 +82,8 @@ bool OTAManagerQuery::process() {
             j.push_back({{"app_name", v.app_name}, {"version", v.version}});
         }
     } else {
-        LOGE("in OTAManagerQuery, query_type not support");
+        RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "in OTAManagerQuery, query_type not support");
+        //LOGE("in OTAManagerQuery, query_type not support");
         set_http_resp(ErrorCode::ERR_PARAM_INVALID, "");
         return false;
     }

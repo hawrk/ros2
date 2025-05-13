@@ -2,13 +2,15 @@
  * @Author: hawrkchen
  * @Date: 2024-12-09 14:17:11
  * @Description: app 升级类管理
- * @FilePath: /sys_server/internal/ota/ota_app_manager.hpp
+ * @FilePath: /sys_server_ros/internal/ota/ota_app_manager.hpp
  */
 #pragma once
 
 #include <iostream>
 #include <vector>
 #include <filesystem>
+
+#include <rclcpp/rclcpp.hpp>
 
 #include "hv/hlog.h"
 

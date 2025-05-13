@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-05-09 15:47:36
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-05-12 12:00:45
+ * @LastEditTime: 2025-05-12 12:13:24
  * @Description: 
  * @FilePath: /sys_server_ros/src/main.cpp
  */
@@ -36,7 +36,7 @@ int parse_confile(const char* confile) {
     std::ifstream ifs(confile);
     if(!ifs) {
         RCLCPP_ERROR(rclcpp::get_logger("sys_server_ros"), "open config file %s failed", confile);
-        return -1;
+        exit(EXIT_FAILURE);
     }
     //nlohmann::json g_config_json;
     ifs >> g_config_json;
