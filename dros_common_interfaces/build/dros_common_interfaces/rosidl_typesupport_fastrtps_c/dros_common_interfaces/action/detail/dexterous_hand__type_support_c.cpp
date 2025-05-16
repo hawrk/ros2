@@ -34,6 +34,8 @@ extern "C"
 {
 #endif
 
+#include "rosidl_runtime_c/string.h"  // obj_name
+#include "rosidl_runtime_c/string_functions.h"  // obj_name
 
 // forward declare type support functions
 
@@ -54,6 +56,20 @@ static bool _DexterousHand_Goal__cdr_serialize(
     cdr << ros_message->target_position;
   }
 
+  // Field name: obj_name
+  {
+    const rosidl_runtime_c__String * str = &ros_message->obj_name;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
   return true;
 }
 
@@ -69,6 +85,22 @@ static bool _DexterousHand_Goal__cdr_deserialize(
   // Field name: target_position
   {
     cdr >> ros_message->target_position;
+  }
+
+  // Field name: obj_name
+  {
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->obj_name.data) {
+      rosidl_runtime_c__String__init(&ros_message->obj_name);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->obj_name,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'obj_name'\n");
+      return false;
+    }
   }
 
   return true;
@@ -94,6 +126,10 @@ size_t get_serialized_size_dros_common_interfaces__action__DexterousHand_Goal(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // field.name obj_name
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->obj_name.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -131,6 +167,18 @@ size_t max_serialized_size_dros_common_interfaces__action__DexterousHand_Goal(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: obj_name
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -140,7 +188,7 @@ size_t max_serialized_size_dros_common_interfaces__action__DexterousHand_Goal(
     using DataType = dros_common_interfaces__action__DexterousHand_Goal;
     is_plain =
       (
-      offsetof(DataType, target_position) +
+      offsetof(DataType, obj_name) +
       last_member_size
       ) == ret_val;
   }
@@ -228,8 +276,10 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // msg
-#include "rosidl_runtime_c/string_functions.h"  // msg
+// already included above
+// #include "rosidl_runtime_c/string.h"  // msg
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"  // msg
 
 // forward declare type support functions
 

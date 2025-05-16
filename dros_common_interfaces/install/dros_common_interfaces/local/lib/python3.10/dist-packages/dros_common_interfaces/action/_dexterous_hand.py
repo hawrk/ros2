@@ -56,14 +56,17 @@ class DexterousHand_Goal(metaclass=Metaclass_DexterousHand_Goal):
 
     __slots__ = [
         '_target_position',
+        '_obj_name',
     ]
 
     _fields_and_field_types = {
         'target_position': 'int32',
+        'obj_name': 'string',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -71,6 +74,7 @@ class DexterousHand_Goal(metaclass=Metaclass_DexterousHand_Goal):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.target_position = kwargs.get('target_position', int())
+        self.obj_name = kwargs.get('obj_name', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -103,6 +107,8 @@ class DexterousHand_Goal(metaclass=Metaclass_DexterousHand_Goal):
             return False
         if self.target_position != other.target_position:
             return False
+        if self.obj_name != other.obj_name:
+            return False
         return True
 
     @classmethod
@@ -124,6 +130,19 @@ class DexterousHand_Goal(metaclass=Metaclass_DexterousHand_Goal):
             assert value >= -2147483648 and value < 2147483648, \
                 "The 'target_position' field must be an integer in [-2147483648, 2147483647]"
         self._target_position = value
+
+    @builtins.property
+    def obj_name(self):
+        """Message field 'obj_name'."""
+        return self._obj_name
+
+    @obj_name.setter
+    def obj_name(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'obj_name' field must be of type 'str'"
+        self._obj_name = value
 
 
 # Import statements for member types

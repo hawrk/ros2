@@ -1,0 +1,488 @@
+[0.008s] Invoking command in '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces -DCMAKE_INSTALL_PREFIX=/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces
+[0.050s] -- The C compiler identification is GNU 11.4.0
+[0.083s] -- The CXX compiler identification is GNU 11.4.0
+[0.087s] -- Detecting C compiler ABI info
+[0.130s] -- Detecting C compiler ABI info - done
+[0.134s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.134s] -- Detecting C compile features
+[0.134s] -- Detecting C compile features - done
+[0.136s] -- Detecting CXX compiler ABI info
+[0.186s] -- Detecting CXX compiler ABI info - done
+[0.190s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.190s] -- Detecting CXX compile features
+[0.191s] -- Detecting CXX compile features - done
+[0.192s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.281s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.333s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.336s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.338s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.358s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.379s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.393s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.406s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.426s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.439s] -- Found geographic_msgs: 1.0.6 (/opt/ros/humble/share/geographic_msgs/cmake)
+[0.456s] -- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)
+[0.682s] -- Found ament_cmake_cppcheck: 0.12.11 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[0.682s] -- Found ament_cmake_cpplint: 0.12.11 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[0.683s] -- Found ament_cmake_uncrustify: 0.12.11 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[0.684s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.883s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.128s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.143s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.143s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.159s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.159s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.159s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.159s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.171s] -- Found PythonExtra: .so  
+[1.223s] -- Found ament_cmake_flake8: 0.12.11 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[1.224s] -- Found ament_cmake_pep257: 0.12.11 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[1.226s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.239s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.240s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_c>;$<BUILD_INTERFACE:/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_typesupport_introspection_cpp>;/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_c;/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/rosidl_generator_py
+[1.240s] -- Configured cppcheck exclude dirs and/or files: 
+[1.244s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.244s] -- Configured cpplint exclude dirs and/or files: 
+[1.248s] -- Added test 'uncrustify' to check C / C++ code style
+[1.249s] -- Configured uncrustify additional arguments: 
+[1.249s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.250s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.251s] -- Added test 'lint_cmake' to check CMake code style
+[1.252s] -- Added test 'xmllint' to check XML markup files
+[1.253s] -- Configuring done
+[1.289s] -- Generating done
+[1.300s] -- Build files have been written to: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces
+[1.306s] Invoked command in '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces -DCMAKE_INSTALL_PREFIX=/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces
+[1.308s] Invoking command in '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces -- -j16 -l16
+[1.342s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.348s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.360s] [  2%] Built target ament_cmake_python_copy_dros_common_interfaces
+[1.485s] running egg_info
+[1.485s] creating dros_common_interfaces.egg-info
+[1.485s] writing dros_common_interfaces.egg-info/PKG-INFO
+[1.486s] writing dependency_links to dros_common_interfaces.egg-info/dependency_links.txt
+[1.486s] writing top-level names to dros_common_interfaces.egg-info/top_level.txt
+[1.486s] writing manifest file 'dros_common_interfaces.egg-info/SOURCES.txt'
+[1.487s] reading manifest file 'dros_common_interfaces.egg-info/SOURCES.txt'
+[1.487s] writing manifest file 'dros_common_interfaces.egg-info/SOURCES.txt'
+[1.504s] [  2%] Built target ament_cmake_python_build_dros_common_interfaces_egg
+[2.026s] [  2%] Built target dros_common_interfaces__cpp
+[2.031s] [  3%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dros_common_interfaces/msg/detail/rgbd__functions.c.o[0m
+[2.031s] [  4%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dros_common_interfaces/msg/detail/extrinsics__functions.c.o[0m
+[2.032s] [  5%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dros_common_interfaces/msg/detail/metadata__functions.c.o[0m
+[2.032s] [  6%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dros_common_interfaces/action/detail/dexterous_hand__functions.c.o[0m
+[2.033s] [  8%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dros_common_interfaces/msg/detail/imu_info__functions.c.o[0m
+[2.033s] [  9%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dros_common_interfaces/action/detail/navigate_to_pose__functions.c.o[0m
+[2.035s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.035s] [ 11%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dros_common_interfaces/srv/detail/grasp__functions.c.o[0m
+[2.035s] [ 13%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.035s] [ 13%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dros_common_interfaces/srv/detail/device_info__functions.c.o[0m
+[2.038s] [ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.132s] [ 16%] [32m[1mLinking C shared library libdros_common_interfaces__rosidl_generator_c.so[0m
+[2.161s] [ 16%] Built target dros_common_interfaces__rosidl_generator_c
+[2.169s] [ 19%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.169s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.169s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.444s] [ 20%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dros_common_interfaces/srv/device_info__type_support.cpp.o[0m
+[2.466s] [ 21%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dros_common_interfaces/msg/imu_info__type_support.cpp.o[0m
+[2.466s] [ 22%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dros_common_interfaces/msg/extrinsics__type_support.cpp.o[0m
+[2.466s] [ 24%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dros_common_interfaces/msg/metadata__type_support.cpp.o[0m
+[2.466s] [ 25%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dros_common_interfaces/msg/rgbd__type_support.cpp.o[0m
+[2.466s] [ 26%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dros_common_interfaces/srv/grasp__type_support.cpp.o[0m
+[2.466s] [ 27%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dros_common_interfaces/action/dexterous_hand__type_support.cpp.o[0m
+[2.466s] [ 28%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dros_common_interfaces/action/navigate_to_pose__type_support.cpp.o[0m
+[2.579s] [ 29%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dros_common_interfaces/msg/detail/metadata__type_support.cpp.o[0m
+[2.579s] [ 31%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dros_common_interfaces/msg/detail/rgbd__type_support.cpp.o[0m
+[2.579s] [ 33%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dros_common_interfaces/msg/detail/extrinsics__type_support.cpp.o[0m
+[2.579s] [ 33%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dros_common_interfaces/msg/detail/imu_info__type_support.cpp.o[0m
+[2.695s] [ 34%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/msg/imu_info__type_support.cpp.o[0m
+[2.702s] [ 35%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dros_common_interfaces/srv/detail/device_info__type_support.cpp.o[0m
+[2.705s] [ 36%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/msg/extrinsics__type_support.cpp.o[0m
+[2.726s] [ 37%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dros_common_interfaces/srv/detail/grasp__type_support.cpp.o[0m
+[2.730s] [ 39%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/msg/metadata__type_support.cpp.o[0m
+[2.738s] [ 40%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/msg/rgbd__type_support.cpp.o[0m
+[2.742s] [ 41%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/srv/device_info__type_support.cpp.o[0m
+[2.749s] [ 42%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dros_common_interfaces/action/detail/navigate_to_pose__type_support.cpp.o[0m
+[2.756s] [ 43%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/srv/grasp__type_support.cpp.o[0m
+[2.765s] [ 45%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/imu_info__type_support.cpp.o[0m
+[2.766s] [ 45%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dros_common_interfaces/action/detail/dexterous_hand__type_support.cpp.o[0m
+[2.776s] [ 47%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/navigate_to_pose__type_support.cpp.o[0m
+[2.778s] [ 48%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dros_common_interfaces/action/dexterous_hand__type_support.cpp.o[0m
+[2.792s] [ 49%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/extrinsics__type_support.cpp.o[0m
+[2.831s] [ 50%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/metadata__type_support.cpp.o[0m
+[2.837s] [ 51%] [32m[1mLinking CXX shared library libdros_common_interfaces__rosidl_typesupport_c.so[0m
+[2.911s] [ 51%] Built target dros_common_interfaces__rosidl_typesupport_c
+[2.920s] [ 52%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/rgbd__type_support.cpp.o[0m
+[2.927s] [ 54%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/srv/detail/dds_fastrtps/device_info__type_support.cpp.o[0m
+[2.939s] [ 55%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dros_common_interfaces/msg/detail/imu_info__type_support.c.o[0m
+[2.942s] [ 56%] [32m[1mLinking CXX shared library libdros_common_interfaces__rosidl_typesupport_cpp.so[0m
+[2.978s] [ 57%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dros_common_interfaces/msg/detail/extrinsics__type_support.c.o[0m
+[2.992s] [ 58%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/srv/detail/dds_fastrtps/grasp__type_support.cpp.o[0m
+[3.004s] [ 59%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/action/detail/dds_fastrtps/navigate_to_pose__type_support.cpp.o[0m
+[3.005s] [ 59%] Built target dros_common_interfaces__rosidl_typesupport_cpp
+[3.005s] [ 60%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dros_common_interfaces/msg/detail/metadata__type_support.c.o[0m
+[3.012s] [ 62%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/action/detail/dds_fastrtps/dexterous_hand__type_support.cpp.o[0m
+[3.020s] [ 63%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dros_common_interfaces/msg/detail/rgbd__type_support.c.o[0m
+[3.039s] [ 64%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dros_common_interfaces/srv/detail/device_info__type_support.c.o[0m
+[3.063s] [ 65%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dros_common_interfaces/msg/detail/imu_info__type_support_c.cpp.o[0m
+[3.067s] [ 66%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dros_common_interfaces/srv/detail/grasp__type_support.c.o[0m
+[3.082s] [ 67%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dros_common_interfaces/action/detail/navigate_to_pose__type_support.c.o[0m
+[3.100s] [ 68%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dros_common_interfaces/action/detail/dexterous_hand__type_support.c.o[0m
+[3.113s] [ 70%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dros_common_interfaces/msg/detail/extrinsics__type_support_c.cpp.o[0m
+[3.123s] [ 71%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dros_common_interfaces/msg/detail/metadata__type_support_c.cpp.o[0m
+[3.160s] [ 72%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dros_common_interfaces/msg/detail/rgbd__type_support_c.cpp.o[0m
+[3.161s] [ 73%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dros_common_interfaces/srv/detail/device_info__type_support_c.cpp.o[0m
+[3.162s] [ 75%] [32m[1mLinking C shared library libdros_common_interfaces__rosidl_typesupport_introspection_c.so[0m
+[3.162s] [ 75%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dros_common_interfaces/srv/detail/grasp__type_support_c.cpp.o[0m
+[3.190s] [ 77%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dros_common_interfaces/action/detail/navigate_to_pose__type_support_c.cpp.o[0m
+[3.209s] [ 77%] Built target dros_common_interfaces__rosidl_typesupport_introspection_c
+[3.218s] [ 78%] [32mBuilding CXX object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dros_common_interfaces/action/detail/dexterous_hand__type_support_c.cpp.o[0m
+[3.499s] [ 79%] [32m[1mLinking CXX shared library libdros_common_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[3.643s] [ 79%] Built target dros_common_interfaces__rosidl_typesupport_introspection_cpp
+[3.762s] [ 80%] [32m[1mLinking CXX shared library libdros_common_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.802s] [ 81%] [32m[1mLinking CXX shared library libdros_common_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[3.809s] [ 81%] Built target dros_common_interfaces__rosidl_typesupport_fastrtps_cpp
+[3.850s] [ 81%] Built target dros_common_interfaces__rosidl_typesupport_fastrtps_c
+[3.863s] [ 81%] Built target dros_common_interfaces
+[3.877s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.972s] [ 82%] Built target dros_common_interfaces__py
+[4.986s] [ 85%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dros_common_interfaces/msg/_imu_info_s.c.o[0m
+[4.986s] [ 85%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dros_common_interfaces/msg/_extrinsics_s.c.o[0m
+[4.986s] [ 86%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dros_common_interfaces/msg/_metadata_s.c.o[0m
+[4.986s] [ 87%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dros_common_interfaces/msg/_rgbd_s.c.o[0m
+[4.989s] [ 89%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dros_common_interfaces/action/_navigate_to_pose_s.c.o[0m
+[4.989s] [ 89%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dros_common_interfaces/srv/_device_info_s.c.o[0m
+[4.989s] [ 90%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dros_common_interfaces/srv/_grasp_s.c.o[0m
+[4.993s] [ 91%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dros_common_interfaces/action/_dexterous_hand_s.c.o[0m
+[5.098s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/dros_common_interfaces/libdros_common_interfaces__rosidl_generator_py.so[0m
+[5.129s] [ 93%] Built target dros_common_interfaces__rosidl_generator_py
+[5.144s] [ 96%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/dros_common_interfaces/_dros_common_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.144s] [ 96%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/dros_common_interfaces/_dros_common_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.144s] [ 96%] [32mBuilding C object CMakeFiles/dros_common_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/dros_common_interfaces/_dros_common_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[5.248s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.248s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.259s] [100%] [32m[1mLinking C shared library rosidl_generator_py/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.281s] [100%] Built target dros_common_interfaces__rosidl_typesupport_c__pyext
+[5.281s] [100%] Built target dros_common_interfaces__rosidl_typesupport_introspection_c__pyext
+[5.296s] [100%] Built target dros_common_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[5.304s] Invoked command in '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces -- -j16 -l16
+[5.311s] Invoking command in '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces
+[5.315s] -- Install configuration: ""
+[5.315s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/ament_index/resource_index/rosidl_interfaces/dros_common_interfaces
+[5.315s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces
+[5.315s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv
+[5.316s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail
+[5.316s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__functions.c
+[5.316s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__functions.h
+[5.316s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__functions.h
+[5.316s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__struct.h
+[5.316s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__struct.h
+[5.316s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__type_support.h
+[5.316s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__functions.c
+[5.316s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__type_support.h
+[5.316s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/device_info.h
+[5.316s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/grasp.h
+[5.316s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action
+[5.316s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail
+[5.317s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__functions.h
+[5.317s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__type_support.h
+[5.317s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__functions.c
+[5.317s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__struct.h
+[5.317s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__functions.c
+[5.317s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__functions.h
+[5.317s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__struct.h
+[5.317s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__type_support.h
+[5.317s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/dexterous_hand.h
+[5.317s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/navigate_to_pose.h
+[5.317s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg
+[5.318s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail
+[5.318s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__functions.c
+[5.318s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__functions.c
+[5.318s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__functions.h
+[5.318s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__type_support.h
+[5.318s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__struct.h
+[5.318s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__functions.c
+[5.318s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__type_support.h
+[5.318s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__struct.h
+[5.318s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__functions.h
+[5.318s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__functions.h
+[5.318s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__struct.h
+[5.318s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__struct.h
+[5.319s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__functions.c
+[5.319s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__type_support.h
+[5.319s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__functions.h
+[5.319s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__type_support.h
+[5.319s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/rgbd.h
+[5.319s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/rosidl_generator_c__visibility_control.h
+[5.319s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/imu_info.h
+[5.319s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/metadata.h
+[5.319s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/extrinsics.h
+[5.319s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/library_path.sh
+[5.319s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/library_path.dsv
+[5.319s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_generator_c.so
+[5.320s] -- Set runtime path of "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_generator_c.so" to ""
+[5.320s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces
+[5.320s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv
+[5.320s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail
+[5.320s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__rosidl_typesupport_fastrtps_c.h
+[5.320s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__rosidl_typesupport_fastrtps_c.h
+[5.320s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action
+[5.320s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail
+[5.320s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__rosidl_typesupport_fastrtps_c.h
+[5.320s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__rosidl_typesupport_fastrtps_c.h
+[5.320s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg
+[5.320s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail
+[5.320s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__rosidl_typesupport_fastrtps_c.h
+[5.320s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__rosidl_typesupport_fastrtps_c.h
+[5.320s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h
+[5.320s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h
+[5.321s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.321s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_fastrtps_c.so
+[5.321s] -- Set runtime path of "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[5.321s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces
+[5.321s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv
+[5.321s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail
+[5.321s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__rosidl_typesupport_introspection_c.h
+[5.321s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__rosidl_typesupport_introspection_c.h
+[5.321s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__type_support.c
+[5.321s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__type_support.c
+[5.321s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action
+[5.321s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail
+[5.321s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__rosidl_typesupport_introspection_c.h
+[5.321s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__type_support.c
+[5.322s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__rosidl_typesupport_introspection_c.h
+[5.322s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__type_support.c
+[5.322s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg
+[5.322s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail
+[5.322s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__rosidl_typesupport_introspection_c.h
+[5.322s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__rosidl_typesupport_introspection_c.h
+[5.322s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h
+[5.322s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__type_support.c
+[5.322s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__type_support.c
+[5.322s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__rosidl_typesupport_introspection_c.h
+[5.322s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__type_support.c
+[5.322s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__type_support.c
+[5.322s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.323s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_introspection_c.so
+[5.323s] -- Set runtime path of "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[5.323s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_c.so
+[5.323s] -- Set runtime path of "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_c.so" to ""
+[5.323s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces
+[5.323s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv
+[5.323s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail
+[5.323s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__builder.hpp
+[5.324s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__traits.hpp
+[5.324s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__struct.hpp
+[5.324s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__builder.hpp
+[5.324s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__type_support.hpp
+[5.324s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__type_support.hpp
+[5.324s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__traits.hpp
+[5.324s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__struct.hpp
+[5.324s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/device_info.hpp
+[5.324s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/grasp.hpp
+[5.324s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action
+[5.324s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/navigate_to_pose.hpp
+[5.324s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail
+[5.324s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__builder.hpp
+[5.324s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__struct.hpp
+[5.324s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__struct.hpp
+[5.324s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__builder.hpp
+[5.325s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__traits.hpp
+[5.325s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__type_support.hpp
+[5.325s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__type_support.hpp
+[5.325s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__traits.hpp
+[5.325s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/dexterous_hand.hpp
+[5.325s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg
+[5.325s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail
+[5.325s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__builder.hpp
+[5.325s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__traits.hpp
+[5.325s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__type_support.hpp
+[5.325s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__traits.hpp
+[5.325s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__struct.hpp
+[5.325s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__builder.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__struct.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__type_support.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__builder.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__type_support.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__traits.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__traits.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__type_support.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__builder.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__struct.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__struct.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/extrinsics.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/imu_info.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/metadata.hpp
+[5.326s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/rgbd.hpp
+[5.326s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces
+[5.327s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv
+[5.327s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail
+[5.327s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__rosidl_typesupport_fastrtps_cpp.hpp
+[5.327s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/dds_fastrtps
+[5.327s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp
+[5.327s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action
+[5.327s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail
+[5.327s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[5.327s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dds_fastrtps
+[5.327s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__rosidl_typesupport_fastrtps_cpp.hpp
+[5.327s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg
+[5.327s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail
+[5.327s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp
+[5.327s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/dds_fastrtps
+[5.327s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__rosidl_typesupport_fastrtps_cpp.hpp
+[5.327s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp
+[5.327s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__rosidl_typesupport_fastrtps_cpp.hpp
+[5.327s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.327s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[5.328s] -- Set runtime path of "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.328s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces
+[5.328s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv
+[5.328s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail
+[5.328s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__rosidl_typesupport_introspection_cpp.hpp
+[5.328s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__type_support.cpp
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/grasp__type_support.cpp
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/srv/detail/device_info__rosidl_typesupport_introspection_cpp.hpp
+[5.329s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action
+[5.329s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__type_support.cpp
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/navigate_to_pose__rosidl_typesupport_introspection_cpp.hpp
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__rosidl_typesupport_introspection_cpp.hpp
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/action/detail/dexterous_hand__type_support.cpp
+[5.329s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg
+[5.329s] -- Up-to-date: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__rosidl_typesupport_introspection_cpp.hpp
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__type_support.cpp
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/rgbd__rosidl_typesupport_introspection_cpp.hpp
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/extrinsics__type_support.cpp
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__type_support.cpp
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/imu_info__type_support.cpp
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/include/dros_common_interfaces/dros_common_interfaces/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp
+[5.329s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_introspection_cpp.so
+[5.329s] -- Set runtime path of "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[5.330s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_cpp.so
+[5.330s] -- Set runtime path of "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_typesupport_cpp.so" to ""
+[5.330s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/pythonpath.sh
+[5.330s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/pythonpath.dsv
+[5.330s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces-0.0.0-py3.10.egg-info
+[5.330s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[5.330s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[5.330s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[5.330s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[5.330s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces
+[5.330s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/_dros_common_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[5.330s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv
+[5.330s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/_device_info_s.c
+[5.330s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/_device_info.py
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/_grasp.py
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/__init__.py
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/_grasp_s.c
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action/_navigate_to_pose_s.c
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action/_dexterous_hand_s.c
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action/__init__.py
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action/_dexterous_hand.py
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action/_navigate_to_pose.py
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/libdros_common_interfaces__rosidl_generator_py.so
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/__init__.py
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/__init__.py
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_imu_info.py
+[5.331s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_extrinsics.py
+[5.332s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_extrinsics_s.c
+[5.332s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_metadata.py
+[5.332s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_metadata_s.c
+[5.332s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_imu_info_s.c
+[5.332s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_rgbd_s.c
+[5.332s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_rgbd.py
+[5.332s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.332s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/_dros_common_interfaces_s.ep.rosidl_typesupport_c.c
+[5.332s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/_dros_common_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.332s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.332s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.366s] Listing '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces'...
+[5.366s] Compiling '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/__init__.py'...
+[5.366s] Listing '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action'...
+[5.366s] Compiling '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action/__init__.py'...
+[5.366s] Compiling '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action/_dexterous_hand.py'...
+[5.366s] Compiling '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/action/_navigate_to_pose.py'...
+[5.366s] Listing '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg'...
+[5.366s] Compiling '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/__init__.py'...
+[5.366s] Compiling '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_extrinsics.py'...
+[5.366s] Compiling '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_imu_info.py'...
+[5.366s] Compiling '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_metadata.py'...
+[5.366s] Compiling '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/msg/_rgbd.py'...
+[5.366s] Listing '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv'...
+[5.366s] Compiling '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/__init__.py'...
+[5.366s] Compiling '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/_device_info.py'...
+[5.366s] Compiling '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/srv/_grasp.py'...
+[5.369s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.369s] -- Set runtime path of "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.369s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.370s] -- Set runtime path of "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.370s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.370s] -- Set runtime path of "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/local/lib/python3.10/dist-packages/dros_common_interfaces/dros_common_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.370s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_generator_py.so
+[5.370s] -- Set runtime path of "/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/lib/libdros_common_interfaces__rosidl_generator_py.so" to ""
+[5.370s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/msg/IMUInfo.idl
+[5.371s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/msg/Extrinsics.idl
+[5.371s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/msg/Metadata.idl
+[5.371s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/msg/RGBD.idl
+[5.371s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/srv/DeviceInfo.idl
+[5.371s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/srv/Grasp.idl
+[5.371s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/action/NavigateToPose.idl
+[5.371s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/action/DexterousHand.idl
+[5.371s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/IMUInfo.msg
+[5.371s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/Extrinsics.msg
+[5.371s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/Metadata.msg
+[5.371s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/RGBD.msg
+[5.371s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/DeviceInfo.srv
+[5.372s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/DeviceInfo_Request.msg
+[5.372s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/realsense/DeviceInfo_Response.msg
+[5.372s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/srv/Grasp.srv
+[5.372s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/srv/Grasp_Request.msg
+[5.372s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/srv/Grasp_Response.msg
+[5.372s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/nav2/NavigateToPose.action
+[5.372s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/action/DexterousHand.action
+[5.372s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/ament_index/resource_index/package_run_dependencies/dros_common_interfaces
+[5.373s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/ament_index/resource_index/parent_prefix_path/dros_common_interfaces
+[5.373s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/ament_prefix_path.sh
+[5.373s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/ament_prefix_path.dsv
+[5.373s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/path.sh
+[5.373s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/environment/path.dsv
+[5.373s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/local_setup.bash
+[5.374s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/local_setup.sh
+[5.374s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/local_setup.zsh
+[5.374s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/local_setup.dsv
+[5.374s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/package.dsv
+[5.374s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/ament_index/resource_index/packages/dros_common_interfaces
+[5.374s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_generator_cExport.cmake
+[5.374s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_generator_cExport-noconfig.cmake
+[5.374s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[5.374s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.374s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[5.374s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.375s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_cExport.cmake
+[5.375s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[5.375s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_generator_cppExport.cmake
+[5.375s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.375s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.375s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[5.375s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.375s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_cppExport.cmake
+[5.375s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[5.376s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_generator_pyExport.cmake
+[5.376s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/export_dros_common_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[5.376s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/rosidl_cmake-extras.cmake
+[5.376s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.376s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.376s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[5.376s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[5.376s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.377s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.377s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfacesConfig.cmake
+[5.377s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/cmake/dros_common_interfacesConfig-version.cmake
+[5.377s] -- Installing: /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/install/dros_common_interfaces/share/dros_common_interfaces/package.xml
+[5.379s] Invoked command in '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces

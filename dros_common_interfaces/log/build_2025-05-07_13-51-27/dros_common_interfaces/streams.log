@@ -1,6 +1,0 @@
-[0.014s] Invoking command in '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces -- -j16 -l16
-[0.020s] [0mCMake Error: The current CMakeCache.txt directory /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces/CMakeCache.txt is different than the directory /home/byd/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0.053s] [0mCMake Error: The source directory "/home/byd/hawrk/ros2/dros_common_interfaces" does not exist.
-[0.053s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.059s] gmake: *** [Makefile:2043：cmake_check_build_system] 错误 1
-[0.062s] Invoked command in '/home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hawrk/Documents/GitHub/hawrk/ros2/dros_common_interfaces/build/dros_common_interfaces -- -j16 -l16

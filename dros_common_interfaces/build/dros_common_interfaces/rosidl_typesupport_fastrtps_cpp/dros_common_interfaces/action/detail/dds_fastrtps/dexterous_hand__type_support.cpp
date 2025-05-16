@@ -34,6 +34,8 @@ cdr_serialize(
 {
   // Member: target_position
   cdr << ros_message.target_position;
+  // Member: obj_name
+  cdr << ros_message.obj_name;
   return true;
 }
 
@@ -45,6 +47,9 @@ cdr_deserialize(
 {
   // Member: target_position
   cdr >> ros_message.target_position;
+
+  // Member: obj_name
+  cdr >> ros_message.obj_name;
 
   return true;
 }
@@ -68,6 +73,10 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // Member: obj_name
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.obj_name.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -101,6 +110,19 @@ max_serialized_size_DexterousHand_Goal(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: obj_name
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -109,7 +131,7 @@ max_serialized_size_DexterousHand_Goal(
     using DataType = dros_common_interfaces::action::DexterousHand_Goal;
     is_plain =
       (
-      offsetof(DataType, target_position) +
+      offsetof(DataType, obj_name) +
       last_member_size
       ) == ret_val;
   }

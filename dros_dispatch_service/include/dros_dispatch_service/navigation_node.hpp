@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 17:02:29
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-04-28 18:05:45
+ * @LastEditTime: 2025-05-13 16:01:20
  * @Description: 
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/navigation_node.hpp
  */
@@ -54,34 +54,33 @@ class NavigateToPoseAction :  public BT::SyncActionNode {
         }
 
         static BT::PortsList providedPorts() {
-            return {BT::InputPort<geometry_msgs::msg::PoseStamped>("goal_pose")};
+            //return {BT::InputPort<geometry_msgs::msg::PoseStamped>("goal_pose")};
+            return {
+                BT::InputPort<geometry_msgs::msg::PoseStamped>("goal_pose"),
+                BT::InputPort<geometry_msgs::msg::PoseStamped>("user_goal")
+            };
         }
 
 
         BT::NodeStatus tick() override {
             RCLCPP_INFO(nav_node_->get_logger(), "NavigateToPoseAction tick......");
             auto origoal_pose = this->getInput<geometry_msgs::msg::PoseStamped>("goal_pose");
+            auto user_pose = this->getInput<geometry_msgs::msg::PoseStamped>("user_goal");
             
-            if(!origoal_pose) {
-                RCLCPP_ERROR(nav_node_->get_logger(), "goal_pose is null");
-                //return BT::NodeStatus::FAILURE;
-            }
-
-            RCLCPP_INFO(nav_node_->get_logger(), "test ::get goal_pose:%lf, %lf, %lf", 
-            origoal_pose->pose.position.x, 
-            origoal_pose->pose.position.y,  
-            origoal_pose->pose.position.z);
-
-            // 创建一个PoseStamped消息，设置你的目标姿态
-            // geometry_msgs::msg::PoseStamped goal_pose;
-            // goal_pose.header.frame_id = "navigation";
-            // goal_pose.header.stamp = nav_node_->now();
-            // goal_pose.pose.position.x = 1.0;  // 设置目标位置的x坐标
-            // goal_pose.pose.position.y = 2.0;  // 设置目标位置的y坐标
-            // goal_pose.pose.position.z = 3.0;  // 设置目标位置的z坐标
-
             NavigateToPose::Goal goal_msg;
-            goal_msg.pose = origoal_pose.value();
+            if(origoal_pose) {
+                goal_msg.pose = origoal_pose.value();
+                RCLCPP_INFO(nav_node_->get_logger(), "test ::get goal_pose:%lf, %lf, %lf", 
+                    origoal_pose->pose.position.x, 
+                    origoal_pose->pose.position.y,  
+                    origoal_pose->pose.position.z);
+            } else if(user_pose) {
+                goal_msg.pose = user_pose.value();
+                RCLCPP_INFO(nav_node_->get_logger(), "test ::get user_pose:%lf, %lf, %lf", 
+                    user_pose->pose.position.x, 
+                    user_pose->pose.position.y,  
+                    user_pose->pose.position.z);
+            }
 
             auto send_goal_options = rclcpp_action::Client<NavigateToPose>::SendGoalOptions();
             send_goal_options.goal_response_callback = std::bind(&NavigateToPoseAction::goal_response_callback,this,std::placeholders::_1);

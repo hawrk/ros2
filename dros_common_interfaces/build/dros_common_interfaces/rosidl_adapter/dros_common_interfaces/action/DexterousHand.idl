@@ -9,6 +9,8 @@ module dros_common_interfaces {
       "goal")
     struct DexterousHand_Goal {
       int32 target_position;
+
+      string obj_name;
     };
     @verbatim (language="comment", text=
       "result")

@@ -21,16 +21,32 @@ namespace action
 namespace builder
 {
 
+class Init_DexterousHand_Goal_obj_name
+{
+public:
+  explicit Init_DexterousHand_Goal_obj_name(::dros_common_interfaces::action::DexterousHand_Goal & msg)
+  : msg_(msg)
+  {}
+  ::dros_common_interfaces::action::DexterousHand_Goal obj_name(::dros_common_interfaces::action::DexterousHand_Goal::_obj_name_type arg)
+  {
+    msg_.obj_name = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::dros_common_interfaces::action::DexterousHand_Goal msg_;
+};
+
 class Init_DexterousHand_Goal_target_position
 {
 public:
   Init_DexterousHand_Goal_target_position()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::dros_common_interfaces::action::DexterousHand_Goal target_position(::dros_common_interfaces::action::DexterousHand_Goal::_target_position_type arg)
+  Init_DexterousHand_Goal_obj_name target_position(::dros_common_interfaces::action::DexterousHand_Goal::_target_position_type arg)
   {
     msg_.target_position = std::move(arg);
-    return std::move(msg_);
+    return Init_DexterousHand_Goal_obj_name(msg_);
   }
 
 private:

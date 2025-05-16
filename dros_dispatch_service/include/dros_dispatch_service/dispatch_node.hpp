@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 15:28:43
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-05-09 13:44:14
+ * @LastEditTime: 2025-05-16 09:29:52
  * @Description: 任务分发，初始化BehaviorTreeFactory
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/dispatch_node.hpp
  */
@@ -79,10 +79,13 @@ class DispatchNode : public rclcpp::Node
                 
                 BT::Blackboard::Ptr blackboard = BT::Blackboard::create();
                 // 这里可以设置 多个值，供不同的模块节点
-                blackboard->set("goal_pose", create_goal_pose_from_message(task_string));
-                blackboard->set("item_name", create_pickup_item_from_message(task_string));
-                blackboard->set("grasp_name", create_pickup_item_from_message(task_string));
-                blackboard->set("target_position", create_pickup_item_from_message(task_string));
+                blackboard->set("goal_pose", create_goal_pose_from_message(task_string));  // 该参数为导航物品的目标坐标
+                blackboard->set("user_goal", create_user_goal_from_message(task_string));   // 目标用户的坐标
+                blackboard->set("item_name", create_pickup_item_from_message(task_string));  // 暂时不用
+                blackboard->set("grasp_name", create_pickup_item_from_message(task_string));  // 智能小车抓取
+                blackboard->set("target_position", create_pickup_item_from_message(task_string));  // 拿水操作
+                blackboard->set("pass_to", create_passto_item_from_message(task_string));  // 传递物品操作
+
                 tree_ = factory_.createTreeFromText(xml_string, blackboard);
 
             } catch(const std::exception& e) {
@@ -117,17 +120,49 @@ class DispatchNode : public rclcpp::Node
             for(const auto& item : plan_seq) {
                 if(item.contains("go_to")) {
                     const auto& go_to = item["go_to"];
-                    goal_pose.header.frame_id = go_to.at("obj_name").get<std::string>();
-                    goal_pose.header.stamp = nav_node_->now();
+                    if(go_to.at("obj_name").get<std::string>() == "table") {
+                        goal_pose.header.frame_id = go_to.at("obj_name").get<std::string>();
+                        goal_pose.header.stamp = nav_node_->now();
 
-                    goal_pose.pose.position.x = go_to.at("obj_loc").at("x").get<double>();
-                    goal_pose.pose.position.y = go_to.at("obj_loc").at("y").get<double>();
-                    goal_pose.pose.position.z = go_to.at("obj_loc").at("z").get<double>();
-                    goal_pose.pose.orientation.x = go_to.at("obj_loc").at("dx").get<double>();
-                    goal_pose.pose.orientation.y = go_to.at("obj_loc").at("dy").get<double>();
-                    goal_pose.pose.orientation.z = go_to.at("obj_loc").at("dz").get<double>();
-                    //goal_pose.pose.orientation.w = go_to.at("obj_loc").at("w").get<double>();
-                    break;
+                        goal_pose.pose.position.x = go_to.at("obj_loc").at("x").get<double>();
+                        goal_pose.pose.position.y = go_to.at("obj_loc").at("y").get<double>();
+                        goal_pose.pose.position.z = go_to.at("obj_loc").at("z").get<double>();
+                        goal_pose.pose.orientation.x = go_to.at("obj_loc").at("dx").get<double>();
+                        goal_pose.pose.orientation.y = go_to.at("obj_loc").at("dy").get<double>();
+                        goal_pose.pose.orientation.z = go_to.at("obj_loc").at("dz").get<double>();
+                        //goal_pose.pose.orientation.w = go_to.at("obj_loc").at("w").get<double>();
+                        break;
+                    }
+                }
+            }
+
+            return goal_pose;
+        }
+        // 用户坐标，目前还拿不到
+        geometry_msgs::msg::PoseStamped create_user_goal_from_message(const std::string& message) {
+            //std::cout <<"create_user_goal_from_message"<< message << std::endl;
+            geometry_msgs::msg::PoseStamped goal_pose;
+
+            json j = json::parse(message);
+            // 设置目标姿态的各个字段
+            const auto& plan_seq = j["data"]["plan_seq"];
+            for(const auto& item : plan_seq) {
+                if(item.contains("go_to")) {
+                    const auto& go_to = item["go_to"];
+                    if(go_to.at("obj_name").get<std::string>() == "user") {
+                        goal_pose.header.frame_id = go_to.at("obj_name").get<std::string>();
+                        goal_pose.header.stamp = nav_node_->now();
+
+                        goal_pose.pose.position.x = go_to.at("obj_loc").at("x").get<double>();
+                        goal_pose.pose.position.y = go_to.at("obj_loc").at("y").get<double>();
+                        goal_pose.pose.position.z = go_to.at("obj_loc").at("z").get<double>();
+                        goal_pose.pose.orientation.x = go_to.at("obj_loc").at("dx").get<double>();
+                        goal_pose.pose.orientation.y = go_to.at("obj_loc").at("dy").get<double>();
+                        goal_pose.pose.orientation.z = go_to.at("obj_loc").at("dz").get<double>();
+                        //goal_pose.pose.orientation.w = go_to.at("obj_loc").at("w").get<double>();
+                        break;
+                    }
+  
                 }
             }
 
@@ -144,6 +179,21 @@ class DispatchNode : public rclcpp::Node
                 }
             }
             return "";
+        }
+
+        dros_common_interfaces::action::DexterousHand::Goal create_passto_item_from_message(const std::string& message) {
+            auto dexterous_hand = dros_common_interfaces::action::DexterousHand::Goal();
+            json j = json::parse(message);
+            const auto& plan_seq = j["data"]["plan_seq"];
+            for(const auto& item : plan_seq) {
+                if(item.contains("pass_to")) {
+                    const auto& pick_up = item["pass_to"];
+                    dexterous_hand.obj_name = pick_up.at("obj_name").get<std::string>();
+                    dexterous_hand.target_position = 11;
+                    break;
+                }
+            }
+            return dexterous_hand;
         }
 
 
@@ -166,11 +216,21 @@ class DispatchNode : public rclcpp::Node
                 const auto& plan_seq = j["data"]["plan_seq"];
                 for(const auto& item : plan_seq) {
                     if(item.contains("go_to")) {
-                        actions += "    <NavigateToPoseAction  goal_pose=\"{goal_pose}\" />\n";
+                        // 再判断一下go_to 到水杯还是用户
+                        const auto& go_to = item["go_to"];
+                        if(go_to.at("obj_name").get<std::string>() == "table") {  // 到水杯坐标
+                            actions += "    <NavigateToPoseAction  goal_pose=\"{goal_pose}\" />\n";
+                        } else {   // 其他的先默认为用户
+                            actions += "    <NavigateToPoseAction  user_goal=\"{user_goal}\" />\n";
+                        }
+
                     }
                     if(item.contains("pick_up")) {
                         //actions += "\t\t\t\t<GraspAction grasp_name=\"{grasp_name}\" />\n";  
                         actions += "\t\t\t\t<DexterousHandAction target_position=\"{target_position}\" />\n";     
+                    }
+                    if(item.contains("pass_to")) {
+                       actions += "\t\t\t\t<DexterousHandAction pass_to=\"{pass_to}\" />\n";   
                     }
                 }
             } else {

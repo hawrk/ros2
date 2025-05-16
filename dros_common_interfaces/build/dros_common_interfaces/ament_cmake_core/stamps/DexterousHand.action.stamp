@@ -1,5 +1,6 @@
 #goal
 int32 target_position
+string obj_name
 ---
 #result
 bool success

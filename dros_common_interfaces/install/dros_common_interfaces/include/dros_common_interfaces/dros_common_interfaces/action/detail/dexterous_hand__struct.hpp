@@ -39,16 +39,18 @@ struct DexterousHand_Goal_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->target_position = 0l;
+      this->obj_name = "";
     }
   }
 
   explicit DexterousHand_Goal_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : obj_name(_alloc)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->target_position = 0l;
+      this->obj_name = "";
     }
   }
 
@@ -56,12 +58,21 @@ struct DexterousHand_Goal_
   using _target_position_type =
     int32_t;
   _target_position_type target_position;
+  using _obj_name_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _obj_name_type obj_name;
 
   // setters for named parameter idiom
   Type & set__target_position(
     const int32_t & _arg)
   {
     this->target_position = _arg;
+    return *this;
+  }
+  Type & set__obj_name(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->obj_name = _arg;
     return *this;
   }
 
@@ -108,6 +119,9 @@ struct DexterousHand_Goal_
   bool operator==(const DexterousHand_Goal_ & other) const
   {
     if (this->target_position != other.target_position) {
+      return false;
+    }
+    if (this->obj_name != other.obj_name) {
       return false;
     }
     return true;

@@ -29,6 +29,13 @@ inline void to_flow_style_yaml(
   {
     out << "target_position: ";
     rosidl_generator_traits::value_to_yaml(msg.target_position, out);
+    out << ", ";
+  }
+
+  // member: obj_name
+  {
+    out << "obj_name: ";
+    rosidl_generator_traits::value_to_yaml(msg.obj_name, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -44,6 +51,16 @@ inline void to_block_style_yaml(
     }
     out << "target_position: ";
     rosidl_generator_traits::value_to_yaml(msg.target_position, out);
+    out << "\n";
+  }
+
+  // member: obj_name
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "obj_name: ";
+    rosidl_generator_traits::value_to_yaml(msg.obj_name, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)
@@ -94,11 +111,11 @@ inline const char * name<dros_common_interfaces::action::DexterousHand_Goal>()
 
 template<>
 struct has_fixed_size<dros_common_interfaces::action::DexterousHand_Goal>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<dros_common_interfaces::action::DexterousHand_Goal>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<dros_common_interfaces::action::DexterousHand_Goal>

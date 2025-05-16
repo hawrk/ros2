@@ -43,17 +43,30 @@ class DexterousHandAction : public BT::SyncActionNode {
         }
 
         static BT::PortsList providedPorts() {
-            return {BT::InputPort<std::string>("target_position")};
+            return {
+                BT::InputPort<std::string>("target_position"),
+                BT::InputPort<dros_common_interfaces::action::DexterousHand::Goal>("pass_to")
+            };
         }
 
         BT::NodeStatus tick() override {
             RCLCPP_INFO(dexterous_hand_node_->get_logger(), "Executing Dexterous Hand tick...");
-            auto target_position = this->getInput<std::string>("target_position").value();
-            RCLCPP_INFO(dexterous_hand_node_->get_logger(), "Target position: %s", target_position.c_str());
+            auto target_position = this->getInput<std::string>("target_position");
+
+            auto pass_to = this->getInput<dros_common_interfaces::action::DexterousHand::Goal>("pass_to");
 
             // 初始化入口参数
             auto goal = DexterousHand::Goal();
-            goal.target_position = 3.14;
+            if(target_position) {
+                //goal.target_position = std::stoi(target_position.value());
+                goal.target_position = 3;
+                RCLCPP_INFO(dexterous_hand_node_->get_logger(), "Target position: %s", target_position.value().c_str());
+            }
+            if(pass_to) {
+                goal = pass_to.value();
+            }
+
+            //goal.target_position = 3.14;
 
             auto send_goal_options = rclcpp_action::Client<DexterousHand>::SendGoalOptions();
             send_goal_options.goal_response_callback =

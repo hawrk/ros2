@@ -17,10 +17,15 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'obj_name'
+#include "rosidl_runtime_c/string.h"
+
 /// Struct defined in action/DexterousHand in the package dros_common_interfaces.
 typedef struct dros_common_interfaces__action__DexterousHand_Goal
 {
   int32_t target_position;
+  rosidl_runtime_c__String obj_name;
 } dros_common_interfaces__action__DexterousHand_Goal;
 
 // Struct for a sequence of dros_common_interfaces__action__DexterousHand_Goal.
@@ -38,7 +43,8 @@ typedef struct dros_common_interfaces__action__DexterousHand_Goal__Sequence
 
 // Include directives for member types
 // Member 'msg'
-#include "rosidl_runtime_c/string.h"
+// already included above
+// #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in action/DexterousHand in the package dros_common_interfaces.
 typedef struct dros_common_interfaces__action__DexterousHand_Result

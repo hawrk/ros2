@@ -37,7 +37,7 @@ void DexterousHand_Goal_fini_function(void * message_memory)
   typed_message->~DexterousHand_Goal();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember DexterousHand_Goal_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember DexterousHand_Goal_message_member_array[2] = {
   {
     "target_position",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
@@ -54,13 +54,30 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember DexterousHand
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "obj_name",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(dros_common_interfaces::action::DexterousHand_Goal, obj_name),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers DexterousHand_Goal_message_members = {
   "dros_common_interfaces::action",  // message namespace
   "DexterousHand_Goal",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(dros_common_interfaces::action::DexterousHand_Goal),
   DexterousHand_Goal_message_member_array,  // message members
   DexterousHand_Goal_init_function,  // function to initialize message memory (memory has to be allocated)

@@ -16,6 +16,9 @@
 #include "dros_common_interfaces/action/detail/dexterous_hand__struct.h"
 #include "dros_common_interfaces/action/detail/dexterous_hand__functions.h"
 
+#include "rosidl_runtime_c/string.h"
+#include "rosidl_runtime_c/string_functions.h"
+
 
 ROSIDL_GENERATOR_C_EXPORT
 bool dros_common_interfaces__action__dexterous_hand__goal__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -59,6 +62,21 @@ bool dros_common_interfaces__action__dexterous_hand__goal__convert_from_py(PyObj
     ros_message->target_position = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
+  {  // obj_name
+    PyObject * field = PyObject_GetAttrString(_pymsg, "obj_name");
+    if (!field) {
+      return false;
+    }
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_runtime_c__String__assign(&ros_message->obj_name, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -92,6 +110,23 @@ PyObject * dros_common_interfaces__action__dexterous_hand__goal__convert_to_py(v
       }
     }
   }
+  {  // obj_name
+    PyObject * field = NULL;
+    field = PyUnicode_DecodeUTF8(
+      ros_message->obj_name.data,
+      strlen(ros_message->obj_name.data),
+      "replace");
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "obj_name", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
 
   // ownership of _pymessage is transferred to the caller
   return _pymessage;
@@ -111,8 +146,10 @@ PyObject * dros_common_interfaces__action__dexterous_hand__goal__convert_to_py(v
 // already included above
 // #include "dros_common_interfaces/action/detail/dexterous_hand__functions.h"
 
-#include "rosidl_runtime_c/string.h"
-#include "rosidl_runtime_c/string_functions.h"
+// already included above
+// #include "rosidl_runtime_c/string.h"
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
 
 
 ROSIDL_GENERATOR_C_EXPORT

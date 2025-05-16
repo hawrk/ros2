@@ -11,6 +11,10 @@
 #include "rcutils/allocator.h"
 
 
+// Include directives for member types
+// Member `obj_name`
+#include "rosidl_runtime_c/string_functions.h"
+
 bool
 dros_common_interfaces__action__DexterousHand_Goal__init(dros_common_interfaces__action__DexterousHand_Goal * msg)
 {
@@ -18,6 +22,11 @@ dros_common_interfaces__action__DexterousHand_Goal__init(dros_common_interfaces_
     return false;
   }
   // target_position
+  // obj_name
+  if (!rosidl_runtime_c__String__init(&msg->obj_name)) {
+    dros_common_interfaces__action__DexterousHand_Goal__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -28,6 +37,8 @@ dros_common_interfaces__action__DexterousHand_Goal__fini(dros_common_interfaces_
     return;
   }
   // target_position
+  // obj_name
+  rosidl_runtime_c__String__fini(&msg->obj_name);
 }
 
 bool
@@ -38,6 +49,12 @@ dros_common_interfaces__action__DexterousHand_Goal__are_equal(const dros_common_
   }
   // target_position
   if (lhs->target_position != rhs->target_position) {
+    return false;
+  }
+  // obj_name
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->obj_name), &(rhs->obj_name)))
+  {
     return false;
   }
   return true;
@@ -53,6 +70,12 @@ dros_common_interfaces__action__DexterousHand_Goal__copy(
   }
   // target_position
   output->target_position = input->target_position;
+  // obj_name
+  if (!rosidl_runtime_c__String__copy(
+      &(input->obj_name), &(output->obj_name)))
+  {
+    return false;
+  }
   return true;
 }
 
@@ -238,7 +261,8 @@ dros_common_interfaces__action__DexterousHand_Goal__Sequence__copy(
 
 // Include directives for member types
 // Member `msg`
-#include "rosidl_runtime_c/string_functions.h"
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
 
 bool
 dros_common_interfaces__action__DexterousHand_Result__init(dros_common_interfaces__action__DexterousHand_Result * msg)
