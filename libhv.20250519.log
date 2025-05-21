@@ -1,0 +1,3 @@
+2025-05-19 14:22:16.540 INFO  http server listening on 0.0.0.0:8090 [HttpServer.cpp:178:http_server_run]
+2025-05-19 14:22:16.541 INFO  EventLoop started, pid=155467 tid=155469 [HttpServer.cpp:151:loop_thread]
+2025-05-19 16:31:50.225 INFO  EventLoop stopped, pid=155467 tid=155469 [HttpServer.cpp:163:loop_thread]

@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 15:28:43
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-05-16 09:29:52
+ * @LastEditTime: 2025-05-21 09:56:13
  * @Description: 任务分发，初始化BehaviorTreeFactory
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/dispatch_node.hpp
  */
@@ -15,6 +15,7 @@
 #include "dros_dispatch_service/pickup_node.hpp"
 #include "dros_dispatch_service/grasp_node.hpp"
 #include "dros_dispatch_service/dexterous_hand_node.hpp"
+#include "dros_dispatch_service/voiceplay_node.hpp"
 
 #include "behaviortree_cpp/bt_factory.h"
 
@@ -35,6 +36,8 @@ class DispatchNode : public rclcpp::Node
             pickup_node_ = std::make_shared<PickupNode>("pickup_node");
             grasp_node_ = std::make_shared<GraspNode>("grasp_node");
             dexterous_hand_node_ = std::make_shared<DexterousHandNode>("dexterous_hand_node");
+            voice_play_node_ = std::make_shared<VoicePlayNode>("voice_play_node");
+
             // 初始化BehaviorTreeFactory
             // factory_.registerNodeType<NavigateToPoseAction>("NavigateToPoseAction",
             //     [this](const std::string& name, const BT::NodeConfig& config) {
@@ -44,6 +47,7 @@ class DispatchNode : public rclcpp::Node
             factory_.registerNodeType<PickupAction>("PickupAction", pickup_node_);
             factory_.registerNodeType<GraspAction>("GraspAction", grasp_node_);
             factory_.registerNodeType<DexterousHandAction>("DexterousHandAction", dexterous_hand_node_);
+            factory_.registerNodeType<VoicePlayPublisher>("VoicePlayPublisher", voice_play_node_);
 
             // <PickupAction item_name="{item_name}" />
 
@@ -229,8 +233,10 @@ class DispatchNode : public rclcpp::Node
                         //actions += "\t\t\t\t<GraspAction grasp_name=\"{grasp_name}\" />\n";  
                         actions += "\t\t\t\t<DexterousHandAction target_position=\"{target_position}\" />\n";     
                     }
-                    if(item.contains("pass_to")) {
-                       actions += "\t\t\t\t<DexterousHandAction pass_to=\"{pass_to}\" />\n";   
+                    if(item.contains("pass_to")) {   // 传递物品操作时增加一个语音播放指令
+                       actions += "\t\t\t\t<VoicePlayPublisher />\n";  
+                       actions += "\t\t\t\t<DexterousHandAction pass_to=\"{pass_to}\" />\n";
+
                     }
                 }
             } else {
@@ -252,6 +258,7 @@ class DispatchNode : public rclcpp::Node
         std::shared_ptr<PickupNode> pickup_node_;
         std::shared_ptr<GraspNode> grasp_node_;
         std::shared_ptr<DexterousHandNode> dexterous_hand_node_;
+        std::shared_ptr<VoicePlayNode> voice_play_node_;
 
         rclcpp::Subscription<std_msgs::msg::String>::SharedPtr module_sub_;   // 接受思模块任务派发
 

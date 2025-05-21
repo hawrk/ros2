@@ -2,7 +2,7 @@
 
 # since this file is sourced use either the provided AMENT_CURRENT_PREFIX
 # or fall back to the destination set at configure time
-: ${AMENT_CURRENT_PREFIX:="/home/byd/src/ros2/topic_ws/install/topic_ws"}
+: ${AMENT_CURRENT_PREFIX:="/home/hawrk/Documents/GitHub/hawrk/ros2/topic_ws/install/topic_ws"}
 if [ ! -d "$AMENT_CURRENT_PREFIX" ]; then
   if [ -z "$COLCON_CURRENT_PREFIX" ]; then
     echo "The compile time prefix path '$AMENT_CURRENT_PREFIX' doesn't " \
