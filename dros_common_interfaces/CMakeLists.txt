@@ -45,6 +45,19 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ADD_LINTER_TESTS
 )
 
+#install(DIRECTORY include/${PROJECT_NAME}/
+#  DESTINATION include
+#)
+
+#install(TARGETS
+#  ${PROJECT_NAME}__rosidl_generator_c
+#  ${PROJECT_NAME}__rosidl_generator_cpp
+#  ${PROJECT_NAME}__rosidl_typesupport_c
+#  ${PROJECT_NAME}__rosidl_typesupport_cpp
+#  DESTINATION lib
+#)
+
+
 ament_export_dependencies(rosidl_default_runtime)
 
 if(BUILD_TESTING)

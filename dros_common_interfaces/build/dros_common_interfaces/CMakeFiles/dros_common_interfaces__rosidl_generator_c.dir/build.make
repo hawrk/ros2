@@ -185,7 +185,6 @@ rosidl_generator_c/dros_common_interfaces/msg/imu_info.h: /opt/ros/humble/share/
 rosidl_generator_c/dros_common_interfaces/msg/imu_info.h: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
 rosidl_generator_c/dros_common_interfaces/msg/imu_info.h: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
 rosidl_generator_c/dros_common_interfaces/msg/imu_info.h: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
-rosidl_generator_c/dros_common_interfaces/msg/imu_info.h: /opt/ros/humble/share/nav_msgs/msg/Goals.idl
 rosidl_generator_c/dros_common_interfaces/msg/imu_info.h: /opt/ros/humble/share/nav_msgs/msg/GridCells.idl
 rosidl_generator_c/dros_common_interfaces/msg/imu_info.h: /opt/ros/humble/share/nav_msgs/msg/MapMetaData.idl
 rosidl_generator_c/dros_common_interfaces/msg/imu_info.h: /opt/ros/humble/share/nav_msgs/msg/OccupancyGrid.idl

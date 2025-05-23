@@ -180,7 +180,6 @@ rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/i
 rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/imu_info__type_support.cpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
 rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/imu_info__type_support.cpp: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
 rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/imu_info__type_support.cpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
-rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/imu_info__type_support.cpp: /opt/ros/humble/share/nav_msgs/msg/Goals.idl
 rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/imu_info__type_support.cpp: /opt/ros/humble/share/nav_msgs/msg/GridCells.idl
 rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/imu_info__type_support.cpp: /opt/ros/humble/share/nav_msgs/msg/MapMetaData.idl
 rosidl_typesupport_fastrtps_cpp/dros_common_interfaces/msg/detail/dds_fastrtps/imu_info__type_support.cpp: /opt/ros/humble/share/nav_msgs/msg/OccupancyGrid.idl

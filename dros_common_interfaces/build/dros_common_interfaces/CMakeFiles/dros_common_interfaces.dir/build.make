@@ -172,7 +172,6 @@ CMakeFiles/dros_common_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalInf
 CMakeFiles/dros_common_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 CMakeFiles/dros_common_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
 CMakeFiles/dros_common_interfaces: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
-CMakeFiles/dros_common_interfaces: /opt/ros/humble/share/nav_msgs/msg/Goals.idl
 CMakeFiles/dros_common_interfaces: /opt/ros/humble/share/nav_msgs/msg/GridCells.idl
 CMakeFiles/dros_common_interfaces: /opt/ros/humble/share/nav_msgs/msg/MapMetaData.idl
 CMakeFiles/dros_common_interfaces: /opt/ros/humble/share/nav_msgs/msg/OccupancyGrid.idl
