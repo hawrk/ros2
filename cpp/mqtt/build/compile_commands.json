@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/hawrk/src/cpp/mqtt/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/publisher.dir/publisher.cpp.o -c /home/hawrk/src/cpp/mqtt/publisher.cpp",
+  "file": "/home/hawrk/src/cpp/mqtt/publisher.cpp"
+},
+{
+  "directory": "/home/hawrk/src/cpp/mqtt/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/subscribe.dir/subscribe.cpp.o -c /home/hawrk/src/cpp/mqtt/subscribe.cpp",
+  "file": "/home/hawrk/src/cpp/mqtt/subscribe.cpp"
+},
+{
+  "directory": "/home/hawrk/src/cpp/mqtt/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/pub_main.dir/pub_main.cpp.o -c /home/hawrk/src/cpp/mqtt/pub_main.cpp",
+  "file": "/home/hawrk/src/cpp/mqtt/pub_main.cpp"
+},
+{
+  "directory": "/home/hawrk/src/cpp/mqtt/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/pub_main.dir/mqtt/mqtt_publisher.cpp.o -c /home/hawrk/src/cpp/mqtt/mqtt/mqtt_publisher.cpp",
+  "file": "/home/hawrk/src/cpp/mqtt/mqtt/mqtt_publisher.cpp"
+},
+{
+  "directory": "/home/hawrk/src/cpp/mqtt/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/sub_main.dir/sub_main.cpp.o -c /home/hawrk/src/cpp/mqtt/sub_main.cpp",
+  "file": "/home/hawrk/src/cpp/mqtt/sub_main.cpp"
+},
+{
+  "directory": "/home/hawrk/src/cpp/mqtt/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/sub_main.dir/mqtt/mqtt_subscriber.cpp.o -c /home/hawrk/src/cpp/mqtt/mqtt/mqtt_subscriber.cpp",
+  "file": "/home/hawrk/src/cpp/mqtt/mqtt/mqtt_subscriber.cpp"
+}
+]

@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/sub_main.dir/sub_main.cpp.o CMakeFiles/sub_main.dir/mqtt/mqtt_subscriber.cpp.o -o sub_main  -lpaho-mqttpp3 -lpaho-mqtt3a 

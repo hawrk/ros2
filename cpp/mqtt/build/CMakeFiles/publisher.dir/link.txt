@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/publisher.dir/publisher.cpp.o -o publisher  -lpaho-mqttpp3 -lpaho-mqtt3a 

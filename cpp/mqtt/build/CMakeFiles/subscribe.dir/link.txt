@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/subscribe.dir/subscribe.cpp.o -o subscribe  -lpaho-mqttpp3 -lpaho-mqtt3a 
