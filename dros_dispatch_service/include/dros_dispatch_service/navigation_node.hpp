@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 17:02:29
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-05-13 16:01:20
+ * @LastEditTime: 2025-05-30 08:57:01
  * @Description: 
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/navigation_node.hpp
  */
@@ -29,6 +29,11 @@ class NavigationNode : public rclcpp::Node {
             // 等待action服务器
             while(!this->action_client_->wait_for_action_server(std::chrono::seconds(10)))   {
                 RCLCPP_INFO(this->get_logger(), "waitting for action server....");
+                if(!rclcpp::ok()) {
+                    RCLCPP_ERROR(this->get_logger(), "Interrupted while waiting for action server to be up");
+                    rclcpp::shutdown();
+                    return;
+                }
             }
             
         }

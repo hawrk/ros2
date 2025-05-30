@@ -20,6 +20,11 @@ class DexterousHandNode : public rclcpp::Node
             this->action_client_ = rclcpp_action::create_client<DexterousHand>(this, "hand_control_module");
 
             while(!this->action_client_->wait_for_action_server(std::chrono::seconds(10))) {
+                if(!rclcpp::ok()) {
+                    RCLCPP_ERROR(this->get_logger(), "Interrupted while waiting for action server to be up");
+                    rclcpp::shutdown();
+                    return;
+                }
                 RCLCPP_INFO(this->get_logger(), "Waiting for action server to be up...");
             }
         }

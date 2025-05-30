@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-22 09:51:29
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-04-30 09:15:57
+ * @LastEditTime: 2025-05-30 08:57:10
  * @Description:   操模块
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/pickup_node.hpp
  */
@@ -27,6 +27,11 @@ class PickupNode : public rclcpp::Node {
             rotate_client_ = rclcpp_action::create_client<turtlesim::action::RotateAbsolute>(this, "pickup");
             while(!rotate_client_->wait_for_action_server(std::chrono::seconds(10))) {
                 RCLCPP_INFO(this->get_logger(), "Waiting for pickup action server to be up...");
+                if(!rclcpp::ok()) {
+                    RCLCPP_ERROR(this->get_logger(), "Interrupted while waiting for action server to be up");
+                    rclcpp::shutdown();
+                    return;
+                }
             }
         }
 

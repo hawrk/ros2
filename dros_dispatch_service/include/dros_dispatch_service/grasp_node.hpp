@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-28 14:29:53
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-04-29 14:02:17
+ * @LastEditTime: 2025-05-30 08:56:49
  * @Description: 
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/grasp_node.hpp
  */
@@ -19,7 +19,12 @@ class GraspNode : public rclcpp::Node {
             RCLCPP_INFO(this->get_logger(), "Creating grasp node...");
             this->client_ = this->create_client<Grasp>("grasp");
             while(!this->client_->wait_for_service(std::chrono::seconds(10))) {
-                 RCLCPP_INFO(this->get_logger(), "Waiting for grasp  server to be up...");
+                RCLCPP_INFO(this->get_logger(), "Waiting for grasp  server to be up...");
+                if(!rclcpp::ok()) {
+                    RCLCPP_ERROR(this->get_logger(), "Interrupted while waiting for action server to be up");
+                    rclcpp::shutdown();
+                    return;
+                }
             }
         }
 
