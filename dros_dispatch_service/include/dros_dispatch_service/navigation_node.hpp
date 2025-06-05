@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 17:02:29
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-05-30 08:57:01
+ * @LastEditTime: 2025-05-30 09:18:58
  * @Description: 
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/navigation_node.hpp
  */
@@ -23,9 +23,15 @@ class NavigationNode : public rclcpp::Node {
     public:
         NavigationNode(const std::string& node_name):Node(node_name) {
             RCLCPP_INFO(this->get_logger(), "NavigationNode start......");
+
+            reentrant_callback_group_ = this->create_callback_group(
+                rclcpp::CallbackGroupType::Reentrant);
     
             // 创建客户端
-            this->action_client_ = rclcpp_action::create_client<NavigateToPose>(this, "navigate_to_pose"); 
+            this->action_client_ = rclcpp_action::create_client<NavigateToPose>(
+                this, 
+                "navigate_to_pose",
+                reentrant_callback_group_); 
             // 等待action服务器
             while(!this->action_client_->wait_for_action_server(std::chrono::seconds(10)))   {
                 RCLCPP_INFO(this->get_logger(), "waitting for action server....");
@@ -44,6 +50,7 @@ class NavigationNode : public rclcpp::Node {
         
     private:
         rclcpp_action::Client<NavigateToPose>::SharedPtr action_client_;
+        rclcpp::CallbackGroup::SharedPtr reentrant_callback_group_;
 };
 
 

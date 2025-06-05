@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 14:46:56
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-05-07 13:37:16
+ * @LastEditTime: 2025-06-04 11:42:03
  * @Description: 
  * @FilePath: /dros_dispatch_service/src/main.cpp
  */
@@ -23,13 +23,14 @@ int main(int argc, char ** argv)
         std::cout << "Received task: " << req.body << std::endl;
         std::string task_string = req.body;
 
-        std::thread task_thread([dispatch_node = dispatch_node, task_string]() {
-            dispatch_node->receive_http_task(task_string);
-        });
-        task_thread.detach();
+        // std::thread task_thread([&dispatch_node, task_string]() {
+        //     dispatch_node->receive_http_task(task_string);
+        // });
+        // task_thread.detach();
+        auto ret_msg = dispatch_node->receive_http_task(task_string);
 
         // 创建JSON 响应
-        json j = {{"msg", "任务已接收"}};
+        json j = {{"msg", ret_msg}};
         res.set_content(j.dump(), "application/json");
         res.status = 200;
 
@@ -41,8 +42,13 @@ int main(int argc, char ** argv)
     });
 
     // 启动 ROS 2 节点的事件循环
-    rclcpp::spin(dispatch_node);
+    rclcpp::executors::MultiThreadedExecutor executor;
+    executor.add_node(dispatch_node->get_node_base_interface());
+    executor.spin();
+
     rclcpp::shutdown();
+    // rclcpp::spin(dispatch_node);
+    // rclcpp::shutdown();
 
     // 等待 HTTP 服务器线程结束
     server_thread.join();

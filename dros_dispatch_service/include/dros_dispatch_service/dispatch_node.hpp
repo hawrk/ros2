@@ -2,7 +2,7 @@
  * @Author: hawrkchen
  * @Date: 2025-04-16 15:28:43
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-05-21 09:56:13
+ * @LastEditTime: 2025-06-05 11:26:32
  * @Description: 任务分发，初始化BehaviorTreeFactory
  * @FilePath: /dros_dispatch_service/include/dros_dispatch_service/dispatch_node.hpp
  */
@@ -32,7 +32,7 @@ class DispatchNode : public rclcpp::Node
             module_sub_ = this->create_subscription<std_msgs::msg::String>(
                 "/task_planning", 10, std::bind(&DispatchNode::receive_module_callback, this, std::placeholders::_1));
             // 初始化 NavigationNode
-            nav_node_ = std::make_shared<NavigationNode>("navigation_node");
+            nav_node_ = std::make_unique<NavigationNode>("navigation_node");
             pickup_node_ = std::make_shared<PickupNode>("pickup_node");
             grasp_node_ = std::make_shared<GraspNode>("grasp_node");
             dexterous_hand_node_ = std::make_shared<DexterousHandNode>("dexterous_hand_node");
@@ -41,7 +41,7 @@ class DispatchNode : public rclcpp::Node
             // 初始化BehaviorTreeFactory
             // factory_.registerNodeType<NavigateToPoseAction>("NavigateToPoseAction",
             //     [this](const std::string& name, const BT::NodeConfig& config) {
-            //         return std::make_unique<NavigateToPoseAction>(name, config); 
+            //         return std::make_unique<NavigateToPoseAction>(name, config, nav_node_); 
             //     });
             factory_.registerNodeType<NavigateToPoseAction>("NavigateToPoseAction", nav_node_);
             factory_.registerNodeType<PickupAction>("PickupAction", pickup_node_);
@@ -73,13 +73,22 @@ class DispatchNode : public rclcpp::Node
             tree_ = factory_.createTreeFromText(xml_string, blackboard);
         }
 
-        void process_policy(const std::string& task_string) {
+        std::string process_policy(const std::string& task_string) {
             try {
+                if(running_) {
+                    RCLCPP_ERROR(this->get_logger(), "BehaviorTree is still running, skip...");
+                    return {"当前行为树正在执行,当前任务执行失败!"};
+                }
                 std::string xml_string = create_bt_xml_from_message(task_string);
                 if(xml_string.empty()) {
                     RCLCPP_INFO(this->get_logger(), "Failed to create BT XML from message, skip...");
-                    return ;
+                    return {"xml字符串解析错误,行为树构建失败!"};
                 }
+                // RCLCPP_INFO(this->get_logger(), "cur bt node status: %d", int(bt_status_));
+                // if(this->bt_status_ == BT::NodeStatus::RUNNING) {
+                //     RCLCPP_ERROR(this->get_logger(), "BehaviorTree is still running, skip...");
+                //     return {"当前行为树正在执行,当前任务执行失败!"};
+                // }
                 
                 BT::Blackboard::Ptr blackboard = BT::Blackboard::create();
                 // 这里可以设置 多个值，供不同的模块节点
@@ -94,15 +103,31 @@ class DispatchNode : public rclcpp::Node
 
             } catch(const std::exception& e) {
                 RCLCPP_ERROR(this->get_logger(), "Failed to create tree from text: %s", e.what());
-                return ;
+                return {"xml字符串解析错误,行为树构建失败!"};
             }
-
-            tree_.tickWhileRunning();
+            running_ = true;
+            bt_status_ = tree_.tickWhileRunning();
+            // 检查行为树的状态
+            switch(bt_status_) {
+                case BT::NodeStatus::SUCCESS:
+                    RCLCPP_INFO(this->get_logger(), "Task completed successfully");
+                    break;
+                case BT::NodeStatus::FAILURE:
+                    RCLCPP_INFO(this->get_logger(), "Task failed");
+                    break;
+                case BT::NodeStatus::RUNNING:
+                    RCLCPP_INFO(this->get_logger(), "Task is running");
+                    break;
+                default:
+                    RCLCPP_INFO(this->get_logger(), "Task status unknown");
+            }
+            running_ = false;
+            return {"任务执行成功!"};
         }
 
         // 处理来自http的请求
-        void receive_http_task(const std::string& body_string) {
-            process_policy(body_string);
+        std::string receive_http_task(const std::string& body_string) {
+            return process_policy(body_string);
         }
 
     private:
@@ -253,6 +278,8 @@ class DispatchNode : public rclcpp::Node
     private:
         BT::BehaviorTreeFactory factory_;
         BT::Tree tree_;
+        BT::NodeStatus bt_status_;
+        bool running_ = false;
 
         std::shared_ptr<NavigationNode> nav_node_;
         std::shared_ptr<PickupNode> pickup_node_;
